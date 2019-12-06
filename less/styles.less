@@ -1,5 +1,5 @@
 body {
-    background: black url("/images/universe-large.jpg") no-repeat center top;
+    background: black url("/etch-a-sketch/60s-background-faded.jpg") no-repeat center top;
     background-size:cover;
     width:100%;
     .flex-column();
@@ -10,8 +10,10 @@ body {
 
 header {
     display:block;
+    box-sizing:border-box;
     background-color: white;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
+    padding: 20px 0 0 20px;
     text-align:center;
     .rounded-shadow();
 }
@@ -29,7 +31,7 @@ nav {
 }
 
 .rollover div {
-    padding:20px;    
+    padding:0 20px 20px 0;    
 }
 
 .rollbtn {
@@ -71,7 +73,8 @@ nav {
     float:right;
     width:25%;
     position:relative;
-    right:15px;
+    top:-13px;
+    right:7px;
 }
 
 #logo {
@@ -97,8 +100,8 @@ nav {
 
 main {
     border-radius: 30px;
-    padding:30px;
-    margin:30px;
+    padding: 20px 0 0 20px;
+    margin: 20px auto 0 auto;
     background-color:white;
     box-shadow: 15px 15px 15px gray;
     .flex-column();
@@ -113,9 +116,10 @@ main {
 aside {
     width:100%;
     background-color:green;
+    color:white;
     box-sizing: border-box;
     .rounded-with-shadow();
-    padding:10px;
+    padding:20px;
     float: none;
     order: 0;
 }
@@ -138,7 +142,7 @@ aside {
         display:block;
         box-sizing:border-box;
         width:860px;
-        margin:0 auto;
+        margin:20 auto 0 auto;
     }
     
     aside {
@@ -159,6 +163,8 @@ aside {
         width:860px;
     }
 }
+
+//                      ASIDE CONTENT
 
 .aside-img {
     width:45%;
@@ -194,21 +200,18 @@ aside {
     width:100%;
 }
 
+//              ARTICLE AND SECTION CONTENT
+
 article {
     text-align: left;
     box-sizing: border-box;
-    padding:10px;
+    padding: 20px 0 0 20px;
+    margin: 0 20px 20px 0;
     order:1;
 }
 
-#videos {
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-
 section {
-    padding:10px;
+    padding: 20px 0 0 20px;
 }
 
 main > div {
@@ -218,10 +221,6 @@ main > div {
 
 #panel1 {
     border-bottom:1px solid black;
-}
-
-dt {
-    font-style:italic;
 }
 
 .category {
@@ -234,14 +233,6 @@ img {
     .rounded-with-shadow();
 }
 
-#proposal-diagram {
-    max-width:100%;
-}
-
-#photo-gallery > img {
-max-width: 300px;
-}
-
 .float-right {
     float:right;
     margin-left:30px;
@@ -249,35 +240,17 @@ max-width: 300px;
 
 .float-left {
     float:left;
-    margin-right:30px;
+    margin: 0 20px 20px 0;
 }
 
 .float-clear {
     clear: both ;
 }
 
-.caption {
-    text-align:center;
-}
-
 .center {
     text-align:center;
     margin:auto;
     display:block;
-}
-
-#container {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    background: lightblue;
-    margin:auto;
-}
-  
-#animate {
-    width: 50px;
-    height: 50px;
-    position: absolute;
 }
 
 #top-anchor {
@@ -290,12 +263,19 @@ max-width: 300px;
 
 footer {
     background-color:white;
+    margin: 20px auto 0 auto;
     padding:50px 0;
     display:block;
     margin: 20px auto;
     text-align:center;
     .rounded-shadow();
 }
+
+//                          GALLERY CONTENT
+
+#photo-gallery > img {
+    max-width: 300px;
+    }
 
 //LESS Preprocessing
 
