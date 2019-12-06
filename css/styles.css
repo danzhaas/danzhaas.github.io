@@ -1,0 +1,259 @@
+body {
+  background: black url("/images/universe-large.jpg") no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.1em;
+}
+header {
+  display: block;
+  background-color: white;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+nav {
+  width: 100%;
+  border-radius: 15px;
+  font-family: 'Poiret One', cursive;
+  background-color: white;
+}
+.rollover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rollover div {
+  padding: 20px;
+}
+.rollbtn {
+  width: 75px;
+}
+.nav-links {
+  width: 100%;
+  display: none;
+}
+.nav-links a {
+  padding: 0;
+}
+.rollover:hover .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#breadcrumbs {
+  clear: right;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  background-color: indigo;
+  text-align: left;
+  width: 115px;
+}
+#breadcrumbs a {
+  margin: 0 0 20px;
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+}
+#search {
+  float: right;
+  width: 25%;
+  position: relative;
+  right: 15px;
+}
+#logo {
+  clear: right;
+  margin: 0 auto 50px auto ;
+  padding: 30px;
+  width: 60%;
+  background-image: linear-gradient(to right, green, blue, indigo);
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+#logo-text {
+  padding: 30px;
+  font-family: 'Poiret One', cursive;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+main {
+  border-radius: 30px;
+  padding: 30px;
+  margin: 30px;
+  background-color: white;
+  box-shadow: 15px 15px 15px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+.title {
+  text-align: center;
+}
+aside {
+  width: 100%;
+  background-color: green;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  float: none;
+  order: 0;
+}
+@media screen and (min-width: 800px) {
+  body {
+    background: black url("../images/universe-large.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  header {
+    width: 860px;
+  }
+  main {
+    display: block;
+    box-sizing: border-box;
+    width: 860px;
+    margin: 0 auto;
+  }
+  aside {
+    width: 40%;
+  }
+  form {
+    text-align: center;
+  }
+  article {
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto;
+  }
+  footer {
+    width: 860px;
+  }
+}
+.aside-img {
+  width: 45%;
+  margin: 7px;
+}
+#newest {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+}
+#new-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#aside-coming-soon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#aside-coming-soon > div {
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+}
+#aside-coming-soon > h3 {
+  width: 100%;
+}
+article {
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  order: 1;
+}
+#videos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section {
+  padding: 10px;
+}
+main > div {
+  margin: auto;
+  display: block;
+}
+#panel1 {
+  border-bottom: 1px solid black;
+}
+dt {
+  font-style: italic;
+}
+.category {
+  text-indent: 0px;
+}
+img {
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+#proposal-diagram {
+  max-width: 100%;
+}
+#photo-gallery > img {
+  max-width: 300px;
+}
+.float-right {
+  float: right;
+  margin-left: 30px;
+}
+.float-left {
+  float: left;
+  margin-right: 30px;
+}
+.float-clear {
+  clear: both ;
+}
+.caption {
+  text-align: center;
+}
+.center {
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: lightblue;
+  margin: auto;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+#top-anchor {
+  width: 25%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+}
+footer {
+  background-color: white;
+  padding: 50px 0;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+.rounded-shadow {
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
