@@ -1,5 +1,5 @@
 body {
-  background: black url("/etch-a-sketch/60s-background-faded.jpg") no-repeat center top;
+  background: black url("/images/60s-background-faded.jpg") no-repeat center top;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -114,7 +114,7 @@ aside {
 }
 @media screen and (min-width: 800px) {
   body {
-    background: black url("../images/universe-large.jpg") no-repeat center top;
+    background: black url("/images/60s-background-faded.jpg") no-repeat center top;
     background-size: cover;
   }
   header {

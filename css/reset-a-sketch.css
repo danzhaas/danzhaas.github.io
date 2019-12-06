@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+#etch-a-sketch {
+  /* HTML5 display-role reset for older browsers */
+}
+#etch-a-sketch html,
+#etch-a-sketch body,
+#etch-a-sketch div,
+#etch-a-sketch span,
+#etch-a-sketch applet,
+#etch-a-sketch object,
+#etch-a-sketch iframe,
+#etch-a-sketch h1,
+#etch-a-sketch h2,
+#etch-a-sketch h3,
+#etch-a-sketch h4,
+#etch-a-sketch h5,
+#etch-a-sketch h6,
+#etch-a-sketch p,
+#etch-a-sketch blockquote,
+#etch-a-sketch pre,
+#etch-a-sketch a,
+#etch-a-sketch abbr,
+#etch-a-sketch acronym,
+#etch-a-sketch address,
+#etch-a-sketch big,
+#etch-a-sketch cite,
+#etch-a-sketch code,
+#etch-a-sketch del,
+#etch-a-sketch dfn,
+#etch-a-sketch em,
+#etch-a-sketch img,
+#etch-a-sketch ins,
+#etch-a-sketch kbd,
+#etch-a-sketch q,
+#etch-a-sketch s,
+#etch-a-sketch samp,
+#etch-a-sketch small,
+#etch-a-sketch strike,
+#etch-a-sketch strong,
+#etch-a-sketch sub,
+#etch-a-sketch sup,
+#etch-a-sketch tt,
+#etch-a-sketch var,
+#etch-a-sketch b,
+#etch-a-sketch u,
+#etch-a-sketch i,
+#etch-a-sketch center,
+#etch-a-sketch dl,
+#etch-a-sketch dt,
+#etch-a-sketch dd,
+#etch-a-sketch ol,
+#etch-a-sketch ul,
+#etch-a-sketch li,
+#etch-a-sketch fieldset,
+#etch-a-sketch form,
+#etch-a-sketch label,
+#etch-a-sketch legend,
+#etch-a-sketch table,
+#etch-a-sketch caption,
+#etch-a-sketch tbody,
+#etch-a-sketch tfoot,
+#etch-a-sketch thead,
+#etch-a-sketch tr,
+#etch-a-sketch th,
+#etch-a-sketch td,
+#etch-a-sketch article,
+#etch-a-sketch aside,
+#etch-a-sketch canvas,
+#etch-a-sketch details,
+#etch-a-sketch embed,
+#etch-a-sketch figure,
+#etch-a-sketch figcaption,
+#etch-a-sketch footer,
+#etch-a-sketch header,
+#etch-a-sketch hgroup,
+#etch-a-sketch menu,
+#etch-a-sketch nav,
+#etch-a-sketch output,
+#etch-a-sketch ruby,
+#etch-a-sketch section,
+#etch-a-sketch summary,
+#etch-a-sketch time,
+#etch-a-sketch mark,
+#etch-a-sketch audio,
+#etch-a-sketch video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#etch-a-sketch article,
+#etch-a-sketch aside,
+#etch-a-sketch details,
+#etch-a-sketch figcaption,
+#etch-a-sketch figure,
+#etch-a-sketch footer,
+#etch-a-sketch header,
+#etch-a-sketch hgroup,
+#etch-a-sketch menu,
+#etch-a-sketch nav,
+#etch-a-sketch section {
+  display: block;
+}
+#etch-a-sketch body {
+  line-height: 1;
+}
+#etch-a-sketch ol,
+#etch-a-sketch ul {
+  list-style: none;
+}
+#etch-a-sketch blockquote,
+#etch-a-sketch q {
+  quotes: none;
+}
+#etch-a-sketch blockquote:before,
+#etch-a-sketch blockquote:after,
+#etch-a-sketch q:before,
+#etch-a-sketch q:after {
+  content: '';
+  content: none;
+}
+#etch-a-sketch table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
