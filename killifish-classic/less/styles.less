@@ -1,6 +1,6 @@
 //          MEDIA QUERIES
 
-// Mobile, <800 px
+// Mobile, <800 px 
 
 @media screen and (max-width:800px) {
 
@@ -169,7 +169,7 @@ header {
 }
 
 nav {
-    margin:40px auto 0 auto;
+    margin: 40px auto 100px auto;
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
@@ -189,6 +189,14 @@ nav {
     justify-content: center;
 }
 
+
+.rollover{
+    position:relative;
+    display:inline-block;
+    width:100px;
+    height:100px;
+}
+
 .hidden {
     display:none;
     position: absolute;
@@ -196,16 +204,42 @@ nav {
     height:200px;    
 }
 
-.rollover {
-    display:flex;
-    flex-direction: column;
-    width:100px;
-    height:300px;
+.rollover:hover .hidden {
+    display:block;
+}
 
-    :hover .hidden {
-        display:block;
-        
-        }
+.rollover:hover {
+    background-color:lightblue;
+    border-radius:50px;
+}
+
+.leader {
+    -webkit-animation: leader-flash 3s infinite;  /* Safari 4+ */
+    -moz-animation: leader-flash 3s infinite;  /* Fx 5+ */
+    -o-animation: leader-flash 3s infinite;  /* Opera 12+ */
+    animation: leader-flash 3s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes leader-flash {
+    0%, 25% {
+        background-color: rgba(78, 255, 217, 0.719);
+    }
+    50%, 75% {
+      background-color: rgba(181, 250, 235, 0.719);
+    }
+}
+
+.leader:hover {
+-webkit-animation: leader-steady 3s infinite;  /* Safari 4+ */
+    -moz-animation: leader-steady 3s infinite;  /* Fx 5+ */
+    -o-animation: leader-steady 3s infinite;  /* Opera 12+ */
+    animation: leader-steady 3s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes leader-steady {
+    0%, 100% {
+        background-color: rgba(78, 255, 217, 0.719);
+    }
 }
 
 #spacer {
@@ -261,7 +295,7 @@ p, h2, h3, h4, h5, h6, li {
     line-height: 1.5em;
 }
 
-a {
+a{
     color: rgb(0, 26, 255);
     
     :visited {
@@ -293,12 +327,12 @@ figcaption {
 
 input {
     padding:5px;
-    background-color:orange;    
+    background-color:rgba(255, 0, 0, 0.637);
     margin:1em;
 }
 
 textarea {
-    background-color:orange;    
+    background-color:rgba(255, 0, 0, 0.637);
     margin:1em;
 }
 

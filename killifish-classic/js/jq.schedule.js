@@ -5,7 +5,7 @@
             rows : {},
             startTime: "07:00",
             endTime: "19:30",
-            widthTimeX:25,		// 1cell辺りの幅(px)
+            widthTimeX:50,		// 1cell辺りの幅(px)
             widthTime:600,		// 区切り時間(秒)
             timeLineY:50,		// timeline height(px)
             timeLineBorder:1,	// timeline height border

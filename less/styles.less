@@ -16,7 +16,7 @@ header {
     padding: 20px 0 0 20px;
     text-align:center;
     .rounded-shadow();
-}
+} 
 
 nav {
     width:100%;
@@ -271,13 +271,40 @@ footer {
     .rounded-shadow();
 }
 
+
 //                          GALLERY CONTENT
 
+#photo-gallery {
+    .flex-row();
+    flex-wrap: wrap;
+}
+
+/*
 #photo-gallery > img {
     max-width: 300px;
     }
+*/
 
-//LESS Preprocessing
+.gallery-img {
+    width:360px;
+    height:360px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    margin:0 20px 20px 0;
+}
+
+.gallery-img img {
+    min-height: 100%;
+    min-width: 100%;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 5-7 */
+    filter: alpha(opacity=0);
+    /* modern browsers */
+    opacity: 0;
+
+//                      LESS Preprocessing
 
 //consolidated code for elements with border-radius and box-shadow;
 .rounded-with-shadow() {

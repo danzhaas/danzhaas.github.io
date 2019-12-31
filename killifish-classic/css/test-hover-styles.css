@@ -127,7 +127,7 @@ header {
   border-bottom: 10px solid orange;
 }
 nav {
-  margin: 40px auto 100px auto;
+  margin: 40px auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -145,61 +145,106 @@ nav {
   border: 3px solid orange;
   justify-content: center;
 }
+
+/*                 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                        HOVER TEST 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX
+*/
+
 .rollover {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+    position:relative;
+    display:inline-block;
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    width: 100px;
+    height: 300px;
 }
+
+.leader {
+    -webkit-animation: leader-flash 3s infinite;  /* Safari 4+ */
+    -moz-animation: leader-flash 3s infinite;  /* Fx 5+ */
+    -o-animation: leader-flash 3s infinite;  /* Opera 12+ */
+    animation: leader-flash 3s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes leader-flash {
+    0%, 25% {
+        background-color: rgba(78, 255, 217, 0.719);
+    }
+    50%, 75% {
+      background-color: rgba(181, 250, 235, 0.719);
+    }
+}
+
+.leader:hover {
+    background-color: rgba(78, 255, 217, 0.719);
+}
+
 .hidden {
   display: none;
   position: absolute;
   width: 100px;
   height: 200px;
 }
+
 .rollover:hover .hidden {
-  display: block;
-}
-.rollover:hover {
-  background-color: lightblue;
-  border-radius: 50px;
-}
-.leader {
-  -webkit-animation: leader-flash 3s infinite;
-  /* Safari 4+ */
-  -moz-animation: leader-flash 3s infinite;
-  /* Fx 5+ */
-  -o-animation: leader-flash 3s infinite;
-  /* Opera 12+ */
-  animation: leader-flash 3s infinite;
-  /* IE 10+, Fx 29+ */
-}
-@-webkit-keyframes leader-flash {
-  0%,
-  25% {
-    background-color: rgba(78, 255, 217, 0.719);
+    display: block;
   }
-  50%,
-  75% {
-    background-color: rgba(181, 250, 235, 0.719);
+
+  .rollover:hover {
+    background-color:lightblue;
+    border-radius:50px;
+}
+
+/*                 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                        HOVER TEST 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX
+*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
   }
-}
-.leader:hover {
-  -webkit-animation: leader-steady 3s infinite;
-  /* Safari 4+ */
-  -moz-animation: leader-steady 3s infinite;
-  /* Fx 5+ */
-  -o-animation: leader-steady 3s infinite;
-  /* Opera 12+ */
-  animation: leader-steady 3s infinite;
-  /* IE 10+, Fx 29+ */
-}
-@-webkit-keyframes leader-steady {
-  0%,
-  100% {
-    background-color: rgba(78, 255, 217, 0.719);
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
   }
-}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* 
+  
+  HTML
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div>
+                 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                        HOVER TEST 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX
+*/
+
 #spacer {
   height: 500px;
 }
@@ -272,11 +317,11 @@ figcaption {
 }
 input {
   padding: 5px;
-  background-color: rgba(255, 0, 0, 0.637);
+  background-color: orange;
   margin: 1em;
 }
 textarea {
-  background-color: rgba(255, 0, 0, 0.637);
+  background-color: orange;
   margin: 1em;
 }
 #panel1 {
