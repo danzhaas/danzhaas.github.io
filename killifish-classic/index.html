@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-    <meta name="keywords" content="Killifish Classic"> 
 </head>
 <body>
     <div id="wrapper">
@@ -93,13 +92,16 @@
         </nav>
     </header>
     <main>
-        <img src="images/about-800.jpg">
+        <div id="slideshow">
+            <img class src="images/collage-1a.jpg">
+            <img class src="images/collage-2.jpg">
+            <img class src="images/collage-3.jpg">
+            <img class src="images/collage-4.jpg">
+            <img class src="images/collage-5.jpg">
+            <img class src="images/collage-6.jpg">
+        </div>
+        <script type="text/javascript" src="js/slideshow.js"></script>        
         <article>
-            <div id="fish-hr">
-                <img src="images/killifish1-mini.png">
-                <img src="images/killifish2-mini.png">
-                <img src="images/killifish3-mini.png">
-            </div>
             <section>
                 <h2 class="title">Introducing the Killifish Classic</h2>
                 <h3 class="title">The BIGGEST Killifish Aquarium Show on the East Coast</h3>
@@ -113,63 +115,87 @@
                     <img src="images/killifish1-mini.png">
                     <img src="images/killifish2-mini.png">
                     <img src="images/killifish3-mini.png">
+                    <img src="images/killifish4-mini.png">
+                    <img src="images/killifish5-mini.png">
             </div>
             <section>                
                 <div id="visit-div">
                     <h2 class="float-left" >Visit for Free</h2>
                     <a href="about.html">                        
-                        <figure>
-                            <img src="images/about-200.jpg" alt="aquarium">
+                        <figure class="container">
+                            <img src="images/about-200.jpg" alt="aquarium" class="image">
+                            <div class="overlay">
+                                <div class="text">About The Event</div>
+                            </div>
                             <figcaption>About the Event</figcaption>
-                        </figure>
+                        </figure>                        
                     </a>
                     <a href="schedule.html">                        
-                        <figure>
-                            <img src="images/schedule-200.jpg" alt="a schedule">
+                        <figure class="container">
+                            <img src="images/schedule-200.jpg" alt="a schedule" class="image">
+                            <div class="overlay">
+                                <div class="text">Schedule</div>
+                            </div>
                             <figcaption>Schedule</figcaption>
                         </figure>
                     </a>
                     <a href="plan.html">                        
-                        <figure>
-                            <img src="images/plan-200.jpg" alt="map and hotel">
+                        <figure class="container">
+                            <img src="images/plan-200.jpg" alt="map and hotel" class="image">
+                            <div class="overlay">
+                                <div class="text">Plan Your Trip</div>
+                            </div>
                             <figcaption>Plan Your Trip</figcaption>
                         </figure>
                     </a>                      
                 </div>
-
                 <div id="show-swap-div">
                     <h2 class="float-left" >Show & Swap</h2>
                     <a href="hobbyists.html">                        
-                        <figure>
-                                <img src="images/hobbyist-kid-200.jpg" alt="fish in bag">
+                        <figure class="container">
+                                <img src="images/hobbyist-kid-200.jpg" alt="fish in bag" class="image">
+                                <div class="overlay">
+                                    <div class="text">For Hobbyists</div>
+                                </div>
                             <figcaption>For Hobbyists</figcaption>
                         </figure>
                     </a>
                     <a href="auction.html">                        
-                        <figure>
-                                <img src="images/auction-200.jpg" alt="auctioneer">
+                        <figure class="container">
+                                <img src="images/auction-200.jpg" alt="auctioneer" class="image">
+                                <div class="overlay">
+                                    <div class="text">Fish Auction</div>
+                                </div>
                             <figcaption>Fish Auction</figcaption>
                         </figure>
                     </a>
                     <a href="challenge.html">                        
-                        <figure>
-                                <img src="images/challenge2-200.jpg" alt="champion with trophy">
+                        <figure class="container">
+                                <img src="images/challenge2-200.jpg" alt="champion with trophy" class="image">
+                                <div class="overlay">
+                                    <div class="text">Killifish Challenge</div>
+                                </div>
                             <figcaption>Killifish Challenge</figcaption>
                         </figure>
                     </a>                      
                 </div>
-
                 <div id="sponsor-vendor-div">
                     <h2 class="float-left">Support the Event</h2>
                     <a href="sponsors-and-vendors.html">                        
-                        <figure>
-                            <img src="images/vendors-200.jpg">
+                        <figure class="container">
+                            <img src="images/vendors-200.jpg" class="image">
+                            <div class="overlay">
+                                <div class="text">Be a Vendor or Sponsor</div>
+                            </div>
                             <figcaption>Be a Vendor or Sponsor</figcaption>
                         </figure>
                     </a>
                     <a href="tickets-and-store.html">                        
-                        <figure>
-                            <img src="images/store-200.jpg" alt="a ticket and a shirt">
+                        <figure class="container">
+                            <img src="images/store-200.jpg" alt="a ticket and a shirt" class="image">
+                            <div class="overlay">
+                                <div class="text">Visit our Store</div>
+                            </div>
                             <figcaption>Visit our Store</figcaption>
                         </figure>
                     </a>                                        
@@ -180,6 +206,8 @@
                     <img src="images/killifish4-mini.png">
                     <img src="images/killifish5-mini.png">
                     <img src="images/killifish6-mini.png">
+                    <img src="images/killifish7-mini.png">
+                    <img src="images/killifish1-mini.png">
             </div>
             <section>
                 <h2 class="title">Get Updates</h2>
@@ -236,6 +264,8 @@
                 <img src="images/killifish7-mini.png">
                 <img src="images/killifish1-mini.png">
                 <img src="images/killifish2-mini.png">
+                <img src="images/killifish3-mini.png">
+                <img src="images/killifish4-mini.png">
             </div>
         </article>
     </main>

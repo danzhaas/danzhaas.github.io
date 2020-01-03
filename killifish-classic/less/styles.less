@@ -57,7 +57,7 @@
     }
     
     main {
-        width:83%;
+        width:80%;
         margin:30px auto;
     }
 
@@ -163,13 +163,13 @@ header {
     display:block;
     font-family: 'Righteous', cursive;    
     color:black;    
-    padding:30px;
+    padding:60px;
     background-color: rgba(255, 166, 0, 0.562);
     border-bottom: 10px solid orange;
 }
 
 nav {
-    margin: 40px auto 100px auto;
+    margin: 60px auto 60px auto;
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
@@ -177,6 +177,7 @@ nav {
     color:black;
     text-shadow: 1px 1px yellow;
     height:100%;
+    z-index:1;
 }
 
 .bubble {
@@ -201,7 +202,8 @@ nav {
     display:none;
     position: absolute;
     width:100px;
-    height:200px;    
+    height:200px;
+    z-index:1;    
 }
 
 .rollover:hover .hidden {
@@ -242,10 +244,6 @@ nav {
     }
 }
 
-#spacer {
-    height:500px;
-}
-
 main {    
     display:flex;
     box-sizing:border-box;
@@ -261,7 +259,6 @@ main {
 aside {
     background-color:rgba(0, 162, 255, 0.8);
     box-sizing: border-box;
-    
     padding:10px;
     margin:10px; 
     float: none;
@@ -297,22 +294,69 @@ p, h2, h3, h4, h5, h6, li {
 
 a{
     color: rgb(0, 26, 255);
-    
-    :visited {
-        color:rgb(30, 144, 30);
-    }
+}
+
+a:visited {
+    color:maroon;
 }
 
 #visit-div {
     background-color:rgba(255, 181, 44, 0.637);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+
+    h2 {        
+        width:20%;
+        margin: auto 0;
+    }
+}
+
+#visit-div a figure .overlay {
+    background-color: darkorange;
+}
+
+#visit-div a figure .overlay .text {
+    color:black;
 }
 
 #show-swap-div {
     background-color:rgba(78, 255, 217, 0.637);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+
+    h2 {        
+        width:20%;
+        margin: auto 0;
+    }
+}
+
+#show-swap-div a figure .overlay {
+    background-color: #008CBA;
 }
 
 #sponsor-vendor-div {
     background-color:rgba(255, 0, 0, 0.637);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px;
+
+    h2 {        
+        width:45%;
+        margin: auto 0;
+    }
+}
+
+#sponsor-vendor-div a figure .overlay {
+    background-color: red;
+}
+
+#sponsor-vendor-div a figure .overlay .text {
+    color:black;
 }
 
 #sponsor-vendor-div, #show-swap-div, #visit-div {
@@ -346,17 +390,56 @@ img {
     border-radius: 15px;
 }
 
+.container {
+    position: relative;
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        border-radius: 15px;
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
 #paypal-btn {
     max-width:30%;
 }
 
 #fish-hr {
-    margin:100px auto;
+    margin:60px auto;
     .flex-row();
     justify-content: space-around;
     width:100%;
     img {
-        width:200px;
+        width:100px;
         object-fit: contain;
     }
 }
@@ -433,9 +516,34 @@ img {
 
 footer {
     border-top:10px solid rgba(255, 181, 44, 0.829);
-    margin:40px auto 0 auto;
-    padding:50px 0;
+    margin:0 auto;
+    padding:60px 0;
     background-color: rgba(255, 166, 0, 0.562)
+}
+
+#slideshow {
+    position:relative; 
+    box-sizing: border-box;
+    width:800px; 
+    height:800px;
+    background-color: rgba(255, 181, 44, 0.829);
+    border:10px solid rgba(255, 181, 44, 0.829);
+    border-radius: 15px;
+    margin: 0 auto;
+    z-index:0;
+    
+    img { 
+        position:absolute; 
+        left:0; 
+        top:0; 
+        transition:opacity 1s; 
+        opacity:1; 
+        z-index:0;
+    }
+    
+    img.is-hidden { 
+        opacity:0; 
+    }
 }
 
 //  ADD HERE AWESOMEFONT FISH FOR UL BULLETS 
