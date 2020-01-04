@@ -1,0 +1,268 @@
+body {
+    width:100%;
+    background-color:gray;
+    color:black;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height:1.6em;
+    margin:0 auto;
+    /*background-image:url(images/BrCa.jpeg)*/
+}
+
+.wrapper {
+  background-color:white;
+  width:100%;
+}
+
+.headerImg {
+  box-sizing:border-box;
+  width:100%;
+  border-bottom: 8px solid darkred;
+  display:block;
+  margin:0 auto;
+  /*border-top: 2px solid green;*/
+}
+
+header {
+  width:100%;
+  background-color:gray;
+  position:relative;
+  text-align:center;
+}
+
+#uber-header {
+  font-family:'Lato', sans-serif;
+  background-color:white;
+}
+
+#uber-header-bottom {
+  max-width:100%;  
+  border-bottom:15px solid gold;
+  position:relative;
+  bottom:0;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  width:315px;
+  margin:0 auto;
+  padding:0;
+}
+
+#logo-text {
+  margin:auto 0;
+  font-family: 'Linden Hill', serif;
+  text-align:left;
+  font-weight: bold;
+}
+
+.caption {
+  position:absolute;
+  bottom:5px;
+  right:20px;
+  font-size:10px;
+  color:#3d3d3d;
+}
+
+nav {
+  width:100%;
+  box-sizing:border-box;
+  text-indent: 20px;
+  color:black;
+  font-weight:bold;
+  background-color:gray;
+  border-width:8px 0 8px 0;
+  border-style:solid;
+  border-color: darkred;
+}
+
+main {
+  padding: 20px;
+  box-sizing:border-box;
+}
+
+h1 {
+  color: maroon;
+  text-align:left;
+  font-size:2.5em;
+  line-height:1.0;
+  padding: 20px;
+  margin:0;
+}
+
+h2 {
+  color: black;
+  font-size:2em;
+  line-height:1.0;
+  margin:0;
+}
+
+h3 {
+  color: maroon;
+  margin: 10px 0 0 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color:red;
+}
+
+a:visited {
+  color:blue;
+}
+
+li a {
+  display:block;
+}
+
+li a:hover {
+  color:maroon;
+}
+
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0 0 0 1em;
+}
+
+#navList {
+  padding: 0;
+}
+
+.active {
+  background-color:lightgray;
+  color:maroon;
+}
+
+.bulleted {
+  list-style-type:circle;
+  list-style-position:outside;
+}
+
+dt {
+  font-weight:bold;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+#bottomRow {
+  margin-top:0;
+  width:100%;
+  background-color:darkgray;
+}
+
+.row:after {
+  margin:20px;
+  clear:both;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  text-align:left;
+  padding: 0 5px 0 5px;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color:#eee;
+}
+
+tr:nth-child(odd) {
+  background-color:#fff;
+}
+
+td {
+  padding: 0 5px 0 5px;
+}
+
+footer {
+  background-color:rgb(36, 44, 44);
+  color:white;
+  font-size:0.60em;
+  padding:10px;
+  text-align:center;
+  clear:both;
+  border-top:5px solid gold;
+}
+
+#PIPic {
+  width:50%;
+  margin:0 auto;
+  display:block;
+}
+
+/*
+Media query begins here
+*/
+
+@media only screen and (min-width: 800px) {
+  
+  .wrapper {
+    width:70%;
+    margin: auto;
+  }
+  
+  .headerImg {
+    width:70%;
+    margin: 0 auto;
+  }
+  
+  nav {
+    padding: 0 0 20px 20px;
+    border-width:0 2px 0 0;
+    border-style: solid;
+    border-color: lightgray;
+    background-color:white;
+    text-indent:0;
+    float:left;
+    width:25%;
+  }
+
+  main {
+    padding: 0 20px 20px 20px;
+    float:right;
+    width:75%;
+  }
+  
+  #PIPic {
+    max-width:20%;
+    float:right;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.center-img {
+  margin:0 auto;
+}
+
+.invite-button {
+  margin:0 auto;
+  box-sizing: border-box;
+  border:10px solid red;
+}
+
+.invite-button:hover {
+  border:10px solid gold;
+}
+
+.full-width {
+  width:100%;
+}
+
+/*
+Media query ends here
+*/
