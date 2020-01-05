@@ -1,3 +1,6 @@
+#etch-a-sketch {
+  background-color: lightgray;
+}
 #etch-a-sketch section {
   font-family: 'Yellowtail', cursive;
   display: flex;

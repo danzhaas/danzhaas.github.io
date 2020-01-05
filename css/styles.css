@@ -1,5 +1,5 @@
 body {
-  background: black url("/images/60s-background-faded.jpg") no-repeat center top;
+  background: black url("../images/dna-background_1280.jpg") no-repeat center top;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -24,6 +24,21 @@ nav {
   font-family: 'Poiret One', cursive;
   background-color: white;
 }
+a {
+  color: turquoise;
+}
+a:visited {
+  color: darkblue;
+}
+.current {
+  background-color: darkblue;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.current:visited {
+  color: white;
+}
 .rollover {
   display: flex;
   flex-direction: row;
@@ -37,22 +52,20 @@ nav {
 }
 .nav-links {
   width: 100%;
-  display: none;
-}
-.nav-links a {
-  padding: 0;
-}
-.rollover:hover .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.nav-links a {
+  padding: 5px;
+  text-align: center;
 }
 #breadcrumbs {
   clear: right;
   float: left;
   display: flex;
   flex-direction: column;
-  background-color: indigo;
+  background-color: darkblue;
   text-align: left;
   width: 115px;
 }
@@ -75,7 +88,7 @@ nav {
   margin: 0 auto 50px auto ;
   padding: 30px;
   width: 60%;
-  background-image: linear-gradient(to right, green, blue, indigo);
+  background-image: linear-gradient(to right, turquoise, darkblue);
   border-radius: 15px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
 }
@@ -103,7 +116,7 @@ main {
 }
 aside {
   width: 100%;
-  background-color: green;
+  background-color: darkblue;
   color: white;
   box-sizing: border-box;
   border-radius: 15px;
@@ -114,7 +127,7 @@ aside {
 }
 @media screen and (min-width: 800px) {
   body {
-    background: black url("/images/60s-background-faded.jpg") no-repeat center top;
+    background: black url("../images/dna-background_1920.jpg") no-repeat center top;
     background-size: cover;
   }
   header {
@@ -230,22 +243,50 @@ footer {
   border-radius: 15px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
 }
+.SQL-code {
+  background-color: #f2f1f0;
+  padding: 0 0 0 20px;
+  margin: 0 0 15px 0;
+}
+.sql-slideshow {
+  background-color: darkblue;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}
+.sql-slideshow div * {
+  margin: auto;
+  text-align: center;
+}
+.sql-slideshow div a {
+  color: white;
+}
+.sql-slideshow div a:visited {
+  color: white;
+}
 #photo-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-/*
-#photo-gallery > img {
-    max-width: 300px;
-    }
-*/
 .gallery-img {
   width: 360px;
   height: 360px;
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
   margin: 0 20px 20px 0;
+}
+.gallery-img img {
+  min-height: 100%;
+  min-width: 100%;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* modern browsers */
+  opacity: 0;
 }
 .rounded-shadow {
   border-radius: 15px;

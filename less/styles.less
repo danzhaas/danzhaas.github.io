@@ -1,5 +1,5 @@
 body {
-    background: black url("/images/60s-background-faded.jpg") no-repeat center top;
+    background: black url("../images/dna-background_1280.jpg") no-repeat center top;
     background-size:cover;
     width:100%;
     .flex-column();
@@ -25,6 +25,24 @@ nav {
     background-color:white;
 }
 
+a {
+    color:turquoise;
+}
+
+a:visited {
+    color:darkblue;
+}
+
+.current {
+    background-color:darkblue;    
+    .rounded-shadow();
+    color:white;
+}
+
+.current:visited {
+    color:white;
+}
+
 .rollover {
     .flex-row();
     justify-content:space-between;
@@ -40,23 +58,20 @@ nav {
 
 .nav-links {
     width:100%;
-    display:none;
+    .flex-row();
+    justify-content:space-evenly;
 }
 
 .nav-links a {
-    padding:0;
-}
-
-.rollover:hover .nav-links {
-    .flex-row();
-    justify-content:space-evenly;
+    padding:5px;
+    text-align:center;
 }
 
 #breadcrumbs {
     clear:right;
     float:left;
     .flex-column();
-    background-color:indigo;    
+    background-color:darkblue;    
     text-align:left;
     width:115px;
 }
@@ -85,9 +100,8 @@ nav {
     background-image:
     linear-gradient(
       to right,        
-      green,
-      blue,
-      indigo);
+      turquoise,
+      darkblue);
       .rounded-shadow();
 }
 
@@ -115,7 +129,7 @@ main {
 
 aside {
     width:100%;
-    background-color:green;
+    background-color:darkblue;
     color:white;
     box-sizing: border-box;
     .rounded-with-shadow();
@@ -130,7 +144,7 @@ aside {
 
 @media screen and (min-width:800px) {
     body {
-        background: black url("/images/60s-background-faded.jpg") no-repeat center top;
+        background: black url("../images/dna-background_1920.jpg") no-repeat center top;
         background-size:cover;
     }
     
@@ -271,6 +285,32 @@ footer {
     .rounded-shadow();
 }
 
+.SQL-code {
+    background-color:#f2f1f0;
+    padding:0 0 0 20px;
+    margin: 0 0 15px 0;
+}
+
+.sql-slideshow {
+    
+    background-color:darkblue;
+    padding:20px;
+    color:white;
+    .rounded-shadow();
+
+    div * {
+        margin:auto;
+        text-align:center;
+    }
+
+    div a {
+        color:white;
+    }
+
+    div a:visited {
+        color:white;
+    }
+}
 
 //                          GALLERY CONTENT
 
@@ -278,12 +318,6 @@ footer {
     .flex-row();
     flex-wrap: wrap;
 }
-
-/*
-#photo-gallery > img {
-    max-width: 300px;
-    }
-*/
 
 .gallery-img {
     width:360px;
@@ -303,7 +337,7 @@ footer {
     filter: alpha(opacity=0);
     /* modern browsers */
     opacity: 0;
-
+}
 //                      LESS Preprocessing
 
 //consolidated code for elements with border-radius and box-shadow;
