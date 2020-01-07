@@ -4,6 +4,7 @@
     <title>Dan Haas' Portfolio - Home</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/side-nav.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <meta property="og:title" content="Dan Haas Web Dev">
@@ -13,6 +14,26 @@
     <meta name="keywords" content="Dan Haas, Web Development, Portfolio"> 
 </head>
 <body>
+    <div id="sidenav-wrapper">
+        <div id="mySidenav" class="sidenav">
+            <!--<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>-->
+            <div id="sidenav-links">
+                <h1 id="sidenav-logo-text">Dan Haas Web Development</h1>        
+                <a href="index.html" class="current">Home</a>
+                <a href="gallery.html">Image Editing Sample</a>
+                <a href="etch-a-sketch.html">Javascript Sample</a>
+                <a href="sql.html">SQL Sample</a>
+                <a href="/killifish-classic/index.html">Website Design Sample</a>
+                <a href="/lorem-ipsum-cancer-studies/index.html">Research Site Sample</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)"  onclick="openCloseToggle()">
+            <div id="sidenav-toggle">
+                <p id="openbtn">&#9776;NAVIGATION</p>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript" src="js/side-nav.js"></script>    
     <header>
         <nav>
             <div class="gcse-search" id="search"></div>
@@ -37,47 +58,46 @@
             <h2>Dan Haas</h2>
             <h3>Web Developer Specializing in Healthcare</h3>
         </div>
-        <aside class="float-left">
-            <div id="new-projects">
-                <h2 class="title">Newest Projects</h2>
-                <div>
-                    <h3 class="title">Research Site Demo</h3>
-                    <a href="/lorem-ipsum-cancer-studies/index.html"><img src="images/LICS-400.jpg" id="newest"></a>
-                </div>
-                <div class="aside-img">
-                    <h4 class="title">Website Design Demo</h4>
-                    <a href="/killifish-classic/index.html"><img src="images/killifish-400.jpg"></a>
-                </div>
-                <div class="aside-img">
-                    <h4 class="title">Javascript Demo</h4>
-                    <a href="etch-a-sketch.html"><img src="images/etch-a-sketch-400.jpg"></a>  
-                </div>
-                <div class="aside-img">
-                    <h4 class="title">Image Editing</h4>
-                    <a href="../proposal/proposal.html"><img src="images/proposal-diagram.jpg" alt="site map diagram"></a>
-                </div>
-                <div class="aside-img">
-                    <h4 class="title">SQL Coding</h4>
-                    <a href="ex1.html"><img src="images/ex-1-thumbnail.jpg" alt="four image thumbnails"></a>
-                </div>
-            </div>                        
-        </aside>
         <article>
+            <aside class="float-left">
+                <div id="new-projects">
+                    <h2 class="title">Newest Projects</h2>
+                    <div>
+                        <h3 class="title">Research Site</h3>
+                        <a href="/lorem-ipsum-cancer-studies/index.html"><img src="images/LICS-400.jpg" id="newest"></a>
+                    </div>
+                    <div class="aside-img">
+                        <h4 class="title">Website Design</h4>
+                        <a href="/killifish-classic/index.html"><img src="images/killifish-400.jpg"></a>
+                    </div>
+                    <div class="aside-img">
+                        <h4 class="title">Javascript Demo</h4>
+                        <a href="etch-a-sketch.html"><img src="images/etch-a-sketch-400.jpg"></a>  
+                    </div>
+                    <div class="aside-img">
+                        <a href="gallery.html"><h4 class="title">Image Editing</h4></a>
+                    </div>
+                    <div class="aside-img">
+                        <a href="sql.html"><h4 class="title">SQL Sample</h4></a>
+                    </div>
+                </div>                        
+            </aside>
             <div>
+                <img id="dan-photo" class="center" src="images/dan-photo.jpg" alt="photo of Dan">
                 <h3 class="category">About</h3>
-                <p>My career focus is now web development, specializing in the 
+                <p class="justify">My career focus is web development, specializing in the 
                     healthcare market. My web development skills 
                     were gained through coursework in Digital Media and Web Technology,
                      and my knowledge in clinical health science accumulated over a 
                      decade of work in health and a Masters degree in Anatomy and Clinical 
                      Health Science. I am specially suited to adapt health professionals' 
-                     content onto the web to reach a broader audience and showcase what 
+                     content for the web to reach a broader audience and showcase what 
                      their work has to offer. </p>
 
                 <h3 class="category">Skills</h3>
-                <p>HTML, CSS, Javascript, JS libraries, SQL</p>
+                <p class="justify">HTML, CSS, Javascript, JQuery, MySQL</p class="justify">
 
-                <h3 class="category">Education</h3>
+                <h3 class="category float-clear">Education</h3>
                 <table>
                     <tr>
                         <td>Bachelor of Science, Digital Media and Web Technology</td>

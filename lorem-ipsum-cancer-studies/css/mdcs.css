@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     line-height:1.6em;
     margin:0 auto;
-    /*background-image:url(images/BrCa.jpeg)*/
+    z-index:-2;
 }
 
 .wrapper {
@@ -20,7 +20,6 @@ body {
   border-bottom: 8px solid darkred;
   display:block;
   margin:0 auto;
-  /*border-top: 2px solid green;*/
 }
 
 header {
@@ -28,11 +27,12 @@ header {
   background-color:gray;
   position:relative;
   text-align:center;
+  z-index:-1;
 }
 
 #uber-header {
   font-family:'Lato', sans-serif;
-  background-color:white;
+  background-color:rgb(214, 214, 214);
 }
 
 #uber-header-bottom {
@@ -48,6 +48,7 @@ header {
   width:315px;
   margin:0 auto;
   padding:0;
+  z-index:1;
 }
 
 #logo-text {

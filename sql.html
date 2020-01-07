@@ -4,6 +4,7 @@
     <title>Dan Haas' Portfolio - SQL Sample</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
@@ -15,6 +16,25 @@
     <meta name="keywords" content="Dan Haas, Web Development, Portfolio"> 
 </head>
 <body>
+    <div id="sidenav-wrapper">
+        <div id="mySidenav" class="sidenav">            
+            <div id="sidenav-links">
+                <h1 id="sidenav-logo-text">Dan Haas Web Development</h1>        
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Image Editing Sample</a>
+                <a href="etch-a-sketch.html">Javascript Sample</a>
+                <a href="sql.html" class="current">SQL Sample</a>
+                <a href="/killifish-classic/index.html">Website Design Sample</a>
+                <a href="/lorem-ipsum-cancer-studies/index.html">Research Site Sample</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)"  onclick="openCloseToggle()">
+            <div id="sidenav-toggle">
+                <p id="openbtn">&#9776;NAVIGATION</p>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript" src="js/side-nav.js"></script>   
     <header>
         <nav>
             <div class="gcse-search" id="search"></div>

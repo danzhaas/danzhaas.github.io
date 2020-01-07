@@ -90,6 +90,10 @@ a:visited {
     position:relative;
     top:-13px;
     right:7px;
+
+    table, tr, td {
+        border:none;
+    }
 }
 
 #logo {
@@ -129,11 +133,12 @@ main {
 
 aside {
     width:100%;
-    background-color:darkblue;
-    color:white;
+    background-color:turquoise;
+    color:black;
     box-sizing: border-box;
     .rounded-with-shadow();
     padding:20px;
+    margin-top::
     float: none;
     order: 0;
 }
@@ -160,7 +165,7 @@ aside {
     }
     
     aside {
-        width:40%;
+        width:50%;
     }
 
     form {
@@ -238,7 +243,13 @@ main > div {
 }
 
 .category {
+    Text-align:center;
     text-indent: 0px;
+}
+
+.justify {
+    text-align:justify;
+    text-justify:inter-character;
 }
 
 img {
@@ -338,6 +349,21 @@ footer {
     /* modern browsers */
     opacity: 0;
 }
+
+#dan-photo {
+    border:5px solid darkblue;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+table, tr, td {
+    border:1px solid darkblue;
+}
+
+tr :nth-child(first) {
+
+}
+
 //                      LESS Preprocessing
 
 //consolidated code for elements with border-radius and box-shadow;

@@ -83,6 +83,11 @@ a:visited {
   top: -13px;
   right: 7px;
 }
+#search table,
+#search tr,
+#search td {
+  border: none;
+}
 #logo {
   clear: right;
   margin: 0 auto 50px auto ;
@@ -116,13 +121,14 @@ main {
 }
 aside {
   width: 100%;
-  background-color: darkblue;
-  color: white;
+  background-color: turquoise;
+  color: black;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  float: none;
+  margin-top: :
+    float: none;
   order: 0;
 }
 @media screen and (min-width: 800px) {
@@ -140,7 +146,7 @@ aside {
     margin: 20 auto 0 auto;
   }
   aside {
-    width: 40%;
+    width: 50%;
   }
   form {
     text-align: center;
@@ -201,7 +207,12 @@ main > div {
   border-bottom: 1px solid black;
 }
 .category {
+  Text-align: center;
   text-indent: 0px;
+}
+.justify {
+  text-align: justify;
+  text-justify: inter-character;
 }
 img {
   max-width: 100%;
@@ -287,6 +298,16 @@ footer {
   filter: alpha(opacity=0);
   /* modern browsers */
   opacity: 0;
+}
+#dan-photo {
+  border: 5px solid darkblue;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+table,
+tr,
+td {
+  border: 1px solid darkblue;
 }
 .rounded-shadow {
   border-radius: 15px;
