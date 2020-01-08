@@ -26,6 +26,8 @@ nav {
 }
 a {
   color: turquoise;
+  transition: 0.3s;
+  border-radius: 15px;
 }
 a:visited {
   color: darkblue;
@@ -59,6 +61,12 @@ a:visited {
 .nav-links a {
   padding: 5px;
   text-align: center;
+}
+.nav-links a:hover {
+  background-color: #38c5b7;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  color: white;
 }
 #breadcrumbs {
   clear: right;
@@ -121,14 +129,13 @@ main {
 }
 aside {
   width: 100%;
-  background-color: turquoise;
+  background-image: linear-gradient(to right, turquoise, #0A90E9);
   color: black;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  margin-top: :
-    float: none;
+  float: none;
   order: 0;
 }
 @media screen and (min-width: 800px) {
@@ -254,11 +261,6 @@ footer {
   border-radius: 15px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
 }
-.SQL-code {
-  background-color: #f2f1f0;
-  padding: 0 0 0 20px;
-  margin: 0 0 15px 0;
-}
 .sql-slideshow {
   background-color: darkblue;
   padding: 20px;
@@ -276,29 +278,68 @@ footer {
 .sql-slideshow div a:visited {
   color: white;
 }
+.SQL-code {
+  background-color: black;
+  color: white;
+  height: 500px;
+  padding: 10px;
+  text-align: left;
+}
+.SQL-code p {
+  text-align: left;
+}
 #photo-gallery {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px 20px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.gallery-img {
-  width: 360px;
-  height: 360px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  margin: 0 20px 20px 0;
+.gallery-container {
+  max-width: 45%;
+  margin-top: 20px;
+  position: relative;
 }
-.gallery-img img {
-  min-height: 100%;
-  min-width: 100%;
-  /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 5-7 */
-  filter: alpha(opacity=0);
-  /* modern browsers */
+.gallery-container img {
+  display: block;
+  max-width: 100%;
+}
+.gallery-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
   opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  box-shadow: none;
 }
+.gallery-container .overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: none;
+}
+.gallery-container:hover .overlay {
+  opacity: 1;
+}
+/*
+.gallery-img img {
+    min-height: 100%;
+    min-width: 100%;
+    /* IE 8 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 5-7 
+    filter: alpha(opacity=0);
+    /* modern browsers 
+    opacity: 100;
+}
+*/
 #dan-photo {
   border: 5px solid darkblue;
   border-radius: 50%;

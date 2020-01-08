@@ -58,6 +58,7 @@
 }
 .current {
   background-color: darkblue;
+  box-shadow: none;
 }
 .current:visited {
   color: white;

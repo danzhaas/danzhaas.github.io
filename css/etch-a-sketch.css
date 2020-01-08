@@ -27,6 +27,8 @@
   font-size: 4em;
   height: 1em;
   color: gold;
+  position:relative;
+  top:30px;
 }
 #etch-a-sketch h2 {
   font-size: 1.5em;

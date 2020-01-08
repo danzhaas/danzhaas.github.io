@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 1 - Dan H</title>
+    <title>Image Editing - Dan's Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Dan Haas Web Dev">
+    <meta property="og:description" content="Dan Haas is a web developer specializing in healthcare.">
+    <meta property="og:image" content="http://dan-z-haas.github.io/images/index-open-graph.jpg">
+    <meta property="og:url" content="http://dan-z-haas.github.io">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <meta name="keywords" content="Dan Haas, Web Development, Principles of Web Design and Technology, Photo Gallery, HTML, CSS"> 
 </head>
 <body>
     <div id="sidenav-wrapper">
         <div id="mySidenav" class="sidenav">
-            <!--<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>-->
             <div id="sidenav-links">
                 <h1 id="sidenav-logo-text">Dan Haas Web Development</h1>        
                 <a href="index.html">Home</a>
                 <a href="gallery.html" class="current">Image Editing Sample</a>
                 <a href="etch-a-sketch.html">Javascript Sample</a>
-                <a href="sql.html">SQL Sample</a>
+                <a href="sql.html">MySQL Sample</a>
                 <a href="/killifish-classic/index.html">Website Design Sample</a>
                 <a href="/lorem-ipsum-cancer-studies/index.html">Research Site Sample</a>
             </div>
@@ -50,30 +54,37 @@
         </div>
     </header>    
     <main>
-        <section>            
+        <article>            
             <div class="title">
-                <h2>Image Gallery</h2>
+                <h2>Image Editing</h2>
                 <h3>From Original Picture to Edited Image With GIMP</h3>
             </div>
-            <p>Hover to see "Before"</p>
+            <p class="center">Hover to see Original Picture</p>
             <div id="photo-gallery">
-                
-                <br>
-                <div class="gallery-img" style="background-image: url('images/amara-poster.jpg');">
-                    <img src="images/amara-poster.jpg" alt="Poster for Amara Movie">
+                <div class="gallery-container">
+                    <img src="images/amara-poster_500.jpg" alt="Poster for Amara Movie">
+                    <div class="overlay">
+                        <img src="images/Priyanka-Chopra_500.jpg" alt="">
+                    </div>
                 </div>  
-                <div class="gallery-img">
-                    <img src="images/book-cover.jpg" alt="Book Cover for Dog Portrait Book">
-                </div>  
-                <div class="gallery-img">
-                    <img src="images/washington-crossing-w-dan.jpg" alt="Washington Crossing the Delaware River with Dan">
-                </div>  
-                <div class="gallery-img">
-                    <img src="images/shuttle-motion-blur.jpg" alt="Space Shuttle Lifting Off">    
-                </div>                  
-                <br>                                                     
+                <div class="gallery-container">
+                    <img src="images/book-cover_500.jpg" alt="">
+                    <div class="overlay">
+                        <img src="images/Suede_500.jpg" alt="">
+                    </div>
+                </div>  <div class="gallery-container">
+                    <img src="images/washington-crossing-w-dan_500.jpg" alt="">
+                    <div class="overlay">
+                        <img src="images/washington-crossing_500.jpg" alt="">                        
+                    </div>
+                </div>  <div class="gallery-container">
+                    <img src="images/shuttle-motion-blur_500.jpg" alt="">
+                    <div class="overlay">
+                        <img src="images/rocket-launch_500.jpeg" alt="">                        
+                    </div>
+                </div>                                                    
             </div>
-        </section>
+        </article>
     </main>
     <footer>
         <p>Copyright 2019.  Contact Dan at <a href=dan.z.haas@gmail.com>dan.z.haas@gmail.com</a> or by phone at 410-937-2073</p>
