@@ -27,6 +27,8 @@ nav {
 
 a {
     color:turquoise;
+    transition: 0.3s;
+    border-radius: 15px;
 }
 
 a:visited {
@@ -65,6 +67,12 @@ a:visited {
 .nav-links a {
     padding:5px;
     text-align:center;
+}
+
+.nav-links a:hover {
+    background-color:rgb(56, 197, 183);
+    .rounded-shadow();
+    color:white;
 }
 
 #breadcrumbs {
@@ -138,7 +146,6 @@ aside {
     box-sizing: border-box;
     .rounded-with-shadow();
     padding:20px;
-    margin-top::
     float: none;
     order: 0;
 }
@@ -183,41 +190,7 @@ aside {
     }
 }
 
-//                      ASIDE CONTENT
 
-.aside-img {
-    width:45%;
-    margin:7px;
-}
-
-#newest {
-    width:100%;
-    max-width:400px;
-    margin:0;
-}
-
-#new-projects {
-    .flex-row();
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-#aside-coming-soon {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-}
-
-#aside-coming-soon > div {
-    display:block;
-    box-sizing: border-box;
-    padding:5px;
-    width:50%;
-}
-
-#aside-coming-soon > h3 {
-    width:100%;
-}
 
 //              ARTICLE AND SECTION CONTENT
 
@@ -296,10 +269,10 @@ footer {
     .rounded-shadow();
 }
 
-.SQL-code {
-    background-color:#f2f1f0;
-    padding:0 0 0 20px;
-    margin: 0 0 15px 0;
+.divider {
+    border-top:10px solid darkblue;
+    border-radius:5px;
+    margin:40px 0;
 }
 
 .sql-slideshow {
@@ -323,45 +296,158 @@ footer {
     }
 }
 
-//                          GALLERY CONTENT
+.SQL-code {
+    background-color:black;
+    color:white;
+    height:500px;
+    padding:10px;
+    text-align:left;
+
+    p {
+        text-align:left;
+    }
+}
+
+//                          GALLERY AND HOVER CONTENT
 
 #photo-gallery {
+    width:100%;
+    margin-top:20px;
+    padding:0 20px 20px 0;
     .flex-row();
     flex-wrap: wrap;
+    justify-content:space-around;
 }
 
-.gallery-img {
-    width:360px;
-    height:360px;
-    background-position:center center;
-    background-repeat:no-repeat;
-    overflow:hidden;
-    margin:0 20px 20px 0;
+.img-hover-container {
+    position: relative;
+
+    img {
+        display: block;
+        max-width:100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        transition: .5s ease;
+        border-radius: 15px;
+        box-shadow: none;
+    }
 }
 
-.gallery-img img {
-    min-height: 100%;
-    min-width: 100%;
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    /* IE 5-7 */
-    filter: alpha(opacity=0);
-    /* modern browsers */
+.gallery-container {
+    max-width:45%; 
+    margin-top:20px;
+    .img-hover-container();
+
+    .overlay {
+        opacity: 0;
+    }
+
+    .overlay img {
+        position: absolute;
+        top:0;
+        left:0;
+        box-shadow: none;
+    }
+}
+
+.gallery-container:hover .overlay {
+    opacity: 1;
+}
+
+.index-hover-container {
+    .img-hover-container();
+
+    .overlay {
+        opacity: 1;
+        background-color:rgba(255, 255, 255, 0.5);
+
+        p {            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align:center;
+            color:Black;
+            font-size: 2em;
+            font-weight:bold;
+            line-height: 1em;
+        }
+    }
+}
+
+.index-hover-container:hover .overlay {
     opacity: 0;
+}
+
+#new-projects {
+    .flex-row();
+    flex-wrap:wrap;
+    justify-content:center;
+
+    > a {
+        width: 45%;
+        margin: 7px;
+    }
+}
+
+/*
+.img-hover-container() {
+    position: relative;
+
+    img {
+        display: block;
+        max-width:100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    .overlay img {
+        position: absolute;
+        top:0;
+        left:0;
+        box-shadow: none;
+    }
+}
+*/
+
+#about {
+    width:100%;
+    p {
+        text-align:justify;
+        text-justify:inter-word;
+    }
 }
 
 #dan-photo {
     border:5px solid darkblue;
     border-radius:50%;
-    margin-bottom:20px;
+    margin:20px;
+    position:relative;
+    bottom:20px;
 }
 
 table, tr, td {
     border:1px solid darkblue;
-}
-
-tr :nth-child(first) {
-
 }
 
 //                      LESS Preprocessing
