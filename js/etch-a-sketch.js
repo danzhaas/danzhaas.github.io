@@ -70,31 +70,34 @@ rAndRButton.addEventListener('click', () => {
 
 //          Hover effect
 
+function hoverEffect(e) {
+            
+    if (colorButtonState=="random") {
+        randomColor="rgb("+Math.floor(Math.random()*256)+", "
+            +Math.floor(Math.random()*256)+", "
+            +Math.floor(Math.random()*256)+")";
+        trailColor=randomColor;
+    } else {
+        trailColor="rgb(0,0,0)";
+    }
+    e.target.style.backgroundColor = trailColor;
+    
+    if (opacityButtonState==true) {
+        if (e.target.style.opacity=="") {
+            e.target.style.opacity=0.1;
+        } else {
+        e.target.style.opacity=(parseFloat(e.target.style.opacity)+0.1)
+        }
+     } else {
+        e.target.style.opacity=""
+     }
+}
+
 var updateHoverEffect = function() {
     updatePixelArray();
     for (i=0;i<pixelArray.length;i++) {
-        pixelArray[i].addEventListener("mouseover", (e) => {
-            
-            if (colorButtonState=="random") {
-                randomColor="rgb("+Math.floor(Math.random()*256)+", "
-                    +Math.floor(Math.random()*256)+", "
-                    +Math.floor(Math.random()*256)+")";
-                trailColor=randomColor;
-            } else {
-                trailColor="rgb(0,0,0)";
-            }
-            e.target.style.backgroundColor = trailColor;
-            
-            if (opacityButtonState==true) {
-                if (e.target.style.opacity=="") {
-                    e.target.style.opacity=0.1
-                } else {
-                e.target.style.opacity=(parseFloat(e.target.style.opacity)+0.1)
-                }
-             } else {
-                e.target.style.opacity=""
-             }
-        })        
+        pixelArray[i].removeEventListener("mouseover",hoverEffect);
+        pixelArray[i].addEventListener("mouseover", hoverEffect);
     }
 }
 updateHoverEffect();
@@ -114,11 +117,11 @@ colorButton.addEventListener('click', () => {
     if (colorButtonState=="black") {
         trailColor="rgb(0,0,0)";
         colorButtonState="random";
-        colorButton.p.innerText = "Black Color"
+        document.querySelector("#color-text").innerText = "Black Color";
     } else {
         trailColor=randomColor;
         colorButtonState="black";
-        colorButton.p.innerText = "Randomize Colors"
+        document.querySelector("#color-text").innerText = "Randomize Colors";
     }
     updateHoverEffect();
 })
@@ -130,10 +133,10 @@ let opacityButtonState=false;
 opacityButton.addEventListener('click', () => {
     if (opacityButtonState==false) {
         opacityButtonState=true;
-        opacityButton.innerText = "Opacity Mode On"
+        document.querySelector("#opacity-text").innerText = "Opacity Mode On";
     } else {
         opacityButtonState=false;
-        opacityButton.innerText = "<p>Opacity Mode Off</p>"
+        document.querySelector("#opacity-text").innerText = "Opacity Mode Off";
     }
     updateHoverEffect();
 })
