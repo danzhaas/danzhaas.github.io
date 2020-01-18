@@ -237,21 +237,25 @@ footer {
   border-radius: 5px;
   margin: 40px 0;
 }
-.sql-slideshow {
+.sql-slideshow,
+#js-slideshow {
   background-color: darkblue;
   padding: 20px;
   color: white;
   border-radius: 15px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
 }
-.sql-slideshow div * {
+.sql-slideshow div *,
+#js-slideshow div * {
   margin: auto;
   text-align: center;
 }
-.sql-slideshow div a {
+.sql-slideshow div a,
+#js-slideshow div a {
   color: white;
 }
-.sql-slideshow div a:visited {
+.sql-slideshow div a:visited,
+#js-slideshow div a:visited {
   color: white;
 }
 .SQL-code {
@@ -372,37 +376,6 @@ footer {
   width: 45%;
   margin: 7px;
 }
-/*
-.img-hover-container() {
-    position: relative;
-
-    img {
-        display: block;
-        max-width:100%;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        border-radius: 15px;
-        box-shadow: none;
-    }
-
-    .overlay img {
-        position: absolute;
-        top:0;
-        left:0;
-        box-shadow: none;
-    }
-}
-*/
 #about {
   width: 100%;
 }

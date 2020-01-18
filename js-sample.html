@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch-A-Sketch - Dan's Portfolio</title>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="css/side-nav.css">
+        <link rel="stylesheet" href="/css/reset-a-sketch.css">
+        <link rel="stylesheet" href="/css/etch-a-sketch.css">
+        <link rel="stylesheet" href="/css/js-sample.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+        <meta property="og:title" content="Dan Haas Web Dev">
+        <meta property="og:description" content="Dan Haas is a web developer specializing in healthcare.">
+        <meta property="og:image" content="http://dan-z-haas.github.io/images/index-open-graph.jpg">
+        <meta property="og:url" content="http://dan-z-haas.github.io">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+<body>
+    <div id="sidenav-wrapper">
+        <div id="mySidenav" class="sidenav">
+            <div id="sidenav-links">
+                <h1 id="sidenav-logo-text">Dan Haas Web Development</h1>        
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Image Editing Sample</a>
+                <a href="etch-a-sketch.html" class="current">Javascript Sample</a>
+                <a href="sql.html">MySQL Sample</a>
+                <a href="/killifish-classic/index.html">Website Design Sample</a>
+                <a href="/lorem-ipsum-cancer-studies/index.html">Research Site Sample</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)"  onclick="openCloseToggle()">
+            <div id="sidenav-toggle">
+                <p id="openbtn">&#9776;NAVIGATION</p>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript" src="js/side-nav.js"></script>   
+    <header>
+        <nav>
+            <div class="gcse-search" id="search"></div>
+            <script async src="https://cse.google.com/cse.js?cx=011008517122385517076:rxqrqojkqnr"></script>
+            <div class="rollover" id="top">                
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Image Editing Sample</a>
+                    <a href="etch-a-sketch.html" class="current">Javascript Sample</a>
+                    <a href="sql.html">SQL Sample</a>
+                    <a href="/killifish-classic/index.html">Website Design Sample</a>
+                    <a href="/lorem-ipsum-cancer-studies/index.html">Research Site Sample</a>
+                </div>                
+            </div>
+        </nav>
+        <div id="logo">
+            <h1 id="logo-text">Dan Haas Web Development</h1>        
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="title">
+                <h2>JS Samples</h2>
+                <h3>Selected Challenges</h3>
+            </div>
+            <p>This is code I wrote working on multiple exercises of The Odin Project online.
+                <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA" target="_blank">
+                MySQL Tutorial for Beginners</a> by <a href="https://programmingwithmosh.com/" 
+                target="_blank">Mosh Hamedani</a>.  The program I used was MySQL Workbench.  
+                If you would like to see the referenced databases for context, you can 
+                <a href="http://bit.ly/2LNdvCd" target="_blank">download the databases 
+                used in the tutorial</a>.</p>
+            <br>
+            <div id="sample-selector">
+                <div id="etch-selector">Etch-a-Sketch</div>
+                <div id="exercises-selector">Exercises</div>
+            </div>
+            <div id="etch-a-sketch">
+                <section>
+                    <div id="frame">            
+                        <div id="container"></div>
+                        <h1 id="etch-logo">Etch A Sketch</h1>
+                        <div class="button" id="reset-and-resize">
+                            <p>Reset and Resize</p>
+                        </div>
+                        <div class="button" id="color">
+                            <p id="color-text">Randomize Colors</p>
+                        </div>
+                        <div class="button" id="opacity">
+                            <p id="opacity-text">Opacity Mode Off</p>
+                        </div>
+                        <script src="/js/etch-a-sketch.js"></script>
+                    </div>
+                </section>
+            </div>
+            <div id="slideshow">
+                <div class="slider-dots"></div>
+                <div id="js-slideshow">
+                    <div id="first-slide">
+                        <h4>Calculator</h4>
+                        <div>
+                            Enter 
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Leap Years</h4>
+                        <div>
+                            <h4>Tells you if the given year is a leap year</h4>>
+                            <h5>Enter a year</h5>
+                            <input type="number" placeholder="2020" id="leapYears-input">
+                            <div id="leapYears-call" class="button"><h5>Is it a leap year?</h5></div>                            
+                            <p id="leapYears-result"></p>                            
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Palindromes</h4>
+                        <div>
+                            <p>Tells you if you wrote a palindrome.</p>
+                            <p>Write a word or phrase.</p>
+                            <input type="text" placeholder="Write palindrome here" id="palindromes-input">
+                            <div id="palindromes-call" class="button">Is it a palindrome?</div>
+                            <p id="palindromes-result"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Remove From Array</h4>
+                        <div>
+                            <p>Removes a value of your choice from an array.</p>
+                            <p>Enter comma-separated values to make an array:</p>
+                            <input type="text" placeholder="1,2,3,4,5" id="rFA-input1">
+                            <p>Enter value you would like removed from that array.</p>
+                            <input type="text" placeholder="3" id="rFA-input2">
+                            <div id="rFA-call" class="button">Remove From Array</div>
+                            <p id="rFA-result"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Repeat String</h4>
+                        <div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Reverse String</h4>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Sum All</h4>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Temperature Conversion</h4>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+                <script type="text/javascript" src="js/slick.js"></script>
+                <script type="text/javascript" src="js/slick-initialize-slider.js"></script>
+                <script type="text/javascript" src="js/js-sample.js"></script>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright 2019.  Contact Dan at <a href=dan.z.haas@gmail.com>dan.z.haas@gmail.com</a> or by phone at 410-937-2073</p>
+        <br>
+        <p>Background Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3539309">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3539309">Pixabay</a></p>
+    </footer>
+</body>
+</html>

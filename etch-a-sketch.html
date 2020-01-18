@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="css/side-nav.css">
         <link rel="stylesheet" href="/css/reset-a-sketch.css">
         <link rel="stylesheet" href="/css/etch-a-sketch.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
         <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
@@ -55,7 +57,7 @@
             <h1 id="logo-text">Dan Haas Web Development</h1>        
         </div>
     </header>
-    <main id="etch-a-sketch">
+    <!--<main id="etch-a-sketch">
         <section>
             <div id="frame">            
                 <div id="container"></div>
@@ -72,6 +74,149 @@
                 <script src="/js/etch-a-sketch.js"></script>
             </div>
         </section>
+    </main>-->
+    <main>
+        <article>
+            <div class="title">
+                <h2>SQL Sample</h2>
+                <h3>Code from Selected Exercises</h3>
+            </div>
+            <p>This is code I wrote as answers to select exercises in the video 
+                <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA" target="_blank">
+                MySQL Tutorial for Beginners</a> by <a href="https://programmingwithmosh.com/" 
+                target="_blank">Mosh Hamedani</a>.  The program I used was MySQL Workbench.  
+                If you would like to see the referenced databases for context, you can 
+                <a href="http://bit.ly/2LNdvCd" target="_blank">download the databases 
+                used in the tutorial</a>.</p>
+            <br>
+            <div class="slider-dots"></div>
+            <div class="sql-slideshow">
+                <div>
+                    <h4>Etch-a-Sketch</h4>                    
+                    <br>
+                    <div id="etch-a-sketch">
+                        <section>
+                            <div id="frame">            
+                                <div id="container"></div>
+                                <h1 id="etch-logo">Etch A Sketch</h1>
+                                <div class="button" id="reset-and-resize">
+                                    <p>Reset and Resize</p>
+                                </div>
+                                <div class="button" id="color">
+                                    <p id="color-text">Randomize Colors</p>
+                                </div>
+                                <div class="button" id="opacity">
+                                    <p id="opacity-text">Opacity Mode Off</p>
+                                </div>
+                                <script src="/js/etch-a-sketch.js"></script>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div>
+                    <h4>Cross Joins Exercise</h4>
+                    <a href="https://youtu.be/7S_tz1z_5bA?t=8217" target="_blank">Jump to this exercise prompt in the tutorial.</a>
+                    <p>My solution:</p>
+                    <br>
+                    <div class="SQL-code">
+                        <p>/* Cross Joins exercise*/</p>
+                        <br>
+                        <p>/*explicit syntax*/</p>
+                        <p>SELECT *<br />FROM shippers s<br />CROSS JOIN products p</p>
+                        <p><br />/*implicit syntax*/</p>
+                        <p>SELECT *<br />FROM shippers s, products p</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Inserting Multiple Rows Exercise</h4>
+                    <a href="https://youtu.be/7S_tz1z_5bA?t=9440" target="_blank">Jump to this exercise prompt in the tutorial.</a>
+                    <p>My solution:</p>
+                    <br>
+                    <div class="SQL-code">
+                        <p>/* inserting multiple rows exercise*/<br /><br>SELECT *</p>
+                        <p>FROM sql_store.products;<br />INSERT INTO products (name,quantity_in_stock,unit_price)</p>
+                        <p>VALUES</p>
+                        <p style="padding-left: 30px;">('Chicken Breast',24,1.99),</p>
+                        <p style="padding-left: 30px;">('Chicken Thigh',264,2.99),</p>
+                        <p style="padding-left: 30px;">('Chicken Legs',200,1.07)</p>
+                        <p><br />INSERT INTO orders (customer_id, order_date, status)</p>
+                        <p>VALUES</p>
+                        <p style="padding-left: 30px;">(1,'2019-01-02',1),</p>
+                        <p style="padding-left: 30px;">(1,'2019-01-02',1),&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">(1,'2019-01-02',1)</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Unions Exercise</h4>
+                    <a href="https://youtu.be/7S_tz1z_5bA?t=8621" target="_blank">Jump to this exercise prompt in the tutorial.</a>
+                    <p>My solution:</p>
+                    <br>
+                    <div class="SQL-code">
+                        <p>/* Unions Exercise */<br /><br>SELECT</p>
+                        <p style="padding-left: 30px;">customer_id,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">first_name,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">points,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">"Bronze" AS type</p>
+                        <p>FROM customers</p>
+                        <p>WHERE points &lt;2000</p>
+                        <p>UNION</p>
+                        <p>SELECT</p>
+                        <p style="padding-left: 30px;">customer_id,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">first_name,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">points,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">"Silver" AS type</p>
+                        <p>FROM customers</p>
+                        <p>WHERE points &gt; 2000 AND points &lt;3000</p>
+                        <p>UNION</p>
+                        <p>SELECT</p>
+                        <p style="padding-left: 30px;">customer_id,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">first_name,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">points,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">"Gold" AS type</p>
+                        <p>FROM customers</p>
+                        <p>WHERE points &gt;3000</p>
+                        <p>ORDER BY first_name</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>USING Clause Exercise</h4>
+                    <a href="https://youtu.be/7S_tz1z_5bA?t=7912" target="_blank">Jump to this exercise prompt in the tutorial.</a>
+                    <p>My solution:</p>
+                    <br>                    
+                    <div class="SQL-code">
+                        <p>/* USING clause exercise */</p>
+                        <br>
+                        <p>SELECT</p>
+                        <p style="padding-left: 30px;">p.date,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">c.name AS client,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">p.amount,&nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">pm.name AS payment_method</p>
+                        <p>FROM payments p</p>
+                        <p>JOIN clients c</p>
+                        <p style="padding-left: 30px;">USING (client_id)</p>
+                        <p>JOIN payment_methods pm</p>
+                        <p style="padding-left: 30px;">ON p.payment_method = pm.payment_method_id</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Using Subqueries in Updates</h4>
+                    <a href="https://youtu.be/7S_tz1z_5bA?t=11088" target="_blank">Jump to this exercise prompt in the tutorial.</a>
+                    <p>My solution:</p>
+                    <br>
+                    <div class="SQL-code">
+                        <p>/* Using Subqueries in Updates exercise */<br /><br>UPDATE orders</p>
+                        <p>SET comments = "Gold Customer"</p>
+                        <p>WHERE customer_id =&nbsp;</p>
+                        <p style="padding-left: 30px;"><br /> (SELECT customer_id&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">FROM customers&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                        <p style="padding-left: 30px;">WHERE points &gt; 3000)</p>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript" src="js/slick.js"></script>
+            <script type="text/javascript" src="js/slick-initialize-slider.js"></script>
+        </article>
     </main>
     <footer>
         <p>Copyright 2019.  Contact Dan at <a href=dan.z.haas@gmail.com>dan.z.haas@gmail.com</a> or by phone at 410-937-2073</p>

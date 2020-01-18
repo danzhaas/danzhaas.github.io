@@ -1,0 +1,26 @@
+#sample-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#sample-selector div {
+  width: 100px;
+  background-color: turquoise;
+  color: black;
+  margin: 20px;
+  border-radius: 7px;
+  text-align: center;
+  padding: 10px;
+}
+#slideshow {
+  display: none;
+}
+#slideshow .button {
+  width: 100px;
+  background-color: turquoise;
+  color: black;
+  margin: 20px auto;
+  border-radius: 7px;
+  text-align: center;
+  padding: 10px;
+}
