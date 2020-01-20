@@ -12,9 +12,6 @@
   text-align: center;
   padding: 10px;
 }
-#slideshow {
-  display: none;
-}
 #slideshow .button {
   width: 100px;
   background-color: turquoise;
@@ -23,4 +20,7 @@
   border-radius: 7px;
   text-align: center;
   padding: 10px;
+}
+#etch-a-sketch {
+  display: none;
 }

@@ -121,7 +121,7 @@ const removeFromArray = function(inputArray) {
       }
       i++;
   }
-  while (i<arguments.length);
+  while (i<arguments[1].length);
   return inputArray;
 }
 

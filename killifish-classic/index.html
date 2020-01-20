@@ -49,7 +49,7 @@
         <div id="logo">            
             <h3>The 5th Annual</h3>
             <h1>Killifish Classic</h1>
-            <h2>Presented By The Aquarium Club of Lancaster County</h2>
+            <h2>Presented By The Aquarium Club of Lorem Ipsum</h2>
         </div>  
         <nav>               
             <a href="index.html">    
@@ -120,8 +120,6 @@
         <div id="slideshow">
             <img class src="images/collage-1a.jpg">
             <img class src="images/collage-2.jpg">
-            <img class src="images/collage-3.jpg">
-            <img class src="images/collage-4.jpg">
             <img class src="images/collage-5.jpg">
             <img class src="images/collage-6.jpg">
         </div>
@@ -178,7 +176,7 @@
                     <h2 class="float-left" >Show & Swap</h2>
                     <a href="hobbyists.html">                        
                         <figure class="container">
-                                <img src="images/hobbyist-kid-200.jpg" alt="fish in bag" class="image">
+                                <img src="images/hobbyist-200.jpg" alt="fish in bag" class="image">
                                 <div class="overlay">
                                     <div class="text">For Hobbyists</div>
                                 </div>
@@ -242,8 +240,31 @@
                     <form id="newsletter-sub" action="mailto:dan-z-haas@gmail.com"
                         method="post" enctype="text/plain" onsubmit="return validateForm()">
                         <fieldset>
-                            <legend id="legend" class="center">Tell Us About You:</legend>
-                            <script>
+                            <legend id="legend" class="center">Tell Us About You:</legend>                            
+                            <div id="labels">
+                                    <label for="referral-source">How did you hear about us?*</label>
+                                    <label for="participate-role">Do you expect to be a guest, a presenter, a vendor, a sponsor?</label>
+                                    <label for="notification-types">What kind of notifications would you like?</label>
+                                    <label for="email">Enter Email Address*</label>
+                            </div>
+                            <div id="inputs">
+                                <textarea name="referral-source" id="referral-source" tabindex="1" rows="3" cols="50"></textarea>
+                                <select name="participate-role" tabindex="2">
+                                    <option value="hobbyist">Hobbyist</option>
+                                    <option value="vendor">Vendor</option>
+                                    <option value="sponsor">Sponsor</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="checkbox-cell">
+                                    <input name="notification-types1" checked value="giveaways" tabindex="3" type="checkbox"> Giveaways
+                                    <input name="notification-types2" checked value="event-updates" tabindex="4" type="checkbox"> Event Updates
+                                    <input name="notification-types3" checked value="blog" tabindex="5" type="checkbox"> Killifish Blog                                    
+                                </div>
+                                <input name="email" tabindex="6">
+                                <input type="submit" value="Submit" class="float-right">                            
+                            </div>                 
+                        </fieldset>   
+                        <script>
                             function validateForm() {
                                 var x = document.forms["newsletter-sub"]["referral-source"].value;                                
                                 var y = document.forms["newsletter-sub"]["email"].value;                                
@@ -257,31 +278,7 @@
                                 }
                             }
                             document.getElementById("referral-source").focus();
-                            </script>                            
-                            <div id="labels">
-                                    <label for="referral-source">How did you hear about us?*</label>
-                                    <label for="participate-role">Do you expect to be a guest, a presenter, a vendor, a sponsor?</label>
-                                    <label for="notification-types">What kind of notifications would you like?</label>
-                                    <label for="email">Enter Email Address*</label>
-                            </div>
-                            <div id="inputs">
-                                <textarea name="referral-source" tabindex="1" rows="3" cols="50"></textarea>
-                                <select name="participate-role" tabindex="2">
-                                    <option value="hobbyist">Hobbyist</option>
-                                    <option value="vendor">Vendor</option>
-                                    <option value="sponsor">Sponsor</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <div class="checkbox-cell">
-                                    <input name="notification-types1" checked value="giveaways" tabindex="3" type="checkbox"> Giveaways
-                                    <input name="notification-types2" checked value="event-updates" tabindex="4" type="checkbox"> Event Updates
-                                    <input name="notification-types3" checked value="blog" tabindex="5" type="checkbox"> Killifish Blog                                    
-                                </div>
-                                <input name="email" tabindex="6">
-                                <input type="submit" value="Submit" class="float-right">
-                            
-                            </div>                            
-                        </fieldset>   
+                        </script>                            
                     </form>
                 </div>
             </section>
@@ -303,5 +300,14 @@
         <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F%7Ect386b14%2Ffinal-project%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">CSS Validation</a>
     </footer>
     </div>
+    <script>
+    let iii=localStorage.getItem("iii");
+    if (iii!=="1") {
+        alert("Note: The Killifish Classic is not a real event - this page is for demonstration purposes only.");
+        if (typeof(Storage) !== "undefined") {
+        localStorage.setItem("iii", "1");
+        }
+    }
+    </script>
 </body>
 </html>

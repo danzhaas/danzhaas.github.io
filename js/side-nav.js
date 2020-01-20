@@ -15,7 +15,6 @@ function openCloseToggle() {
     if (typeof(Storage) !== "undefined") {
         localStorage.setItem("ii", ii);
     }
-    console.log(localStorage.getItem("ii"));
 }
 
 function openNav() {
