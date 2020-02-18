@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 15vw;
-  height: 350px;
+  height: 50vh;
   margin-top: 20px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -78,7 +78,7 @@
 #sidenav-toggle {
   position: absolute;
   width: 1em;
-  height: 100%;
+  height: 50vh;
   background-color: white;
   padding: 0 0.5vw;
   border-radius: 0 15px 15px 0;
@@ -109,7 +109,9 @@
   text-shadow: none;
 }
 @media screen and (max-height: 450px) {
-  
+  .sidenav {
+    padding-top: 15px;
+  }
   .sidenav a {
     font-size: 18px;
   }

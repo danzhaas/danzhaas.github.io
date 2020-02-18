@@ -2,11 +2,11 @@
 
 document.querySelector("#etch-selector").addEventListener("click", () => {
   document.querySelector("#etch-a-sketch").style.display="block";
-  document.querySelector("#slideshow").style.display="none";
+  document.querySelector("#js-slideshow").style.display="none";
 });
 document.querySelector("#exercises-selector").addEventListener("click", () => {
     document.querySelector("#etch-a-sketch").style.display="none";
-    document.querySelector("#slideshow").style.display="block";
+    document.querySelector("#js-slideshow").style.display="block";
 });
 
 //JAVASCRIPT EXERCISES
