@@ -1,0 +1,33 @@
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+}
+
+body * {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.pageheight {
+    height:90vh;
+}
+
+#tagline {
+    color:white;
+    font-size: 10vh;
+    z-index:5;
+}
+
+#hero-pic {
+    height:75vh;
+    position:absolute;
+    bottom:0;
+    right:0;
+    opacity:0.3;
+    background:transparent;
+    /* border:25px solid yellow;
+    border-radius:50%; */
+}
+
+.bg-black {
+    background-color: black;
+}
