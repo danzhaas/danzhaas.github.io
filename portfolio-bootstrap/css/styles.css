@@ -1,33 +1,140 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size:2vh
+}
+
+header {
+    z-index:5;
+    opacity:1;
+}
+
+h1 {
+    margin:0;
+}
+
+a:hover {
+    color:white
+}
+
 .navbar-brand {
     font-family: 'Poiret One', cursive;
     font-weight:bold;
+    background-color:black;
+    color:gold;
 }
 
-body * {
-    font-family: 'Oxygen', sans-serif;
+.container > .row {
+    margin: 0 5vw 0 5vw;
 }
 
-.pageheight {
-    height:90vh;
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #tagline {
     color:white;
-    font-size: 10vh;
-    z-index:5;
+    /* font-size: 5vw;
+    z-index:5; */
+    position:relative;
+    top:25%;
 }
 
-#hero-pic {
+/* #hero-pic {
     height:75vh;
     position:absolute;
     bottom:0;
     right:0;
     opacity:0.3;
     background:transparent;
-    /* border:25px solid yellow;
-    border-radius:50%; */
+    border:25px solid yellow;
+    border-radius:50%;
+} */
+
+.space-icon {
+    position:absolute;
+    bottom:0;
+    right:0
 }
 
 .bg-black {
     background-color: black;
+}
+
+.text-black {
+    color:black;
+}
+
+section {
+    padding: 3vh 0 3vh 0;
+}
+
+#landing {
+    height:95vh;
+    background-image: url(../../images/nasa-launch-stars.jpg);
+    background-size: cover;
+    background-position:0% 65%
+}
+
+/*  Showcase    */
+
+#showcase {
+    height:95vh;
+    background-image: url(../../images/blue-marble.jpg);
+    background-size: cover;
+    background-position:0% 70%
+}
+
+/*  Resume    */
+
+#resume {
+    height:95vh;
+    background-image: url(../../images/pluto.jpg);
+    background-size: cover;
+    background-position:0% 70%
+}
+
+/*  Contact    */
+
+#contact {
+    height:90vh;
+    background-image: url(../../images/space-gum-22.jpg);
+    background-size: cover;
+    background-position:0% 70%
+}
+
+/*  Footer    */
+
+footer {
+    position:fixed;
+    bottom:0;
+    height:5vh;
+    width:100%;
+    color:white;
+}
+
+footer > * {
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    color:gold;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+.card-img-overlay:hover {
+    background-color:rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width : 768px) {
+
+    #landing {
+        background-position:45% 80%
+    }
+
+    #resume {
+        background-position:25% 100%
+    }
 }

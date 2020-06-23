@@ -8,80 +8,138 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-    <title>Dan Haas Web Development</title>
+    <title>Dan Z Haas Web Development</title>
 </head>
 
-<body>
 
-    <header>
+<body class="position-relative" data-spy="scroll" data-target="#scroll" data-offset="0">
+
+    <!--            HEADER          -->
+    <header class="fixed-top w-100">
         <div class="row">
             <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Dan Haas Web Development</a>
+                <nav id="scroll" class="navbar navbar-expand-md ">
+                    <a class="nav-link navbar-brand rounded" href="#landing">Dan Z Haas Web Development</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon text-dark bg-white"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Responsive React App <span
-                                        class="sr-only">(current)</span></a>
+                        <ul class="navbar-nav nav-pills ml-auto">
+                            <li class="nav-item rounded">
+                                <a id="showcase-pill" class="nav-link text-light bg-primary" href="#showcase">Showcase</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Eye-Catching Design</a>
+                            <li class="nav-item rounded">
+                                <a id="resume-pill" class="nav-link text-dark bg-light" href="#resume">Resume</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Health Research Content</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Javascript Demos
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Etch-A-Sketch</a>
-                                    <a class="dropdown-item" href="#">JS Challenges</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Image Editing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">MySQL Sample</a>
+                            <li class="nav-item rounded">
+                                <a id="contact-pill" class="nav-link text-light bg-success" href="#contact">Contact</a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <div class="row bg-black">
-            <div class="col pageheight d-flex position-relative">
-                <h1 id="tagline" class="px-5">Creating Digital Experiences Inspired By Your Passion</h1>
-                <img id="hero-pic" src="/images/hero-pic-1000x1000.jpg">
-                <span style="color: rgb(112, 102, 204); font-size: 135px;">&#x2B22;</span>
-                <span style="color: rgb(112, 102, 204); font-size: 135px;">&#x2B22;</span>
-                <span style="color: rgb(112, 102, 204); font-size: 135px;">&#x2B22;</span>
+<!--            LANDING         -->
+    <section id="landing" class="bg-black">
+        <div class="container position-relative h-100 ">
+            <div class="row">
+                <div class="d-flex flex-column justify-content-center">
+                    <h1 id="tagline" class="display-2 text-center">Creating Out Of This World Digital Experiences</h1>
+                    <!-- <h1 id="tagline" class="display-2 text-white text-center">Creating Digital Experiences Inspired By Your Passion</h1> -->
+                </div>
+            </div>
+            <a href="#showcase" class="space-icon text-white"><i class="fas fa-space-shuttle fa-7x fa-rotate-270"></i></a>
             </div>
         </div>
-        <div class="row bg-secondary">
-            <div class="col pageheight d-flex">
-                <h1 id="tagline" class="m-auto w-50">Hi, my name is Dan, and I'm a developer in Baltimore.</h1>
+    </section>
+
+<!--            SHOWCASE            -->
+    <section id="showcase" class="bg-primary">
+        <div class="container h-100 position-relative">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-white">SHOWCASE</h1>
+                </div>
+            </div>
+            <div class="row d-flex flex-row">
+                <div class="card bg-dark text-white">
+                    <img src="../images/barkr-400.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Barkr</h5>
+                        <p class="card-text">Faygo</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="../images/killifish-400.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="../images/LICS-400.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                </div>
             </div>
         </div>
-    </div>
+        <a href="#resume" class="space-icon"><i class="fas fa-7x fa-satellite text-light"></i></a>
+    </section>
+
+
+<!--            RESUME          -->
+    <section id="resume" class="bg-light text-black">
+        <div class="container h-100 position-relative">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">RESUME</h1>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <a href="#contact" class="space-icon"><i class="fas fa-7x fa-user-astronaut text-white"></i></a>
+        </div>
+    </section>
+
+<!--            CONTACT         -->
+    <section id="contact" class="bg-success">
+        <div class="container h-100 position-relative">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-white">CONTACT</h1>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+            <a href="#landing" class="space-icon"><i class="fas fa-7x fa-meteor text-white"></i></a>
+        </div>
+    </section>
+
+<!--            FOOTER          -->
+
+    <div style="height:5vh"></div>
+    <footer class="d-flex flex-row justify-content-around align-items-center bg-black">
+        <p class="m-0">Dan Z Haas</p>
+        <a href="mailto:dan.z.haas@gmail.com">dan.z.haas@gmail.com</a>
+        <a href="tel:(410)937-2073">(410)937-2073</a>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
