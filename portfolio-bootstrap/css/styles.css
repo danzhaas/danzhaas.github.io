@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Oxygen', sans-serif;
     font-size:2vh
@@ -21,10 +25,6 @@ a:hover {
     font-weight:bold;
     background-color:black;
     color:gold;
-}
-
-.container > .row {
-    margin: 0 5vw 0 5vw;
 }
 
 .jumbotron {
@@ -56,32 +56,94 @@ a:hover {
     right:0
 }
 
+.last-space-icon {
+    position:absolute;
+    top:3rem;
+    left:0
+}
+
 .bg-black {
     background-color: black;
+}
+
+.bg-gold {
+    background-color: gold;
 }
 
 .text-black {
     color:black;
 }
 
+.text-gold {
+    color: gold;
+}
+
 section {
-    padding: 3vh 0 3vh 0;
+    padding-bottom:3rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #landing {
     height:95vh;
     background-image: url(../../images/nasa-launch-stars.jpg);
     background-size: cover;
-    background-position:0% 65%
+    background-position:0% 75%
 }
+
+#showcase-pill {
+    color:black;
+    background-color: gold;
+}
+
+#resume-pill {
+    background-color:#f8f9fa;   
+}
+
+#contact-pill {
+    color:#f8f9fa;
+    background-color: rgb(185, 0, 0);
+}
+
+/* #showcase-pill.active {
+    color: gold;
+}
+
+#resume-pill.active {
+    background-color: gold;
+}
+
+#contact-pill.active {
+    color: gold;
+} */
 
 /*  Showcase    */
 
 #showcase {
     height:95vh;
-    background-image: url(../../images/blue-marble.jpg);
+    background-image: url(../../images/gold-sun.jpg);
     background-size: cover;
-    background-position:0% 70%
+    background-position:0% 70%;
+}
+
+.showcase-img {
+    width:100%;
+    object-fit:contain;
+    flex-grow:0;
+    background-color: black;
+    border:0.5vh solid black;
+    cursor:pointer;
+}
+
+.showcase-img.active {
+    border:0.5vh solid white;
+    background-color: white;
+    /* border:0.5vh solid rgb(185, 0, 0);
+    background-color: rgb(185, 0, 0); */
+}
+
+.carousel-item {
+    text-align: center;
 }
 
 /*  Resume    */
@@ -93,13 +155,27 @@ section {
     background-position:0% 70%
 }
 
+#resume-thumbnail {
+    height:50vh;
+    cursor:pointer;
+}
+
+#resume-iframe {
+    height:80vh;
+}
+
 /*  Contact    */
 
 #contact {
-    height:90vh;
-    background-image: url(../../images/space-gum-22.jpg);
+    height:95vh;
+    background-image: url(../../images/red-nebula.jpg);
     background-size: cover;
     background-position:0% 70%
+}
+
+#profile-pic {
+    height:50vh;
+    border:5px solid gold;
 }
 
 /*  Footer    */
@@ -134,7 +210,29 @@ footer > * {
         background-position:45% 80%
     }
 
+    #showcase {
+        background-position:50% 90%
+    }
+
     #resume {
         background-position:25% 100%
     }
+    
+    
+}
+
+@media only screen and (min-width : 768px) {
+
+    .modal-dialog {
+        max-width:75vw;
+    }
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
