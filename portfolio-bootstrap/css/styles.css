@@ -1,15 +1,22 @@
+/* Global */
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Oxygen', sans-serif; */
     font-size:2vh
 }
 
-header {
-    z-index:5;
-    opacity:1;
+section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding:3rem 0;
 }
 
 h1 {
@@ -17,50 +24,11 @@ h1 {
 }
 
 a:hover {
-    color:white
-}
-
-.navbar-brand {
-    font-family: 'Poiret One', cursive;
-    font-weight:bold;
-    background-color:black;
-    color:gold;
-}
-
-.jumbotron {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-#tagline {
     color:white;
-    /* font-size: 5vw;
-    z-index:5; */
-    position:relative;
-    top:25%;
+    text-decoration:none;
 }
 
-/* #hero-pic {
-    height:75vh;
-    position:absolute;
-    bottom:0;
-    right:0;
-    opacity:0.3;
-    background:transparent;
-    border:25px solid yellow;
-    border-radius:50%;
-} */
-
-.space-icon {
-    position:absolute;
-    bottom:0;
-    right:0
-}
-
-.last-space-icon {
-    position:absolute;
-    top:3rem;
-    left:0
-}
+/* Colors */
 
 .bg-black {
     background-color: black;
@@ -78,18 +46,48 @@ a:hover {
     color: gold;
 }
 
-section {
-    padding-bottom:3rem;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.text-red {
+    color: rgb(185, 0, 0);
 }
 
-#landing {
-    height:95vh;
-    background-image: url(../../images/nasa-launch-stars.jpg);
-    background-size: cover;
-    background-position:0% 75%
+/* Repeated Features */
+
+.space-icon {
+    width:150px;
+    position:absolute;
+    bottom:5vh;
+    right:0
 }
+
+.space-icon > a {
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content:end ;
+}
+
+.space-icon * {
+    text-align: right;
+}
+
+.space-icon h2 {
+    font-weight:bold;
+    /* font-size:3vh;     */
+}
+
+.last * {
+    text-align:left;
+}
+
+/* Nav */
+
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    background-color:black;
+    color:gold;
+}
+
 
 #showcase-pill {
     color:black;
@@ -105,17 +103,20 @@ section {
     background-color: rgb(185, 0, 0);
 }
 
-/* #showcase-pill.active {
-    color: gold;
+/* Landing */
+
+#landing {
+    height:95vh;
+    background-image: url(../../images/nasa-launch-stars.jpg);
+    background-size: cover;
+    background-position:0% 75%
 }
 
-#resume-pill.active {
-    background-color: gold;
+#tagline {
+    color:white;
+    position:relative;
+    top:3%;    
 }
-
-#contact-pill.active {
-    color: gold;
-} */
 
 /*  Showcase    */
 
@@ -126,24 +127,38 @@ section {
     background-position:0% 70%;
 }
 
-.showcase-img {
+.carousel-item {
+    text-align: center;
+}
+
+.card {
+    color:black;
+    border: 2px solid black;
+    height:60vh;
+} 
+
+.card-title {
+    font-weight:bold;
+}
+
+#carousel-indicators {
+    height:60vh;
+}
+
+.carousel-indicator {
     width:100%;
     object-fit:contain;
     flex-grow:0;
     background-color: black;
-    border:0.5vh solid black;
+    border:2px solid black;
     cursor:pointer;
 }
 
-.showcase-img.active {
-    border:0.5vh solid white;
+.carousel-indicator.active {
+    border:2px solid white;
     background-color: white;
-    /* border:0.5vh solid rgb(185, 0, 0);
-    background-color: rgb(185, 0, 0); */
-}
-
-.carousel-item {
-    text-align: center;
+    /* border:2px solid ;
+    background-color: ; */
 }
 
 /*  Resume    */
@@ -173,9 +188,9 @@ section {
     background-position:0% 70%
 }
 
-#profile-pic {
+#dzh {
     height:50vh;
-    border:5px solid gold;
+    border:2px solid white;
 }
 
 /*  Footer    */
@@ -189,20 +204,14 @@ footer {
 }
 
 footer > * {
+    position: relative;
     font-family: 'Poiret One', cursive;
     font-weight:bold;
     color:gold;
+    height:fit-content;
 }
 
-.card-img-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgb(255, 255, 255);
-}
-
-.card-img-overlay:hover {
-    background-color:rgba(0, 0, 0, 0);
-    color:rgba(0, 0, 0, 0);
-}
+/* Media Queries */
 
 @media only screen and (max-width : 768px) {
 
@@ -225,6 +234,14 @@ footer > * {
 
     .modal-dialog {
         max-width:75vw;
+    }
+
+    #tagline {
+        max-width:49vw;
+    }
+
+    #dzh {
+        max-width:49vw;
     }
 }
 

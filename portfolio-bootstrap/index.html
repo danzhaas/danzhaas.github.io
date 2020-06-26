@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+
+<title>Dan Z Haas Web Development</title>
+<meta property="og:title" content="Dan Z Haas Web Development" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="danzhaas.com" />
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="../images/og-image.jpg" />
+<meta property="og:description" content="Web developer Dan Z Haas' portfolio, about, and contact." />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,9 +21,8 @@
     <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-    <title>Dan Z Haas Web Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
-
 
 <body class="position-relative" data-spy="scroll" data-target="#scroll" data-offset="10">
 
@@ -49,22 +56,32 @@
     </header>
 
     <!--            LANDING         -->
-    <section id="landing" class="bg-black">
+    <section id="landing">
         <div class="container position-relative h-100 ">
-            <div class="row">
-                <div class="d-flex flex-column justify-content-center">
-                    <h1 id="tagline" class="display-2 text-center">Creating Out Of This World Digital Experiences</h1>
+            <div class="row h-100">
+                <div class="col-12 offset-md-6 col-md-6 h-100">
+                    <h1 id="tagline" class="position-absolute display-3 text-right">I Create <span style="font-weight:bold">Out-Of-This-World</span> Digital Experiences</h1>
+                    <!-- <h1 id="tagline" class="display-2 text-center">Creating Out Of This World Digital Experiences</h1> -->
                     <!-- <h1 id="tagline" class="display-2 text-white text-center">Creating Digital Experiences Inspired By Your Passion</h1> -->
                 </div>
+
             </div>
-            <a href="#showcase" class="space-icon text-white"><i
-                    class="fas fa-space-shuttle fa-5x fa-rotate-270"></i></a>
-        </div>
+            <div class="space-icon">                
+                <a href="#showcase">
+                    <div>
+                        <i class="fas fa-space-shuttle fa-5x fa-rotate-270 float-right text-white display-block"></i>
+                    </div>
+                    <h2 class="text-white pt-2 mb-0">Showcase</h2>
+                </a>
+            </div>
         </div>
     </section>
 
+    
+    <!-- <div class="bg-black w-100" style="height:10px"></div> -->
+
     <!--            SHOWCASE            -->
-    <section id="showcase" class="bg-primary">
+    <section id="showcase">
         <div class="container h-100 position-relative">
             <div class="row">
                 <div class="col">
@@ -76,43 +93,59 @@
                     <div id="carouselControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">                            
                             <div class="carousel-item active">
-                                <div class="card bg-black text-black p-2">
+                                <div class="card">
                                     <img src="../images/barkr-400.jpg" class="card-img" alt="...">
                                     <div class="p-2 bg-white">
-                                        <h5 class="card-title mb-1">React and JS Development Demo</h5>
-                                        <p class="card-text mb-1">Modules: React, React Router, Bootstrap, Reactstrap</p>
-                                        <p class="card-text mb-1">Description: Barkr is a Social Media site.  A companion to man's best friend.  This project is being expanded and integrated with a back end to become a full-stack project</p>
+                                        <h5 class="card-title mb-1">React and JS Development Demo</h5>                                        
+                                        <div>
+                                            <span class="badge badge-primary">HTML</span>
+                                            <span class="badge badge-secondary">CSS</span>
+                                            <span class="badge badge-dark">Javascript</span>
+                                            <span class="badge badge-success">React</span>
+                                            <span class="badge badge-danger">React Router</span>
+                                            <span class="badge badge-warning">Bootstrap</span>
+                                            <span class="badge badge-info">Reactstrap</span>                                            
+                                        </div>
+                                        <p class="card-text mb-1">Barkr is a Social Media site.  A companion to man's best friend.  This project is being expanded and integrated with a back end to become a full-stack project</p>
                                         <div class="d-flex flex-row justify-content-around">
-                                            <button><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
-                                            <button><a href="https://dan-z-haas.github.io/barkr-react/" target="_blank">Live Version</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="https://dan-z-haas.github.io/barkr-react/" target="_blank">Live Version</a></button>
                                         </div>
                                     </div>                                    
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card bg-black text-black p-2">
+                                <div class="card">
                                     <img src="../images/killifish-400.jpg" class="d-block w-100" alt="...">
                                     <div class="p-2 bg-white">
-                                        <h5 class="card-title mb-1">Color Theory Design Demo</h5>
-                                        <p class="card-text mb-1">Modules: HTML, CSS, JS, JQuery</p>
-                                        <p class="card-text mb-1">Description: Killifish Classic is an event page that attracts hobbyists to an aquarium convention event with a design palette borrowing from the natural bright colors of the beautiful fish. </p>
+                                        <h5 class="card-title mb-1">Color Theory Design Demo</h5>                                        
+                                        <div>
+                                            <span class="badge badge-primary">HTML</span>
+                                            <span class="badge badge-secondary">CSS</span>
+                                            <span class="badge badge-dark">Javascript</span>
+                                            <span class="badge badge-danger">jQuery</span>
+                                        </div>
+                                        <p class="card-text mb-1">Killifish Classic is an event page that attracts hobbyists to an aquarium convention event with a design palette borrowing from the natural bright colors of the beautiful fish. </p>
                                         <div class="d-flex flex-row justify-content-around">
-                                            <button><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
-                                            <button><a href="https://dan-z-haas.github.io/killifish-classic/" target="_blank">Live Version</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="https://dan-z-haas.github.io/killifish-classic/" target="_blank">Live Version</a></button>
                                         </div>
                                     </div>
                                 </div>                                   
                             </div>
                             <div class="carousel-item">
-                                <div class="card bg-black text-black p-2">
+                                <div class="card">
                                     <img src="../images/LICS-400.jpg" class="d-block w-100" alt="...">
                                     <div class="p-2 bg-white">
                                         <h5 class="card-title mb-1">Medical/University Content Demo</h5>
-                                        <p class="card-text mb-1">Technologies: HTML, CSS</p>
-                                        <p class="card-text mb-1">Description: Lorem Ipsum Cancer Studies is a university medical research study.  The content has been written to be widely accessible for audiences from the layman to the Ph.D. </p>
+                                        <div>
+                                            <span class="badge badge-primary">HTML</span>
+                                            <span class="badge badge-secondary">CSS</span>                                                                                       
+                                        </div>
+                                        <p class="card-text mb-1">Lorem Ipsum Cancer Studies is a university medical research study.  The content has been written to be widely accessible for audiences from the layman to the Ph.D. </p>
                                         <div class="d-flex flex-row justify-content-around">
-                                            <button><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
-                                            <button><a href="https://dan-z-haas.github.io/lorem-ipsum-cancer-studies" target="_blank">Live Version</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="https://dan-z-haas.github.io/lorem-ipsum-cancer-studies" target="_blank">Live Version</a></button>
                                         </div>
                                     </div>     
                                 </div>                              
@@ -128,24 +161,32 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-row flex-md-column">
-                    <img src="../images/barkr-400.jpg" class="col-4 col-md px-0 showcase-img active" alt="..." data-target="#carouselControls" data-slide-to="0">
-                    <img src="../images/killifish-400.jpg" class="col-4 col-md px-0 my-4 showcase-img" alt="..." data-target="#carouselControls" data-slide-to="1">
-                    <img src="../images/LICS-400.jpg" class="col-4 col-md px-0 showcase-img" alt="..." data-target="#carouselControls" data-slide-to="2">
+                <div id="carousel-indicators" class="col-12 col-md-3 d-flex flex-row flex-md-column justify-content-around">
+                    <img src="../images/barkr-400.jpg" class="col-4 col-md px-0 carousel-indicator active" alt="..." data-target="#carouselControls" data-slide-to="0">
+                    <img src="../images/killifish-400.jpg" class="col-4 col-md px-0 my-4 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="1">
+                    <img src="../images/LICS-400.jpg" class="col-4 col-md px-0 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="2">
                 </div>
 
-                <a href="#resume" class="space-icon"><i class="fas fa-5x fa-satellite text-light"></i></a>
+                <div class="space-icon">                    
+                    <a href="#resume">
+                        <i class="fas fa-5x fa-satellite text-black"></i>
+                        <h2 class="text-black pt-2 mb-0">Resume</h2>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </section>
 
 
+    <!-- <div class="bg-black w-100" style="height:10px"></div> -->
+
     <!--            RESUME          -->
-    <section id="resume" class="bg-light text-black">
+    <section id="resume">
         <div class="container h-100 position-relative">
             <div class="row">
                 <div class="col">
-                    <h1 class="display-3 my-5 text-center">Resume</h1>
+                    <h1 class="display-3 my-5 text-red text-center">Resume</h1>
                 </div>
             </div>
             <div class="row">
@@ -160,7 +201,8 @@
                             <iframe id="resume-iframe" src="../assets\Dan Z Haas Web Dev Resume.pdf" width="100%" ></iframe>
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                            
+                                <a class="btn btn-secondary" href="../assets\Dan Z Haas Web Dev Resume.pdf" download>Download PDF (76kb)</a>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                            
                             </div>
                         </div>
                         </div>
@@ -168,12 +210,22 @@
 
                 </div>    
             </div>
-            <a href="#contact" class="space-icon"><i class="fas fa-5x fa-user-astronaut text-white"></i></a>
+
+            <div class="space-icon">                
+                <a href="#contact">                    
+                    <i class="fas fa-5x fa-user-astronaut text-red"></i>
+                    <h2 class="text-red pt-2 mb-0">Contact</h2>
+                </a>
+            </div>
+            
         </div>
     </section>
 
+    
+    <!-- <div class="bg-black w-100" style="height:10px"></div> -->
+
     <!--            CONTACT         -->
-    <section id="contact" class="bg-success">
+    <section id="contact">
         <div class="container h-100 position-relative">
             <div class="row">
                 <div class="col">
@@ -181,26 +233,32 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 text-white">
+                <div class="col-12 col-md-6 text-md-right text-white">
                     <h2>Hi, I'm Dan.</h2>
                     <p> </p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img id="profile-pic" class="rounded" src="../images/desk profile.jpg">
-                    <p id="zStandsFor" class="text-gold"></p>
+                    <img id="dzh" class="rounded" src="../images/desk-profile.jpg">
+                    <!-- <p id="zStandsFor" class="text-gold"></p> -->
                 </div>
-
             </div>
-            <a href="#landing" class="last-space-icon"><i class="fas fa-5x fa-meteor text-white"></i></a>
+
+            <div class="space-icon">                
+                <a href="#landing">
+                    <i class="fas fa-5x fa-meteor text-white"></i>
+                    <h2 class="text-white">To Top</h2>
+                </a>
+            </div>
+            
         </div>
     </section>
 
     <!--            FOOTER          -->
     <div style="height:5vh"></div>
-    <footer class="d-flex flex-row justify-content-around align-items-center bg-black">
-        <p class="m-0">Dan Z Haas</p>
+    <footer class="d-flex flex-row justify-content-between align-content-center bg-black ">
+        <p class="ml-3 mb-0">Dan Z Haas</p>
         <a href="mailto:dan.z.haas@gmail.com">dan.z.haas@gmail.com</a>
-        <a href="tel:(410)937-2073">(410)937-2073</a>
+        <a class="mr-3" href="tel:(410)937-2073">(410)937-2073</a>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -219,7 +277,7 @@
         //Custom script for my portfolio
         
         //carousel custom indicators
-        const customCarsouselIndicators = $('.showcase-img');
+        const customCarsouselIndicators = $('.carousel-indicator');
         console.log(customCarsouselIndicators);
         $('#carouselControls').on('slide.bs.carousel', function (e) {
             customCarsouselIndicators[e.from].classList.remove("active");
