@@ -72,7 +72,6 @@ a:hover {
 
 .space-icon h2 {
     font-weight:bold;
-    /* font-size:3vh;     */
 }
 
 .last * {
@@ -87,7 +86,6 @@ a:hover {
     background-color:black;
     color:gold;
 }
-
 
 #showcase-pill {
     color:black;
@@ -107,15 +105,20 @@ a:hover {
 
 #landing {
     height:95vh;
-    background-image: url(../../images/nasa-launch-stars.jpg);
-    background-size: cover;
-    background-position:0% 75%
+    /* background-image: url(../../images/nasa-launch-stars.jpg); */
+    background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
+    background-size: 100% 100%;
+    background-position:0% 100%
 }
 
 #tagline {
     color:white;
     position:relative;
     top:3%;    
+}
+
+#shuttle {
+    /* right:-5% */
 }
 
 /*  Showcase    */
@@ -133,7 +136,8 @@ a:hover {
 
 .card {
     color:black;
-    border: 2px solid black;
+    border: 2px dotted gold;
+    background-color: white;
     height:60vh;
 } 
 
@@ -150,13 +154,13 @@ a:hover {
     object-fit:contain;
     flex-grow:0;
     background-color: black;
-    border:2px solid black;
+    border:2px dotted black;
     cursor:pointer;
 }
 
 .carousel-indicator.active {
-    border:2px solid white;
-    background-color: white;
+    border:2px dotted white;
+    background-color: gold;
     /* border:2px solid ;
     background-color: ; */
 }
@@ -190,7 +194,7 @@ a:hover {
 
 #dzh {
     height:50vh;
-    border:2px solid white;
+    border:2px dotted black;
 }
 
 /*  Footer    */
