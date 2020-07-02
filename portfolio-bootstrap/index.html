@@ -31,12 +31,12 @@
     <header class="fixed-top">
         <div class="row">
             <div class="col">
-                <nav id="scroll" class="navbar navbar-expand-md">
-                    <a class="nav-link navbar-brand rounded" href="#landing">Dan Z Haas Web Development</a>
+                <nav id="scroll" class="navbar navbar-dark navbar-expand-md">
+                    <a class="nav-link navbar-brand rounded text-gold" href="#landing">Dan Z Haas Web Development</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon text-dark bg-white"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav nav-pills ml-auto">
@@ -60,10 +60,10 @@
     <section id="landing">
         <div class="container position-relative h-100 ">
             <div class="row h-100">
-                <div class="col-12 col-md-3 h-100">
+                <!-- <div class="col-12 col-md-3">
                     <h1 id="tagline" class="position-absolute display-3 text-left">Hi, I'm Dan.</h1>                    
-                </div>
-                <div class="col-12 offset-md-5 col-md-4 h-100">
+                </div> -->
+                <div class="col-12 offset-md-5 col-md-4">
                 <!-- <div class="col-12 offset-md-6 col-md-6 h-100"> -->
                     <h1 id="tagline" class="position-absolute display-3 text-left">I Create <span style="font-weight:bold">Out-Of-This-World</span> Digital Experiences.</h1>
                     <!-- <h1 id="tagline" class="display-2 text-center">Creating Out Of This World Digital Experiences</h1> -->
@@ -88,19 +88,27 @@
     <!--            SHOWCASE            -->
     <section id="showcase">
         <div class="container h-100 position-relative">
+
             <div class="row">
                 <div class="col">
-                    <h1 class="display-3 py-4 text-center text-white">Showcase</h1>
+                    <h1 class="display-3 py-2 py-md-4 text-center text-white">Showcase</h1>
                 </div>
             </div>
-            <div class="row h-100">
-                <div class="offset-md-1 col-12 col-md-7 h-100">
+
+            <div class="row">
+                <div id="carousel-indicators" class="offset-md-1 col-12 col-md-3 order-1 order-md-0 d-flex flex-row flex-md-column justify-content-between p-2 p-md-4 bg-white">
+                    <img src="../images/barkr-400.jpg"      class="col-4 col-md px-0 carousel-indicator active" alt="..." data-target="#carouselControls" data-slide-to="0">
+                    <img src="../images/killifish-400.jpg"  class="col-4 col-md px-0 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="1">
+                    <img src="../images/LICS-400.jpg"       class="col-4 col-md px-0 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="2">
+                </div>
+                <div class="col-12 col-md-7 order-0 order-md-1">
                     <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">                            
+                        <div class="carousel-inner">
+
                             <div class="carousel-item active">
-                                <div class="card">
+                                <div class="card p-2 p-md-4">
                                     <img src="../images/barkr-400.jpg" class="card-img" alt="...">
-                                    <div class="p-2 bg-white">
+                                    <div class="my-auto pt-2 pt-md-4 bg-white">
                                         <h5 class="card-title mb-1">React and JS Development Demo</h5>                                        
                                         <div>
                                             <span class="badge badge-primary">HTML</span>
@@ -119,10 +127,11 @@
                                     </div>                                    
                                 </div>
                             </div>
+
                             <div class="carousel-item">
-                                <div class="card">
+                                <div class="card p-2 p-md-4">
                                     <img src="../images/killifish-400.jpg" class="d-block w-100" alt="...">
-                                    <div class="p-2 bg-white">
+                                    <div class="my-auto pt-2 pt-md-4 bg-white">
                                         <h5 class="card-title mb-1">Design and jQuery Demo</h5>                                        
                                         <div>
                                             <span class="badge badge-primary">HTML</span>
@@ -138,10 +147,11 @@
                                     </div>
                                 </div>                                   
                             </div>
+
                             <div class="carousel-item">
-                                <div class="card">
+                                <div class="card p-2 p-md-4">
                                     <img src="../images/LICS-400.jpg" class="d-block w-100" alt="...">
-                                    <div class="p-2 bg-white">
+                                    <div class="my-auto pt-2 pt-md-4 bg-white">
                                         <h5 class="card-title mb-1">Content Demo: Medical/Higher Education </h5>
                                         <div>
                                             <span class="badge badge-primary">HTML</span>
@@ -156,6 +166,7 @@
                                 </div>                              
                             </div>
                         </div>
+
                         <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
@@ -166,12 +177,7 @@
                         </a>
                     </div>
                 </div>
-                <div id="carousel-indicators" class="col-12 col-md-3 d-flex flex-row flex-md-column justify-content-around">
-                    <img src="../images/barkr-400.jpg" class="col-4 col-md px-0 carousel-indicator active" alt="..." data-target="#carouselControls" data-slide-to="0">
-                    <img src="../images/killifish-400.jpg" class="col-4 col-md px-0 my-4 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="1">
-                    <img src="../images/LICS-400.jpg" class="col-4 col-md px-0 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="2">
-                </div>
-
+                
                 <div class="space-icon">                    
                     <a href="#resume">
                         <i class="fas fa-5x fa-satellite text-white"></i>
@@ -191,22 +197,27 @@
         <div class="container h-100 position-relative">
             <div class="row">
                 <div class="col">
-                    <h1 class="display-3 my-5 text-white text-center">Resume</h1>
+                    <h1 class="display-3 py-2 py-md-4 text-center">Resume</h1>
                 </div>
             </div>
-            <div class="row">
 
-                <div class="col-12 col-md-6 text-right">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-12 col-md-6 d-flex flex-row justify-content-center">
                     <img id="resume-thumbnail" class="center" src="../images/resume.jpg">
+                    <div class="d-md-none ml-3 d-flex flex-column justify-content-center">
+                        <a href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-7x fa-linkedin"></i></a>
+                        <a class="mt-1" href="https://github.com/danzhaas" target="_blank"><i style="color:#24292e" class="fab fa-7x fa-github-square"></i></a>
+                    </div>
                     <!-- Modal -->
                     <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                         <div class="modal-content">                            
                             <div class="modal-body">
-                            <iframe id="resume-iframe" src="../assets\Dan Z Haas Web Dev Resume.pdf" width="100%" ></iframe>
+                            <iframe id="resume-iframe" src="../assets/Dan Z Haas Web Dev Resume.pdf" width="100%" ></iframe>
                             </div>
                             <div class="modal-footer">
-                                <a class="btn btn-secondary" href="../assets\Dan Z Haas Web Dev Resume.pdf" download>Download PDF (76kb)</a>
+                                <a class="btn btn-secondary" href="../assets/Dan Z Haas Web Dev Resume.pdf" download>Download PDF (76kb)</a>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                            
                             </div>
                         </div>
@@ -215,31 +226,30 @@
                 </div>    
 
                 <div class="col-12 col-md-6 text-left">
-                    <h2 class="text-white">Highlights</h2>
-                    <ul class="text-white">                        
+                    <h2>Highlights</h2>
+                    <ul>                        
                         <li>
-                            Goal-oriented Full Stack Bootcamp Honors graduate.  My bootcamp capstone project was chosen as one of four showcased from submissions from my cohort of 211 graduates.  
+                            Goal-oriented Full Stack Bootcamp Honors graduate.  My bootcamp capstone project was one of only four chosen from the submissions of 211 graduates to be showcased at graduation.  
                         </li>
                         <li>
-                            Second Bachelor's degree due Spring 2021: BS, Digital Media and Web Technology.
+                            Second Bachelor's degree expected Spring 2021: BS, Digital Media and Web Technology.
                         </li>
                         <li>
-                            Expertise in health and higher education with over 10 years experience in allied health care and a Master's degree.
+                            Knowledgable in health and higher education, with over 10 years experience in allied health care and a Master's degree.
                         </li>
                     </ul>
-                    <h2 class="text-white">
-                        See all about me: <a href="https://linkedin.com/in/danzhaas" target="_blank">Linkedin</a>
-                    </h2>
-                    <h2 class="text-white">
-                        See my code: <a href="https://github.com/danzhaas" target="_blank">GitHub</a>
-                    </h2>
+                    <div class="d-none d-md-flex justify-content-around">
+                        <a href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-5x fa-linkedin"></i></a>
+                        <a href="https://github.com/danzhaas" target="_blank"><i style="color:#24292e" class="fab fa-5x fa-github-square"></i></a>
+                    </div>
                 </div>
+
             </div>
 
             <div class="space-icon">                
                 <a href="#contact">                    
-                    <i class="fas fa-5x fa-user-astronaut text-white"></i>
-                    <h2 class="text-white pt-2 mb-0">Contact</h2>
+                    <i class="fas fa-5x fa-user-astronaut"></i>
+                    <h2 class="pt-2 mb-0">Contact</h2>
                 </a>
             </div>
             
@@ -254,22 +264,21 @@
         <div class="container h-100 position-relative">
             <div class="row">
                 <div class="col">
-                    <h1 class="display-3 my-5 text-center text-white">Contact</h1>
+                    <h1 class="display-3 py-2 py-md-4 text-center text-white">Contact</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-12 col-md-6 text-md-right text-white">
                     <h2>Hi, I'm Dan.</h2>
-                    <h3>I'm an aspiring web developer/designer whose work has been praised as "very cohesive," "fantastic," and "FIREEEEEEEEE EMOJI". </h3>
-                    <h3>I'm currently seeking work in the web dev field as a front-end developer.</h3>
-                    <h3>Interested in my services?  You're invited to text or email me.  We can set up a virtual meeting with real coffee.</h3>
-                    <h3><a href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a><br></h3>
-                    <h3><a class="mr-3" href="tel:(410)937-2073">(410)937-2073</a></h3>
-
+                    <h3>I'm an aspiring web developer/designer whose work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". </h3>
+                    <h3>I'm seeking work in the web dev field as a front-end developer.</h3>
+                    <h3>Interested in my services?  You're invited to email, text, or call me.  Let's set up a virtual meeting with real coffee.</h3>
+                    <a class="text-gold text-center text-md-left" href="mailto:danzhaas@gmail.com"><i class="fas fa-at"></i>danzhaas@gmail.com</a><br>
+                    <h3><a class="text-gold text-center text-md-left mr-md-3" href="tel:(410)937-2073"><i class="fas fa-mobile"></i>(410)937-2073</a></h3>
 
                 </div>
                 <div class="col-12 col-md-6">
-                    <img id="dzh" class="rounded" src="../images/desk-profile.jpg">
+                    <img id="dzh" class="rounded text-center text-md-left" src="../images/desk-profile.jpg">
                     <!-- <p id="zStandsFor" class="text-gold"></p> -->
                 </div>
             </div>
@@ -308,12 +317,12 @@
         //Custom script for my portfolio
         
         //carousel custom indicators
-        const customCarsouselIndicators = $('.carousel-indicator');
-        console.log(customCarsouselIndicators);
-        $('#carouselControls').on('slide.bs.carousel', function (e) {
-            customCarsouselIndicators[e.from].classList.remove("active");
-            customCarsouselIndicators[e.to].classList.add("active");
-        })
+            const customCarsouselIndicators = $('.carousel-indicator');
+            console.log(customCarsouselIndicators);
+            $('#carouselControls').on('slide.bs.carousel', function (e) {
+                customCarsouselIndicators[e.from].classList.remove("active");
+                customCarsouselIndicators[e.to].classList.add("active");
+            })
 
         //resume modal 
         document.getElementById("resume-thumbnail").addEventListener("click", () => $('#resumeModal').modal('toggle'));

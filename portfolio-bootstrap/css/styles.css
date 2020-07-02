@@ -11,12 +11,14 @@ body {
 }
 
 section {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    padding:0 1vw
+    /* background-attachment: fixed;
+    background-repeat: no-repeat; */
 }
 
 .container {
-    padding:3rem 0;
+    padding: 4px 0;   
+    /* background-color: black; */
 }
 
 h1 {
@@ -35,7 +37,7 @@ a:hover {
 }
 
 .bg-gold {
-    background-color: gold;
+    background-color: rgb(255, 235, 121);
 }
 
 .text-black {
@@ -43,7 +45,7 @@ a:hover {
 }
 
 .text-gold {
-    color: gold;
+    color: rgb(255, 234, 116);
 }
 
 .text-red {
@@ -53,7 +55,6 @@ a:hover {
 /* Repeated Features */
 
 .space-icon {
-    width:150px;
     position:absolute;
     bottom:5vh;
     right:0
@@ -72,10 +73,6 @@ a:hover {
 
 .space-icon h2 {
     font-weight:bold;
-}
-
-.last * {
-    text-align:left;
 }
 
 /* Nav */
@@ -101,15 +98,42 @@ a:hover {
     background-color: rgb(185, 0, 0);
 }
 
-/* Landing */
+/* Section Styling */
 
 #landing {
     height:95vh;
-    /* background-image: url(../../images/nasa-launch-stars.jpg); */
     background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
     background-size: 100% 100%;
     background-position:0% 100%
+    /* background-color:black; */
 }
+
+#showcase {
+    height:95vh;
+    /* background-image: url(../../images/gold-sun.jpg);
+    background-size: cover;
+    background-position:0% 70%; */
+    background-color:gold;
+}
+
+#resume {
+    height:95vh;
+    /* background-image: url(../../images/pluto.jpg);
+    background-size: cover;
+    background-position:0% 70% */
+    background-color: #f8f9fa;
+}
+
+#contact {
+    height:95vh;
+    /* background-image: url(../../images/red-nebula.jpg);
+    background-size: cover;
+    background-position:0% 70% */
+    background-color: rgb(185, 0, 0);
+}
+
+
+/* Landing */
 
 #tagline {
     color:white;
@@ -117,18 +141,12 @@ a:hover {
     top:3%;    
 }
 
-#shuttle {
-    /* right:-5% */
-}
+/* #shuttle {
+    right:-5%
+} */
+
 
 /*  Showcase    */
-
-#showcase {
-    height:95vh;
-    background-image: url(../../images/gold-sun.jpg);
-    background-size: cover;
-    background-position:0% 70%;
-}
 
 .carousel-item {
     text-align: center;
@@ -146,7 +164,7 @@ a:hover {
 }
 
 #carousel-indicators {
-    height:60vh;
+    height: auto;
 }
 
 .carousel-indicator {
@@ -165,17 +183,11 @@ a:hover {
     background-color: ; */
 }
 
+
 /*  Resume    */
 
-#resume {
-    height:95vh;
-    background-image: url(../../images/pluto.jpg);
-    background-size: cover;
-    background-position:0% 70%
-}
-
 #resume-thumbnail {
-    height:50vh;
+    max-width:50vw;
     cursor:pointer;
 }
 
@@ -183,17 +195,11 @@ a:hover {
     height:80vh;
 }
 
+
 /*  Contact    */
 
-#contact {
-    height:95vh;
-    background-image: url(../../images/red-nebula.jpg);
-    background-size: cover;
-    background-position:0% 70%
-}
-
 #dzh {
-    height:50vh;
+    width:50vw;
     border:2px dotted black;
 }
 
@@ -219,32 +225,58 @@ footer > * {
 
 @media only screen and (max-width : 768px) {
 
-    #landing {
+    /* #landing {
         background-position:45% 80%
     }
 
     #showcase {
         background-position:50% 90%
-    }
+    } */
 
-    #resume {
+    /* #resume {
         background-position:25% 100%
-    }
-    
-    
+    } */
 }
 
 @media only screen and (min-width : 768px) {
 
-    .modal-dialog {
-        max-width:75vw;
+    .container {
+        padding:3rem 0;
+    }
+
+    .space-icon {
+        width:150px;
+        position:absolute;
+        bottom:5vh;
+        right:0
+    }
+
+    .space-icon > a {
+        display:flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content:end ;
     }
 
     #tagline {
         max-width:49vw;
     }
 
+    #carousel-indicators {
+        height:60vh;
+    }
+
+    #resume-thumbnail {
+        height:50vh;
+    }
+
+    .modal-dialog {
+        max-width:75vw;
+    }
+
     #dzh {
+        height:50vh;
+        border:2px dotted black;
         max-width:49vw;
     }
 }
