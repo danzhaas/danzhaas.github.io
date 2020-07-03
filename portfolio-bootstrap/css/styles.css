@@ -11,7 +11,7 @@ body {
 }
 
 section {
-    padding:0 1vw
+    padding:5vh 0;
     /* background-attachment: fixed;
     background-repeat: no-repeat; */
 }
@@ -25,9 +25,21 @@ h1 {
     margin:0;
 }
 
+p {
+    font-size:1.5rem;
+}
+
+a, .navbar-brand {
+    font-size:1.75rem;
+}
+
 a:hover {
     color:white;
     text-decoration:none;
+}
+
+img {
+    border: 1px solid black;
 }
 
 /* Colors */
@@ -64,7 +76,7 @@ a:hover {
     display:flex;
     flex-direction: column;
     align-items: right;
-    justify-content:end ;
+    justify-content:end;
 }
 
 .space-icon * {
@@ -76,6 +88,10 @@ a:hover {
 }
 
 /* Nav */
+
+/* .navbar {
+    height:10vh;
+} */
 
 .navbar-brand {
     font-family: 'Poiret One', cursive;
@@ -199,15 +215,13 @@ a:hover {
 /*  Contact    */
 
 #dzh {
-    width:50vw;
-    border:2px dotted black;
+    max-width:75vw;
+    max-height:35vh;
 }
 
 /*  Footer    */
 
 footer {
-    position:fixed;
-    bottom:0;
     height:5vh;
     width:100%;
     color:white;
@@ -239,6 +253,14 @@ footer > * {
 }
 
 @media only screen and (min-width : 768px) {
+    
+    section {
+        padding:0;
+    }
+
+    p, a, .navbar-brand {
+        font-size:auto;
+    }
 
     .container {
         padding:3rem 0;
@@ -255,7 +277,8 @@ footer > * {
         display:flex;
         flex-direction: column;
         align-items: right;
-        justify-content:end ;
+        justify-content:end;
+        font-size: auto;
     }
 
     #tagline {
@@ -275,9 +298,10 @@ footer > * {
     }
 
     #dzh {
-        height:50vh;
+        height:auto;
+        max-height:50vh;
         border:2px dotted black;
-        max-width:49vw;
+        width:100%;
     }
 }
 
