@@ -12,13 +12,11 @@ body {
 
 section {
     padding:5vh 0;
-    /* background-attachment: fixed;
-    background-repeat: no-repeat; */
 }
 
 .container {
-    padding: 4px 0;   
-    /* background-color: black; */
+    padding: 4px 0;
+    height:100%;   
 }
 
 h1 {
@@ -40,6 +38,10 @@ a:hover {
 
 img {
     border: 1px solid black;
+}
+
+i {
+    font-size:3rem;
 }
 
 /* Colors */
@@ -68,7 +70,7 @@ img {
 
 .space-icon {
     position:absolute;
-    bottom:5vh;
+    bottom:0;
     right:0
 }
 
@@ -105,7 +107,7 @@ img {
     background-color: gold;
 }
 
-#resume-pill {
+#about-pill {
     background-color:#f8f9fa;   
 }
 
@@ -114,13 +116,13 @@ img {
     background-color: rgb(185, 0, 0);
 }
 
-/* Section Styling */
+/* Section Colors & Backgrounds */
 
 #landing {
     height:95vh;
     background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
-    background-size: 100% 100%;
-    background-position:0% 100%
+    background-size: 200% 100%;
+    background-position:40% 100%
     /* background-color:black; */
 }
 
@@ -132,7 +134,7 @@ img {
     background-color:gold;
 }
 
-#resume {
+#about {
     height:95vh;
     /* background-image: url(../../images/pluto.jpg);
     background-size: cover;
@@ -149,16 +151,39 @@ img {
 }
 
 
+/* Parallax section styling */
+
+#parallax1 {
+    background-image: url(../../images/gold-sun.jpg)
+}
+
+#parallax2 {
+    background-image: url(../../images/pluto.jpg);
+}
+
+#parallax3 {
+    background-image: url(../../images/red-nebula.jpg);
+}
+
+
 /* Landing */
 
-#tagline {
-    color:white;
+#landing {
     position:relative;
-    top:3%;    
+}
+
+#headline-parent {
+    position:relative;
+}
+
+#headline {
+    color:white;
+    position:absolute;
+    top:20%;    
 }
 
 /* #shuttle {
-    right:-5%
+    right:5%
 } */
 
 
@@ -200,7 +225,7 @@ img {
 }
 
 
-/*  Resume    */
+/*  About    */
 
 #resume-thumbnail {
     max-width:50vw;
@@ -237,21 +262,6 @@ footer > * {
 
 /* Media Queries */
 
-@media only screen and (max-width : 768px) {
-
-    /* #landing {
-        background-position:45% 80%
-    }
-
-    #showcase {
-        background-position:50% 90%
-    } */
-
-    /* #resume {
-        background-position:25% 100%
-    } */
-}
-
 @media only screen and (min-width : 768px) {
     
     section {
@@ -281,7 +291,16 @@ footer > * {
         font-size: auto;
     }
 
-    #tagline {
+    i {
+        font-size:5rem;
+    }
+
+    #landing {
+        background-size: 100% 100%;
+        background-position:0% 100%
+    }
+
+    #headline {
         max-width:49vw;
     }
 
@@ -300,7 +319,7 @@ footer > * {
     #dzh {
         height:auto;
         max-height:50vh;
-        border:2px dotted black;
+        border:1px solid black;
         width:100%;
     }
 }
