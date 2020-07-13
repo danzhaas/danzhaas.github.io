@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col">
                 <nav id="scroll" class="navbar navbar-dark navbar-expand-md">
-                    <a class="nav-link navbar-brand rounded text-gold" href="#landing">Dan Z Haas Web Development</a>
+                    <a class="nav-link navbar-brand rounded" href="#landing">Dan Z Haas Web Development</a>
                     <button class="navbar-toggler bg-black" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -36,16 +36,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav nav-pills ml-auto">
                             <li class="nav-item rounded">
-                                <a id="showcase-pill" class="nav-link" href="#landing">Landing</a>
+                                <a id="showcase-pill" class="text-right pr-2 pr-md-auto nav-link" href="#landing">Landing</a>
                             </li>
                             <li class="nav-item rounded">
-                                <a id="showcase-pill" class="nav-link" href="#showcase">Showcase</a>
+                                <a id="showcase-pill" class="text-right pr-2  pr-md-auto nav-link" href="#showcase">Showcase</a>
                             </li>
                             <li class="nav-item rounded">
-                                <a id="about-pill" class="nav-link text-dark" href="#about">About</a>
+                                <a id="about-pill" class="text-right pr-2  pr-md-auto nav-link text-dark" href="#about">About</a>
                             </li>
                             <li class="nav-item rounded">
-                                <a id="contact-pill" class="nav-link" href="#contact">Contact</a>
+                                <a id="contact-pill" class="text-right pr-2  pr-md-auto nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -56,22 +56,25 @@
 
     <!--            LANDING         -->
     <section id="landing">
-        <div class="position-relative h-100">
+        <div class="container-md h-100 position-relative">
+            <h1 id="headline" class="offset-5 col-7 offset-md-7 col-md-5 text-right p-md-0">Creating <br><span style="font-weight:bold; color:gold">Out-Of-This-World</span><br>Digital Experiences</h1>    
             <!-- <h1 id="headline" class="position-absolute display-3 text-left">Hi, I'm Dan.</h1>                     -->
-            <!-- <div id="headline-parent" class=""> -->
-            <!-- <div class="col-12 offset-md-6 col-md-6 h-100"> -->
-            <h1 id="headline" class="offset-6 offset-md-0 col-6 display-4 display-md-3 text-right text-md-left">Creating <span style="font-weight:bold">Out-Of-This-World</span> Digital Experiences.</h1>
-            <!-- <h1 id="headline" class="display-2 text-center">Creating Out Of This World Digital Experiences</h1> -->
-            <!-- <h1 id="headline" class="display-2 text-white text-center">Creating Digital Experiences Inspired By Your Passion</h1> -->
+            <!-- <h1 id="headline" class="display-2 text-white text-center"></h1> -->
+        <!-- </div> -->
 
-            <div id="shuttle" class="space-icon">                
-                <a href="#showcase">
-                    <i class="fas fa-space-shuttle fa-rotate-270 float-right text-white display-block"></i>
-                    <h2 class="text-white pt-2 mb-0">Showcase</h2>
-                </a>
-            </div>
+        <!-- <div class="container"> -->
+            <!-- <div class="row h-100 position-relative"> -->
+                <div id="shuttle" class="space-icon">                
+                    <a class="d-flex flex-row align-items-center flex-md-column text-gold" href="#showcase">
+                        <i class="fas fa-space-shuttle fa-rotate-270 float-right"></i>
+                        <!-- <span class="d-md-none">&nbsp;</span> -->
+                        <!-- <h2 class="pt-2 mb-0">Showcase</h2> -->
+                    </a>
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
     </section>
+
 
     <!--            SHOWCASE            -->
     <section id="showcase">
@@ -79,78 +82,74 @@
 
             <div class="row">
                 <div class="col">
-                    <h1 class="display-3 py-2 py-md-4 text-center text-white">Showcase</h1>
+                    <h1 class="display-3 py-2 py-md-4 text-center ">Showcase</h1>
                 </div>
             </div>
 
-            <div class="row">
-                <div id="carousel-indicators" class="offset-md-1 col-12 col-md-3 order-1 order-md-0 d-flex flex-row flex-md-column justify-content-between p-2 p-md-4 bg-white">
-                    <img src="../images/barkr-400.jpg"      class="col-4 col-md px-0 carousel-indicator active" alt="..." data-target="#carouselControls" data-slide-to="0">
-                    <img src="../images/killifish-400.jpg"  class="col-4 col-md px-0 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="1">
-                    <img src="../images/LICS-400.jpg"       class="col-4 col-md px-0 carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="2">
-                </div>
-                <div class="col-12 col-md-7 order-0 order-md-1">
+            <div class="row p-1">
+                <div class="order-0 col-12 order-md-1 col-md-7 p-md-0 ">
                     <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                    <!-- <div id="carouselControls" > -->
                         <div class="carousel-inner">
 
                             <div class="carousel-item active">
-                                <div class="card p-2 p-md-4">
-                                    <img src="../images/barkr-400.jpg" class="card-img" alt="...">
-                                    <div class="my-auto pt-2 pt-md-4 bg-white">
-                                        <h5 class="card-title mb-1">React and JS Development Demo</h5>                                        
+                                <div class="card px-2 py-4 p-md-4 d-flex flex-column justify-content-between">
+                                    <!-- <div class="h-100 d-flex flex-column justify-content-between bg-white"> -->
+                                        <img src="../images/barkr-400.jpg" class="card-img" alt="...">
+                                        <h2 class="card-title m-0">React and JS Development Demo</h2>                                        
                                         <div>
-                                            <span class="badge badge-primary">HTML</span>
-                                            <span class="badge badge-secondary">CSS</span>
                                             <span class="badge badge-dark">Javascript</span>
                                             <span class="badge badge-success">React</span>
                                             <span class="badge badge-danger">React Router</span>
                                             <span class="badge badge-warning">Bootstrap</span>
-                                            <span class="badge badge-info">Reactstrap</span>                                            
+                                            <span class="badge badge-info">Reactstrap</span>   
+                                            <span class="badge badge-primary">HTML</span>
+                                            <span class="badge badge-secondary">CSS</span>                                            
                                         </div>
-                                        <p class="card-text mb-1">Barkr is more than a Social Media site; it's a companion for man's best friend.  This project will have a big update in July 2020.</p>
+                                        <p class="card-text m-0">Barkr is more than a Social Media site; it's a companion for man's best friend.  The back end is in development as of July 2020.</p>
                                         <div class="d-flex flex-row justify-content-around">
-                                            <button type="button" class="btn btn-primary"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
-                                            <button type="button" class="btn btn-info"><a href="https://dan-z-haas.github.io/barkr-react/" target="_blank">Live Version</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
+                                            <button type="button" class="btn btn-warning"><a href="https://dan-z-haas.github.io/barkr-react/" target="_blank">Live Version</a></button>
                                         </div>
-                                    </div>                                    
+                                    <!-- </div>                                     -->
                                 </div>
                             </div>
 
                             <div class="carousel-item">
-                                <div class="card p-2 p-md-4">
-                                    <img src="../images/killifish-400.jpg" class="d-block w-100" alt="...">
-                                    <div class="my-auto pt-2 pt-md-4 bg-white">
-                                        <h5 class="card-title mb-1">Design and jQuery Demo</h5>                                        
+                                <div class="card px-2 py-4 p-md-4 d-flex flex-column justify-content-between">
+                                    <!-- <div class="my-auto pt-2 pt-md-4 bg-white"> -->
+                                        <img src="../images/killifish-400.jpg" class="d-block w-100" alt="...">
+                                        <h2 class="card-title m-0">Design and jQuery Demo</h2>                                        
                                         <div>
-                                            <span class="badge badge-primary">HTML</span>
-                                            <span class="badge badge-secondary">CSS</span>
                                             <span class="badge badge-dark">Javascript</span>
                                             <span class="badge badge-danger">jQuery</span>
+                                            <span class="badge badge-primary">HTML</span>
+                                            <span class="badge badge-secondary">CSS</span>
                                         </div>
-                                        <p class="card-text mb-1">Killifish Classic is an event page for an aquarium convention.  Designed with a palette inspired by the natural bright colors of the beautiful fish. </p>
+                                        <p class="card-text m-0">Killifish Classic is an event page for an aquarium convention.  Designed with a palette inspired by the natural bright colors of the beautiful fish. </p>
                                         <div class="d-flex flex-row justify-content-around">
-                                            <button type="button" class="btn btn-warning"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
-                                            <button type="button" class="btn btn-warning"><a href="https://dan-z-haas.github.io/killifish-classic/" target="_blank">Live Version</a></button>
+                                            <button type="button" class="btn btn-killi"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
+                                            <button type="button" class="btn btn-killi"><a href="https://dan-z-haas.github.io/killifish-classic/" target="_blank">Live Version</a></button>
                                         </div>
-                                    </div>
+                                    <!-- </div> -->
                                 </div>                                   
                             </div>
 
                             <div class="carousel-item">
-                                <div class="card p-2 p-md-4">
-                                    <img src="../images/LICS-400.jpg" class="d-block w-100" alt="...">
-                                    <div class="my-auto pt-2 pt-md-4 bg-white">
-                                        <h5 class="card-title mb-1">Content Demo: Medical/Higher Education </h5>
+                                <div class="card px-2 py-4 p-md-4 d-flex flex-column justify-content-between">
+                                    <!-- <div class="my-auto pt-2 pt-md-4 bg-white"> -->
+                                        <img src="../images/LICS-400.jpg" class="d-block w-100" alt="...">
+                                        <h2 class="card-title m-0">Content Demo: Medical/Higher Education </h2>
                                         <div>
                                             <span class="badge badge-primary">HTML</span>
                                             <span class="badge badge-secondary">CSS</span>                                                                                       
                                         </div>
-                                        <p class="card-text mb-1">Lorem Ipsum Cancer Studies is a site for a university medical research study.  The content has been written to be widely accessible for audiences from the layman to the Ph.D. </p>
+                                        <p class="card-text m-0">A site for a university medical research study.  The content has been written to be widely accessible for audiences from the layman to the Ph.D. </p>
                                         <div class="d-flex flex-row justify-content-around">
-                                            <button type="button" class="btn btn-warning"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
-                                            <button type="button" class="btn btn-warning"><a href="https://dan-z-haas.github.io/lorem-ipsum-cancer-studies" target="_blank">Live Version</a></button>
+                                            <button type="button" class="btn btn-lics"><a href="http://github.com/dan-z-haas/barkr-react" target="_blank">View Code at Github</a></button>
+                                            <button type="button" class="btn btn-lics"><a href="https://dan-z-haas.github.io/lorem-ipsum-cancer-studies" target="_blank">Live Version</a></button>
                                         </div>
-                                    </div>     
+                                    <!-- </div>      -->
                                 </div>                              
                             </div>
                         </div>
@@ -165,15 +164,33 @@
                         </a>
                     </div>
                 </div>
-                
-                <div class="space-icon">                    
-                    <a href="#about">
-                        <i class="fas fa-satellite text-white"></i>
-                        <h2 class="text-white pt-2 mb-0">About</h2>
-                    </a>
+                <!-- Carousel indicators for md, lg, xl -->
+                <div id="carousel-indicators" class="d-none d-md-flex order-0 offset-md-1 col-3 p-4 flex-column justify-content-between bg-light">
+                    <img src="../images/barkr-400.jpg"      class="col-4 col-md px-0 ci carousel-indicator active" alt="..." data-target="#carouselControls" data-slide-to="0">
+                    <img src="../images/killifish-400.jpg"  class="col-4 col-md px-0 ci carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="1">
+                    <img src="../images/LICS-400.jpg"       class="col-4 col-md px-0 ci carousel-indicator" alt="..." data-target="#carouselControls" data-slide-to="2">
                 </div>
-                
             </div>
+
+            <div class="row d-md-none">
+                <!-- Carousel indicators for xs, sm -->
+                <div class="col-12">
+                    <ol id="ci-xs-sm" class="carousel-indicators">
+                        <li class="ci-xs-sm active" data-target="#carouselControls" data-slide-to="0"></li>
+                        <li class="ci-xs-sm" data-target="#carouselControls" data-slide-to="1"></li>
+                        <li class="ci-xs-sm" data-target="#carouselControls" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+                
+            <div class="space-icon">                    
+                <a class="d-flex flex-row align-items-center flex-md-column text-black" href="#about">
+                    <i class="fas fa-satellite"></i>
+                    <!-- <span class="d-md-none">&nbsp;</span> -->
+                    <!-- <h2 class="pt-2 mb-0">About</h2> -->
+                </a>
+            </div>
+                
         </div>
     </section>
 
@@ -188,35 +205,23 @@
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-6 d-flex flex-row justify-content-center d-md-block text-md-right">
-                    <img id="resume-thumbnail" class="center" src="../images/resume.jpg">
+            <div class="row py-4 d-flex justify-content-center">
+                <div class="col-12 col-md-5 d-flex flex-row justify-content-center d-md-block text-md-right">
+                    <img id="resume-thumbnail" class="center bg-black" src="../images/resume.jpg">
+                    <div class="col-1 d-md-none"></div>
                     <div class="d-md-none ml-3 d-flex flex-column justify-content-center">
-                        <a href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-7x fa-linkedin"></i></a>
-                        <a class="mt-1" href="https://github.com/danzhaas" target="_blank"><i style="color:#24292e" class="fab fa-7x fa-github-square"></i></a>
+                        <a href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-7x fa-linkedin bg-white"></i></a>
+                        <a class="mt-1" href="https://github.com/danzhaas" target="_blank"><i style="color:#24292e" class="fab fa-7x fa-github-square bg-white"></i></a>
                     </div>
-                    <!-- Modal -->
-                    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">                            
-                            <div class="modal-body">
-                            <iframe id="resume-iframe" src="../assets/Dan Z Haas Web Dev Resume.pdf" width="100%" ></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <a class="btn btn-secondary" href="../assets/Dan Z Haas Web Dev Resume.pdf" download>Download PDF (76kb)</a>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                            
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>    
-                <div class="col-12 col-md-6 text-left">
+                </div>
+
+                <div class="col-12 col-md-6 pt-3 pt-md-0 text-left">
                     <h2>Highlights</h2>
                     <ul>                        
-                        <li>Goal-oriented Full Stack Bootcamp Honors graduate experienced with MERN stack (MongoDB, Express, React, Node).</li>
+                        <li>Full Stack Bootcamp graduate with honors: experienced with MongoDB, Express, React, Node</li>
                         <!-- <li>My bootcamp capstone project was one of only four chosen from the submissions of 211 graduates to be showcased at graduation.</li> -->
                         <li>Second Bachelor's degree expected Spring 2021: BS, Digital Media and Web Technology.</li>
-                        <li>Knowledgable in health and higher education, with over 10 years experience in allied health care and a Master's degree.</li>
+                        <li>Knowledgable in health and higher education: 10 years experience in health and a Master's degree.</li>
                     </ul>
                     <div class="d-none d-md-flex justify-content-start">
                         <a class="mr-md-4" href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-linkedin"></i></a>
@@ -225,10 +230,26 @@
                 </div>
             </div>
 
+            <!-- Modal -->
+            <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">                            
+                    <div class="modal-body">
+                    <iframe id="resume-iframe" src="../assets/Dan Z Haas Web Dev Resume.pdf" width="100%" ></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-secondary" href="../assets/Dan Z Haas Web Dev Resume.pdf" download>Download PDF (76kb)</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                            
+                    </div>
+                </div>
+                </div>
+            </div>
+
             <div class="space-icon">                
-                <a href="#contact">                    
+                <a class="d-flex flex-row align-items-center flex-md-column text-black" href="#contact">
                     <i class="fas fa-user-astronaut"></i>
-                    <h2 class="pt-2 mb-0">Contact</h2>
+                    <!-- <span class="d-md-none">&nbsp;</span> -->
+                    <!-- <h2 class="pt-2 mb-0">Contact</h2> -->
                 </a>
             </div>
             
@@ -242,43 +263,50 @@
 
             <div class="row">
                 <div class="col">
-                    <h1 class="display-3 py-2 py-md-4 text-center text-white">Contact</h1>
+                    <h1 class="display-3 py-3 py-md-4 text-center text-white">Contact</h1>
                 </div>
             </div>
 
-            <div class="row d-md-none">
-                <div class="col-12 offset-md-2 col-md-4 text-md-right text-white">
+            <!-- <div class="row d-md-none">
+                <div class="col-12 text-white">
+                    <div class="mb-3 d-flex">
+                        <img id="dzh" class="mx-auto" src="../images/desk-profile.jpg">
+                    </div>
                     <h2>Hi, I'm Dan.</h2>
                     <p>I'm an aspiring web developer/designer whose work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". </p>
                     <p>I'm seeking work in web development as a front-end developer.</p>
-                    <p>Interested in my services?  You're invited to email, text, or call me.  Let's set up a virtual meeting with real coffee.</p>
-                    <a class="text-gold text-center text-md-left" href="mailto:danzhaas@gmail.com"><i class="fas fa-envelope"></i>danzhaas@gmail.com</a><br>
-                    <a class="text-gold text-center text-md-left mr-md-3" href="tel:(410)937-2073"><i class="fas fa-mobile"></i> (410)937-2073</a>
+                    <p>I can make your passion a reality on the web.  You're invited to email, text, or call me.  Let's set up a virtual meeting with real coffee.</p>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a class="text-gold" href="mailto:danzhaas@gmail.com"><i class="fas fa-envelope"></i>danzhaas@gmail.com</a><br>
+                        <a class="text-gold" href="tel:(410)937-2073"><i class="fas fa-mobile"></i> (410)937-2073</a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex">
-                    <img id="dzh" class="rounded mx-auto ml-md-0" src="../images/desk-profile.jpg">
+            </div> -->
+
+            <div class="row py-4 d-flex flex-row align-content-center text-white">
+                <div class="order-md-1 col-6 offset-md-0 col-md-7 py-0 d-flex flex-column justify-content-around ">
+                    <h2 >Hi, I'm Dan.</h2>
+                    <p>I'm a web developer.  </p>
+                    <p>My work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". </p>
                 </div>
-            </div>
-            <div class="row d-none d-md-flex align-content-center">
-                <div class="offset-1 col-5">
+                <div class="order-md-0 col-6 offset-md-1 col-md-3">
                     <img id="dzh" class="rounded mx-auto ml-md-0" src="../images/desk-profile.jpg">                    
                 </div>
-                <div class="col-5 d-flex flex-column justify-content-around">
-                    <h2>Hi, I'm Dan.</h2>
-                    <p>I'm an aspiring web developer / designer whose work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". </p>
+                <div class="order-md-2 offset-md-1 col-md-10 pt-4">
+                    <p>I'm seeking work as a front-end or full-stack web developer.  I can make your passion in the real world a reality on the web. </p>
+                    <p>Let's talk about your needs in a virtual meeting with real coffee.  You're invited to email, text, or call me.</p>                    
                 </div>
-                <div class="pt-4 offset-1 col-10">
-                    <p>I'm seeking work as a front-end or full-stack web developer.</p>
-                    <p>Do you think you'd like to work with me?  You're invited to email, text, or call me.  Let's set up a virtual meeting with real coffee.</p>
-                    <a class="text-gold text-center text-md-left" href="mailto:danzhaas@gmail.com"><i class="fas fa-1x fa-envelope"></i> danzhaas@gmail.com</a><br>
-                    <a class="text-gold text-center text-md-left mr-md-3" href="tel:(410)937-2073"><i class="fas fa-1x fa-mobile"></i> (410)937-2073</a>
+                <div class="order-md-3 col-12 offset-md-2 col-md-8 d-flex flex-row justify-content-around text-center">
+                    <a class="text-gold text-md-left contact-text" href="mailto:danzhaas@gmail.com"><i class="fas fa-1x fa-envelope"></i> danzhaas@gmail.com</a>
+                    <a class="text-gold text-md-left mr-md-3 contact-text" href="tel:(410)937-2073"><i class="fas fa-1x fa-mobile"></i> (410)937-2073</a>
                 </div>
             </div>
 
             <div class="space-icon">                
-                <a href="#landing">
-                    <i class="fas fa-meteor text-white"></i>
-                    <h2 class="text-white">Landing</h2>
+                <a class="d-flex flex-row align-items-center text-white" href="#landing">
+                    <i class="fas fa-meteor"></i>
+                    <!-- <span class="d-md-none">&nbsp;</span> -->
+                    <!-- <h2 class="pt-2 mb-0">Landing</h2> -->
                 </a>
             </div>
             

@@ -1,17 +1,18 @@
 /* Global */
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     /* font-family: 'Oxygen', sans-serif; */
-    font-size:2vh
+    /* font-size:2vh */
+    font-size: 1.5rem;
 }
 
 section {
-    padding:5vh 0;
+    padding:5vh 2vw;
 }
 
 .container {
@@ -23,16 +24,17 @@ h1 {
     margin:0;
 }
 
-p {
-    font-size:1.5rem;
+.navbar-brand {
+    color:gold !important;
+    font-size:1.5rem
 }
 
-a, .navbar-brand {
-    font-size:1.75rem;
+a {
+    color:Blue;
 }
 
 a:hover {
-    color:white;
+    color:blue;
     text-decoration:none;
 }
 
@@ -40,9 +42,14 @@ img {
     border: 1px solid black;
 }
 
-i {
-    font-size:3rem;
+.btn {
+    font-size: 1.5rem;
 }
+
+.badge {
+    font-size:1.25rem
+}
+
 
 /* Colors */
 
@@ -51,7 +58,7 @@ i {
 }
 
 .bg-gold {
-    background-color: rgb(255, 235, 121);
+    background-color: gold;
 }
 
 .text-black {
@@ -59,11 +66,19 @@ i {
 }
 
 .text-gold {
-    color: rgb(255, 234, 116);
+    color: gold;
 }
 
 .text-red {
     color: rgb(185, 0, 0);
+}
+
+.btn-killi {
+    background-color:rgba(173, 236, 255)
+}
+
+.btn-lics {
+    background-color: #a9a9a9;
 }
 
 /* Repeated Features */
@@ -71,7 +86,7 @@ i {
 .space-icon {
     position:absolute;
     bottom:0;
-    right:0
+    right:5%
 }
 
 .space-icon > a {
@@ -86,14 +101,14 @@ i {
 }
 
 .space-icon h2 {
-    font-weight:bold;
+    font-size:2.5rem;
+}
+
+.space-icon i {
+    font-size:4rem;
 }
 
 /* Nav */
-
-/* .navbar {
-    height:10vh;
-} */
 
 .navbar-brand {
     font-family: 'Poiret One', cursive;
@@ -131,7 +146,7 @@ i {
     /* background-image: url(../../images/gold-sun.jpg);
     background-size: cover;
     background-position:0% 70%; */
-    background-color:gold;
+    background-color: #f8f9fa;
 }
 
 #about {
@@ -139,7 +154,7 @@ i {
     /* background-image: url(../../images/pluto.jpg);
     background-size: cover;
     background-position:0% 70% */
-    background-color: #f8f9fa;
+    background-color: gold;
 }
 
 #contact {
@@ -174,18 +189,18 @@ i {
 
 #headline-parent {
     position:relative;
+    height:100%;
 }
 
 #headline {
+    /* color:rgb(255, 217, 0); */
     color:white;
     position:absolute;
-    top:20%;    
+    top:30%;  
+    right:1vw;
+    font-family: 'Poiret One', cursive;
+    font-size:3.5rem;
 }
-
-/* #shuttle {
-    right:5%
-} */
-
 
 /*  Showcase    */
 
@@ -195,9 +210,8 @@ i {
 
 .card {
     color:black;
-    border: 2px dotted gold;
-    background-color: white;
-    height:60vh;
+    background-color:#f8f9fa;
+    height:65vh;
 } 
 
 .card-title {
@@ -205,30 +219,48 @@ i {
 }
 
 #carousel-indicators {
-    height: auto;
+    height: 65vh;
+    border-right:1px solid black;
+}
+
+#ci-xs-sm {
+    position:relative;
+    top:30px;
+}
+
+#ci-xs-sm > li{
+    width:45px;
+    height:10px;
+    background-color:rgba(0, 0, 0, 0.651)
 }
 
 .carousel-indicator {
     width:100%;
+    box-sizing: content-box;
     object-fit:contain;
     flex-grow:0;
     background-color: black;
-    border:2px dotted black;
+    border:1px solid black;
+    margin:2px;
     cursor:pointer;
 }
 
 .carousel-indicator.active {
-    border:2px dotted white;
-    background-color: gold;
-    /* border:2px solid ;
-    background-color: ; */
+    border:3px solid rgb(185, 0, 0);
+    background-color: rgb(185, 0, 0);
+    margin:0;
+}
+
+.carousel-item > .card {
+    border: 0;
+    border-radius:0;
 }
 
 
 /*  About    */
 
 #resume-thumbnail {
-    max-width:50vw;
+    max-width:40vw;
     cursor:pointer;
 }
 
@@ -240,8 +272,8 @@ i {
 /*  Contact    */
 
 #dzh {
-    max-width:75vw;
-    max-height:35vh;
+    max-width:100%;
+    max-height:30vh;
 }
 
 /*  Footer    */
@@ -264,20 +296,19 @@ footer > * {
 
 @media only screen and (min-width : 768px) {
     
-    section {
-        padding:0;
-    }
-
-    p, a, .navbar-brand {
-        font-size:auto;
-    }
-
     .container {
         padding:3rem 0;
     }
 
+    section {
+        padding:0;
+    }
+
+    .navbar-brand {
+        padding:8px
+    }
+
     .space-icon {
-        width:150px;
         position:absolute;
         bottom:5vh;
         right:0
@@ -288,11 +319,7 @@ footer > * {
         flex-direction: column;
         align-items: right;
         justify-content:end;
-        font-size: auto;
-    }
-
-    i {
-        font-size:5rem;
+        /* font-size: auto; */
     }
 
     #landing {
@@ -301,11 +328,9 @@ footer > * {
     }
 
     #headline {
-        max-width:49vw;
-    }
-
-    #carousel-indicators {
-        height:60vh;
+        position:relative;
+        top:40%;
+        right:0;
     }
 
     #resume-thumbnail {
@@ -322,7 +347,18 @@ footer > * {
         border:1px solid black;
         width:100%;
     }
+
+    .fa-linkedin, .fa-github-square {
+        font-size:6rem;
+    }
+
+    .contact-text {
+        font-size:2.5rem;
+    }
 }
+
+
+/* ACCESSABILITY */
 
 /**
  * Disable smooth scrolling when users have prefers-reduced-motion enabled
