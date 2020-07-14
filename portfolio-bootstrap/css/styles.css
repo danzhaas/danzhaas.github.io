@@ -1,6 +1,6 @@
 /* Global */
 
-html {
+.viewport {
     scroll-behavior: smooth;
 }
 
@@ -117,7 +117,17 @@ img {
     color:gold;
 }
 
-#showcase-pill {
+.nav-item {
+    color:black;
+    background-color:white
+}
+
+.nav-link.active {
+    color:black;
+    background-color:gold !important
+}
+
+/* #showcase-pill {
     color:black;
     background-color: gold;
 }
@@ -129,15 +139,15 @@ img {
 #contact-pill {
     color:#f8f9fa;
     background-color: rgb(185, 0, 0);
-}
+} */
 
 /* Section Colors & Backgrounds */
 
 #landing {
     height:95vh;
     background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
-    background-size: 200% 100%;
-    background-position:40% 100%
+    /* background-size: 200% 100%;
+    background-position:40% 100% */
     /* background-color:black; */
 }
 
@@ -154,11 +164,11 @@ img {
     /* background-image: url(../../images/pluto.jpg);
     background-size: cover;
     background-position:0% 70% */
-    background-color: gold;
+    background-color: rgb(255, 217, 0);
 }
 
 #contact {
-    height:95vh;
+    height:100vh;
     /* background-image: url(../../images/red-nebula.jpg);
     background-size: cover;
     background-position:0% 70% */
@@ -168,23 +178,38 @@ img {
 
 /* Parallax section styling */
 
+#parallax-landing {
+    background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
+}
+
+/* #parallax-liftoff {
+    background-image: url(../../images/liftoff.jpg);
+    height:6000px;
+    margin-bottom:-6000px;
+    z-index:-1000;
+} */
+
+/* #liftoff-scene {
+    height:1500px;
+} */
+
 #parallax1 {
-    background-image: url(../../images/gold-sun.jpg)
+    background-image: url(../../images/gold-sun.jpg);
 }
 
 #parallax2 {
-    background-image: url(../../images/pluto.jpg);
-}
-
-#parallax3 {
     background-image: url(../../images/red-nebula.jpg);
 }
 
+#parallax3 {
+    background-image: url(../../images/pluto.jpg);
+}
 
 /* Landing */
 
 #landing {
     position:relative;
+    /* z-index:1; */
 }
 
 #headline-parent {
@@ -276,6 +301,10 @@ img {
     max-height:30vh;
 }
 
+#contact .space-icon {
+    bottom:10vh;
+}
+
 /*  Footer    */
 
 footer {
@@ -342,10 +371,10 @@ footer > * {
     }
 
     #dzh {
-        height:auto;
-        max-height:50vh;
+        max-width:auto;
+        max-height:auto;
         border:1px solid black;
-        width:100%;
+
     }
 
     .fa-linkedin, .fa-github-square {
@@ -357,6 +386,9 @@ footer > * {
     }
 }
 
+@media only screen and (min-width : 992px) {
+
+}
 
 /* ACCESSABILITY */
 

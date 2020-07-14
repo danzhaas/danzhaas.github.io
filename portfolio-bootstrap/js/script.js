@@ -1,3 +1,6 @@
+// SCROLLSPY
+$('#inner-body').scrollspy({ target: '#navbar-collapse' })
+
 // CAROUSEL INDICATOR TAG
 //purpose: add carousel custom indicators
 //activate appropriate indicators for viewport size depending on media breakpoint
