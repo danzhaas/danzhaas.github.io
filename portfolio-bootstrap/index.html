@@ -13,13 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
     <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
-
-
 
     <!-- Parallax style/script -->
 
@@ -55,11 +53,13 @@
             background-size: cover;
             box-sizing: border-box;
             width: 100%;
-            height: 130vh;
+            height: 175vh;                   
             /* Since the parallax elements still consume space, we set the margin to undo
                 the height of this parallax element making it essentially consume 0 space.
             */
-            margin-bottom: -130vh;
+            margin-bottom: -175vh;       
+            /* height: 125vh; */
+            /* margin-bottom: -125vh; */
             transform-origin: 0 0;
             transform: translateZ(-2px) scale(3);
             display:block;
@@ -68,8 +68,9 @@
             margin-bottom: -70vh;
         }
         .scene {
-            height: 150vh;
-            /* padding: 5vh 10vw; */
+            height: 150vh;   
+            /* height: 100vh; */
+            /* padding:0; */
         }
         .solid {
             z-index: 1;
@@ -129,33 +130,42 @@
 
     <!-- Parallax viewport & inner body-->
     <div class="viewport position-relative" data-spy="scroll" data-target=".navbar-collapse" data-offset="10">
-        <div id="inner-body" data-spy="scroll" data-target="#navbar-collapse" data-offset="10">
+        <div id="inner-body">
 
             <!-- <div id="parallax-landing" class="parallax" parallax></div> -->
 
             <!--            LANDING         -->
-            <section id="landing" class="scene solid">
+            <section id="landing" class="scene">
                 <div class="container-md h-100 position-relative">
                     <h1 id="headline" class="offset-5 col-7 offset-md-7 col-md-5 text-right p-md-0">Creating <br><span style="font-weight:bold; color:gold">Out-Of-This-World</span><br>Digital Experiences</h1>    
                     <!-- <h1 id="headline" class="position-absolute display-3 text-left">Hi, I'm Dan.</h1>                     -->
                     <!-- <h1 id="headline" class="display-2 text-white text-center"></h1> -->
                 <!-- </div> -->
 
-                <!-- <div class="container"> -->
-                    <!-- <div class="row h-100 position-relative"> -->
-                        <div id="shuttle" class="space-icon">                
-                            <a class="d-flex flex-row align-items-center flex-md-column text-gold" href="#showcase">
-                                <i class="fas fa-space-shuttle fa-rotate-270 float-right"></i>
-                                <!-- <span class="d-md-none">&nbsp;</span> -->
-                                <!-- <h2 class="pt-2 mb-0">Showcase</h2> -->
-                            </a>
-                        <!-- </div> -->
-                    <!-- </div> -->
+                    <a id="shuttle" class="space-icon btn" href="#showcase" data-toggle="tooltip" data-placement="top" title="We're go for launch">
+                        <i class="fas fa-space-shuttle fa-rotate-270"></i>
+                    </a>
                 </div>
+                <div id="s1" class="star"></div>
+                <div id="s2" class="star"></div>
+                <div id="s3" class="star"></div>
+                <div id="s4" class="star"></div>
+                <div id="s5" class="star"></div>
+                <div id="s6" class="star"></div>
+                <div id="s7" class="star"></div>
+                <div id="s8" class="star"></div>
+                <div id="s9" class="star"></div>
+                <div id="s10" class="star"></div>
+                    
+                
             </section>
 
             <div id="parallax1" class="parallax" parallax=0.5></div>
-            <section class="scene"></section>
+            <section class="scene">
+                <!-- <div class="bg-black w-100 h-25"></div> -->
+                <!-- <div class="bg-black w-100 h-50"></div> -->
+                <!-- <div class="bg-black w-100 h-75"></div> -->
+            </section>
 
             <!--            SHOWCASE            -->
             <section id="showcase" class="scene solid">
@@ -264,22 +274,28 @@
                         </div>
                     </div>
                         
-                    <div class="space-icon">                    
-                        <a class="d-flex flex-row align-items-center flex-md-column text-black" href="#about">
+                    <!-- <div class="space-icon">                    
+                        <a class="d-flex flex-row align-items-center flex-md-column text-red" href="#about">
                             <i class="fas fa-satellite"></i>
-                            <!-- <span class="d-md-none">&nbsp;</span> -->
-                            <!-- <h2 class="pt-2 mb-0">About</h2> -->
+                            <span class="d-md-none">&nbsp;</span>
+                            <h2 class="pt-2 mb-0">About</h2>
                         </a>
-                    </div>
+                    </div> -->
+                    <a class="space-icon btn" href="#about">
+                        <i class="fas fa-satellite"></i>
+                    </a>
                         
                 </div>
             </section>
 
             <div id="parallax2" class="parallax" parallax=0.5></div>
-            <section class="scene"></section>
+            <section class="scene p-0">
+                <div id="scene1" class="w-100 h-75">
+                </div>
+            </section>
 
             <!--            ABOUT          -->
-            <section id="about" class="solid scene" >
+            <section id="about" class="scene" >
                 <div class="container h-100 position-relative">
 
                     <div class="row">
@@ -293,8 +309,8 @@
                             <img id="resume-thumbnail" class="center bg-black" src="../images/resume.jpg">
                             <div class="col-1 d-md-none"></div>
                             <div class="d-md-none ml-3 d-flex flex-column justify-content-center">
-                                <a href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-7x fa-linkedin bg-white"></i></a>
-                                <a class="mt-1" href="https://github.com/danzhaas" target="_blank"><i style="color:#24292e" class="fab fa-7x fa-github-square bg-white"></i></a>
+                                <a href="https://linkedin.com/in/danzhaas" target="_blank"><i style="color:#0077b5" class="fab fa-7x fa-linkedin"></i></a>
+                                <a class="mt-1" href="https://github.com/danzhaas" target="_blank"><i style="color:#24292e" class="fab fa-7x fa-github-square"></i></a>
                             </div>
                         </div>
 
@@ -316,19 +332,24 @@
                     <!-- Modal HTML located below, outside of viewport and above footer -->
 
 
-                    <div class="space-icon">                
-                        <a class="d-flex flex-row align-items-center flex-md-column text-black" href="#contact">
+                    <!-- <div class="space-icon">                
+                        <a class="d-flex flex-row align-items-center flex-md-column text-red" href="#contact">
                             <i class="fas fa-user-astronaut"></i>
-                            <!-- <span class="d-md-none">&nbsp;</span> -->
-                            <!-- <h2 class="pt-2 mb-0">Contact</h2> -->
+                            <span class="d-md-none">&nbsp;</span>
+                            <h2 class="pt-2 mb-0">Contact</h2>
                         </a>
-                    </div>
+                    </div> -->
+                    <a class="space-icon btn" href="#contact">
+                        <i class="fas fa-user-astronaut"></i>
+                    </a>
                     
                 </div>
             </section>
 
             <div id="parallax3" class="parallax" parallax=0.5></div>
-            <section class="scene"></section>
+            <section class="scene p-0">
+                <div id="scene1" class="w-100 h-75"></div>
+            </section>
             
             <!--            CONTACT         -->
             <section id="contact" class="solid scene" >
@@ -392,14 +413,17 @@
                         </div>
                     </div>
 
-                    <div class="space-icon">                
+                    <!-- <div class="space-icon">                
                         <a class="d-flex flex-row align-items-center text-white" href="#landing">
                             <i class="fas fa-meteor"></i>
-                            <!-- <span class="d-md-none">&nbsp;</span> -->
-                            <!-- <h2 class="pt-2 mb-0">Landing</h2> -->
+                            <span class="d-md-none">&nbsp;</span>
+                            <h2 class="pt-2 mb-0">Landing</h2>
                         </a>
-                    </div>
-                    
+                    </div> -->
+
+                    <a class="space-icon btn" href="#landing">
+                        <i class="fas fa-meteor"></i>
+                    </a>
                 </div>
             </section>
 

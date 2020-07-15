@@ -1,3 +1,8 @@
+// TOOLTIPS ACTIVATED
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
 // SCROLLSPY
 $('#inner-body').scrollspy({ target: '#navbar-collapse' })
 
