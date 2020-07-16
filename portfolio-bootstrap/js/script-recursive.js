@@ -1,6 +1,11 @@
 // INITIALIZE PARALLAX
 document.addEventListener('DOMContentLoaded', function() {
-    initializeParallax(document.querySelector('.viewport'));
+    const vn = document.querySelectorAll('.viewport');
+    const va = Array.from(vn);
+    for (i=0; i<va.length; i++) {
+        console.log(i)
+        initializeParallax(va[i]);
+    }
 });
 
 // SCROLLSPY

@@ -1,4 +1,11 @@
-/* Global */
+/* 
+ d888b  db       .d88b.  d8888b.  .d8b.  db      
+88' Y8b 88      .8P  Y8. 88  `8D d8' `8b 88      
+88      88      88    88 88oooY' 88ooo88 88      
+88  ooo 88      88    88 88~~~b. 88~~~88 88      
+88. ~8~ 88booo. `8b  d8' 88   8D 88   88 88booo. 
+ Y888P  Y88888P  `Y88P'  Y8888P' YP   YP Y88888P                                  
+ */
 
 .viewport {
     scroll-behavior: smooth;
@@ -51,9 +58,107 @@ img {
 }
 
 
-/* Colors */
+/* 
+d8888b. d88888b d8888b. d88888b  .d8b.  d888888b d88888b d8888b.      d88888b d88888b  .d8b.  d888888b db    db d8888b. d88888b .d8888. 
+88  `8D 88'     88  `8D 88'     d8' `8b `~~88~~' 88'     88  `8D      88'     88'     d8' `8b `~~88~~' 88    88 88  `8D 88'     88'  YP 
+88oobY' 88ooooo 88oodD' 88ooooo 88ooo88    88    88ooooo 88   88      88ooo   88ooooo 88ooo88    88    88    88 88oobY' 88ooooo `8bo.   
+88`8b   88~~~~~ 88~~~   88~~~~~ 88~~~88    88    88~~~~~ 88   88      88~~~   88~~~~~ 88~~~88    88    88    88 88`8b   88~~~~~   `Y8b. 
+88 `88. 88.     88      88.     88   88    88    88.     88  .8D      88      88.     88   88    88    88b  d88 88 `88. 88.     db   8D 
+88   YD Y88888P 88      Y88888P YP   YP    YP    Y88888P Y8888D'      YP      Y88888P YP   YP    YP    ~Y8888P' 88   YD Y88888P `8888Y' 
+ */
 
-.bg-black {
+.space-icon {
+    position:absolute;
+    bottom:-4%;
+    right:5%;
+    border: none;
+    border-radius:50%;
+    padding:1.5rem;
+    /* background: radial-gradient(circle farthest-side, white, white,white, rgb(255, 240, 157, 1), rgba(255, 234, 117, 0.7), rgba(255, 234, 117, 0.7)); */
+    /* background: radial-gradient(circle farthest-side, white,white,white, rgb(255, 240, 157, 0.7), rgba(255, 234, 117, 0.3), rgba(255, 234, 117, 0)); */
+    /* background: radial-gradient(circle farthest-side, white,white,white, rgb(255, 240, 157, 0.7), rgb(255, 190, 51), rgba(128, 99, 255, 0.185));  */
+    /* background: radial-gradient(circle farthest-side, white,white, rgb(255, 240, 157, 0.7), rgb(255, 203, 91), rgba(128, 99, 255, 0.185)); */
+    /* background: radial-gradient(closest-side, white,white, rgba(255, 251, 228, 0.7), rgb(255, 203, 91), rgb(128, 99, 255), rgb(8, 0, 43)); */
+    /* background: radial-gradient(closest-side, white,white, rgba(255, 251, 228, 0.7), rgb(255, 203, 91), rgb(31, 15, 104)); */
+    /* background: radial-gradient(closest-side, white,white, rgb(255, 240, 157, 0.7), rgb(255, 203, 91), rgb(17, 0, 94)); */
+    /* background: radial-gradient(circle farthest-side, white, white,white, rgb(255, 240, 157, 1), rgba(255, 234, 117, 0.7), rgba(255, 234, 117, 0.7)); */
+    /* background: radial-gradient(circle farthest-side, white, #910000, #910000,#910000); */
+    background: radial-gradient(closest-side, rgb(14, 7, 46) 35%,rgb(20, 0, 92) 55% , rgb(87, 84, 107) 75%, rgb(255, 204, 93) 85%, white 99%);
+    background-repeat: no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: #910000;
+    /* border:1px solid black; */
+}
+
+.space-icon:hover {
+    /* background: radial-gradient(circle farthest-side, white, rgb(255, 240, 157, 1), rgba(255, 234, 117, 0.7), rgba(255, 234, 117, 0.7)); */
+    /* background: radial-gradient(closest-side, white 35%, rgb(255, 204, 93) 55% , rgb(87, 84, 107) 75%, rgb(20, 0, 92) 85%, rgb(14, 7, 46) 99%); */
+    /* color: #910000; */
+    cursor: wait !important;
+}
+
+.space-icon i {
+    display:none;
+    font-size:4rem;
+}
+
+
+/* 
+d8b   db  .d8b.  db    db 
+888o  88 d8' `8b 88    88 
+88V8o 88 88ooo88 Y8    8P 
+88 V8o88 88~~~88 `8b  d8' 
+88  V888 88   88  `8bd8'  
+VP   V8P YP   YP    YP    
+ */
+
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    background-color:black;
+    color:gold;
+}
+
+.nav-item a{
+    color:black !important;
+    background-color:white;
+    font-family: 'Poiret One', cursive;
+}
+
+.nav-link.active {
+    color:black !important;
+    background-color: gold !important;
+}
+
+/* #showcase-pill {
+    color:black;
+    background-color: gold;
+}
+
+#about-pill {
+    background-color:#f8f9fa;   
+}
+
+#contact-pill {
+    color:#f8f9fa;
+    background-color: rgb(185, 0, 0);
+} */
+
+
+
+
+/* 
+ .o88b.  .d88b.  db       .d88b.  d8888b. .d8888. 
+d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D 88'  YP 
+8P      88    88 88      88    88 88oobY' `8bo.   
+8b      88    88 88      88    88 88`8b     `Y8b. 
+Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D 
+ `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y' 
+ */
+
+ .bg-black {
     background-color: black;
 }
 
@@ -85,83 +190,17 @@ img {
     background-color: #a9a9a9;
 }
 
-/* Repeated Features */
 
-.space-icon {
-    position:absolute;
-    bottom:-4%;
-    right:5%;
-    border: none;
-    border-radius:50%;
-    padding:1.5rem;
-    background: radial-gradient(circle farthest-side, #b90000, #6b0000);
-    background-repeat: no-repeat;
-    /* background-color:#b90000; */
-    color:white;
-}
 
-.space-icon:hover {
-    background: radial-gradient(circle farthest-side, #ffffff, #949494);
-    color:#910000;
-}
-
-.space-icon i {
-    font-size:4rem;
-}
 
 /* 
-.space-icon > a {
-    display:flex;
-    flex-direction: column;
-    align-items: right;
-    justify-content:end;
-}
-
-.space-icon * {
-    text-align: right;
-}
-
-.space-icon h2 {
-    font-size:2.5rem;
-} */
-
-
-/* Nav */
-
-.navbar-brand {
-    font-family: 'Poiret One', cursive;
-    font-weight:bold;
-    background-color:black;
-    color:gold;
-}
-
-.nav-item a{
-    color:black;
-    background-color:white;
-    font-family: 'Poiret One', cursive;
-}
-
-.nav-link.active {
-    /* color:white !important; */
-    background-color: gold !important;
-}
-
-/* #showcase-pill {
-    color:black;
-    background-color: gold;
-}
-
-#about-pill {
-    background-color:#f8f9fa;   
-}
-
-#contact-pill {
-    color:#f8f9fa;
-    background-color: rgb(185, 0, 0);
-} */
-
-
-/* Section Colors & Backgrounds */
+.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db       .o88b.  .d88b.  db       .d88b.  d8888b. .d8888.      .d888b.       d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888b. .d8888. 
+88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88      d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D 88'  YP      8P   8D       88  `8D d8' `8b d8P  Y8 88 ,8P' 88' Y8b 88  `8D .8P  Y8. 88    88 888o  88 88  `8D 88'  YP 
+`8bo.   88ooooo 8P         88       88    88    88 88V8o 88      8P      88    88 88      88    88 88oobY' `8bo.        `Vb d8'       88oooY' 88ooo88 8P      88,8P   88      88oobY' 88    88 88    88 88V8o 88 88   88 `8bo.   
+  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88      8b      88    88 88      88    88 88`8b     `Y8b.       d88C dD      88~~~b. 88~~~88 8b      88`8b   88  ooo 88`8b   88    88 88    88 88 V8o88 88   88   `Y8b. 
+db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888      Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D      C8' d8D       88   8D 88   88 Y8b  d8 88 `88. 88. ~8~ 88 `88. `8b  d8' 88b  d88 88  V888 88  .8D db   8D 
+`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P       `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y'      `888P Yb      Y8888P' YP   YP  `Y88P' YP   YD  Y888P  88   YD  `Y88P'  ~Y8888P' VP   V8P Y8888D' `8888Y' 
+ */
 
 #landing {
     height:95vh;
@@ -171,7 +210,7 @@ img {
     /* background-color:black; */
 }
 
-#showcase {
+#showcase, #parashowcase {
     height:95vh;
     /* background-image: url(../../images/gold-sun.jpg);
     background-size: cover;
@@ -191,7 +230,8 @@ img {
 }
 
 #contact {
-    height:100vh;
+    /* height:100vh;*/
+    height:95vh; 
     /* background-image: url(../../images/red-nebula.jpg);
     background-size: cover;
     background-position:0% 70% */
@@ -200,7 +240,16 @@ img {
 }
 
 
-/* Parallax section styling */
+/* 
+d8888b.  .d8b.  d8888b.  .d8b.  db      db       .d8b.  db    db 
+88  `8D d8' `8b 88  `8D d8' `8b 88      88      d8' `8b `8b  d8' 
+88oodD' 88ooo88 88oobY' 88ooo88 88      88      88ooo88  `8bd8'  
+88~~~   88~~~88 88`8b   88~~~88 88      88      88~~~88  .dPYb.  
+88      88   88 88 `88. 88   88 88booo. 88booo. 88   88 .8P  Y8. 
+88      YP   YP 88   YD YP   YP Y88888P Y88888P YP   YP YP    YP 
+                                                                 
+                                                                 
+ */
 
 #parallax-landing {
     background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
@@ -245,7 +294,28 @@ img {
     background-position:20% 100%;
 }
 
-/* Landing */
+
+/* 
+.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db .d8888. 
+88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88 88'  YP 
+`8bo.   88ooooo 8P         88       88    88    88 88V8o 88 `8bo.   
+  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88   `Y8b. 
+db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D 
+`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P `8888Y' 
+                                                                    
+                                                                    
+ */
+
+/*
+          db       .d8b.  d8b   db d8888b. d888888b d8b   db  d888b  
+          88      d8' `8b 888o  88 88  `8D   `88'   888o  88 88' Y8b 
+          88      88ooo88 88V8o 88 88   88    88    88V8o 88 88      
+          88      88~~~88 88 V8o88 88   88    88    88 V8o88 88  ooo 
+          88booo. 88   88 88  V888 88  .8D   .88.   88  V888 88. ~8~ 
+          Y88888P YP   YP VP   V8P Y8888D' Y888888P VP   V8P  Y888P  
+                                                                     
+                                                                     
+   */
 
 #landing {
     position:relative;
@@ -261,14 +331,23 @@ img {
     /* color:rgb(255, 217, 0); */
     color:white;
     position:absolute;
-    top:30%;  
+    /* top:30%;   */
+    top:25%;
     right:1vw;
     font-family: 'Poiret One', cursive;
-    font-size:3.5rem;
 }
 
 
-/*  Showcase    */
+/*  
+          .d8888. db   db  .d88b.  db   d8b   db  .o88b.  .d8b.  .d8888. d88888b 
+          88'  YP 88   88 .8P  Y8. 88   I8I   88 d8P  Y8 d8' `8b 88'  YP 88'     
+          `8bo.   88ooo88 88    88 88   I8I   88 8P      88ooo88 `8bo.   88ooooo 
+            `Y8b. 88~~~88 88    88 Y8   I8I   88 8b      88~~~88   `Y8b. 88~~~~~ 
+          db   8D 88   88 `8b  d8' `8b d8'8b d8' Y8b  d8 88   88 db   8D 88.     
+          `8888Y' YP   YP  `Y88P'   `8b8' `8d8'   `Y88P' YP   YP `8888Y' Y88888P 
+                                                                                 
+                                                                                 
+    */
 
 .carousel-item {
     text-align: center;
@@ -323,7 +402,16 @@ img {
 }
 
 
-/*  About    */
+/*
+           .d8b.  d8888b.  .d88b.  db    db d888888b 
+          d8' `8b 88  `8D .8P  Y8. 88    88 `~~88~~' 
+          88ooo88 88oooY' 88    88 88    88    88    
+          88~~~88 88~~~b. 88    88 88    88    88    
+          88   88 88   8D `8b  d8' 88b  d88    88    
+          YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP    
+                                                     
+                                                     
+      */
 
 #resume-thumbnail {
     max-width:40vw;
@@ -335,18 +423,36 @@ img {
 }
 
 
-/*  Contact    */
+/*
+           .o88b.  .d88b.  d8b   db d888888b  .d8b.   .o88b. d888888b 
+          d8P  Y8 .8P  Y8. 888o  88 `~~88~~' d8' `8b d8P  Y8 `~~88~~' 
+          8P      88    88 88V8o 88    88    88ooo88 8P         88    
+          8b      88    88 88 V8o88    88    88~~~88 8b         88    
+          Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88    
+           `Y88P'  `Y88P'  VP   V8P    YP    YP   YP  `Y88P'    YP    
+                                                                      
+                                                                      
+      */
 
 #dzh {
     max-width:100%;
     max-height:30vh;
 }
 
-#contact .space-icon {
+/* #contact .space-icon {
     bottom:10vh;
-}
+} */
 
-/*  Footer    */
+/*  
+          d88888b  .d88b.   .d88b.  d888888b d88888b d8888b. 
+          88'     .8P  Y8. .8P  Y8. `~~88~~' 88'     88  `8D 
+          88ooo   88    88 88    88    88    88ooooo 88oobY' 
+          88~~~   88    88 88    88    88    88~~~~~ 88`8b   
+          88      `8b  d8' `8b  d8'    88    88.     88 `88. 
+          YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD 
+                                                             
+                                                             
+    */
 
 footer {
     height:5vh;
@@ -363,7 +469,113 @@ footer > * {
     height:fit-content;
 }
 
-/* Media Queries */
+
+
+
+
+
+
+/* 
+.88b  d88. d88888b d8888b. d888888b  .d8b.        .d88b.  db    db d88888b d8888b. d888888b d88888b .d8888. 
+88'YbdP`88 88'     88  `8D   `88'   d8' `8b      .8P  Y8. 88    88 88'     88  `8D   `88'   88'     88'  YP 
+88  88  88 88ooooo 88   88    88    88ooo88      88    88 88    88 88ooooo 88oobY'    88    88ooooo `8bo.   
+88  88  88 88~~~~~ 88   88    88    88~~~88      88    88 88    88 88~~~~~ 88`8b      88    88~~~~~   `Y8b. 
+88  88  88 88.     88  .8D   .88.   88   88      `8P  d8' 88b  d88 88.     88 `88.   .88.   88.     db   8D 
+YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   YD Y888888P Y88888P `8888Y' 
+ */
+
+/* 
+          db    db .d8888. 
+          `8b  d8' 88'  YP 
+           `8bd8'  `8bo.   
+           .dPYb.    `Y8b. 
+          .8P  Y8. db   8D 
+          YP    YP `8888Y' 
+                           
+                           
+*/
+@media only screen and (max-width : 576px) {
+    
+    /* Typography */
+    body {
+        font-size:1rem;
+    }
+    h2 {
+        font-size:1.0rem;
+        font-weight:bold
+    }
+    p { 
+        font-size:1rem;
+    } 
+    .space-icon {
+        height:4rem;
+        width:4rem;
+    }
+    .space-icon i {
+        font-size:2rem;
+    } 
+    .badge {
+        font-size:0.75rem;
+    }
+    .btn {
+        font-size:1rem;
+    }
+    .display-3 {
+        font-size:2rem;
+    } 
+    /* .fa-7x {
+        font-size:1rem;
+    } */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    #headline {
+        font-size:2.5rem;
+    }
+    #resume-thumbnail {
+        max-height:50vh;
+    }    
+    
+    /* Nav */
+    .navbar-toggler-icon, .navbar-brand {
+        outline: -webkit-focus-ring-color auto 1px;
+        background-color:rgba(0, 0, 0, 0.65);
+    }
+    .nav-item > a {
+        color:black !important;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .nav-item > a.active {
+        background-color: rgba(255, 217, 0, 1) !important;
+    }
+}
+
+/* 
+          .d8888. .88b  d88. 
+          88'  YP 88'YbdP`88 
+          `8bo.   88  88  88 
+            `Y8b. 88  88  88 
+          db   8D 88  88  88 
+          `8888Y' YP  YP  YP 
+                             
+                             
+*/
+@media only screen and (min-width : 576px) {
+    #headline {
+        font-size: 3.5rem;
+    } 
+}
+
+/* 
+          .88b  d88. d8888b. 
+          88'YbdP`88 88  `8D 
+          88  88  88 88   88 
+          88  88  88 88   88 
+          88  88  88 88  .8D 
+          YP  YP  YP Y8888D' 
+                             
+                             
+*/
 
 @media only screen and (min-width : 768px) {
     
@@ -382,20 +594,24 @@ footer > * {
     .space-icon {
         position:absolute;
         bottom:5vh;
-        right:0
+        right:0;
+        padding:4vh;
     }
 
-    .space-icon > a {
-        display:flex;
-        flex-direction: column;
-        align-items: right;
-        justify-content:end;
-        /* font-size: auto; */
+    header {
+        width:99%;
     }
 
     #landing {
         background-size: 100% 100%;
-        background-position:0% 100%
+        background-position:0% 100%;
+    }
+
+    #landing .space-icon {
+        bottom:auto;
+        right:auto;
+        top:15%;
+        left:62%;
     }
 
     #parallax1 {
@@ -435,15 +651,54 @@ footer > * {
     }
 
     .contact-text {
-        font-size:2.5rem;
+        font-size:2rem;
+    }
+
+    footer {
+        width:99%
     }
 }
 
+/* 
+          db       d888b  
+          88      88' Y8b 
+          88      88      
+          88      88  ooo 
+          88booo. 88. ~8~ 
+          Y88888P  Y888P  
+                          
+                          
+*/
 @media only screen and (min-width : 992px) {
 
 }
 
-/* ACCESSABILITY */
+/* 
+          db    db db      
+          `8b  d8' 88      
+           `8bd8'  88      
+           .dPYb.  88      
+          .8P  Y8. 88booo. 
+          YP    YP Y88888P 
+                           
+                           
+          */
+
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+/* 
+ .d8b.   .o88b.  .o88b. d88888b .d8888. .d8888.  .d8b.  d8888b. d888888b db      d888888b d888888b db    db 
+d8' `8b d8P  Y8 d8P  Y8 88'     88'  YP 88'  YP d8' `8b 88  `8D   `88'   88        `88'   `~~88~~' `8b  d8' 
+88ooo88 8P      8P      88ooooo `8bo.   `8bo.   88ooo88 88oooY'    88    88         88       88     `8bd8'  
+88~~~88 8b      8b      88~~~~~   `Y8b.   `Y8b. 88~~~88 88~~~b.    88    88         88       88       88    
+88   88 Y8b  d8 Y8b  d8 88.     db   8D db   8D 88   88 88   8D   .88.   88booo.   .88.      88       88    
+YP   YP  `Y88P'  `Y88P' Y88888P `8888Y' `8888Y' YP   YP Y8888P' Y888888P Y88888P Y888888P    YP       YP    
+                                                                                                            
+                                                                                                            
+ */
 
 /**
  * Disable smooth scrolling when users have prefers-reduced-motion enabled

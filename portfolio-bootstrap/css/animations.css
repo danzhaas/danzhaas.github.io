@@ -1,5 +1,62 @@
-/* Stars for the Landing page */
+/* Shuttle button for the Landing page */
 
+#shuttle {
+    /* background: radial-gradient(circle farthest-side, white,white,white, rgb(255, 240, 157, 0.7), rgba(255, 234, 117, 0.3), rgba(255, 234, 117, 0)); */
+    /* opacity:1; */
+    color:#910000;
+    /* animation-name: shuttle; */
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shuttle {
+    /* 0%   {background: radial-gradient(circle farthest-side, white,rgba(255, 255, 255, 1),rgba(255, 255, 155, 1), rgba(255, 240, 157, 0.7), rgba(255, 234, 117, 0.3), rgba(255, 234, 117, 0))}
+    50%  {background: radial-gradient(circle farthest-side, white, rgba(255, 240, 157, 0.7), rgba(255, 234, 117, 0.3), rgba(255, 234, 117, 0))}
+    100% {background: radial-gradient(circle farthest-side, white,white,white, rgba(255, 240, 157, 0.7), rgba(255, 234, 117, 0.3), rgba(255, 234, 117, 0))} */
+    /* 0% {opacity:1}
+    50% {opacity:0.7}
+    100% {opacity:1} */
+    0% {color:#910000}
+    /* 25% {color:white} */
+    50% {color:gold}
+    /* 75% {color:black} */
+    100% {color:#910000}
+}
+
+
+/* Cosmos Button for the landing page */
+
+#landing .space-icon {
+    margin:1vh;
+    padding:4vh;
+    animation-name: cosmos;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cosmos {
+    0% {padding:4vh;margin:.5vh}
+    50% {padding:4.5vh;margin:0vh}
+    100% {padding:4vh;margin:.5vh}
+}
+
+/* #landing .space-icon:hover {
+    padding:4.5vh;
+    bottom:15%;
+    right:15%;
+    animation-name: cosmos-grow;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cosmos-grow {
+    0% {padding:4.5vh; bottom:15%; right:15%}
+    100% {padding:80vw; bottom:-50%; right:-40%}
+} */
+
+
+/* Stars for the Landing page */
 
 #s1 {
     top:17%;
@@ -123,4 +180,50 @@
     width:4px;
     text-align: center;
     transform: rotate(20deg);
+}
+
+
+/* Satellite for Showcase */
+
+#satellite {
+    position:absolute;
+    left:-60px;
+    top:90%;
+    height:auto;
+    width:60px;
+    filter:brightness(800%) contrast(30%);
+    animation-name: satellite;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    border:0;
+}
+
+@keyframes satellite {
+    0%   {left:-60px; top:90%}
+    75% {left:150%; top:95%}
+    100% {left:150%; top:95%}
+}
+
+
+/* Silhouetted Shuttle for About */
+#silhouette {
+    position:absolute;
+    left:-60px;
+    top:30%;
+    /* filter:brightness(800%) contrast(30%); */
+    animation-name: silhouette;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    border:0;
+}
+
+#silhouette img {
+    height:20px;
+    width:20px;
+}
+
+@keyframes silhouette {
+    0%   {left:-60px; top:55%}
+    75% {left:105%; top:55%}
+    100% {left:105%; top:55%}
 }
