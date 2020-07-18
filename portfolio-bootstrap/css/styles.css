@@ -194,12 +194,14 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 
 
 /* 
-.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db       .o88b.  .d88b.  db       .d88b.  d8888b. .d8888.      .d888b.       d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888b. .d8888. 
-88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88      d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D 88'  YP      8P   8D       88  `8D d8' `8b d8P  Y8 88 ,8P' 88' Y8b 88  `8D .8P  Y8. 88    88 888o  88 88  `8D 88'  YP 
-`8bo.   88ooooo 8P         88       88    88    88 88V8o 88      8P      88    88 88      88    88 88oobY' `8bo.        `Vb d8'       88oooY' 88ooo88 8P      88,8P   88      88oobY' 88    88 88    88 88V8o 88 88   88 `8bo.   
-  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88      8b      88    88 88      88    88 88`8b     `Y8b.       d88C dD      88~~~b. 88~~~88 8b      88`8b   88  ooo 88`8b   88    88 88    88 88 V8o88 88   88   `Y8b. 
-db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888      Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D      C8' d8D       88   8D 88   88 Y8b  d8 88 `88. 88. ~8~ 88 `88. `8b  d8' 88b  d88 88  V888 88  .8D db   8D 
-`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P       `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y'      `888P Yb      Y8888P' YP   YP  `Y88P' YP   YD  Y888P  88   YD  `Y88P'  ~Y8888P' VP   V8P Y8888D' `8888Y' 
+.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db      d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888b. .d8888. 
+88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88      88  `8D d8' `8b d8P  Y8 88 ,8P' 88' Y8b 88  `8D .8P  Y8. 88    88 888o  88 88  `8D 88'  YP 
+`8bo.   88ooooo 8P         88       88    88    88 88V8o 88      88oooY' 88ooo88 8P      88,8P   88      88oobY' 88    88 88    88 88V8o 88 88   88 `8bo.   
+  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88      88~~~b. 88~~~88 8b      88`8b   88  ooo 88`8b   88    88 88    88 88 V8o88 88   88   `Y8b. 
+db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888      88   8D 88   88 Y8b  d8 88 `88. 88. ~8~ 88 `88. `8b  d8' 88b  d88 88  V888 88  .8D db   8D 
+`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P      Y8888P' YP   YP  `Y88P' YP   YD  Y888P  88   YD  `Y88P'  ~Y8888P' VP   V8P Y8888D' `8888Y' 
+                                                                                                                                                            
+                                                                                                                                                            
  */
 
 #landing {
@@ -212,32 +214,36 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888      Y8b  d8 `8b  d8
 
 #showcase, #parashowcase {
     height:95vh;
-    /* background-image: url(../../images/gold-sun.jpg);
+    background-image: url(../../images/pluto-1920.jpg);
+    /* background-image: url(../../images/gold-sun.jpg); */
     background-size: cover;
-    background-position:0% 70%; */
-    background-color: #f8f9fa77;
+    /* background-position:0% 70%; */
+    /* background-color: #f8f9fa77; */
     /* background-color: #f8f9fa; */
 }
 
 #about {
     height:95vh;
-    /* background-image: url(../../images/gold-sun.jpg); */
+    background-image: url(../../images/gold-silicate-star-1920c.jpg);
     /* background-image: url(../../images/pluto.jpg); */
-    /* background-size: cover; */
-    /* background-position:0% 70% */
-    background-color: rgba(255, 217, 0, 0.479);
+    background-size: cover;
+    background-position:0% 70%;
+    /* background-color: rgba(255, 217, 0, 0.479); */
     /* background-color: rgb(255, 217, 0); */
+    color:white;
 }
 
 #contact {
     /* height:100vh;*/
     height:95vh; 
-    /* background-image: url(../../images/red-nebula.jpg);
-    background-size: cover;
+    background-image: url(../../images/red-nebula.jpg);
+    /* filter:brightness(50%) */
+    /* background-size: cover;
     background-position:0% 70% */
-    background-color: rgba(185, 0, 0, 0.486);
+    /* background-color: rgba(185, 0, 0, 0.486); */
     /* background-color: rgb(185, 0, 0); */
 }
+
 
 
 /* 
@@ -268,18 +274,18 @@ d8888b.  .d8b.  d8888b.  .d8b.  db      db       .d8b.  db    db
 
 #parallax1 {
     /* background-image: url(../../images/gold-sun.jpg); */
-    background-image: url(../../images/pluto.jpg);
+    background-image: url(../../images/deep-field-far-1920.jpg);
     background-position:00% 100%;
 }
 
-#scene1 {
+/* #scene1 {
     background-image: url(../../images/stars-low-n.jpg);
     background-size: cover;
-}
+} */
 
 #parallax2 {
     /* background-image: url(../../images/red-nebula.jpg); */
-    background-image: url(../../images/gold-sun.jpg);
+    background-image: url(../../images/deep-field-between-1920.jpg);
     background-position:15% 100%;
 }
 
@@ -290,7 +296,7 @@ d8888b.  .d8b.  d8888b.  .d8b.  db      db       .d8b.  db    db
 
 #parallax3 {
     /* background-image: url(../../images/pluto.jpg); */
-    background-image: url(../../images/red-nebula.jpg);
+    background-image: url(../../images/deep-field-near-1920.jpg);
     background-position:20% 100%;
 }
 
@@ -585,6 +591,8 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
     section {
         padding:0;
+        background-size: cover;
+        background-position:100% 100%
     }
 
     .navbar-brand {
@@ -607,12 +615,12 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         background-position:0% 100%;
     }
 
-    #landing .space-icon {
+    /* #landing .space-icon {
         bottom:auto;
         right:auto;
         top:15%;
         left:62%;
-    }
+    } */
 
     #parallax1 {
         background-position:00% 100%;
@@ -631,6 +639,10 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         top:40%;
         right:0;
     }
+
+    /* #about {
+        background-position: left top;
+    } */
 
     #resume-thumbnail {
         height:50vh;

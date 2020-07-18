@@ -7,11 +7,14 @@ body {
     line-height:1.6em;
     margin:0 auto;
     z-index:-2;
+    display:flex;
+    flex-direction:column;
 }
 
 .wrapper {
   background-color:white;
   width:100%;
+  height: fit-content;
 }
 
 .headerImg {
@@ -32,14 +35,15 @@ header {
 
 #uber-header {
   font-family:'Lato', sans-serif;
-  background-color:rgb(214, 214, 214);
+  /* background-color:rgb(214, 214, 214); */
+  background-color:lightgray;
 }
 
 #uber-header-bottom {
-  max-width:100%;  
+  width:100%;  
+  display:block;
   border-bottom:15px solid gold;
   position:relative;
-  bottom:0;
 }
 
 #logo {
@@ -81,6 +85,7 @@ nav {
 main {
   padding: 20px;
   box-sizing:border-box;
+  background-color:white;
 }
 
 h1 {
@@ -155,6 +160,7 @@ dt {
 #bottomRow {
   margin-top:0;
   width:100%;
+  height: fit-content;
   background-color:darkgray;
 }
 
@@ -203,6 +209,14 @@ footer {
   display:block;
 }
 
+#contact-table {
+  margin:15px 15px 15px 0;
+}
+
+#map {
+margin:10px;
+}
+
 /*
 Media query begins here
 */
@@ -218,7 +232,12 @@ Media query begins here
     width:70%;
     margin: 0 auto;
   }
-  
+
+  .row {
+    display:flex;
+    flex-direction:row;
+  }
+
   nav {
     padding: 0 0 20px 20px;
     border-width:0 2px 0 0;
@@ -226,13 +245,13 @@ Media query begins here
     border-color: lightgray;
     background-color:white;
     text-indent:0;
-    float:left;
+    /* float:left; */
     width:25%;
   }
 
   main {
     padding: 0 20px 20px 20px;
-    float:right;
+    /* float:right; */
     width:75%;
   }
   
@@ -253,11 +272,11 @@ Media query begins here
 .invite-button {
   margin:0 auto;
   box-sizing: border-box;
-  border:10px solid red;
+  border:0;
 }
 
 .invite-button:hover {
-  border:10px solid gold;
+  filter:brightness(90%)
 }
 
 .full-width {
