@@ -16,10 +16,11 @@ body {
     /* font-family: 'Oxygen', sans-serif; */
     /* font-size:2vh */
     font-size: 1.5rem;
+    overflow-x:hidden
 }
 
 section {
-    padding:5vh 2vw;
+    padding:5vh 0;
 }
 
 .container {
@@ -32,7 +33,7 @@ h1 {
 }
 
 .navbar-brand {
-    color:gold !important;
+    /* color:gold !important; */
     font-size:1.5rem
 }
 
@@ -45,9 +46,9 @@ a:hover {
     text-decoration:none;
 }
 
-img {
+/* img {
     border: 1px solid black;
-}
+} */
 
 .btn {
     font-size: 1.5rem;
@@ -55,52 +56,6 @@ img {
 
 .badge {
     font-size:1.25rem
-}
-
-
-/* 
-d8888b. d88888b d8888b. d88888b  .d8b.  d888888b d88888b d8888b.      d88888b d88888b  .d8b.  d888888b db    db d8888b. d88888b .d8888. 
-88  `8D 88'     88  `8D 88'     d8' `8b `~~88~~' 88'     88  `8D      88'     88'     d8' `8b `~~88~~' 88    88 88  `8D 88'     88'  YP 
-88oobY' 88ooooo 88oodD' 88ooooo 88ooo88    88    88ooooo 88   88      88ooo   88ooooo 88ooo88    88    88    88 88oobY' 88ooooo `8bo.   
-88`8b   88~~~~~ 88~~~   88~~~~~ 88~~~88    88    88~~~~~ 88   88      88~~~   88~~~~~ 88~~~88    88    88    88 88`8b   88~~~~~   `Y8b. 
-88 `88. 88.     88      88.     88   88    88    88.     88  .8D      88      88.     88   88    88    88b  d88 88 `88. 88.     db   8D 
-88   YD Y88888P 88      Y88888P YP   YP    YP    Y88888P Y8888D'      YP      Y88888P YP   YP    YP    ~Y8888P' 88   YD Y88888P `8888Y' 
- */
-
-.space-icon {
-    position:absolute;
-    bottom:-4%;
-    right:5%;
-    border: none;
-    border-radius:50%;
-    padding:1.5rem;
-    /* background: radial-gradient(circle farthest-side, white, white,white, rgb(255, 240, 157, 1), rgba(255, 234, 117, 0.7), rgba(255, 234, 117, 0.7)); */
-    /* background: radial-gradient(circle farthest-side, white,white,white, rgb(255, 240, 157, 0.7), rgba(255, 234, 117, 0.3), rgba(255, 234, 117, 0)); */
-    /* background: radial-gradient(circle farthest-side, white,white,white, rgb(255, 240, 157, 0.7), rgb(255, 190, 51), rgba(128, 99, 255, 0.185));  */
-    /* background: radial-gradient(circle farthest-side, white,white, rgb(255, 240, 157, 0.7), rgb(255, 203, 91), rgba(128, 99, 255, 0.185)); */
-    /* background: radial-gradient(closest-side, white,white, rgba(255, 251, 228, 0.7), rgb(255, 203, 91), rgb(128, 99, 255), rgb(8, 0, 43)); */
-    /* background: radial-gradient(closest-side, white,white, rgba(255, 251, 228, 0.7), rgb(255, 203, 91), rgb(31, 15, 104)); */
-    /* background: radial-gradient(closest-side, white,white, rgb(255, 240, 157, 0.7), rgb(255, 203, 91), rgb(17, 0, 94)); */
-    /* background: radial-gradient(circle farthest-side, white, white,white, rgb(255, 240, 157, 1), rgba(255, 234, 117, 0.7), rgba(255, 234, 117, 0.7)); */
-    /* background: radial-gradient(circle farthest-side, white, #910000, #910000,#910000); */
-    background: radial-gradient(closest-side, rgb(14, 7, 46) 35%,rgb(20, 0, 92) 55% , rgb(87, 84, 107) 75%, rgb(255, 204, 93) 85%, white 99%);
-    background-repeat: no-repeat;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color: #910000;
-    /* border:1px solid black; */
-}
-
-.space-icon:hover {
-    /* background: radial-gradient(circle farthest-side, white, rgb(255, 240, 157, 1), rgba(255, 234, 117, 0.7), rgba(255, 234, 117, 0.7)); */
-    /* background: radial-gradient(closest-side, white 35%, rgb(255, 204, 93) 55% , rgb(87, 84, 107) 75%, rgb(20, 0, 92) 85%, rgb(14, 7, 46) 99%); */
-    /* color: #910000; */
-}
-
-.space-icon i {
-    display:none;
-    font-size:4rem;
 }
 
 
@@ -116,12 +71,15 @@ VP   V8P YP   YP    YP
 .navbar-brand {
     font-family: 'Poiret One', cursive;
     font-weight:bold;
-    background-color:black;
-    color:gold;
+}
+
+#logo-text > p {
+    margin-bottom:0;
 }
 
 .nav-item a{
     color:black !important;
+    font-size:2rem;
     background-color:white;
     font-family: 'Poiret One', cursive;
 }
@@ -130,22 +88,6 @@ VP   V8P YP   YP    YP
     color:black !important;
     background-color: gold !important;
 }
-
-/* #showcase-pill {
-    color:black;
-    background-color: gold;
-}
-
-#about-pill {
-    background-color:#f8f9fa;   
-}
-
-#contact-pill {
-    color:#f8f9fa;
-    background-color: rgb(185, 0, 0);
-} */
-
-
 
 
 /* 
@@ -157,147 +99,82 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
  `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y' 
  */
 
- .bg-black {
-    background-color: black;
-}
+/*BRANDING: Primary colors:  */
 
-.bg-gold {
-    background-color: gold;
+.text-white {
+    color:white
 }
-
+.bg-white {
+    background-color: white
+}
 .text-black {
-    color:black;
+    color:black
+}
+.bg-black {
+    background-color: black
+}
+.text-deep-blue {
+    /* color:	#0088e3 */
+    color:	rgb(0, 68, 227)
+
+}
+.bg-deep-blue {
+    /* background-color: #0088e3 */
+    background-color: rgb(0, 68, 227)
+}
+.text-light-blue {
+    color:rgb(146, 187, 214)
+}
+.bg-light-blue {
+    background-color: rgb(146,187,214)
+}
+.text-mid-blue {
+    color:rgb(64,162,227)
+}
+.bg-mid-blue {
+    background-color: rgb(64,162,227)
+}
+.text-mid-gray {
+    color:rgb(145, 145, 145)
+}
+.bg-mid-gray {
+    background-color: rgb(145, 145, 145)
+}
+.text-deep-gray {
+    color:rgb(115, 115, 115)
+}
+.bg-deep-gray {
+    background-color: rgb(115, 115, 115)
+}
+.text-light-gray {
+    color:rgb(181, 181, 181)
+}
+.bg-light-gray {
+    background-color: rgb(181, 181, 181)
 }
 
+/* Secondary colors: Gold */
 .text-gold {
-    color: gold;
+    color:rgb(255, 215, 0)
 }
-
-.text-red {
-    color: rgb(185, 0, 0);
+.bg-gold {
+    background-color: #ffd700
 }
+/*
+More Secondary colors: green rgb(tbd) purple rgb(tbd)
+.text- {
+    color:
+};
+.bg- {
+    background-color: 
+};
+.text- {
+    color:
+};
+.bg- {
+    background-color: 
+}; */
 
-.bg-red {
-    background-color: rgb(185, 0, 0);
-}
-
-.btn-killi {
-    background-color:rgba(173, 236, 255)
-}
-
-.btn-lics {
-    background-color: #a9a9a9;
-}
-
-
-
-
-/* 
-.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db      d8888b.  .d8b.   .o88b. db   dD  d888b  d8888b.  .d88b.  db    db d8b   db d8888b. .d8888. 
-88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88      88  `8D d8' `8b d8P  Y8 88 ,8P' 88' Y8b 88  `8D .8P  Y8. 88    88 888o  88 88  `8D 88'  YP 
-`8bo.   88ooooo 8P         88       88    88    88 88V8o 88      88oooY' 88ooo88 8P      88,8P   88      88oobY' 88    88 88    88 88V8o 88 88   88 `8bo.   
-  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88      88~~~b. 88~~~88 8b      88`8b   88  ooo 88`8b   88    88 88    88 88 V8o88 88   88   `Y8b. 
-db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888      88   8D 88   88 Y8b  d8 88 `88. 88. ~8~ 88 `88. `8b  d8' 88b  d88 88  V888 88  .8D db   8D 
-`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P      Y8888P' YP   YP  `Y88P' YP   YD  Y888P  88   YD  `Y88P'  ~Y8888P' VP   V8P Y8888D' `8888Y' 
-                                                                                                                                                            
-                                                                                                                                                            
- */
-
-#landing {
-    height:95vh;
-    background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
-    background-size: 200% 100%;
-    background-position:30% 100%
-    /* background-color:black; */
-}
-
-#showcase, #parashowcase {
-    height:95vh;
-    /* background-image: url(../../images/pluto-1920.jpg); */
-    background-image: url(../../images/gold-sun.jpg);
-    background-size: cover;
-    /* background-position:0% 70%; */
-    /* background-color: #f8f9fa77; */
-    /* background-color: #f8f9fa; */
-}
-
-#about {
-    height:95vh;
-    /* background-image: url(../../images/gold-silicate-star-1920c.jpg); */
-    background-image: url(../../images/pluto.jpg);
-    background-size: cover;
-    background-position:0% 70%;
-    /* background-color: rgba(255, 217, 0, 0.479); */
-    /* background-color: rgb(255, 217, 0); */
-    color:white;
-}
-
-#contact {
-    /* height:100vh;*/
-    height:95vh; 
-    background-image: url(../../images/red-nebula.jpg);
-    /* filter:brightness(50%) */
-    /* background-size: cover;
-    background-position:0% 70% */
-    /* background-color: rgba(185, 0, 0, 0.486); */
-    /* background-color: rgb(185, 0, 0); */
-}
-
-
-
-/* 
-d8888b.  .d8b.  d8888b.  .d8b.  db      db       .d8b.  db    db 
-88  `8D d8' `8b 88  `8D d8' `8b 88      88      d8' `8b `8b  d8' 
-88oodD' 88ooo88 88oobY' 88ooo88 88      88      88ooo88  `8bd8'  
-88~~~   88~~~88 88`8b   88~~~88 88      88      88~~~88  .dPYb.  
-88      88   88 88 `88. 88   88 88booo. 88booo. 88   88 .8P  Y8. 
-88      YP   YP 88   YD YP   YP Y88888P Y88888P YP   YP YP    YP 
-                                                                 
-                                                                 
- */
-
-#parallax-landing {
-    background-image: url(../../images/launch-of-falcon-9-1920x1280.jpg);
-}
-
-/* #parallax-liftoff {
-    background-image: url(../../images/liftoff.jpg);
-    height:6000px;
-    margin-bottom:-6000px;
-    z-index:-1000;
-} */
-
-/* #liftoff-scene {
-    height:1500px;
-} */
-
-#parallax1 {
-    /* background-image: url(../../images/gold-sun.jpg); */
-    background-image: url(../../images/deep-field-far-1920.jpg);
-    background-position:00% 100%;
-}
-
-/* #scene1 {
-    background-image: url(../../images/stars-low-n.jpg);
-    background-size: cover;
-} */
-
-#parallax2 {
-    /* background-image: url(../../images/red-nebula.jpg); */
-    background-image: url(../../images/deep-field-between-1920.jpg);
-    background-position:15% 100%;
-}
-
-/* #scene2 {
-    background-image: url(../../images/glowing-cosmos.jpg);
-    background-size: cover;
-} */
-
-#parallax3 {
-    /* background-image: url(../../images/pluto.jpg); */
-    background-image: url(../../images/deep-field-near-1920.jpg);
-    background-position:20% 100%;
-}
 
 
 /* 
@@ -307,9 +184,13 @@ d8888b.  .d8b.  d8888b.  .d8b.  db      db       .d8b.  db    db
   `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88   `Y8b. 
 db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D 
 `8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P `8888Y' 
-                                                                    
-                                                                    
- */
+*/
+
+
+section, .section {
+    height:95vh;
+    }
+
 
 /*
           db       .d8b.  d8b   db d8888b. d888888b d8b   db  d888b  
@@ -324,7 +205,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 #landing {
     position:relative;
-    /* z-index:1; */
+    background-image: url(../../images/dna-background_1920-flipped.jpg);
 }
 
 #headline-parent {
@@ -439,6 +320,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
                                                                       
       */
 
+#contact {
+    color:black;
+}
+
 #dzh {
     max-width:100%;
     max-height:30vh;
@@ -470,7 +355,7 @@ footer > * {
     font-family: 'Poiret One', cursive;
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight:bold;
-    color:gold;
+    color:black;
     height:fit-content;
 }
 
@@ -512,13 +397,6 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     p { 
         font-size:1rem;
     } 
-    .space-icon {
-        height:4rem;
-        width:4rem;
-    }
-    .space-icon i {
-        font-size:2rem;
-    } 
     .badge {
         font-size:0.75rem;
     }
@@ -528,9 +406,6 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     .display-3 {
         font-size:2rem;
     } 
-    /* .fa-7x {
-        font-size:1rem;
-    } */
     .navbar-brand {
         font-size: 1rem;
     }
@@ -565,6 +440,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
                              
                              
 */
+
 @media only screen and (min-width : 576px) {
     #headline {
         font-size: 3.5rem;
@@ -588,49 +464,12 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         padding:3rem 0;
     }
 
-    section {
-        padding:0;
-        background-size: cover;
-        background-position:100% 100%
-    }
-
     .navbar-brand {
         padding:8px
     }
 
-    .space-icon {
-        position:absolute;
-        bottom:5vh;
-        right:0;
-        padding:4vh;
-    }
-
     header {
         width:99%;
-    }
-
-    #landing {
-        background-size: 100% 100%;
-        background-position:0% 100%;
-    }
-
-    /* #landing .space-icon {
-        bottom:auto;
-        right:auto;
-        top:15%;
-        left:62%;
-    } */
-
-    #parallax1 {
-        background-position:00% 100%;
-    }
-    
-    #parallax2 {
-        background-position:00% 100%;
-    }
-    
-    #parallax3 {
-        background-position:00% 100%;
     }
 
     #headline {
@@ -638,10 +477,6 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         top:40%;
         right:0;
     }
-
-    /* #about {
-        background-position: left top;
-    } */
 
     #resume-thumbnail {
         height:50vh;
@@ -652,8 +487,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     }
 
     #dzh {
-        max-width:auto;
-        max-height:none;
+        max-height:65vh;
         border:1px solid black;
     }
 
@@ -663,10 +497,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
     .contact-text {
         font-size:2rem;
-    }
-
-    footer {
-        width:99%
+        color:#fff
     }
 }
 

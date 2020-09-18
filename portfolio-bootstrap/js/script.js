@@ -1,10 +1,5 @@
-// INITIALIZE PARALLAX
-document.addEventListener('DOMContentLoaded', function() {
-    initializeParallax(document.querySelector('.viewport'));
-});
-
 // SCROLLSPY
-$('#inner-body').scrollspy({ target: '#navbar-collapse' })
+$('body').scrollspy({ target: '#navbar-collapse' })
 
 // CAROUSEL INDICATOR TAG
 //purpose: add carousel custom indicators
