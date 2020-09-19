@@ -23,12 +23,10 @@ tagIndicators(smallViewportStatus);   // Call listener function at run time
 smallViewportStatus.addListener(tagIndicators) // Attach listener function on state changes
 
 
+//CARD-FLIP
+function flip(cardId) {
+    $(cardId).toggleClass('flipped');
+}
+
 //RESUME MODAL
 document.getElementById("resume-thumbnail").addEventListener("click", () => $('#resumeModal').modal('toggle'));
-
-
-//randomly-chosen z-adjectives
-// const zArray = ["zaftig", "zairean", "zairese", "zambian", "zany", "zapotec", "zealous", "zenithal", "zero", "zeroth", "zestful", "zesty", "zigzag", "zillion", "zimbabwean", "zionist", "zippy", "zodiacal", "zoftig", "zoic", "zolaesque", "zonal", "zonary", "zoological", "zoonotic", "zoophagous", "zoroastrian", "zygodactyl", "zygomatic", "zygomorphic", "zygomorphous", "zygotic", "zymoid", "zymolytic", "zymotic"];
-// const randNum = Math.floor(Math.random() * zArray.length);
-// const randZWord = zArray[randNum];
-// document.querySelector("#zStandsFor").innerHTML = `The Z stands for ${randZWord}!`;
