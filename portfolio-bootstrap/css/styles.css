@@ -46,9 +46,9 @@ a:hover {
     text-decoration:none;
 }
 
-img, .border1black {
+/* img {
     border: 1px solid black;
-}
+} */
 
 .btn {
     font-size: 1.5rem;
@@ -199,10 +199,14 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 */
 
 
-section {
+#landing {
     height:95vh;
-    }
+}
 
+/* section {
+    height:95vh;
+} */
+    
 
 /*
           db       .d8b.  d8b   db d8888b. d888888b d8b   db  d888b  
@@ -249,8 +253,9 @@ section {
 
 .card-container {
     width:400px;
-    max-width: 100%;    
-    display:block;
+    max-width: 100%; 
+    margin:3vh 0;
+    /* padding-bottom:100%; */
     position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -259,12 +264,16 @@ section {
 }
 
 .card {
+    position:absolute;
+    left:0;
+    right:0;
+    padding-bottom:100%;
     color:black;
-    background-color:#f8f9fa;
-    -webkit-transition: -webkit-transform 1s;
-    -moz-transition: -moz-transform 1s;
-    -o-transition: -o-transform 1s;
-    transition: transform 1s;
+    background-color:white;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
@@ -273,10 +282,17 @@ section {
     transform-origin: 50% 50%;
 } 
 
-.card img {
-    width:500px; 
-    height:auto;
-    max-width:100%;
+.front .card-img-overlay {
+    position:absolute;
+    top:auto;
+    bottom:0;
+}
+
+.front img, .front .card-img-overlay {
+    -webkit-transition: -webkit-filter 0.5s;
+    -moz-transition: -moz-filter 0.5s;
+    -o-transition: -o-filter 0.5s;
+    transition: filter 0.5s;
 }
 
 .card-title {
@@ -294,7 +310,10 @@ section {
 }
 
 .front, .back {
-    background:white
+    background:white;
+    position:relative;
+    height:100%;
+    width:100%
 }
 
 .card .back {
@@ -304,23 +323,35 @@ section {
     transform: rotateY( 180deg );
 }
 
-.card:hover {
-    border:1px solid gray;
-}
-
-/* .mini {
-    width:300px; 
-    height:auto;
-    max-width:100%; 
-    max-height:100%;
-} */
-
 .flipped {
-    
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
+}
+
+.card-text, .card button {
+    font-size:18px;
+}
+
+#barkr-card .back {
+    /* background-color: rgb(255, 250, 221); */
+    background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
+}
+
+#timer-card .back {
+    /* background-color: rgb(229, 214, 255); */
+    background-image: linear-gradient( rgb(171, 122, 255), rgb(229, 214, 255));
+}
+
+#killi-card .back {
+    /* background-color: rgb(196, 246, 255); */
+    background-image: linear-gradient( rgb(121, 235, 255), rgb(196, 246, 255));
+}
+
+#LICS-card .back {
+    /* background-color: rgb(223, 223, 223); */
+    background-image: linear-gradient(rgb(139, 139, 139),rgb(223, 223, 223));
 }
 
 
