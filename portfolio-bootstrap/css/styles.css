@@ -114,12 +114,10 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
     background-color: black
 }
 .text-deep-blue {
-    /* color:	#0088e3 */
     color:	rgb(0, 68, 227)
 
 }
 .bg-deep-blue {
-    /* background-color: #0088e3 */
     background-color: rgb(0, 68, 227)
 }
 .text-light-blue {
@@ -180,8 +178,17 @@ More Secondary colors: green rgb(tbd) purple rgb(tbd)
 .landing-gradient {
     background-image: linear-gradient(rgb(64,162,227), rgb(146, 187, 214));
 }
+
+.resume-gradient {
+    background-image: linear-gradient(rgb(255, 229, 79), rgb(255, 235, 122));
+}
+
+.about-gradient, .form-gradient {
+    background-image: linear-gradient( rgb(146, 187, 214),  rgb(188, 228, 255));
+}
+
 .contact-gradient {
-    background-image: linear-gradient(rgb(0, 68, 227), rgb(64,162,227));
+    background-image: linear-gradient(rgb(0, 68, 227), rgb(78, 122, 226));
 }
 
 .transparent {
