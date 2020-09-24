@@ -113,13 +113,6 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 .bg-black {
     background-color: black
 }
-.text-deep-blue {
-    color:	rgb(0, 68, 227)
-
-}
-.bg-deep-blue {
-    background-color: rgb(0, 68, 227)
-}
 .text-light-blue {
     color:rgb(146, 187, 214)
 }
@@ -131,6 +124,24 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 }
 .bg-mid-blue {
     background-color: rgb(64,162,227)
+}
+.text-deep-blue {
+    color:	rgb(0, 68, 227)
+}
+.bg-deep-blue {
+    background-color: rgb(0, 68, 227)
+}
+.bg-darkest-blue {
+    background-color: rgb(3, 0, 36);
+}
+.bg-lightest-gray {
+    background-color: rgb(233, 233, 233)
+}
+.text-light-gray {
+    color:rgb(181, 181, 181)
+}
+.bg-light-gray {
+    background-color: rgb(181, 181, 181)
 }
 .text-mid-gray {
     color:rgb(145, 145, 145)
@@ -144,14 +155,9 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 .bg-deep-gray {
     background-color: rgb(115, 115, 115)
 }
-.text-light-gray {
-    color:rgb(181, 181, 181)
+.bg-darkest-gray {
+    background-color: rgb(19, 19, 19)
 }
-.bg-light-gray {
-    background-color: rgb(181, 181, 181)
-}
-
-
 /* Secondary colors: Gold */
 .text-gold {
     color:rgb(255, 215, 0)
@@ -175,8 +181,9 @@ More Secondary colors: green rgb(tbd) purple rgb(tbd)
 }; */
 
 /* Gradients */
-.landing-gradient {
-    background-image: linear-gradient(rgb(64,162,227), rgb(146, 187, 214));
+.home-gradient {
+    /* background-image: linear-gradient(rgb(64,162,227), rgb(146, 187, 214)); */
+    background-image: linear-gradient(black, rgb(0, 68, 227))
 }
 
 .resume-gradient {
@@ -188,7 +195,8 @@ More Secondary colors: green rgb(tbd) purple rgb(tbd)
 }
 
 .contact-gradient {
-    background-image: linear-gradient(rgb(0, 68, 227), rgb(78, 122, 226));
+    /* background-image: linear-gradient(rgb(0, 68, 227), rgb(78, 122, 226)); */
+    background-image: linear-gradient(rgb(0, 68, 227), black)
 }
 
 .transparent {
@@ -206,7 +214,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 */
 
 
-#landing {
+#home {
     height:95vh;
 }
 
@@ -226,24 +234,25 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
                                                                      
    */
 
-#landing {
+#home {
     position:relative;
     /* background-image: url(../../images/dna-background_1920-flipped.jpg); */
 }
 
-#headline-parent {
+/* #headline-parent {
     position:relative;
     height:100%;
-}
+} */
 
 #headline {
     /* color:rgb(255, 217, 0); */
-    color:white;
-    position:absolute;
+    /* color:white; */
+    /* position:absolute; */
     /* top:30%;   */
-    top:25%;
-    right:1vw;
+    /* top:25%; */
+    /* right:1vw; */
     font-family: 'Poiret One', cursive;
+    font-weight: bold;
 }
 
 
@@ -374,7 +383,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
       */
 
 #resume-thumbnail {
-    max-width:40vw;
+    /* max-width:40vw; */
+    max-width:84px;
+    /* height:110px; */
     cursor:pointer;
 }
 
@@ -541,15 +552,15 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         width:99%;
     }
 
-    #headline {
+    /* #headline {
         position:relative;
         top:40%;
         right:0;
-    }
+    } */
 
-    #resume-thumbnail {
+    /* #resume-thumbnail {
         height:50vh;
-    }
+    } */
 
     .modal-dialog {
         max-width:75vw;
