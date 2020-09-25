@@ -384,13 +384,17 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 #resume-thumbnail {
     /* max-width:40vw; */
-    max-width:84px;
+    max-width:6em;
     /* height:110px; */
     cursor:pointer;
 }
 
 #resume-iframe {
     height:80vh;
+}
+
+.carousel-item img{
+    filter:brightness(0.50)
 }
 
 
@@ -577,7 +581,6 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
     .contact-text {
         font-size:2rem;
-        color:gold
     }
 }
 
