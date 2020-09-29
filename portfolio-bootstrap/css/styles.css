@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    padding:5vh 0;
+    padding:10vh 0;
 }
 
 .container {
@@ -30,11 +30,8 @@ section {
 
 h1 {
     margin:0;
-}
-
-.navbar-brand {
-    /* color:gold !important; */
-    font-size:1.5rem
+    width:100%;
+    border-bottom: 10px solid rgb(64,162,227)
 }
 
 a {
@@ -42,13 +39,9 @@ a {
 }
 
 a:hover {
-    color:blue;
+    color: rgb(64,162,227);
     text-decoration:none;
 }
-
-/* img {
-    border: 1px solid black;
-} */
 
 .btn {
     font-size: 1.5rem;
@@ -56,6 +49,34 @@ a:hover {
 
 .badge {
     font-size:1.25rem
+}
+
+hr {
+    border-color: rgb(64,162,227);
+    margin:5vh;
+}
+
+#about ul {
+    list-style-type:none;
+    padding-left:0;
+}
+
+.bold {
+    font-weight:bold
+}
+
+.h2-underline {
+    border-bottom: 3px solid rgb(145, 145, 145)
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    cursor:pointer;
 }
 
 
@@ -71,6 +92,7 @@ VP   V8P YP   YP    YP
 .navbar-brand {
     font-family: 'Poiret One', cursive;
     font-weight:bold;
+    font-size:1.5rem
 }
 
 #logo-text > p {
@@ -81,12 +103,12 @@ VP   V8P YP   YP    YP
     color:black !important;
     font-size:2rem;
     background-color:white;
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive; */
 }
 
 .nav-link.active {
-    color:black !important;
-    background-color: gold !important;
+    color:white !important;
+    background-color:	rgb(0, 68, 227) !important;
 }
 
 
@@ -136,6 +158,9 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 }
 .bg-lightest-gray {
     background-color: rgb(233, 233, 233)
+}
+.text-lightest-gray {
+    color: rgb(233, 233, 233)
 }
 .text-light-gray {
     color:rgb(181, 181, 181)
@@ -199,8 +224,12 @@ More Secondary colors: green rgb(tbd) purple rgb(tbd)
     background-image: linear-gradient(rgb(0, 68, 227), black)
 }
 
-.transparent {
+.bg-transparent {
     background-color:transparent
+}
+
+.border-transparent {
+    border:transparent
 }
 
 
@@ -224,15 +253,13 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     
 
 /*
-          db       .d8b.  d8b   db d8888b. d888888b d8b   db  d888b  
-          88      d8' `8b 888o  88 88  `8D   `88'   888o  88 88' Y8b 
-          88      88ooo88 88V8o 88 88   88    88    88V8o 88 88      
-          88      88~~~88 88 V8o88 88   88    88    88 V8o88 88  ooo 
-          88booo. 88   88 88  V888 88  .8D   .88.   88  V888 88. ~8~ 
-          Y88888P YP   YP VP   V8P Y8888D' Y888888P VP   V8P  Y888P  
-                                                                     
-                                                                     
-   */
+██╗  ██╗ ██████╗ ███╗   ███╗███████╗
+██║  ██║██╔═══██╗████╗ ████║██╔════╝
+███████║██║   ██║██╔████╔██║█████╗  
+██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  
+██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+*/
 
 #home {
     position:relative;
@@ -255,17 +282,31 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     font-weight: bold;
 }
 
+#line-design {
+    position:absolute;
+    top:20%;
+    bottom:10%;
+    left:0;
+    width:80%;
+    padding: 3rem 3rem 3rem 0;
+    border-top:10px solid rgb(64,162,227);
+    border-right:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227)
+}
+
+#dzh {
+    max-height:100%;
+    max-width:80%
+}
 
 /*  
-          .d8888. db   db  .d88b.  db   d8b   db  .o88b.  .d8b.  .d8888. d88888b 
-          88'  YP 88   88 .8P  Y8. 88   I8I   88 d8P  Y8 d8' `8b 88'  YP 88'     
-          `8bo.   88ooo88 88    88 88   I8I   88 8P      88ooo88 `8bo.   88ooooo 
-            `Y8b. 88~~~88 88    88 Y8   I8I   88 8b      88~~~88   `Y8b. 88~~~~~ 
-          db   8D 88   88 `8b  d8' `8b d8'8b d8' Y8b  d8 88   88 db   8D 88.     
-          `8888Y' YP   YP  `Y88P'   `8b8' `8d8'   `Y88P' YP   YP `8888Y' Y88888P 
-                                                                                 
-                                                                                 
-    */
+        ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+        ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+        ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+        ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+        ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+*/
 
 .card-container {
     width:400px;
@@ -279,7 +320,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     perspective: 800px;
 }
 
-.card {
+.project-card {
     position:absolute;
     left:0;
     right:0;
@@ -315,7 +356,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     font-weight:bold;
 }
 
-.card > div {
+.project-card > div {
     display: block;
     max-height: 65vh;
     position: absolute;
@@ -332,7 +373,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     width:100%
 }
 
-.card .back {
+.project-card .back {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
@@ -384,7 +425,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 #resume-thumbnail {
     /* max-width:40vw; */
-    max-width:6em;
+    max-height:5em;
     /* height:110px; */
     cursor:pointer;
 }
@@ -393,9 +434,60 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     height:80vh;
 }
 
+.resume-icon-1 {
+    height:105px;
+    margin:8px 0;
+    /* background-color:#0088e3; */
+    /* background-color:rgb(145, 145, 145); */
+    background-color:#b2b2b2;
+    /* background-color:rgb(0, 68, 227); */
+    border-radius:10px;
+    padding-top:20px;
+    /* color:black; */
+    color:white;
+}
+
+.resume-icon-1 img {
+    height:70px;
+    margin-top:5px
+}
+
+.resume-icon-1 p {
+    margin-top:-5px
+}
+
+.resume-icon {
+    height:105px;
+    margin:8px 0;
+    /* background-color:#0088e3; */
+    background-color:rgb(0, 68, 227);
+    border-radius:10px;
+    padding-top:20px;
+    color:white;
+    /* color:darkgray; */
+}
+
+.resume-icon img {
+    height:75px;
+    padding-left:20px
+}
+
+.resume-icon p {
+    margin-top:-20px
+}
+
 .carousel-item img{
     filter:brightness(0.50)
 }
+
+#about .card {
+    margin-bottom: 3vh;
+}
+
+#about li {
+    margin-bottom:2vh;
+}
+
 
 
 /*
@@ -413,14 +505,20 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     color:black;
 }
 
-#dzh {
-    max-width:100%;
-    max-height:30vh;
+.contact-text {
+    color:white;
+    font-size:2rem;
 }
 
-/* #contact .space-icon {
-    bottom:10vh;
-} */
+#submit-btn {
+    background-color: rgb(64,162,227);
+    color:white;
+}
+
+#submit-btn:hover {
+    /* background-color: rgb(64,162,227); */
+    background-color:rgb(0, 68, 227)
+}
 
 /*  
           d88888b  .d88b.   .d88b.  d888888b d88888b d8888b. 
@@ -441,7 +539,7 @@ footer {
 
 footer > * {
     position: relative;
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive; */
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight:bold;
     color:black;
@@ -496,9 +594,8 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     #headline {
         font-size:2.5rem;
     }
-    #resume-thumbnail {
-        max-height:50vh;
-    }    
+
+
     
     /* Nav */
     .navbar-toggler-icon, .navbar-brand {
@@ -556,32 +653,36 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         width:99%;
     }
 
-    /* #headline {
-        position:relative;
-        top:40%;
-        right:0;
-    } */
-
-    /* #resume-thumbnail {
-        height:50vh;
-    } */
+    #line-design {
+        position:absolute;
+        top:20%;
+        bottom:10%;
+        left:0;
+        width:80%;
+        padding: 3rem 3rem 3rem 0;
+        border-top:10px solid rgb(64,162,227);
+        border-right:10px solid rgb(64,162,227);
+        border-bottom:10px solid rgb(64,162,227)
+    }
 
     .modal-dialog {
         max-width:75vw;
     }
 
     #dzh {
-        max-height:65vh;
-        border:1px solid black;
+        max-height:100%;
+        max-width:100%
     }
 
     .fa-linkedin, .fa-github-square {
         font-size:6rem;
     }
 
-    .contact-text {
-        font-size:2rem;
+    #resume-thumbnail {
+        max-height:5em;
+        cursor:pointer;
     }
+
 }
 
 /* 

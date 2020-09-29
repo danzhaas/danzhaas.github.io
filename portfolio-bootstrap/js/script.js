@@ -41,9 +41,21 @@ function squareCard(cardId) {
 }
 squareCard('.card-container')
 
+
 //TOOLTIPS
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-})
+});
 
-$('#resume-thumbnail').tooltip('show')
+// $('#resume-thumbnail').tooltip('show');
+
+
+//BADGES
+//1. Dev badges
+// const devBadges = "MongoDB, Express, React, Node.js, Gatsby, Redux, JQuery, Javascript, Bootstrap, LESS, SASS, CSS, HTML, NPM, React Native, Github, Browser Developer Tools";
+
+// function generateBadges(listString, targetId) = {
+//     const array1 = listString.split(", ");
+//     const array2 = array1.map(text => <span>{text}</span>);
+//     $(targetId).append(array2)
+// }
