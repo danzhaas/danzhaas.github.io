@@ -39,7 +39,8 @@ function squareCard(cardId) {
         'width': cardWidth + 'px'
     });
 }
-squareCard('.card-container')
+squareCard('.card-container');
+// squareCard('#timer-card');
 
 
 //TOOLTIPS

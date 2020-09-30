@@ -47,9 +47,9 @@
                         </div>
                     </a>
                     <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        data-target="#navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon" style="height:70px; width:70px"></span>
                     </button>
                     <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
                     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -84,43 +84,28 @@
 ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 -->
-    <section id="home" class="bg-darkest-blue">
-        <div id="line-design">
-            <div class="container-md h-100 position-relative pr-0 pl-5 mr-0 d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-6 text-white">
-                    <h1 id="headline" class="border-0">Hi, I'm Dan.</h1><br>
-                    <h1 class="text-light-gray border-0">I'm a full-stack web developer living in Baltimore, MD.</h1>
-                    <br>
-                    <h2 class="text-light-gray">After earning a Master's in Clinical Health Science and working in the
-                        ER in my previous career, I'm prepared to rise to ambitious challenges in my new career as a web developer.</h2>
-                </div>
-                
-                <div class="col-12 offset-md-1 col-md-5 mh-100 px-0">
-                    <img id="dzh" class="border-0 float-md-right" src="../images/DZH-pic-Sept-2020-700x850.jpg">
-                </div>
+    <section id="home" class="bg-darkest-blue d-flex">
+        <div class="col home-div" id="home-l-div"></div>
+        <div id="home-container" class="container mx-0 d-flex flex-column flex-md-row">
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-around text-white">
+                <h1 id="headline" class="border-0">Hi, I'm Dan.</h1><br>
+                <h2 class="text-light-gray border-0">I'm a full-stack web developer living in Baltimore, MD.</h2>
+                <br>
+                <h3 class="text-light-gray mb-4 mb-md-2">After earning a Master's in Clinical Health Science and working in the
+                    ER in my previous career, I'm prepared to rise to ambitious challenges in my new career as a web
+                    developer.</h3>
+            </div>
+
+            <div class="col-12 offset-md-1 col-md-5 mh-100 p-3 px-md-0">
+                <img id="dzh" class="border-0 float-md-right" src="../images/DZH-pic-Sept-2020-700x850.jpg">
             </div>
         </div>
-
-        <!-- <div class="container-md h-100 position-relative">
-            <div class="row" style="padding-top:20vh">
-                <div class="col-12 col-md-6 text-white">
-                    <h1 id="headline" class="border-0">Hi, I'm Dan.</h1><br>
-                    <h1 class="text-light-gray border-0">I'm a full-stack web developer living in Baltimore, MD.</h1>
-                    <br>
-                    <h2 class="text-light-gray">After earning a Master's in Clinical Health Science and working in the
-                        ER in my previous career, I'm prepared to rise to ambitious challenges in my new career as a web developer.</h2>
-                </div>
-                <div class="col-12 offset-md-1 col-md-5 mh-100">
-                    <img id="dzh" class="border-0" src="../images/DZH-pic-Sept-2020-700x850.jpg"
-                        style="max-height:50vh">
-                </div>
-            </div>
-        </div> -->
+        <div class="col home-div" id="home-r-div"></div>
 
     </section>
 
 
-    <!-- 
+<!-- 
 ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
 ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
 ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
@@ -128,10 +113,11 @@
 ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
 ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝ 
 -->
-    <section id="projects" class="bg-white">
+
+    <section id="projects" class="bg-lightest-gray" >
         <div class="container h-100 position-relative">
 
-            <h1 class="display-3">Projects</h1>
+            <h1>Projects</h1>
 
             <div class="row h-100">
                 <div class="col-12 d-flex flex-row flex-wrap justify-content-between">
@@ -143,7 +129,7 @@
                                 <img class="card-img" src="..\images\barkr-tile-500.jpg" />
                             </div>
                             <div
-                                class="back zoom border1black px-2 py-4 p-md-4 d-flex flex-column justify-content-between d-none zoom">
+                                class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
                                 <h2 class="card-title m-0">Barkr</h2>
                                 <div>
                                     <!-- <span class="badge badge-success">React</span> -->
@@ -234,7 +220,7 @@
                                 <img class="card-img" src="..\images\timer-tile-500.jpg" />
                             </div>
                             <div
-                                class="back zoom border1black px-2 py-4 p-md-4 d-flex flex-column justify-content-between d-none">
+                                class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
                                 <h2 class="card-title m-0">Distraction Timer</h2>
                                 <div class="display-flex flex-row">
                                     <!-- <span class="badge badge-danger">Gatsby</span> -->
@@ -341,7 +327,7 @@
                                 <img class="card-img" src="..\images\killi-tile-500.jpg" />
                             </div>
                             <div
-                                class="back zoom border1black px-2 py-4 p-md-4 d-flex flex-column justify-content-between d-none">
+                                class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
                                 <h2 class="card-title m-0">Killifish Classic</h2>
                                 <div>
                                     <!-- <span class="badge badge-danger">jQuery</span> -->
@@ -424,7 +410,7 @@
                                 <img class="card-img" src="..\images\LICS-tile-500.jpg" />
                             </div>
                             <div
-                                class="back zoom border1black px-2 py-4 p-md-4 d-flex flex-column justify-content-between d-none">
+                                class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
                                 <h2 class="card-title m-0">Lorem Ipsem Cancer Studies</h2>
                                 <div>
                                     <!-- <span class="badge badge-primary d-none d-md-inline-block">HTML</span> -->
@@ -507,15 +493,15 @@
 -->
 
 
-    <section id="about" class="bg-lightest-gray">
+    <section id="about" class="bg-white">
         <div class="container h-100 position-relative">
-            <h1 class="display-3">About</h1><br>
+            <h1 >About</h1><br>
 
             <!-- <div class="row d-flex flex-row flex-wrap"> -->
             <div id="about-cards" class="row d-flex flex-row flex-wrap justify-content-between">
 
                 <!-- First card -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="card col-12">
                         <h2 class="card-title py-3 bold h2-underline">Career Highlights</h2>
                         <div class="card-body">
@@ -546,15 +532,10 @@
                                         <i style="color:#0077b5" class="fab fa-5x fa-linkedin"></i>
                                     </a>
                                     <!-- Resume -->
+                                    <img id="resume-thumbnail" class="zoom" src="..\images\brand-resume-icon-w-margin.svg"  >
                                     <!-- <img id="resume-thumbnail" class="center bg-black border zoom"
                                     src="../images/resume-09222020.jpg" data-toggle="tooltip"
                                     data-placement="left" title="Click to magnify my resume"> -->
-                                    <div id="resume-thumbnail" class="d-flex flex-column align-content-center zoom" style="height:120px; width:105px">
-                                        <div class="d-flex flex-column justify-content-around align-content-center resume-icon-1">
-                                            <img src="..\images\logo-full-illustration.svg" >
-                                            <p class="mx-auto bold">Resume</p>
-                                        </div>
-                                    </div>
                                     <!-- <div id="resume-thumbnail" class="d-flex flex-column align-content-center zoom" style="width:105px">
                                         <div class="d-flex flex-column justify-content-around align-content-center resume-icon">
                                             <img src="..\images\logo-d-illustration-silhouette.svg" >
@@ -569,17 +550,21 @@
                 </div>
 
                 <!-- Second Card -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="card col-12">
                         <h2 class="py-3 bold h2-underline card-title">Skills & Technologies</h2>
                         <div class="card-body">
                             <ul>
-                                <li id="dev-badges"><span style="font-weight: bold;">Development: </span>MongoDB, Express, React, Node.js, Gatsby, Redux, JQuery, Javascript,
+                                <li id="dev-badges"><span style="font-weight: bold;">Development: </span>MongoDB,
+                                    Express, React, Node.js, Gatsby, Redux, JQuery, Javascript,
                                     Bootstrap, LESS, SASS, CSS, HTML, NPM, React Native, Github, Browser Developer Tools
                                 </li>
-                                <li id="design-badges"><span style="font-weight: bold;">Design: </span>Photoshop, GIMP, Adobe Illustrator</li>
-                                <li id="database-badges"><span style="font-weight: bold;">Database: </span>MySQL, Robo3T, MS Access</li>
-                                <li id="languages-badges"><span style="font-weight: bold;">Other Languages:  </span>Visual Basic for Applications</li>
+                                <li id="design-badges"><span style="font-weight: bold;">Design: </span>Photoshop, GIMP,
+                                    Adobe Illustrator</li>
+                                <li id="database-badges"><span style="font-weight: bold;">Database: </span>MySQL,
+                                    Robo3T, MS Access</li>
+                                <li id="languages-badges"><span style="font-weight: bold;">Other Languages:
+                                    </span>Visual Basic for Applications</li>
                                 <li id="os-badges"><span style="font-weight: bold;">OS: </span>Windows, Linux, Mac</li>
                             </ul>
                         </div>
@@ -592,7 +577,7 @@
                         <div class="card-body d-flex flex-row flex-wrap">
 
                             <!-- Carousel -->
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6  px-0 pr-lg-3">
                                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
@@ -606,7 +591,7 @@
                                                 alt="...">
                                             <div class="carousel-caption">
                                                 <h5><i class="fas fa-dog"></i> Dog Dad</h5>
-                                                <p class="d-none d-md-block">Suede was the inspiration for my Barkr
+                                                <p class="d-none d-md-block">Suede is the inspiration for my Barkr
                                                     project.
                                                     She
                                                     knows over 25 commands.</p>
@@ -646,14 +631,17 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-lg-6 px-0 pl-lg-3">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item pt-0">I believe black lives matter, the LGBTQ community has equal rights, and masks save
+                                    <li class="list-group-item px-0 px-lg-3 pt-lg-0">I believe black lives matter, the LGBTQ community
+                                        has equal rights, and masks save
                                         lives.
                                     </li>
-                                    <li class="list-group-item">My current passion project is Focus Suite, apps designed to help
+                                    <li class="list-group-item px-0 px-lg-3">My current passion project is Focus Suite, apps designed
+                                        to help
                                         people with ADHD manage their distractions and organize their thoughts. </li>
-                                    <li class="list-group-item mb-0">My best work is done with realistic, investigative, and artistic people who are
+                                    <li class="list-group-item px-0 px-lg-3 mb-0">My best work is done with realistic, investigative,
+                                        and artistic people who are
                                         responsible, trustworthy, and hardworking.</li>
 
                                 </ul>
@@ -677,57 +665,70 @@
     <section id="contact" class="bg-darkest-blue">
         <div class="container h-100 position-relative">
 
-            <h1 class="display-3 text-lightest-gray">Contact</h1>
+            <h1 class="text-lightest-gray">Contact</h1>
 
             <!-- Displayed on MD and up -->
-            <div class="row d-flex flex-row align-content-center py-4 text-lightest-gray">
-                <div class="col-12 col-md-7 py-0 d-flex flex-column justify-content-around">
-                    <p>My work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". Is this the reaction you want from your audience on your website?<br>
+            <div class="row d-flex flex-row align-content-center py-4 text-light-gray">
+                <div class="col-12 col-lg-7 py-0 d-flex flex-column justify-content-around">
+                    <p>My work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". Is this the
+                        reaction to your website you want from your audience?<br>
                         <br>
-                        Let's work together to bring your favorite project online. I'm available for individual projects and full-time job opportunities as a front-end or full-stack developer.<br>
+                        Let's work together to bring your favorite project online. I'm available for individual projects
+                        and full-time job opportunities as a front-end or full-stack developer.<br>
                         <br>
-                        Send me a message and we'll make an appointment to talk about your project.  You're invited to email, text,
+                        Send me a message and we'll make an appointment to talk about your project. You're invited to
+                        email, text,
                         or call me. Our meeting may be virtual, but the coffee will be
-                        very real.</p>
-                    <a class="contact-text" href="tel:(410)937-2073"><i class="fas fa-1x fa-mobile text-mid-blue"></i>
+                        very real.
+                    </p>
+                    <div id="contact-buttons" class="w-100 d-flex flex-row " >
+                        <button class="col-auto btn contact-button">
+                            <i class="fas fa-1x fa-mobile"></i>
+                            (410)937-2073
+                        </button>
+                        <button class="col-auto btn contact-button">
+                            <i class="fas fa-1x fa-envelope"></i>
+                            danzhaas@gmail.com
+                        </button>
+                    </div>
+                        <!-- <a class="contact-text" href="tel:(410)937-2073"><i class="fas fa-1x fa-mobile text-mid-blue"></i>
                         (410)937-2073</a>
                     <a class="contact-text" href="mailto:danzhaas@gmail.com"><i
                             class="fas fa-1x fa-envelope text-mid-blue"></i>
-                        danzhaas@gmail.com</a>
+                        danzhaas@gmail.com</a> -->
                 </div>
 
                 <!-- Form -->
-                <form class="col-12 offset-md-1 col-md-4 card rounded bg-lightest-gray text-black">
-                    <h2 class="card-title py-3 bold h2-underline">Send Me a Message</h2>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Your Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Your Email Address</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="john@doe.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1"> Message </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                placeholder="My project's purpose or vision is..."></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+                <div class="col-12 offset-lg-1 col-lg-4 mt-4 mt-lg-0">
+                    <form class="col card bg-lightest-gray text-black">
+                        <h2 class="card-title py-3 h2-underline">Send Me a Message</h2>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Your Name</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Your Email Address</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="john@doe.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"> Message </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="My project's purpose or vision is..."></textarea>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" id="submit-btn" class="btn contact-button">Submit</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
 
             </div>
         </div>
     </section>
-
-
-    <!-- Height-filler to sit behind fixed footer -->
-    <div style="height:5vh"></div>
 
 
     <!--            
@@ -739,9 +740,9 @@
 ╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝
 -->
     <footer class="fixed-bottom d-flex flex-row justify-content-between align-content-center bg-white">
-        <p class="ml-3 d-none d-md-block">© Dan Z Haas 2020</p>
-        <a class="ml-3" href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a>
-        <a class="mr-3" href="tel:(410)937-2073">(410)937-2073</a>
+        <p class="m-0" >© Dan Z Haas 2020</p>
+        <a href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a>
+        <a href="tel:(410)937-2073">(410)937-2073</a>
     </footer>
 
 

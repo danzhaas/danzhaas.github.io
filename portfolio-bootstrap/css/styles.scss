@@ -1,0 +1,850 @@
+/* 
+ d888b  db       .d88b.  d8888b.  .d8b.  db      
+88' Y8b 88      .8P  Y8. 88  `8D d8' `8b 88      
+88      88      88    88 88oooY' 88ooo88 88      
+88  ooo 88      88    88 88~~~b. 88~~~88 88      
+88. ~8~ 88booo. `8b  d8' 88   8D 88   88 88booo. 
+ Y888P  Y88888P  `Y88P'  Y8888P' YP   YP Y88888P                                  
+ */
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-size:2vh */
+    font-size: 1.5rem;
+    overflow-x:hidden
+}
+
+.container {
+    padding: 4px 0;
+    height:100%;   
+
+    > h1 {
+        font-weight:bold
+    }
+}
+
+h1 {
+    margin:0;
+    width:100%;
+    border-bottom: 10px solid rgb(64,162,227)
+}
+
+a {
+    color:Blue;
+}
+
+a:hover {
+    color: rgb(64,162,227);
+    text-decoration:none;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
+.badge {
+    font-size:1.25rem
+}
+
+hr {
+    border-color: rgb(64,162,227);
+    margin:5vh;
+}
+
+#about ul {
+    list-style-type:none;
+    padding-left:0;
+}
+
+.bold {
+    font-weight:bold
+}
+
+.h2-underline {
+    border-bottom: 3px solid rgb(145, 145, 145)
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    cursor:pointer;
+}
+
+
+/* 
+d8b   db  .d8b.  db    db 
+888o  88 d8' `8b 88    88 
+88V8o 88 88ooo88 Y8    8P 
+88 V8o88 88~~~88 `8b  d8' 
+88  V888 88   88  `8bd8'  
+VP   V8P YP   YP    YP    
+ */
+
+.navbar-brand {
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    font-size:1.5rem
+}
+
+#logo-text > p {
+    margin-bottom:0;
+}
+
+.nav-item a{
+    color:black !important;
+    font-size:2rem;
+    background-color:white;
+    /* font-family: 'Poiret One', cursive; */
+}
+
+.nav-link.active {
+    color:white !important;
+    background-color:	rgb(0, 68, 227) !important;
+}
+
+
+/* 
+ .o88b.  .d88b.  db       .d88b.  d8888b. .d8888. 
+d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D 88'  YP 
+8P      88    88 88      88    88 88oobY' `8bo.   
+8b      88    88 88      88    88 88`8b     `Y8b. 
+Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D 
+ `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y' 
+ */
+
+/*BRANDING: Primary colors:  */
+
+.text-white {
+    color:white
+}
+.bg-white {
+    background-color: white
+}
+.text-black {
+    color:black
+}
+.bg-black {
+    background-color: black
+}
+.text-light-blue {
+    color:rgb(146, 187, 214)
+}
+.bg-light-blue {
+    background-color: rgb(146,187,214)
+}
+.text-mid-blue {
+    color:rgb(64,162,227)
+}
+.bg-mid-blue {
+    background-color: rgb(64,162,227)
+}
+.text-deep-blue {
+    color:	rgb(0, 68, 227)
+}
+.bg-deep-blue {
+    background-color: rgb(0, 68, 227)
+}
+.bg-darkest-blue {
+    background-color: rgb(3, 0, 36);
+}
+.bg-lightest-gray {
+    background-color: rgb(241, 241, 241)
+}
+// .bg-lightest-gray {
+//     background-color: rgb(233, 233, 233)
+// }
+.text-lightest-gray {
+    color: rgb(233, 233, 233)
+}
+.text-light-gray {
+    color:rgb(181, 181, 181)
+}
+.bg-light-gray {
+    background-color: rgb(181, 181, 181)
+}
+.text-mid-gray {
+    color:rgb(145, 145, 145)
+}
+.bg-mid-gray {
+    background-color: rgb(145, 145, 145)
+}
+.text-deep-gray {
+    color:rgb(115, 115, 115)
+}
+.bg-deep-gray {
+    background-color: rgb(115, 115, 115)
+}
+.bg-darkest-gray {
+    background-color: rgb(19, 19, 19)
+}
+/* Secondary colors: Gold */
+.text-gold {
+    color:rgb(255, 215, 0)
+}
+.bg-gold {
+    background-color: #ffd700
+}
+/*
+More Secondary colors: green rgb(tbd) purple rgb(tbd)
+.text- {
+    color:
+};
+.bg- {
+    background-color: 
+};
+.text- {
+    color:
+};
+.bg- {
+    background-color: 
+}; */
+
+/* Gradients */
+.home-gradient {
+    /* background-image: linear-gradient(rgb(64,162,227), rgb(146, 187, 214)); */
+    background-image: linear-gradient(black, rgb(0, 68, 227))
+}
+
+.resume-gradient {
+    background-image: linear-gradient(rgb(255, 229, 79), rgb(255, 235, 122));
+}
+
+.about-gradient, .form-gradient {
+    background-image: linear-gradient( rgb(146, 187, 214),  rgb(188, 228, 255));
+}
+
+.contact-gradient {
+    /* background-image: linear-gradient(rgb(0, 68, 227), rgb(78, 122, 226)); */
+    background-image: linear-gradient(rgb(0, 68, 227), black)
+}
+
+.bg-transparent {
+    background-color:transparent
+}
+
+.border-transparent {
+    border:transparent
+}
+
+
+/* 
+.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db .d8888. 
+88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88 88'  YP 
+`8bo.   88ooooo 8P         88       88    88    88 88V8o 88 `8bo.   
+  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88   `Y8b. 
+db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D 
+`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P `8888Y' 
+*/
+
+/*
+██╗  ██╗ ██████╗ ███╗   ███╗███████╗
+██║  ██║██╔═══██╗████╗ ████║██╔════╝
+███████║██║   ██║██╔████╔██║█████╗  
+██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  
+██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+*/
+
+#home {
+    padding: 19vh 0;
+}
+
+
+#headline {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+/* 
+#line-design {
+    position:absolute;
+    top:20%;
+    bottom:10%;
+    left:0;
+    width:80%;
+    padding: 3rem 3rem 3rem 0;
+    border-top:10px solid rgb(64,162,227);
+    border-right:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227)
+} */
+
+#home-container {
+    padding: 1rem 1rem 1rem 0;
+    border-top:10px solid rgb(64,162,227);
+    border-right:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227)
+}
+
+#home-l-div {
+    border-top:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227)
+}
+
+#dzh {
+    max-height:100%;
+    max-width:100%
+}
+
+/*  
+        ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+        ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+        ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+        ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+        ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+*/
+
+.card-container {
+    width:400px;
+    max-width: 100%; 
+    margin:3vw 0;
+    /* padding-bottom:100%; */
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.project-card {
+    position:absolute;
+    left:3%;
+    right:3%;
+    padding-bottom:100%;
+    color:black;
+    background-color:white;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+} 
+
+.front .card-img-overlay {
+    position:absolute;
+    top:auto;
+    bottom:0;
+}
+
+.front img, .front .card-img-overlay {
+    -webkit-transition: -webkit-filter 0.5s;
+    -moz-transition: -moz-filter 0.5s;
+    -o-transition: -o-filter 0.5s;
+    transition: filter 0.5s;
+}
+
+.card-title {
+    font-weight:bold;
+}
+
+.project-card > div {
+    display: block;
+    max-height: 65vh;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front, .back {
+    background:white;
+    position:relative;
+    height:100%;
+    width:100%
+}
+
+.project-card .back {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card-text, .card button {
+    font-size:18px;
+}
+
+// .card-img {
+//     border:1px solid black
+// }
+
+#barkr-card .back {
+    /* background-color: rgb(255, 250, 221); */
+    background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
+}
+
+#timer-card .back {
+    /* background-color: rgb(229, 214, 255); */
+    background-image: linear-gradient( rgb(171, 122, 255), rgb(229, 214, 255));
+}
+
+#killi-card .back {
+    /* background-color: rgb(196, 246, 255); */
+    background-image: linear-gradient( rgb(121, 235, 255), rgb(196, 246, 255));
+}
+
+#LICS-card .back {
+    /* background-color: rgb(223, 223, 223); */
+    background-image: linear-gradient(rgb(139, 139, 139),rgb(223, 223, 223));
+}
+
+
+/*
+           .d8b.  d8888b.  .d88b.  db    db d888888b 
+          d8' `8b 88  `8D .8P  Y8. 88    88 `~~88~~' 
+          88ooo88 88oooY' 88    88 88    88    88    
+          88~~~88 88~~~b. 88    88 88    88    88    
+          88   88 88   8D `8b  d8' 88b  d88    88    
+          YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP    
+                                                     
+                                                     
+      */
+
+#about {
+    .card, li {
+        background-color: rgb(233, 233, 233);
+    }
+}
+
+#resume-thumbnail {
+    height:5em;
+    cursor:pointer;
+}
+
+#resume-iframe {
+    height:80vh;
+}
+
+.resume-icon-1 {
+    height:5em;
+    margin:8px 0;
+    /* background-color:#0088e3; */
+    /* background-color:rgb(145, 145, 145); */
+    background-color:#b2b2b2;
+    /* background-color:rgb(0, 68, 227); */
+    border-radius:10px;
+    padding-top:20px;
+    /* color:black; */
+    color:white;
+}
+
+.resume-icon-1 img {
+    height:3.5em;
+    margin-top:5px
+}
+
+.resume-icon-1 p {
+    margin-top:-5px
+}
+
+.resume-icon {
+    height:105px;
+    margin:8px 0;
+    /* background-color:#0088e3; */
+    background-color:rgb(0, 68, 227);
+    border-radius:10px;
+    padding-top:20px;
+    color:white;
+    /* color:darkgray; */
+}
+
+.resume-icon img {
+    height:75px;
+    padding-left:20px
+}
+
+.resume-icon p {
+    margin-top:-20px
+}
+
+.carousel-item img{
+    filter:brightness(0.50)
+}
+
+#about .card {
+    margin-bottom: 3vh;
+}
+
+#about li {
+    margin-bottom:2vh;
+}
+
+
+
+/*
+           .o88b.  .d88b.  d8b   db d888888b  .d8b.   .o88b. d888888b 
+          d8P  Y8 .8P  Y8. 888o  88 `~~88~~' d8' `8b d8P  Y8 `~~88~~' 
+          8P      88    88 88V8o 88    88    88ooo88 8P         88    
+          8b      88    88 88 V8o88    88    88~~~88 8b         88    
+          Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88    
+           `Y88P'  `Y88P'  VP   V8P    YP    YP   YP  `Y88P'    YP    
+                                                                      
+                                                                      
+      */
+
+#contact {
+    color:black;
+}
+
+.contact-text {
+    color:white;
+    font-size:2rem;
+}
+
+.contact-button {
+    text-align:left;
+    margin:5px;
+}
+
+.contact-button {
+    font-size:1.5rem;
+    background-color:rgb(0, 68, 227);
+    color:white;
+}
+
+.contact-button:hover {
+    /* background-color: rgb(64,162,227); */
+    background-color: rgb(64,162,227);
+    color:white;
+}
+
+/*  
+          d88888b  .d88b.   .d88b.  d888888b d88888b d8888b. 
+          88'     .8P  Y8. .8P  Y8. `~~88~~' 88'     88  `8D 
+          88ooo   88    88 88    88    88    88ooooo 88oobY' 
+          88~~~   88    88 88    88    88    88~~~~~ 88`8b   
+          88      `8b  d8' `8b  d8'    88    88.     88 `88. 
+          YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD 
+                                                             
+                                                             
+    */
+
+footer {
+    width:100%;
+    color:white;
+    padding:5px
+}
+
+footer > * {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bold;
+    color:black;
+    height:fit-content;
+    font-size: clamp(1rem, 1.5rem, 2rem)
+}
+
+
+/* 
+.88b  d88. d88888b d8888b. d888888b  .d8b.        .d88b.  db    db d88888b d8888b. d888888b d88888b .d8888. 
+88'YbdP`88 88'     88  `8D   `88'   d8' `8b      .8P  Y8. 88    88 88'     88  `8D   `88'   88'     88'  YP 
+88  88  88 88ooooo 88   88    88    88ooo88      88    88 88    88 88ooooo 88oobY'    88    88ooooo `8bo.   
+88  88  88 88~~~~~ 88   88    88    88~~~88      88    88 88    88 88~~~~~ 88`8b      88    88~~~~~   `Y8b. 
+88  88  88 88.     88  .8D   .88.   88   88      `8P  d8' 88b  d88 88.     88 `88.   .88.   88.     db   8D 
+YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   YD Y888888P Y88888P `8888Y' 
+ */
+
+/* 
+          db    db .d8888. 
+          `8b  d8' 88'  YP 
+           `8bd8'  `8bo.   
+           .dPYb.    `Y8b. 
+          .8P  Y8. db   8D 
+          YP    YP `8888Y' 
+                           
+                           
+*/
+@media only screen and (max-width : 576px) {
+    
+    /* Typography */
+    body, p {
+        font-size:1.25rem;
+    }
+    h2 {
+        font-size:1.75rem;
+    }
+    h3, .contact-text {
+        font-size:1.5rem
+    }
+    .badge {
+        font-size:0.75rem;
+    }
+    .btn {
+        font-size:1rem;
+    }
+    .display-3 {
+        font-size:2rem;
+    } 
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    footer * {
+        font-size:1rem
+    }
+
+
+    // Global
+    section {
+        padding:5vh 2vh;
+    }
+
+
+    /* Nav */
+    .navbar-toggler-icon, .navbar-brand {
+        outline: -webkit-focus-ring-color auto 1px;
+        background-color:rgba(0, 0, 0, 0.65);
+    }
+    .nav-item > a {
+        color:black !important;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    // .nav-item > a.active {
+    //     background-color: rgba(255, 217, 0, 1) !important;
+    // }
+
+    form > .card-body {
+        padding:10px
+    }
+
+    .label {
+        margin-bottom:4px
+    }
+
+    .form-group {
+        margin-bottom:8px
+    }   
+
+    #home {
+        padding:10vh 0
+    }
+
+}
+
+/* 
+          .d8888. .88b  d88. 
+          88'  YP 88'YbdP`88 
+          `8bo.   88  88  88 
+            `Y8b. 88  88  88 
+          db   8D 88  88  88 
+          `8888Y' YP  YP  YP 
+*/
+
+@media only screen and (min-width : 576px) {
+    body, p, label, li {
+        font-size:1.5rem
+    }
+    
+    #headline {
+        font-size: 3.5rem;
+    } 
+
+    #home-container {
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    section {
+        padding:7vw 0;
+    }
+
+    #projects .btn {
+        font-size:1.5rem
+    }
+
+    .card-text {
+        font-size:1.5rem
+    }
+
+    svg {
+        height:10vh;
+    }
+}
+
+/* 
+          .88b  d88. d8888b. 
+          88'YbdP`88 88  `8D 
+          88  88  88 88   88 
+          88  88  88 88   88 
+          88  88  88 88  .8D 
+          YP  YP  YP Y8888D' 
+                             
+                             
+*/
+
+@media only screen and (min-width : 768px) {
+
+    body {
+        font-size:1rem;
+    }
+
+    h1 {
+        font-size:3rem
+    }
+
+    h2 {
+        font-size:2rem;
+    }
+
+    h3 {
+        font-size:1.5rem;
+    }
+
+    section {
+        padding:10vh 0;
+    }
+
+    #home-container {
+        padding: 2.5rem 2.5rem 2.5rem 0;
+    }
+
+    .navbar-brand {
+        padding:8px
+    }
+
+    header {
+        width:99%;
+    }
+
+    .modal-dialog {
+        max-width:75vw;
+    }
+
+    #dzh {
+        max-height:50vh;
+        max-width:100%
+    }
+
+    .fa-linkedin, .fa-github-square {
+        font-size:6rem;
+    }
+
+    svg {
+        height:4vh;
+        margin:3px
+    }
+
+    #resume-thumbnail {
+        max-height:5em;
+        cursor:pointer;
+    }
+
+    #projects .btn {
+        font-size:1.25rem
+    }
+
+    .card-text {
+        font-size: 1.2rem
+    }
+}
+
+/* 
+          db       d888b  
+          88      88' Y8b 
+          88      88      
+          88      88  ooo 
+          88booo. 88. ~8~ 
+          Y88888P  Y888P  
+                          
+                          
+*/
+@media only screen and (min-width : 992px) {
+    #projects .btn {
+        font-size:1.25rem
+    }
+
+    .card-text {
+        font-size: 1rem
+    }
+
+    h3, .contact-text {
+        font-size:1.75rem
+    }
+}
+
+/* 
+          db    db db      
+          `8b  d8' 88      
+           `8bd8'  88      
+           .dPYb.  88      
+          .8P  Y8. 88booo. 
+          YP    YP Y88888P 
+                           
+                           
+          */
+
+@media only screen and (min-width : 1200px) {
+    
+    section {
+        padding:9vh 0;
+    }
+
+    h1 {
+        font-size:4rem
+    }
+
+    h2 {
+        font-size:2.6rem;
+    }
+
+    h3 {
+        font-size:1.7rem;
+    }
+
+    #home-container {
+        padding: 3rem 3rem 3rem 0;
+    }
+    
+    #headline {
+        top:33%;
+        font-size:5rem;
+    }
+
+    .card-container{ 
+        margin: 1.5rem 0;
+    }
+
+    .card-text {
+        font-size: 1.3rem
+    }
+}
+
+
+/* 
+ .d8b.   .o88b.  .o88b. d88888b .d8888. .d8888.  .d8b.  d8888b. d888888b db      d888888b d888888b db    db 
+d8' `8b d8P  Y8 d8P  Y8 88'     88'  YP 88'  YP d8' `8b 88  `8D   `88'   88        `88'   `~~88~~' `8b  d8' 
+88ooo88 8P      8P      88ooooo `8bo.   `8bo.   88ooo88 88oooY'    88    88         88       88     `8bd8'  
+88~~~88 8b      8b      88~~~~~   `Y8b.   `Y8b. 88~~~88 88~~~b.    88    88         88       88       88    
+88   88 Y8b  d8 Y8b  d8 88.     db   8D db   8D 88   88 88   8D   .88.   88booo.   .88.      88       88    
+YP   YP  `Y88P'  `Y88P' Y88888P `8888Y' `8888Y' YP   YP Y8888P' Y888888P Y88888P Y888888P    YP       YP    
+                                                                                                            
+                                                                                                            
+ */
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
