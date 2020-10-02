@@ -30,25 +30,29 @@ function squareCard(cardId) {
     $(cardId).css({
         'height': cardWidth + 'px'
     });
-    $(cardId + ' > .front').css({
+    $(cardId + ' > div').css({
         'height': cardWidth + 'px',
         'width': cardWidth + 'px'
     });
-    $(cardId + ' > .back').css({
-        'height': cardWidth + 'px',
-        'width': cardWidth + 'px'
-    });
+    // $(cardId + ' > .front').css({
+    //     'height': cardWidth + 'px',
+    //     'width': cardWidth + 'px'
+    // });
+    // $(cardId + ' > .back').css({
+    //     'height': cardWidth + 'px',
+    //     'width': cardWidth + 'px'
+    // });
+    // console.log( document.getElementById("LICS2-card") )
+    // console.log( $(cardId + ' > .front').css )
+    // console.log( $(cardId + ' > .back').css)
 }
 squareCard('.card-container');
-// squareCard('#timer-card');
 
 
 //TOOLTIPS
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-});
-
-// $('#resume-thumbnail').tooltip('show');
+// $(function () {
+//     $('[data-toggle="tooltip"]').tooltip()
+// });
 
 
 //BADGES

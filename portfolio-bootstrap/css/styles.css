@@ -13,8 +13,6 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  /* font-family: 'Oxygen', sans-serif; */
-  /* font-size:2vh */
   font-size: 1.5rem;
   overflow-x: hidden;
 }
@@ -263,10 +261,6 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 */
-#home {
-  padding: 19vh 0;
-}
-
 #headline {
   font-family: "Poiret One", cursive;
   font-weight: bold;
@@ -325,7 +319,6 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   position: absolute;
   left: 3%;
   right: 3%;
-  padding-bottom: 100%;
   color: black;
   background-color: white;
   -webkit-transition: -webkit-transform 0.5s;
@@ -388,7 +381,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   transform: rotateY(180deg);
 }
 
-.card-text, .card button {
+.card-text, #projects button {
   font-size: 18px;
 }
 
@@ -423,7 +416,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
       */
 #about .card, #about li {
-  background-color: #e9e9e9;
+  background-color: #f1f1f1;
 }
 
 #resume-thumbnail {
@@ -499,8 +492,29 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 
       */
-#contact {
-  color: black;
+#contact-l-div {
+  margin-right: 15px;
+  border-bottom: 10px solid #40a2e3;
+}
+
+#container-left {
+  padding: 0 3.5rem 3.5rem 0;
+  border-right: 10px solid #40a2e3;
+  border-bottom: 10px solid #40a2e3;
+}
+
+#contact-container {
+  margin: 0 -15px;
+}
+
+#container-right {
+  padding: 3.5rem 0 3.5rem 3.5rem;
+  border-top: 10px solid #40a2e3;
+}
+
+#contact-r-div {
+  margin-left: 15px;
+  border-top: 10px solid #40a2e3;
 }
 
 .contact-text {
@@ -511,16 +525,13 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 .contact-button {
   text-align: left;
   margin: 5px;
-}
-
-.contact-button {
   font-size: 1.5rem;
   background-color: #0044e3;
   color: white;
+  border: 1px solid white;
 }
 
 .contact-button:hover {
-  /* background-color: rgb(64,162,227); */
   background-color: #40a2e3;
   color: white;
 }
@@ -538,6 +549,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 footer {
   width: 100%;
   color: white;
+  background-color: white;
   padding: 5px;
 }
 
@@ -545,7 +557,7 @@ footer > * {
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
-  color: black;
+  color: #0044e3;
   height: fit-content;
   font-size: clamp(1rem, 1.5rem, 2rem);
 }
@@ -608,12 +620,11 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
   /* Nav */
   .navbar-toggler-icon, .navbar-brand {
-    outline: -webkit-focus-ring-color auto 1px;
+    outline: white auto 1px;
     background-color: rgba(0, 0, 0, 0.65);
   }
 
   .nav-item > a {
-    color: black !important;
     background-color: white;
   }
 
@@ -646,12 +657,16 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     font-size: 1.5rem;
   }
 
-  #headline {
-    font-size: 3.5rem;
+  #home {
+    padding: 10vh 0;
   }
 
   #home-container {
     padding: 2rem 2rem 2rem 0;
+  }
+
+  #headline {
+    font-size: 3.5rem;
   }
 
   section {
@@ -699,6 +714,14 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
   section {
     padding: 10vh 0;
+  }
+
+  #home {
+    padding: 19vh 0;
+  }
+
+  #contact {
+    padding: 15vh 0;
   }
 
   #home-container {
@@ -758,8 +781,10 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   #projects .btn {
     font-size: 1.25rem;
   }
-
-  .card-text {
+  #projects .card-container {
+    margin: 1.5rem 0;
+  }
+  #projects .card-text {
     font-size: 1rem;
   }
 
