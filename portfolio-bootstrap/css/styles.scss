@@ -184,13 +184,14 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 .bg-darkest-gray {
     background-color: rgb(19, 19, 19)
 }
-/* Secondary colors: Gold */
+/* Secondary colors: Gold, Green */
 .text-gold {
     color:rgb(255, 215, 0)
 }
 .bg-gold {
     background-color: #ffd700
 }
+
 /*
 More Secondary colors: green rgb(tbd) purple rgb(tbd)
 .text- {
@@ -303,6 +304,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     margin:3vw 0;
     /* padding-bottom:100%; */
     position: relative;
+    // display:flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items:center;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -o-perspective: 800px;
@@ -403,6 +408,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     background-image: linear-gradient(rgb(139, 139, 139),rgb(223, 223, 223));
 }
 
+#portfolio-card .back {
+    /* background-color: rgb(223, 223, 223); */
+    background-image: linear-gradient(rgb(0, 68, 227), rgb(64,162,227));
+}
 
 
 /*
@@ -420,9 +429,15 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     .card, li {
         background-color: #f1f1f1;
     }
+    li {
+        margin-bottom:2vh;
+    }
+    .card {
+        margin-bottom: 3vh;
+    }
 }
 
-#resume-thumbnail {
+#resume-icon {
     height:5em;
     cursor:pointer;
 }
@@ -431,60 +446,21 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     height:80vh;
 }
 
-.resume-icon-1 {
-    height:5em;
-    margin:8px 0;
-    /* background-color:#0088e3; */
-    /* background-color:rgb(145, 145, 145); */
-    background-color:#b2b2b2;
-    /* background-color:rgb(0, 68, 227); */
-    border-radius:10px;
-    padding-top:20px;
-    /* color:black; */
-    color:white;
-}
-
-.resume-icon-1 img {
-    height:3.5em;
-    margin-top:5px
-}
-
-.resume-icon-1 p {
-    margin-top:-5px
-}
-
-.resume-icon {
-    height:105px;
-    margin:8px 0;
-    /* background-color:#0088e3; */
-    background-color:rgb(0, 68, 227);
-    border-radius:10px;
-    padding-top:20px;
-    color:white;
-    /* color:darkgray; */
-}
-
-.resume-icon img {
-    height:75px;
-    padding-left:20px
-}
-
-.resume-icon p {
-    margin-top:-20px
-}
-
 .carousel-item img{
     filter:brightness(0.50)
 }
 
-#about .card {
-    margin-bottom: 3vh;
+#key {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
-#about li {
-    margin-bottom:2vh;
+#key > .badge {
+    font-size:1.5rem;
+    margin: .25rem;
 }
-
 
 
 /*
@@ -560,7 +536,9 @@ footer {
     width:100%;
     color:white;
     // background-color:rgb(64,162,227);
-    background-color:white;
+    background-color:rgb(3, 0, 36);
+    // background-color:white;
+    // border-top: 10px solid rgb(64,162,227);
     padding:5px
 }
 
@@ -570,15 +548,12 @@ footer {
         position: relative;
         font-family: 'Source Sans Pro', sans-serif;
         font-weight:bold;
-        color:rgb(0, 68, 227);
-        // color:white;
+        // color:rgb(0, 68, 227);
+        color:white;
         height:fit-content;
         font-size: clamp(1rem, 1.5rem, 2rem)
     }
 
-    // > a:hover {
-    //     color:blue;
-    // }
 }
 
 
@@ -614,7 +589,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         font-size:1.5rem
     }
     .badge {
-        font-size:0.75rem;
+        font-size:1rem;
     }
     .btn {
         font-size:1rem;

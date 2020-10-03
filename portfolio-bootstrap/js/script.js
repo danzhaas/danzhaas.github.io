@@ -22,7 +22,7 @@ function flip(cardId) {
 }
 
 //RESUME MODAL
-document.getElementById("resume-thumbnail").addEventListener("click", () => $('#resumeModal').modal('toggle'));
+document.getElementById("resume-icon").addEventListener("click", () => $('#resumeModal').modal('toggle'));
 
 //CARD DIMENSIONS
 function squareCard(cardId) {
@@ -47,20 +47,25 @@ function squareCard(cardId) {
     // console.log( $(cardId + ' > .back').css)
 }
 squareCard('.card-container');
-
+// $(window).resize(squareCard('.card-container'))
 
 //TOOLTIPS
 // $(function () {
 //     $('[data-toggle="tooltip"]').tooltip()
 // });
 
+function generateBadges(listString, badgeColor, targetSelector) {
+    const badgeArray = listString.split(", ").map(text => "<span class='badge badge-"+badgeColor+" mr-1'>" +text + "</span>");
+    $(targetSelector).append(badgeArray)
+}
 
-//BADGES
-//1. Dev badges
-// const devBadges = "MongoDB, Express, React, Node.js, Gatsby, Redux, JQuery, Javascript, Bootstrap, LESS, SASS, CSS, HTML, NPM, React Native, Github, Browser Developer Tools";
-
-// function generateBadges(listString, targetId) = {
-//     const array1 = listString.split(", ");
-//     const array2 = array1.map(text => <span>{text}</span>);
-//     $(targetId).append(array2)
-// }
+// generateBadges(devBadges, "primary", $("#dev-badges"));
+// generateBadges(designBadges, "info", $("#dev-badges"));
+// generateBadges(databaseBadges, "success", $("#dev-badges"));
+// generateBadges(languagesBadges, "secondary", $("#dev-badges"));
+// generateBadges(osBadges, "dark", $("#dev-badges"))
+generateBadges(devBadges, "primary", $(".dev-badges"));
+generateBadges(designBadges, "info", $(".design-badges"));
+generateBadges(databaseBadges, "success", $(".database-badges"));
+generateBadges(languagesBadges, "secondary", $(".languages-badges"));
+generateBadges(osBadges, "dark", $(".os-badges"))
