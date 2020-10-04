@@ -39,7 +39,7 @@
                 <nav id="scroll" class="navbar navbar-dark navbar-expand-md p-2">
                     <a class="nav-link navbar-brand rounded bg-white display-flex flex-row"
                         style="display:flex !important" href="#home">
-                        <img src="../images/color-full-illustration-logo-z.svg" style="height:3rem">
+                        <img src="../images/color-full-illustration-logo-z.svg" style="height:3rem" alt="logo for Dan Z Haas Web Developer" >
                         <!-- <img src="..\images\logo-full-illustration.svg" class="bg-transparent border-0"
                             style="height:60px" />
                         <div id="logo-text" class="display-flex flex-column ml-2">
@@ -99,7 +99,7 @@
             </div>
 
             <div class="col-12 offset-md-1 col-md-5 mh-100 p-3 px-md-0">
-                <img id="dzh" class="border-0 float-md-right" src="../images/DZH-pic-Sept-2020-700x850.jpg">
+                <img id="dzh" class="border-0 float-md-right" src="../images/DZH-pic-Sept-2020-700x850.jpg" alt="Picture of Dan Haas" >
             </div>
         </div>
         <div class="col home-div" id="home-r-div"></div>
@@ -126,9 +126,9 @@
 
                     <!-- Barkr Card -->
                     <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="barkr-card" class="card project-card border-0 mx-auto" onclick="flip('#barkr-card')">
+                        <div id="barkr-card" class="card project-card border-0 mx-auto" onclick="flip('#barkr-card')" tabindex=0 >
                             <div class="front zoom">
-                                <img class="card-img" src="..\images\barkr-tile-500.jpg" />
+                                <img class="card-img" src="..\images\barkr-tile-500.jpg" alt="screen capture of Barkr site" />
                             </div>
                             <div
                                 class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
@@ -203,13 +203,19 @@
                                 <p class="card-text m-0">My "pet project": a companion to your companion. Share your
                                     best friend with the world on this dog social network.</p>
                                 <div class="d-flex flex-row justify-content-around">
-                                    <button type="button" class="btn btn-sm">
+                                    <a role="button" class="btn btn-sm" href="http://github.com/danzhaas/barkr-react" target="_blank" >
+                                        View Code at Github
+                                    </a>
+                                    <a role="button" class="btn btn-sm" href="https://danzhaas.github.io/barkr-react/" target="_blank" >
+                                        Live Version
+                                    </a>
+                                    <!-- <button type="button" class="btn btn-sm">
                                         <a href="http://github.com/danzhaas/barkr-react" target="_blank">View Code
                                             at Github</a>
                                     </button>
                                     <button type="button" class="btn btn-sm"><a
                                             href="https://danzhaas.github.io/barkr-react/" target="_blank">Live
-                                            Version</a></button>
+                                            Version</a></button> -->
                                 </div>
                             </div>
                         </div>
@@ -217,9 +223,9 @@
 
                     <!-- Distraction Timer Card -->
                     <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="timer-card" class="card project-card border-0 mx-auto" onclick="flip('#timer-card')">
+                        <div id="timer-card" class="card project-card border-0 mx-auto" onclick="flip('#timer-card')" tabindex=0  >
                             <div class="front zoom">
-                                <img class="card-img" src="..\images\timer-tile-500.jpg" />
+                                <img class="card-img" src="..\images\timer-tile-500.jpg" alt="screen capture of Distraction Timer app" />
                             </div>
                             <div class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
                                 <h2 class="card-title m-0">Distraction Timer</h2>
@@ -309,13 +315,19 @@
                                 <p class="card-text m-0">A productivity tool to quantify time lost to distractions.
                                     Useful to anyone who wants to be more efficient and people with ADHD.</p>
                                 <div class="d-flex flex-row justify-content-around">
-                                    <button type="button" class="btn btn-sm"><a
+                                    <a role="button" class="btn btn-sm" href="https://github.com/danzhaas/danzhaas.github.io/tree/source/project-adhd/distraction-timer" target="_blank">
+                                        View Code at Github
+                                    </a>
+                                    <a role="button" class="btn btn-sm" href="http://magenta-yam.surge.sh/" target="_blank" >
+                                        Live Version
+                                    </a>
+                                    <!-- <button type="button" class="btn btn-sm"><a
                                             href="https://github.com/danzhaas/danzhaas.github.io/tree/source/project-adhd/distraction-timer"
                                             target="_blank">View Code
                                             at Github</a></button>
                                     <button type="button" class="btn btn-sm"><a href="http://magenta-yam.surge.sh/"
                                             target="_blank">Live
-                                            Version</a></button>
+                                            Version</a></button> -->
                                 </div>
                             </div>
                         </div>
@@ -323,9 +335,9 @@
 
                     <!-- Killifish Classic Card -->
                     <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="killi-card" class="card project-card border-0 mx-auto" onclick="flip('#killi-card')">
+                        <div id="killi-card" class="card project-card border-0 mx-auto" onclick="flip('#killi-card')" tabindex=0 >
                             <div class="front zoom">
-                                <img class="card-img" src="..\images\killi-tile-500.jpg" />
+                                <img class="card-img" src="..\images\killi-tile-500.jpg" alt="screen capture of Killifish Clasic site" />
                             </div>
                             <div class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
                                 <h2 class="card-title m-0">Killifish Classic</h2>
@@ -391,13 +403,19 @@
                                     convention. The design incorporates the palette of beautifully bright colors of
                                     these fish. </p>
                                 <div class="d-flex flex-row justify-content-around">
-                                    <button type="button" class="btn btn-sm"><a
+                                    <a role="button" class="btn btn-sm" href="https://github.com/danzhaas/danzhaas.github.io/tree/master/killifish-classic" target="_blank">
+                                        View Code at Github
+                                    </a>
+                                    <a role="button" class="btn btn-sm" href="https://danzhaas.github.io/killifish-classic/" target="_blank" >
+                                        Live Version
+                                    </a>
+                                    <!-- <button type="button" class="btn btn-sm"><a
                                             href="https://github.com/danzhaas/danzhaas.github.io/tree/master/killifish-classic"
                                             target="_blank">View Code
                                             at Github</a></button>
                                     <button type="button" class="btn btn-sm"><a
                                             href="https://danzhaas.github.io/killifish-classic/" target="_blank">Live
-                                            Version</a></button>
+                                            Version</a></button> -->
                                 </div>
                             </div>
                         </div>
@@ -405,9 +423,9 @@
 
                     <!-- LICS Card -->
                     <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="LICS-card" class="card project-card border-0 mx-auto" onclick="flip('#LICS-card')">
+                        <div id="LICS-card" class="card project-card border-0 mx-auto" onclick="flip('#LICS-card')" tabindex=0 >
                             <div class="front zoom">
-                                <img class="card-img" src="..\images\LICS-tile-500.jpg" />
+                                <img class="card-img" src="..\images\LICS-tile-500.jpg" alt="screen capture of Lorem Ipsum Cancer Studies site" />
                             </div>
                             <div class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
                                 <h2 class="card-title m-0">Lorem Ipsem Cancer Studies</h2>
@@ -459,7 +477,13 @@
                                     has been written to be widely accessible for many audiences, from the layman to the
                                     Ph.D. </p>
                                 <div class="d-flex flex-row justify-content-around">
-                                    <button type="button" class="btn btn-sm">
+                                    <a role="button" class="btn btn-sm" href="https://github.com/danzhaas/danzhaas.github.io/tree/master/lorem-ipsum-cancer-studies" target="_blank">
+                                        View Code at Github
+                                    </a>
+                                    <a role="button" class="btn btn-sm" href="https://danzhaas.github.io/lorem-ipsum-cancer-studies/index.html" target="_blank" >
+                                        Live Version
+                                    </a>
+                                    <!-- <button type="button" class="btn btn-sm">
                                         <a href="https://github.com/danzhaas/danzhaas.github.io/tree/master/lorem-ipsum-cancer-studies"
                                             target="_blank">
                                             View Code at Github
@@ -470,7 +494,7 @@
                                             target="_blank">
                                             Live Version
                                         </a>
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                         </div>
@@ -478,10 +502,9 @@
 
                     <!-- Portfolio Card -->
                     <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="portfolio-card" class="card project-card border-0 mx-auto"
-                            onclick="flip('#portfolio-card')">
+                        <div id="portfolio-card" class="card project-card border-0 mx-auto" onclick="flip('#portfolio-card')" tabindex=0 >
                             <div class="front zoom">
-                                <img class="card-img" src="..\images\portfolio-tile-500.jpg" />
+                                <img class="card-img" src="..\images\portfolio-tile-500.jpg" alt="screen capture of this Portfolio site" />
                             </div>
                             <div
                                 class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
@@ -560,13 +583,13 @@
                                 </div>
                                 <p class="card-text m-0">Look familiar? Check out how I made this project at Github.</p>
                                 <div class="d-flex flex-row justify-content-around">
-                                    <button type="button" class="btn btn-sm">
-                                        <a href="https://github.com/danzhaas/danzhaas.github.io/tree/master/index.html"
-                                            target="_blank">View Code at Github</a>
-                                    </button>
-                                    <button type="button" class="btn btn-sm" onclick="alert('Welcome Back')">
-                                        <a href="#">Live Version</a>
-                                    </button>
+                                    <!-- <button type="button" class="btn btn-sm"> -->
+                                    <a role="button" class="btn btn-sm" href="https://github.com/danzhaas/danzhaas.github.io/tree/master/index.html" target="_blank">
+                                        View Code at Github
+                                    </a>
+                                    <a role="button" class="btn btn-sm" href="#projects" >
+                                        Live Version
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -595,33 +618,33 @@
             <div id="about-cards" class="row d-flex flex-row flex-wrap justify-content-between">
 
                 <!-- First Card -->
-                    <div class="card col-12">
-                        <h2 class="py-3 bold h2-underline card-title">Skills & Technologies</h2>
-                        <div class="card-body">
-                            <ul class="d-flex d-lg-none list-group list-group-flush flex-row flex-wrap">
-                                <div id="dev-badges" class="dev-badges col-auto p-2"><span
-                                        class="text-primary bold mr-2">Development</span><br></div>
-                                <div id="design-badges" class="design-badges col-auto p-2"><span class="text-info bold mr-2">Design</span><br>
-                                </div>
-                                <div id="database-badges" class="database-badges col-auto p-2"><span
-                                        class="text-success bold mr-2">Databases</span><br></div>
-                                <div id="languages-badges" class="languages-badges col-auto p-2"><span
-                                        class="text-secondary bold mr-2">Languages</span><br></div>
-                                <div id="os-badges" class="os-badges col-auto p-2"><span class="text-dark bold mr-2">OS</span><br></div>
-                            </ul>
-                            <ul class="d-none d-lg-flex list-group list-group-flush flex-row">
-                                <li id="dev-badges" class="dev-badges p-2"><span
-                                    class="text-primary bold mr-2">Development</span><br></li>
-                                <li id="design-badges" class="design-badges p-2"><span class="text-info bold mr-2">Design</span><br>
-                                </li>
-                                <li id="database-badges" class="database-badges p-2"><span
-                                        class="text-success bold mr-2">Databases</span><br></li>
-                                <li id="languages-badges" class="languages-badges p-2"><span
-                                        class="text-secondary bold mr-2">Languages</span><br></li>
-                                <li id="os-badges" class="os-badges p-2"><span class="text-dark bold mr-2">OS</span><br></li>
-                            </ul>
-                        </div>
+                <div class="card col-12">
+                    <h2 class="py-3 bold h2-underline card-title">Skills & Technologies</h2>
+                    <div class="card-body">
+                        <ul class="d-flex d-lg-none list-group list-group-flush flex-row flex-wrap">
+                            <div id="dev-badges" class="dev-badges col-auto p-2"><span
+                                    class="text-primary bold mr-2">Development</span><br></div>
+                            <div id="design-badges" class="design-badges col-auto p-2"><span class="text-info bold mr-2">Design</span><br>
+                            </div>
+                            <div id="database-badges" class="database-badges col-auto p-2"><span
+                                    class="text-success bold mr-2">Databases</span><br></div>
+                            <div id="languages-badges" class="languages-badges col-auto p-2"><span
+                                    class="text-secondary bold mr-2">Languages</span><br></div>
+                            <div id="os-badges" class="os-badges col-auto p-2"><span class="text-dark bold mr-2">OS</span><br></div>
+                        </ul>
+                        <ul class="d-none d-lg-flex list-group list-group-flush flex-row">
+                            <li id="dev-badges" class="dev-badges p-2"><span
+                                class="text-primary bold mr-2">Development</span><br></li>
+                            <li id="design-badges" class="design-badges p-2"><span class="text-info bold mr-2">Design</span><br>
+                            </li>
+                            <li id="database-badges" class="database-badges p-2"><span
+                                    class="text-success bold mr-2">Databases</span><br></li>
+                            <li id="languages-badges" class="languages-badges p-2"><span
+                                    class="text-secondary bold mr-2">Languages</span><br></li>
+                            <li id="os-badges" class="os-badges p-2"><span class="text-dark bold mr-2">OS</span><br></li>
+                        </ul>
                     </div>
+                </div>
 
                 <!-- Second card -->
                 <div class="card col-12">
@@ -655,7 +678,7 @@
                                     <i style="color:#0082ca" class="fab fa-5x fa-linkedin"></i>
                                 </a>
                                 <!-- Resume -->
-                                <img id="resume-icon" class="zoom" src="..\images\brand-resume-icon-w-margin.svg">
+                                <img id="resume-icon" class="zoom" src="..\images\brand-resume-icon-w-margin.svg" tabindex=0 alt="thumbnail for resume with Dan Haas' logo" >
                             </div>
                             <!-- </div> -->
                         </div>
@@ -680,7 +703,7 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="../images/suede-and-true-grit-800.jpg" class="d-block w-100"
-                                            alt="...">
+                                            alt="Dan's dog Suede and statue of UMBC mascot True Grit, a Chesapeake Bay Retriever">
                                         <div class="carousel-caption">
                                             <h5><i class="fas fa-dog"></i> Dog Dad</h5>
                                             <p class="d-none d-md-block">Suede is the inspiration for my Barkr
@@ -690,7 +713,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../images/bike-800.jpg" class="d-block w-100" alt="...">
+                                        <img src="../images/bike-800.jpg" class="d-block w-100" alt="Sculpture of bicyclist">
                                         <div class="carousel-caption">
                                             <h5><i class="fas fa-biking"></i> Casual Biker</h5>
                                             <p class="d-none d-md-block">Have biked all over MD, southern PA,
@@ -700,7 +723,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../images/goofball-600.jpg" class="d-block w-100" alt="...">
+                                        <img src="../images/goofball-600.jpg" class="d-block w-100" alt="Screen capture of The Simpsons with Homer Simpson and the Capitol City Goofball">
                                         <div class="carousel-caption">
                                             <h5><i class="fas fa-golf-ball"></i> Goofball</h5>
                                             <p class="d-none d-md-block">Comedies I've been watching recently are
@@ -842,10 +865,10 @@
                             very real.
                         </p>
                         <div id="contact-buttons" class="w-100 d-flex flex-row ">
-                            <a class="col-auto btn contact-button" href="tel:(410)937-2073"><i
+                            <a class="col-auto btn contact-button btn-outline-light" href="tel:(410)937-2073"><i
                                     class="fas fa-1x fa-mobile"></i>
                                 (410)937-2073</a>
-                            <a class="col-auto btn contact-button" href="mailto:danzhaas@gmail.com"><i
+                            <a class="col-auto btn contact-button btn-outline-light " href="mailto:danzhaas@gmail.com"><i
                                     class="fas fa-1x fa-envelope"></i>
                                 danzhaas@gmail.com</a>
                         </div>

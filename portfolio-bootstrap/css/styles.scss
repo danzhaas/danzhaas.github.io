@@ -330,6 +330,12 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+
+    .btn {
+        // color:white;
+        color:black;
+        // border:1px solid black
+    }
 } 
 
 .front .card-img-overlay {
@@ -384,34 +390,81 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     font-size:18px;
 }
 
-// .card-img {
-//     border:1px solid black
-// }
-
-#barkr-card .back {
-    /* background-color: rgb(255, 250, 221); */
-    background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
+#barkr-card {
+    .back {
+        background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
+    }
+    .btn {
+        background-color:rgb(255, 233, 111);
+        // background-color: hsl(51, 100%, 51%); 
+        &:hover {
+            background-color: hsl(51, 100%, 51%); 
+            // background-color:rgb(255, 233, 111);
+        }
+    }
 }
 
-#timer-card .back {
-    /* background-color: rgb(229, 214, 255); */
+#timer-card {
+    .back {
     background-image: linear-gradient( rgb(171, 122, 255), rgb(229, 214, 255));
+    }
+
+    .btn {
+        background-color:rgb(171, 122, 255);
+        // background-color: hsl(265, 100%, 61%); 
+        &:hover {
+            background-color: hsl(265, 100%, 61%); 
+            // background-color:rgb(171, 122, 255);
+        }
+    }
 }
 
-#killi-card .back {
-    /* background-color: rgb(196, 246, 255); */
+#killi-card {
+    .back {
     background-image: linear-gradient( rgb(121, 235, 255), rgb(196, 246, 255));
+    }
+
+    .btn {
+        background-color:rgb(121, 235, 255);
+        // background-color: hsl(189, 100%, 56%); 
+        &:hover {
+            background-color: hsl(189, 100%, 56%); 
+            // background-color:rgb(121, 235, 255);
+        }
+    }
 }
 
-#LICS-card .back {
-    /* background-color: rgb(223, 223, 223); */
+#LICS-card {
+    .back {
     background-image: linear-gradient(rgb(139, 139, 139),rgb(223, 223, 223));
+    }
+
+    .btn {
+    background-color:rgb(139, 139, 139);
+    // background-color: hsl(0, 0%, 41%); 
+    &:hover {
+        background-color: hsl(0, 0%, 41%); 
+        // background-color:rgb(139, 139, 139);
+    }
+    }
 }
 
-#portfolio-card .back {
-    /* background-color: rgb(223, 223, 223); */
-    background-image: linear-gradient(rgb(0, 68, 227), rgb(64,162,227));
+#portfolio-card {
+    .back {
+    background-image: linear-gradient(rgb(64,162,227), rgb(146,187,214));
+    }
+
+    .btn {
+    background-color:rgb(64, 162, 227);
+    // background-color:hsl(204, 62%, 44%);
+        &:hover {
+            background-color:hsl(204, 62%, 44%);
+            // background-color:rgb(64, 162, 227);
+            
+        }
+    }
 }
+
 
 
 /*
