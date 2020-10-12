@@ -527,31 +527,31 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
                                                                       
       */
 
-#contact-l-div {
-    margin-right:15px;
-    border-bottom:10px solid rgb(64,162,227)
+
+// Xs to Md design
+
+#contact-top-l-div {
+    border-top:10px solid rgb(64,162,227)
 }
 
-#container-left {
-    padding: 0 3.5rem 3.5rem 0;
+#contact-top-container {
     border-right:10px solid rgb(64,162,227);
+    border-top:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227);
+    padding-right:15px;
+}
+
+#contact-bottom-container {
+    border-left:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227);
+    padding-left:15px;
+}
+
+#contact-bottom-r-div {
     border-bottom:10px solid rgb(64,162,227)
 }
 
-#contact-container {
-    margin:0 -15px;
-}
-
-#container-right {
-    padding: 3.5rem 0 3.5rem 3.5rem;
-    border-top:10px solid rgb(64,162,227);
-}
-
-#contact-r-div {
-    margin-left:15px;
-    border-top:10px solid rgb(64,162,227);
-    // border-bottom:10px solid rgb(64,162,227)
-}
+// All sizes
 
 .contact-text {
     color:white;
@@ -676,6 +676,13 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     // .nav-item > a.active {
     //     background-color: rgba(255, 217, 0, 1) !important;
     // }
+
+    // About
+    #about-cards {
+        padding:0 2vh;
+    }
+
+    // Contact
 
     form > .card-body {
         padding:10px
@@ -853,6 +860,33 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     h3, .contact-text {
         font-size:1.75rem
     }
+}
+
+
+#contact-l-div {
+    margin-right:15px;
+    border-bottom:10px solid rgb(64,162,227)
+}
+
+#container-left {
+    padding: 0 3.5rem 3.5rem 0;
+    border-right:10px solid rgb(64,162,227);
+    border-bottom:10px solid rgb(64,162,227)
+}
+
+#contact-container {
+    margin:0 -15px;
+}
+
+#container-right {
+    padding: 3.5rem 0 3.5rem 3.5rem;
+    border-top:10px solid rgb(64,162,227);
+}
+
+#contact-r-div {
+    margin-left:15px;
+    border-top:10px solid rgb(64,162,227);
+    // border-bottom:10px solid rgb(64,162,227)
 }
 
 /* 

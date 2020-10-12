@@ -492,29 +492,25 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 
       */
-#contact-l-div {
-  margin-right: 15px;
-  border-bottom: 10px solid #40a2e3;
+#contact-top-l-div {
+  border-top: 10px solid #40a2e3;
 }
 
-#container-left {
-  padding: 0 3.5rem 3.5rem 0;
+#contact-top-container {
   border-right: 10px solid #40a2e3;
+  border-top: 10px solid #40a2e3;
   border-bottom: 10px solid #40a2e3;
+  padding-right: 15px;
 }
 
-#contact-container {
-  margin: 0 -15px;
+#contact-bottom-container {
+  border-left: 10px solid #40a2e3;
+  border-bottom: 10px solid #40a2e3;
+  padding-left: 15px;
 }
 
-#container-right {
-  padding: 3.5rem 0 3.5rem 3.5rem;
-  border-top: 10px solid #40a2e3;
-}
-
-#contact-r-div {
-  margin-left: 15px;
-  border-top: 10px solid #40a2e3;
+#contact-bottom-r-div {
+  border-bottom: 10px solid #40a2e3;
 }
 
 .contact-text {
@@ -626,6 +622,10 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
   .nav-item > a {
     background-color: white;
+  }
+
+  #about-cards {
+    padding: 0 2vh;
   }
 
   form > .card-body {
@@ -792,6 +792,31 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     font-size: 1.75rem;
   }
 }
+#contact-l-div {
+  margin-right: 15px;
+  border-bottom: 10px solid #40a2e3;
+}
+
+#container-left {
+  padding: 0 3.5rem 3.5rem 0;
+  border-right: 10px solid #40a2e3;
+  border-bottom: 10px solid #40a2e3;
+}
+
+#contact-container {
+  margin: 0 -15px;
+}
+
+#container-right {
+  padding: 3.5rem 0 3.5rem 3.5rem;
+  border-top: 10px solid #40a2e3;
+}
+
+#contact-r-div {
+  margin-left: 15px;
+  border-top: 10px solid #40a2e3;
+}
+
 /* 
           db    db db      
           `8b  d8' 88      
