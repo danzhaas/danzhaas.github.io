@@ -55,7 +55,7 @@ squareCard('.card-container');
 // });
 
 function generateBadges(listString, badgeColor, targetSelector) {
-    const badgeArray = listString.split(", ").map(text => "<span class='badge badge-"+badgeColor+" mr-1'>" +text + "</span>");
+    const badgeArray = listString.split(", ").map(text => "<span class='badge badge-"+badgeColor+" mr-1 zoom'>" +text + "</span>");
     $(targetSelector).append(badgeArray)
 }
 
