@@ -49,3 +49,5 @@ const languagesBadges = "Visual Basic for Applications";
 // OS
 const osBadges = "Windows, Linux, Mac";
 
+
+//SVGs
