@@ -114,11 +114,11 @@ p {
 }
 
 a {
-  color:red;
+  color:blue;
 }
 
 a:visited {
-  color:blue;
+  color:darkblue;
 }
 
 li a {
@@ -126,7 +126,7 @@ li a {
 }
 
 li a:hover {
-  color:maroon;
+  color:darkblue;
 }
 
 ul {
@@ -214,7 +214,8 @@ footer {
 }
 
 #map {
-margin:10px;
+margin:10px auto;
+max-width:100%;
 }
 
 /*
@@ -273,6 +274,7 @@ Media query begins here
   margin:0 auto;
   box-sizing: border-box;
   border:0;
+  max-width:100%
 }
 
 .invite-button:hover {

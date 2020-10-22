@@ -1,106 +1,3 @@
-//          MEDIA QUERIES
-
-// Mobile, <800 px 
-
-@media screen and (max-width:800px) {
-
-    body {
-        background-position:-200px 0;
-    }
-
-    header {
-        width:100%;
-        border-radius:0;
-    }
-
-    nav {
-        flex-wrap:wrap;
-    }
-    
-    #logo {
-        display:block;
-        line-height:80px;
-    }
-
-    main {        
-        width:100%;
-        margin:30px 0;
-        border-radius:0;
-    }
-    
-    aside {
-        width:100%;        
-        border-radius: 0;
-    }
-
-    article {
-        margin:0;   
-    }
-
-    section {
-        border-radius: 0px;
-    }
-
-    footer {
-        width:100%;
-        border-radius:0;
-    }
-}
-
-// Tablet, 800-1200px
-
-@media screen and (min-width:800px) {
-    
-    header {
-        width:80%;
-        margin:auto;
-    }
-    
-    main {
-        width:80%;
-        margin:30px auto;
-    }
-
-    aside {
-        width:40%;
-    }
-
-    footer {
-        width:80%;        
-    }
-}
-
-// Desktop, >1200px
-@media screen and (min-width:1200px) {
-
-    header {
-        width:1000px;
-        margin:auto;
-    }
-    
-    body {
-        width:1000px;
-        margin:auto;
-    }
-
-    main {
-        margin:30px auto 30px auto;        
-        border-radius: 30px;
-    }
-
-    article {
-        margin: auto;
-    }
-    
-    aside {
-        width:40%;
-    }
-
-    footer {
-        width:1000px;
-    }
-}
-
 //          FONTS
 
 /* latin-ext */
@@ -363,6 +260,15 @@ a:visited {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    h2 {
+        width:100%;
+        text-align: center;
+    }
+
+    a {
+        margin:1em;
+    }
 }
 
 figcaption {
@@ -453,9 +359,10 @@ img {
 }
 
 #labels {
+    width:33%;
     display:grid;
-    grid-template-columns: 250px;
-    grid-template-rows:repeat(4,50px);
+    grid-template-columns: 100%;
+    grid-template-rows:repeat(4,80px);
     grid-gap:10px;
     float:left;
     justify-items: right;
@@ -470,20 +377,22 @@ img {
 }
 
 #inputs {
+    width:66%;
     display:grid;
-    grid-template-columns: 500px;
-    grid-template-rows:repeat(4,50px);
+    grid-template-columns: 100%;
+    grid-template-rows:repeat(4,80px);
     grid-gap:10px 10px;
     float:right;
     justify-items: left;
     align-items:center;
-    
+    max-width:100%;
     
     * {
         place-self:center left;
         margin-left:0;
         padding-left:0;
         text-align:left;
+        max-width:100%;
     }
 }
 
@@ -514,6 +423,28 @@ img {
     background-color:orange;
 }
 
+ul {
+    padding-inline-start:0;
+
+    li {
+        margin: 1em 0;
+    }
+}
+
+ol {
+    // margin:1em 0;
+    list-style-type: decimal;
+    padding-inline-start:20px;
+
+    li {
+        margin:1em 0;
+    }
+}
+
+iframe {
+    max-width:100%
+}
+
 footer {
     border-top:10px solid rgba(255, 181, 44, 0.829);
     margin:0 auto;
@@ -521,11 +452,12 @@ footer {
     background-color: rgba(255, 166, 0, 0.562)
 }
 
-.js-slideshow {
+#slideshow {
     position:relative; 
     box-sizing: border-box;
-    width:800px; 
-    height:800px;
+    max-width:800px;
+    width:100%;
+    padding-top:100%;
     background-color: rgba(255, 181, 44, 0.829);
     border:10px solid rgba(255, 181, 44, 0.829);
     border-radius: 15px;
@@ -546,13 +478,6 @@ footer {
     }
 }
 
-//  ADD HERE AWESOMEFONT FISH FOR UL BULLETS 
-//ul {
-//    
-//}
-
-//LESS Preprocessing
-
 .flex-column() {
     display:flex;
     flex-direction: column;
@@ -561,4 +486,135 @@ footer {
 .flex-row() {
     display: flex;    
     flex-direction: row;
+}
+
+
+//          MEDIA QUERIES
+
+// XS screens < 400px
+
+@media screen and (max-width:400px) {
+
+    #logo {
+        padding:60px 0;
+        margin: 0 auto;
+    }
+
+    #fish-hr > img:nth-child(4) {
+        display:none
+    }
+
+}
+
+// SM Screens < 600 px
+
+@media screen and (max-width:600px) {
+
+    #fish-hr > img:nth-child(5) {
+        display:none
+    }
+
+}
+
+// Mobile, <800 px 
+
+@media screen and (max-width:800px) {
+
+    body {
+        background-position:-200px 0;
+        background-size:cover
+    }
+
+    header {
+        width:100%;
+        border-radius:0;
+    }
+
+    nav {
+        flex-wrap:wrap;
+    }
+    
+    #logo {
+        display:block;
+        line-height:80px;
+    }
+
+    main {        
+        width:100%;
+        margin:30px 0;
+        border-radius:0;
+    }
+    
+    aside {
+        width:100%;        
+        border-radius: 0;
+        margin:30px 0;
+    }
+
+    article {
+        margin:0;   
+    }
+
+    section {
+        border-radius: 0px;
+    }
+
+    footer {
+        width:100%;
+        border-radius:0;
+    }
+}
+
+// Tablet, 800-1200px
+
+@media screen and (min-width:800px) {
+    
+    header {
+        width:80%;
+        margin:auto;
+    }
+    
+    main {
+        width:80%;
+        margin:30px auto;
+    }
+
+    aside {
+        width:40%;
+    }
+
+    footer {
+        width:80%;        
+    }
+}
+
+// Desktop, >1200px
+@media screen and (min-width:1200px) {
+
+    header {
+        width:1000px;
+        margin:auto;
+    }
+    
+    body {
+        width:1000px;
+        margin:auto;
+    }
+
+    main {
+        margin:30px auto 30px auto;        
+        border-radius: 30px;
+    }
+
+    article {
+        margin: auto;
+    }
+    
+    aside {
+        width:40%;
+    }
+
+    footer {
+        width:1000px;
+    }
 }

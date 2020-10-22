@@ -55,11 +55,7 @@ generateBadges(osBadges, "dark", $(".os-badges"))
 
 
 //OPEN DISTRACTION TIMER WITH APPROPRIATE SIZE
-// function openDistractionTimer() {
-//     window.open("http://danzhaas.github.io/Focus-Suite", ["width=600px,height=370px"])
-// }
-
-
+// Code from https://accessify.com/tools-and-wizards/accessibility-tools/pop-up-window-generator/default.php
 function addEvent(elm, evType, fn, useCapture) {
     if(elm.addEventListener) {
         elm.addEventListener(evType, fn, useCapture);
@@ -71,22 +67,16 @@ function addEvent(elm, evType, fn, useCapture) {
         elm['on' + evType] = fn;
     }
 }
-
 var newWindow = null;
-
 function closeWin(){
     if (newWindow != null){
         if(!newWindow.closed)
             newWindow.close();
     }
 }
-
 function popUpWin(url, type, strWidth, strHeight){
-
     closeWin();
-
     type = type.toLowerCase();
-
     if (type == "fullscreen"){
         strWidth = screen.availWidth;
         strHeight = screen.availHeight;
@@ -97,7 +87,6 @@ function popUpWin(url, type, strWidth, strHeight){
     newWindow = window.open(url, "newWin", tools);
     newWindow.focus();
 }
-
 function doPopUp(e)
 {
 //set defaults - if nothing in rel attrib, these will be used
@@ -123,7 +112,6 @@ else if (e)
     e.preventDefault();
     }
 }
-
 function findPopUps()
 {
 var popups = document.getElementsByTagName("a");
@@ -146,7 +134,6 @@ for (i=0;i<popups.length;i++)
         }
     }
 }
-
 addEvent(window, "load", findPopUps, false);
 
 
