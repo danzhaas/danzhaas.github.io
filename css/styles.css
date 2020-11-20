@@ -151,11 +151,11 @@ hr {
   border-bottom: 3px solid #919191;
 }
 
-.zoom {
+.zoom, .dev-icon {
   transition: transform 0.2s;
 }
 
-.zoom:hover {
+.zoom:hover, .dev-icon:hover {
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
   cursor: pointer;

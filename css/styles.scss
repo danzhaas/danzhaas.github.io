@@ -149,11 +149,11 @@ hr {
     border-bottom: 3px solid $mid-gray
 }
 
-.zoom {
+.zoom, .dev-icon {
     transition: transform .2s;
 }
 
-.zoom:hover {
+.zoom:hover, .dev-icon:hover {
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
     cursor:pointer;
@@ -441,7 +441,6 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 #key > .badge {
