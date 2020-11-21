@@ -1,12 +1,22 @@
-// ███╗   ███╗██╗   ██╗    ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
-// ████╗ ████║╚██╗ ██╔╝    ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
-// ██╔████╔██║ ╚████╔╝     ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗
-// ██║╚██╔╝██║  ╚██╔╝      ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║
-// ██║ ╚═╝ ██║   ██║       ███████║╚██████╗██║  ██║██║██║        ██║   ███████║
-// ╚═╝     ╚═╝   ╚═╝       ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝
+//  ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗     
+// ██╔════╝ ██║     ██╔═══██╗██╔══██╗██╔══██╗██║     
+// ██║  ███╗██║     ██║   ██║██████╔╝███████║██║     
+// ██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║     
+// ╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗
+//  ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
 
 // SCROLLSPY
 $('body').scrollspy({ target: '#navbar-collapse' })
+
+
+// ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+// ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+// ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+// ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+// ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+// ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+
 
 //CARD-FLIP
 function flip(cardId) {
@@ -24,92 +34,64 @@ function flip(cardId) {
 }
 
 
-//RESUME MODAL
-document.getElementById("resume-icon").addEventListener("click", () => $('#resumeModal').modal('toggle'));
+// GENERATE CARDS
+var cardTemplate, iconsTemplate;
 
-
-// //CARD DIMENSIONS
-// function squareCard(cardId) {
-//     var cardWidth = $(cardId).width();
-//     $(cardId).css({
-//         'height': cardWidth + 'px'
-//     });
-//     $(cardId + ' > div').css({
-//         'height': cardWidth + 'px',
-//         'width': cardWidth + 'px'
-//     });
-// }
-// squareCard('.card-container');
-
-
-//GENERATE BADGES
-
-function generateBadges(listString, badgeColor, targetSelector) {
-    const badgeArray = listString.split(", ").map(text => "<span class='badge badge-"+badgeColor+" mr-1 zoom'>" +text + "</span>");
-    $(targetSelector).append(badgeArray)
-}
-
-generateBadges(devBadges, "primary", $(".dev-badges"));
-generateBadges(designBadges, "info", $(".design-badges"));
-generateBadges(databaseBadges, "success", $(".database-badges"));
-generateBadges(languagesBadges, "secondary", $(".languages-badges"));
-generateBadges(osBadges, "dark", $(".os-badges"))
-
-
-// CARD TEMPLATE
-
-var cardTemplate;
-
-function makeTemplate(project) {
+function populateTemplate(project) {
     cardTemplate = `
-    <div id="${project.id}-card" class="card project-card border-0 mx-auto" onclick="flip('#${project.id}-card')"
-        tabindex=0>
-        <div class="front zoom">
-            <img class="card-img" src="${project.imageSrc}"
-                alt="${project.altText}" />
-        </div>
-        <div
-            class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
-            <h2 class="card-title m-0">${project.name}</h2>
-            <div id="${project.id}DevIcons">
-                <img src="images/svg/react.svg"></img>
-                <img src="images/svg/js.svg"></img>
-                <img src="images/svg/bootstrap.svg"></img>
-                <img src="images/svg/html.svg"></img>
-                <img src="images/svg/css.svg"></img>
-                <span class="badge badge-danger">React Router</span>
-                <span class="badge badge-info">Reactstrap</span>
+        <div id="${project.id}-card" class="card project-card border-0 mx-auto" onclick="flip('#${project.id}-card')"
+            tabindex=0>
+            <div class="front zoom">
+                <img class="card-img" src="${project.imageSrc}"
+                    alt="${project.altText}" />
             </div>
-            <p class="card-text m-0">My "pet project": a companion to your companion. Share your
-                best friend with the world on this dog social network.</p>
-            <div class="d-flex flex-row justify-content-around">
-                <a role="button" class="btn btn-sm" href="http://github.com/danzhaas/barkr-react"
-                    target="_blank">
-                    View Code at Github
-                </a>
-                <a role="button" class="btn btn-sm" href="https://danzhaas.github.io/barkr-react/"
-                    target="_blank">
-                    Live Version
-                </a>
+            <div
+                class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
+                <h2 class="card-title m-0">${project.name}</h2>
+                <div id="${project.id}-icons">
+                </div>
+                <p class="card-text m-0">${project.desc}</p>
+                <div class="d-flex flex-row justify-content-around">
+                    <a role="button" class="btn btn-sm" href="${project.button1.href}" target="_blank" ${project.button1.attribute} >
+                        ${project.button1.text}
+                    </a>
+                    <a role="button" class="btn btn-sm" href="${project.button2.href}" target="_blank">
+                        ${project.button2.text}
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
     `
 }
 
-// function generateDevIcons(array, targetSelector) {
-//     array.map(icon =>          //This is where it gets fucked
-//     $(targetSelector).append(badgeArray)
-// }
+function generateIcons(icons) {
+    iconsTemplate="";
+    icons.forEach(function(iconName) {
+        var iconRef=allDevIcons.filter((icon) => icon.name===iconName);
+        if (iconRef.length === 1) {
+            iconsTemplate=iconsTemplate.concat(`<img class="dev-icon" src="${iconRef[0].svg}" data-toggle="tooltip" title="${iconRef[0].name}"></img>`)
+        } else {
+            iconsTemplate=iconsTemplate.concat(`<span class="dev-icon badge badge-info">${iconName}</span>`)
+        }
+    });
+}
 
-myProjects.map(project => {
-    makeTemplate(project);
-    var cardContainer = document.createElement("div");
-    cardContainer.classList="card-container col-12 col-md-6 col-xl-4";
-    cardContainer.innerHTML = cardTemplate;
-    document.getElementById("cards").appendChild(cardContainer);
-    // generateDevIcons(project.devIcons, `${project.id}DevIcons`);
-})
+function buildCard(project) {
+    var cardContainer = document.createElement("div");  
+    cardContainer.classList="card-container col-12 col-md-6 col-xl-4";  
+    cardContainer.innerHTML = cardTemplate;     
+    document.getElementById("cards").appendChild(cardContainer);  
+    var iconTarget = $(`#${project.id}-icons`); 
+    iconTarget[0].innerHTML = iconsTemplate;  
+}
+
+function generateCards(project) {
+    populateTemplate(project);
+    generateIcons(project.devIcons);
+    buildCard(project);
+}
+
+myProjects.forEach(generateCards);
 
 
 //CARD DIMENSIONS
@@ -131,14 +113,6 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
-
-
-//  ██████╗ ████████╗██╗  ██╗███████╗██████╗ ███████╗    ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗
-// ██╔═══██╗╚══██╔══╝██║  ██║██╔════╝██╔══██╗██╔════╝    ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝
-// ██║   ██║   ██║   ███████║█████╗  ██████╔╝███████╗    ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗
-// ██║   ██║   ██║   ██╔══██║██╔══╝  ██╔══██╗╚════██║    ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║
-// ╚██████╔╝   ██║   ██║  ██║███████╗██║  ██║███████║    ███████║╚██████╗██║  ██║██║██║        ██║   ███████║
-//  ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝    ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝
 
 //OPEN DISTRACTION TIMER WITH APPROPRIATE SIZE
 // Code from https://accessify.com/tools-and-wizards/accessibility-tools/pop-up-window-generator/default.php
@@ -177,8 +151,8 @@ function doPopUp(e)
 {
 //set defaults - if nothing in rel attrib, these will be used
 var t = "standard";
-var w = "780";
-var h = "580";
+var w = "600";
+var h = "375";
 //look for parameters
 attribs = this.rel.split(" ");
 if (attribs[1]!=null) {t = attribs[1];}
@@ -221,3 +195,30 @@ for (i=0;i<popups.length;i++)
     }
 }
 addEvent(window, "load", findPopUps, false);
+
+
+//  █████╗ ██████╗  ██████╗ ██╗   ██╗████████╗
+// ██╔══██╗██╔══██╗██╔═══██╗██║   ██║╚══██╔══╝
+// ███████║██████╔╝██║   ██║██║   ██║   ██║   
+// ██╔══██║██╔══██╗██║   ██║██║   ██║   ██║   
+// ██║  ██║██████╔╝╚██████╔╝╚██████╔╝   ██║   
+// ╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝    ╚═╝   
+
+
+//RESUME MODAL
+
+document.getElementById("resume-icon").addEventListener("click", () => $('#resumeModal').modal('toggle'));
+
+
+//GENERATE BADGES
+
+function generateBadges(listString, badgeColor, targetSelector) {
+    const badgeArray = listString.split(", ").map(text => "<span class='badge badge-"+badgeColor+" mr-1 zoom'>" +text + "</span>");
+    $(targetSelector).append(badgeArray)
+}
+
+generateBadges(devBadges, "primary", $(".dev-badges"));
+generateBadges(designBadges, "info", $(".design-badges"));
+generateBadges(databaseBadges, "success", $(".database-badges"));
+generateBadges(languagesBadges, "secondary", $(".languages-badges"));
+generateBadges(osBadges, "dark", $(".os-badges"))

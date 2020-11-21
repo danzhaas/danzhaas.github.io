@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,40 +33,33 @@
 ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
 -->
     <header class="fixed-top">
-        <div class="row">
-            <div class="col">
-                <nav id="scroll" class="navbar navbar-dark navbar-expand-md p-2">
-                    <a class="nav-link navbar-brand rounded bg-white display-flex flex-row"
-                        style="display:flex !important" href="#home">
-                        <img src="images/color-full-illustration-logo-z.svg" style="height:3rem"
-                            alt="logo for Dan Z Haas Web Developer">
-                    </a>
-                    <button class="navbar-toggler p-0" type="button" data-toggle="collapse"
-                        data-target="#navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="height:3rem; width:3rem"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
-                        <ul class="navbar-nav nav-pills ml-auto" role="tablist">
-                            <li class="nav-item rounded">
-                                <a id="projects-pill" class="text-right pr-2 pr-md-auto nav-link " href="#home">Home</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a id="projects-pill" class="text-right pr-2 pr-md-auto nav-link"
-                                    href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a id="about-pill" class="text-right pr-2  pr-md-auto nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a id="contact-pill" class="text-right pr-2  pr-md-auto nav-link"
-                                    href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <nav id="scroll" class="navbar navbar-dark navbar-expand-md p-2">
+            <a class="nav-link navbar-brand rounded bg-white display-flex flex-row" style="display:flex !important"
+                href="#home">
+                <img src="images/color-full-illustration-logo-z.svg" style="height:3rem"
+                    alt="logo for Dan Z Haas Web Developer">
+            </a>
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="height:3rem; width:3rem"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="navbar-nav nav-pills ml-auto" role="tablist">
+                    <li class="nav-item rounded">
+                        <a id="projects-pill" class="text-right pr-2 pr-md-auto nav-link " href="#home">Home</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a id="projects-pill" class="text-right pr-2 pr-md-auto nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a id="about-pill" class="text-right pr-2  pr-md-auto nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a id="contact-pill" class="text-right pr-2  pr-md-auto nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
 
@@ -87,7 +79,8 @@
                 <h2 class="text-light-gray border-0">I'm a full-stack web developer living in Baltimore, MD.</h2>
                 <br>
                 <h3 class="text-light-gray mb-4 mb-md-2">After earning a Master's in Clinical Health Science and working
-                    on a cancer research study in my previous career, I'm prepared to rise to ambitious challenges in my new career as a web
+                    on a cancer research study in my previous career, I'm prepared to rise to ambitious challenges in my
+                    new career as a web
                     developer.</h3>
             </div>
 
@@ -114,177 +107,9 @@
         <div class="container h-100 position-relative">
 
             <h1>Projects</h1>
-
             <div class="row h-100">
                 <div id="cards" class="col-12 d-flex flex-row flex-wrap justify-content-start">
-
-                    <!-- Barkr Card -->
-                    <!-- <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="barkr-card" class="card project-card border-0 mx-auto" onclick="flip('#barkr-card')"
-                            tabindex=0>
-                            <div class="front zoom">
-                                <img class="card-img" src="images\barkr-tile-500.jpg"
-                                    alt="screen capture of Barkr site" />
-                            </div>
-                            <div
-                                class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
-                                <h2 class="card-title m-0">Barkr</h2>
-                                <div>
-                                    <img class="dev-icon" src="images/svg/react.svg" data-toggle="tooltip" title="React"></img>
-                                    <img class="dev-icon" src="images/svg/js.svg" data-toggle="tooltip" title="Javascript"></img>
-                                    <img class="dev-icon" src="images/svg/bootstrap.svg" data-toggle="tooltip" title="Bootstrap"></img>
-                                    <img class="dev-icon" src="images/svg/html.svg" data-toggle="tooltip" title="HTML5"></img>
-                                    <img class="dev-icon" src="images/svg/css.svg" data-toggle="tooltip" title="CSS3"></img>
-                                    <span class="dev-icon badge badge-danger">React Router</span>
-                                    <span class="dev-icon badge badge-info">Reactstrap</span>
-                                </div>
-                                <p class="card-text m-0">My "pet project": a companion to your companion. Share your
-                                    best friend with the world on this dog social network.</p>
-                                <div class="d-flex flex-row justify-content-around">
-                                    <a role="button" class="btn btn-sm" href="http://github.com/danzhaas/barkr-react"
-                                        target="_blank">
-                                        View Code at Github
-                                    </a>
-                                    <a role="button" class="btn btn-sm" href="https://danzhaas.github.io/barkr-react/"
-                                        target="_blank">
-                                        Live Version
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- Distraction Timer Card -->
-                    <!-- <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="timer-card" class="card project-card border-0 mx-auto" onclick="flip('#timer-card')"
-                            tabindex=0>
-                            <div class="front zoom">
-                                <img class="card-img" src="images\timer-tile-500.jpg"
-                                    alt="screen capture of Distraction Timer app" />
-                            </div>
-                            <div class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
-                                <h2 class="card-title m-0">Distraction Timer</h2>
-                                <div class="display-flex flex-row">
-                                    <img class="dev-icon" src="images/svg/gatsby.svg" data-toggle="tooltip" title="Gatsby"></img>
-                                    <img class="dev-icon" src="images/svg/react.svg" data-toggle="tooltip" title="React"></img>
-                                    <img class="dev-icon" src="images/svg/js.svg" data-toggle="tooltip" title="Javascript"></img>
-                                    <img class="dev-icon" src="images/svg/bootstrap.svg" data-toggle="tooltip" title="Bootstrap"></img>
-                                    <img class="dev-icon" src="images/svg/html.svg" data-toggle="tooltip" title="HTML5"></img>
-                                    <img class="dev-icon" src="images/svg/css.svg" data-toggle="tooltip" title="CSS3"></img>
-                                </div>
-                                <p class="card-text m-0">A productivity tool to measure how much time you are distracted during a task.</p>
-                                <div class="d-flex flex-row justify-content-around">
-                                    <a role="button" class="btn btn-sm"
-                                        href="https://github.com/danzhaas/danzhaas.github.io/tree/source/project-adhd/distraction-timer"
-                                        target="_blank">
-                                        View Code at Github
-                                    </a>                
-                                    <a role="button" class="btn btn-sm" href="https://danzhaas.github.io/Focus-Suite" rel="popup console 600 375">
-                                        Live Version
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- Killifish Classic Card -->
-                    <!-- <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="killi-card" class="card project-card border-0 mx-auto" onclick="flip('#killi-card')"
-                            tabindex=0>
-                            <div class="front zoom">
-                                <img class="card-img" src="images\killi-tile-500.jpg"
-                                    alt="screen capture of Killifish Clasic site" />
-                            </div>
-                            <div class="back zoom  px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
-                                <h2 class="card-title m-0">Killifish Classic</h2>
-                                <div>
-                                    <img class="dev-icon" src="images/svg/jquery.svg" data-toggle="tooltip" title="jQuery"></img>
-                                    <img class="dev-icon" src="images/svg/bootstrap.svg" data-toggle="tooltip" title="Bootstrap"></img>
-                                    <img class="dev-icon" src="images/svg/html.svg" data-toggle="tooltip" title="HTML5"></img>
-                                    <img class="dev-icon" src="images/svg/css.svg" data-toggle="tooltip" title="CSS3"></img>
-                                </div>
-                                <p class="card-text m-0">An event page for an aquarium
-                                    convention. The design incorporates the palette of beautifully bright colors of
-                                    these fish. </p>
-                                <div class="d-flex flex-row justify-content-around">
-                                    <a role="button" class="btn btn-sm"
-                                        href="https://github.com/danzhaas/danzhaas.github.io/tree/master/killifish-classic"
-                                        target="_blank">
-                                        View Code at Github
-                                    </a>
-                                    <a role="button" class="btn btn-sm"
-                                        href="https://danzhaas.github.io/killifish-classic/" target="_blank">
-                                        Live Version
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- LICS Card -->
-                    <!-- <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="LICS-card" class="card project-card border-0 mx-auto" onclick="flip('#LICS-card')"
-                            tabindex=0>
-                            <div class="front zoom">
-                                <img class="card-img" src="images\LICS-tile-500.jpg"
-                                    alt="screen capture of Lorem Ipsum Cancer Studies site" />
-                            </div>
-                            <div class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none">
-                                <h2 class="card-title m-0">Lorem Ipsem Cancer Studies</h2>
-                                <div>
-                                    <img class="dev-icon" src="images/svg/html.svg" data-toggle="tooltip" title="HTML5"></img>
-                                    <img class="dev-icon" src="images/svg/css.svg" data-toggle="tooltip" title="CSS3"></img>
-                                </div>
-                                <p class="card-text m-0">A university medical research study site. The content was written to be widely accessible for audiences from the layman to the Ph.D. </p>
-                                <div class="d-flex flex-row justify-content-around">
-                                    <a role="button" class="btn btn-sm"
-                                        href="https://github.com/danzhaas/danzhaas.github.io/tree/master/lorem-ipsum-cancer-studies"
-                                        target="_blank">
-                                        View Code at Github
-                                    </a>
-                                    <a role="button" class="btn btn-sm"
-                                        href="https://danzhaas.github.io/lorem-ipsum-cancer-studies/index.html"
-                                        target="_blank">
-                                        Live Version
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- Portfolio Card -->
-                    <!-- <div class="card-container col-12 col-md-6 col-xl-4">
-                        <div id="portfolio-card" class="card project-card border-0 mx-auto"
-                            onclick="flip('#portfolio-card')" tabindex=0>
-                            <div class="front zoom">
-                                <img class="card-img" src="images\portfolio-tile-500.jpg"
-                                    alt="screen capture of this Portfolio site" />
-                            </div>
-                            <div
-                                class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
-                                <h2 class="card-title m-0">My Portfolio</h2>
-                                <div>
-                                    <img class="dev-icon" src="images/svg/nodejs.svg" data-toggle="tooltip" title="Node.js"></img>
-                                    <img class="dev-icon" src="images/svg/jquery.svg" data-toggle="tooltip" title="jQuery"></img>
-                                    <img class="dev-icon" src="images/svg/js.svg" data-toggle="tooltip" title="Javascript"></img>
-                                    <img class="dev-icon" src="images/svg/bootstrap.svg" data-toggle="tooltip" title="Bootstrap"></img>
-                                    <img class="dev-icon" src="images/svg/html.svg" data-toggle="tooltip" title="HTML5"></img>
-                                    <img class="dev-icon" src="images/svg/css.svg" data-toggle="tooltip" title="CSS3"></img>
-                                </div>
-                                <p class="card-text m-0">Look familiar? Check out how I made this project at Github.</p>
-                                <div class="d-flex flex-row justify-content-around">
-                                    <a role="button" class="btn btn-sm"
-                                        href="https://github.com/danzhaas/danzhaas.github.io/tree/master/index.html"
-                                        target="_blank">
-                                        View Code at Github
-                                    </a>
-                                    <a role="button" class="btn btn-sm" href="https://trello.com/b/pXxa9X5h/danzhaasgithubio" target="_blank" >
-                                        View Trello Board
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                    <!-- Cards generated by script.js  -->
 
                 </div>
             </div>
@@ -304,13 +129,12 @@
 
     <section id="about" class="bg-white">
         <div class="container h-100 position-relative">
-            <h1>About</h1><br>
-
-            <!-- <div class="row d-flex flex-row flex-wrap"> -->
+            <h1>About</h1>
+            <br>
             <div id="about-cards" class="row d-flex flex-row flex-wrap justify-content-between">
 
                 <!-- First Card: Skills -->
-                <div class="card col-12 ">
+                <div class="card col-12">
                     <h2 class="py-3 bold h2-underline card-title">Skills</h2>
                     <div class="card-body">
 
@@ -354,18 +178,13 @@
 
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item px-0 pt-lg-0">Experienced with MongoDB, Express, React,
-                                    Node.js; NuCamp Full Stack Bootcamp
-                                    graduate.</li>
+                                    Node.js; NuCamp Full Stack Bootcamp graduate.</li>
                                 <li class="list-group-item px-0 pt-lg-0">Bachelor's degree in Digital Media and Web
-                                    Technology will be complete in Spring
-                                    2021.
-                                </li>
+                                    Technology will be complete in Spring 2021.</li>
                                 <li class="list-group-item px-0 pt-lg-0">Knowledgable in other fields: 10 years
-                                    experience and a Master's degree in
-                                    health
-                                    science.
-                                </li>
+                                    experience and a Master's degree in health science.</li>
                             </ul>
+
                             <div class="d-flex flex-row align-items-end justify-content-start">
                                 <!-- GitHub -->
                                 <a href="https://github.com/danzhaas" class="zoom" target="_blank">
@@ -379,6 +198,7 @@
                                 <img id="resume-icon" class="zoom" src="images\brand-resume-icon-w-margin.svg"
                                     tabindex=0 alt="thumbnail for resume with Dan Haas' logo">
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -487,19 +307,12 @@
                     <h1 class="text-lightest-gray border-0">Contact</h1>
                     <div class="row d-flex flex-row align-content-center text-light-gray">
                         <div class="col-12 py-0 pr-4 d-flex flex-column justify-content-around">
-                            <p>My work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI". Wouldn't
-                                you
-                                like that reaction for your website?<br>
-                                <br>
+                            <p>My work has been praised as "fantastic," "very cohesive," and "FIREEEEEEEEE EMOJI".
+                                Wouldn't you like that reaction for your website?<br><br>
                                 Let's work together to bring your favorite project online. I'm available for individual
-                                projects
-                                and full-time job opportunities as a front-end or full-stack developer.<br>
-                                <br>
-                                Let's make an appointment to talk about your project. You're invited to
-                                email, text,
-                                or call me. Our meeting may be virtual, but the coffee will be
-                                very real.
-                            </p>
+                                projects and full-time job opportunities as a front-end or full-stack developer.<br><br>
+                                Let's make an appointment to talk about your project. You're invited to email, text, or
+                                call me. Our meeting may be virtual, but the coffee will be very real.</p>
                             <div id="contact-buttons" class="w-100 d-flex flex-row ">
                                 <a class="d-sm-none col-auto btn contact-button" href="tel:(410)937-2073">
                                     <i class="fas fa-1x fa-mobile"></i>
@@ -513,7 +326,8 @@
                                     <i class="fas fa-1x fa-mobile"></i>
                                     (410)937-2073
                                 </a>
-                                <a class="d-none d-sm-block col-auto btn contact-button" href="mailto:danzhaas@gmail.com">
+                                <a class="d-none d-sm-block col-auto btn contact-button"
+                                    href="mailto:danzhaas@gmail.com">
                                     <i class="fas fa-1x fa-envelope"></i>
                                     danzhaas@gmail.com
                                 </a>
@@ -545,8 +359,8 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-10">
-                                        <input type="submit" id="submit-btn" class="btn contact-button btn-outline-light"
-                                            value="Create Email"></input>
+                                        <input type="submit" id="submit-btn"
+                                            class="btn contact-button btn-outline-light" value="Create Email"></input>
                                     </div>
                                 </div>
                             </form>
@@ -654,13 +468,13 @@
                     <iframe id="resume-iframe" src="assets/dan-z-haas-resume.pdf" width="100%"></iframe>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-secondary" href="assets/dan-z-haas-resume.pdf" download>Download PDF
-                        (77kb)</a>
+                    <a class="btn btn-secondary" href="assets/dan-z-haas-resume.pdf" download>Download PDF (77kb)</a>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 
@@ -671,13 +485,18 @@
     88    `Y8b. 
 db. 88  db   8D 
 Y8888P  `8888Y' 
-                
-                
- -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="js/content.js"></script>
+
+-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+<script src="js/projectsAndSkills.js"></script>
 <script src="js/script.js"></script>
 
 </html>
