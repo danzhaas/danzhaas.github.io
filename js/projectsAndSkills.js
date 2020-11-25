@@ -95,7 +95,7 @@ const portfolio = {
     devIcons:[
         "Node.js","jQuery","Javascript","Bootstrap","CSS","HTML"
     ],
-    desc:"You're looking at it.  Check out how I planned this project on Trello.",
+    desc:"You're looking at it.  Visit my Trello board to see how I used the natural planning model and a Kanban board to create this project.",
     button1: {
         text:"Trello Board",
         href:"https://trello.com/b/pXxa9X5h/danzhaasgithubio"
