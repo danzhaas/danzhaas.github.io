@@ -32,7 +32,7 @@ const distractionTimer = {
     id:"timer",
     imageSrc:"images/timer-tile-500.jpg",
     devIcons:[
-        "Gatsby","React","Javascript","Bootstrap","HTML","CSS"
+        "Gatsby","React","Javascript","Bootstrap","HTML","CSS","Sass"
     ],
     desc:'A productivity tool to measure and chart how much time you are distracted during a task.',
     button1: {
@@ -53,7 +53,7 @@ const killi = {
     id:"killi",
     imageSrc:"images/killi-tile-500.jpg",
     devIcons:[
-        "jQuery","Javascript","HTML","CSS"
+        "jQuery","Javascript","HTML","CSS","less"
     ],
     desc:'An event page for an aquarium convention. The design incorporates the palette of beautifully bright colors of these fish.',
     button1: {
@@ -75,7 +75,7 @@ const LICS = {
     devIcons:[
         "HTML","CSS"
     ],
-    desc:'A university medical research study site. The content was written to be widely accessible for audiences from the layman to the Ph.D.',
+    desc:'A university medical research study site. The content was written to be read by anyone from the layman to the Ph.D.',
     button1: {
         text:"Live Version",
         href:"https://danzhaas.github.io/lorem-ipsum-cancer-studies/index.html"
@@ -93,7 +93,7 @@ const portfolio = {
     id:"portfolio",
     imageSrc:"images/portfolio-tile-500.jpg",
     devIcons:[
-        "Node.js","jQuery","Javascript","Bootstrap","CSS","HTML"
+        "jQuery","Javascript","Bootstrap","Sass","CSS","HTML"
     ],
     desc:"You're looking at it.  Visit my Trello board to see how I used the natural planning model and a Kanban board to create this project.",
     button1: {
@@ -144,6 +144,14 @@ const allDevIcons = [
     nodeJS={
         name:"Node.js",
         svg:"images/svg/nodejs.svg",
+    },
+    sass={
+        name:"Sass",
+        svg:"images/svg/sass.svg"
+    },
+    less={
+        name:"less",
+        svg:"images/svg/less.svg"
     }
 ]
 
