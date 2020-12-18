@@ -20,17 +20,13 @@ $('body').scrollspy({ target: '#navbar-collapse' })
 
 //CARD-FLIP
 function flip(cardId) {
-    // Reverse side of the card should have display = none once it is underneath the other side and is not seen anyway so anchors cannot be clicked from reverse.
     const thisCard = document.querySelector(cardId);
     var face;
     thisCard.classList.contains("flipped") ? face = "1" : face = "0";
     const reverse = 1 - face;
-    // //toggle display on for reverse side
     thisCard.children[reverse].classList.toggle("d-none");
-    // //flip card
     thisCard.classList.toggle('flipped');
-    // //wait 0.5 seconds for animation to complete before toggling new reverse side display off 
-    setTimeout(function () { thisCard.children[face].classList.toggle("d-none") }, 500);
+    setTimeout(function () { thisCard.children[face].classList.toggle("d-none") }, 500);    // To address problem of anchors on the reverse side being activated on click from the front, the side of the card facing backwards gets display = none 
 }
 
 
@@ -85,13 +81,13 @@ function buildCard(project) {
     iconTarget[0].innerHTML = iconsTemplate;  
 }
 
-function generateCards(project) {
+function generateCard(project) {
     populateTemplate(project);
     generateIcons(project.devIcons);
     buildCard(project);
 }
 
-myProjects.forEach(generateCards);
+myProjects.forEach(generateCard);
 
 
 //CARD DIMENSIONS
@@ -213,7 +209,7 @@ document.getElementById("resume-icon").addEventListener("click", () => $('#resum
 //GENERATE BADGES
 
 function generateBadges(listString, badgeColor, targetSelector) {
-    const badgeArray = listString.split(", ").map(text => "<span class='badge badge-"+badgeColor+" mr-1 zoom'>" +text + "</span>");
+    const badgeArray = listString.split(", ").map(text => "<div class='badge-container zoom'><span class='badge badge-"+badgeColor+" mr-1'>" +text + "</span></div>");
     $(targetSelector).append(badgeArray)
 }
 
@@ -222,3 +218,17 @@ generateBadges(designBadges, "info", $(".design-badges"));
 generateBadges(databaseBadges, "success", $(".database-badges"));
 generateBadges(languagesBadges, "secondary", $(".languages-badges"));
 generateBadges(osBadges, "dark", $(".os-badges"))
+
+var clickcounter = 0;
+document.querySelectorAll(".badge").forEach(badge => badge.addEventListener("click", (event) => {
+    badge.classList.toggle("barrel-roll");
+    clickcounter++;
+    // console.log(event);
+    // if (clickcounter>3) {
+    //     const explosionGif = document.createElement('img');
+    //     explosionGif.setAttribute('id','explosion');
+    //     setTimeout(function () { explosionGif.setAttribute('style','display:none') }, 500);
+    //     badge.parentElement.replaceChild(explosionGif, badge);
+    //     setTimeout(function () { alert("What have you done?") }, 1500)
+    // } 
+}))

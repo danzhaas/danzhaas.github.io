@@ -324,6 +324,30 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     font-size:18px;
 }
 
+#dev-card {
+    .back {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(223, 223, 223), rgb(202, 202, 202), rgb(30, 30, 28));
+    }
+    .btn {
+        background-color:rgb(255, 255, 255);
+        &:hover {
+            background-color: rgb(204, 204, 204); 
+        }
+    }
+}
+
+// #dev-card {
+//     .back {
+//         background-image: linear-gradient(rgb(255, 111, 111),  rgb(255, 221, 221));
+//     }
+//     .btn {
+//         background-color:rgb(255, 111, 111);
+//         &:hover {
+//             background-color: rgb(211, 92, 92); 
+//         }
+//     }
+// }
+
 #barkr-card {
     .back {
         background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
@@ -418,10 +442,32 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     }
     li {
         margin-bottom:2vh;
+        display:flex;
+        flex-wrap:wrap;
+        align-content: flex-start;
     }
     .card {
         margin-bottom: 3vh;
     }
+}
+
+.badge {
+    transition: transform 1s;
+}
+
+.barrel-roll {
+    -webkit-transform: rotateY( 360deg );
+    -moz-transform: rotateY( 360deg );
+    -o-transform: rotateY( 360deg );
+    transform: rotateY( 360deg );
+}
+
+#explosion {
+    background: url('../images/explosion.gif');
+    background-size: 30px 30px;
+    width: 30px; /* Width of new image */
+    height: 30px; /* Height of new image */
+    padding-left: 30px; /* Equal to width of new image */
 }
 
 #resume-icon {
@@ -447,6 +493,12 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     font-size:1.5rem;
     margin: .25rem;
 }
+
+// .zoom:hover, .dev-icon:hover {
+//     -webkit-transform: scale(1.1, 1.1);
+//     transform: scale(1.1, 1.1);
+//     cursor:pointer;
+// }
 
 
 /*

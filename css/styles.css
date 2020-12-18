@@ -314,6 +314,16 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   font-size: 18px;
 }
 
+#dev-card .back {
+  background-image: linear-gradient(white, #dfdfdf, #cacaca, #1e1e1c);
+}
+#dev-card .btn {
+  background-color: white;
+}
+#dev-card .btn:hover {
+  background-color: #cccccc;
+}
+
 #barkr-card .back {
   background-image: linear-gradient(#ffe96f, #fffadd);
 }
@@ -379,9 +389,34 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 }
 #about li {
   margin-bottom: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 #about .card {
   margin-bottom: 3vh;
+}
+
+.badge {
+  transition: transform 1s;
+}
+
+.barrel-roll {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+#explosion {
+  background: url("../images/explosion.gif");
+  background-size: 30px 30px;
+  width: 30px;
+  /* Width of new image */
+  height: 30px;
+  /* Height of new image */
+  padding-left: 30px;
+  /* Equal to width of new image */
 }
 
 #resume-icon {
