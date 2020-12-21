@@ -14,7 +14,7 @@ const dev = {
     devIcons:[
         "Node.js","Express","MongoDB"
     ],
-    desc:'I am currently taking this Udemy course by Brad Traversy.  I will build and deploy a social network with the MERN stack and Redux.',
+    desc:'I am currently taking this Udemy course by Brad Traversy.  It teaches how to build and deploy a social network with the MERN stack and Redux.',
     button1: {
         text:"Course Page",
         href:"https://www.udemy.com/course/mern-stack-front-to-back/"
@@ -32,7 +32,7 @@ const barkr = {
     id:"barkr",
     imageSrc:"images/barkr-tile-500.jpg",
     devIcons:[
-        "React","Javascript","Bootstrap","HTML","CSS","React Router","Reactstrap"
+        "React","React Router","Reactstrap","Javascript","Bootstrap","HTML","CSS"
     ],
     desc:'My "pet project": a companion to your companion. Share your best friend with the world on this dog social network.',
     button1: {
@@ -52,7 +52,7 @@ const distractionTimer = {
     id:"timer",
     imageSrc:"images/timer-tile-500.jpg",
     devIcons:[
-        "Gatsby","React","Javascript","Bootstrap","HTML","CSS","Sass"
+        "Gatsby","React","React Google Charts","Javascript","Bootstrap","HTML","CSS","Sass"
     ],
     desc:'A productivity tool to measure and chart how much time you are distracted during a task.',
     button1: {
@@ -95,7 +95,7 @@ const LICS = {
     devIcons:[
         "HTML","CSS"
     ],
-    desc:'A university medical research study site. The content was written to be read by anyone from the layman to the Ph.D.',
+    desc:'A university medical research study site. The content was written to be readable by all, from the layman to the Ph.D.',
     button1: {
         text:"Live Version",
         href:"https://danzhaas.github.io/lorem-ipsum-cancer-studies/index.html"
@@ -144,6 +144,18 @@ const allDevIcons = [
     react={
         name:"React",
         svg:"images/svg/react.svg",
+    },
+    reactrouter={
+        name:"React Router",
+        svg:"images/svg/reactrouter.svg"
+    },
+    reactstrap={
+        name:"Reactstrap",
+        svg:"images/svg/reactstrap.png"
+    },
+    reactgooglecharts={
+        name:"React Google Charts",
+        svg:"images/svg/reactgooglecharts.png"
     },
     javascript={
         name:"Javascript",

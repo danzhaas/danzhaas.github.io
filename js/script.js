@@ -38,7 +38,7 @@ function populateTemplate(project) {
         <div id="${project.id}-card" class="card project-card border-0 mx-auto" onclick="flip('#${project.id}-card')"
             tabindex=0>
             <div class="front zoom">
-                <img class="card-img" src="${project.imageSrc}"
+                <img class="card-img rounded-0" src="${project.imageSrc}"
                     alt="${project.altText}" />
             </div>
             <div
@@ -74,7 +74,7 @@ function generateIcons(icons) {
 
 function buildCard(project) {
     var cardContainer = document.createElement("div");  
-    cardContainer.classList="card-container col-12 col-md-6 col-xl-4";  
+    cardContainer.classList="card-container col-12 col-md-6 col-xl-4 px-lg-0";  
     cardContainer.innerHTML = cardTemplate;     
     document.getElementById("cards").appendChild(cardContainer);  
     var iconTarget = $(`#${project.id}-icons`); 
