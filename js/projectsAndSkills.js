@@ -113,7 +113,7 @@ const portfolio = {
     id:"portfolio",
     imageSrc:"images/portfolio-tile-500.jpg",
     devIcons:[
-        "jQuery","Javascript","Bootstrap","Sass","CSS","HTML"
+        "Node.js","Express","MongoDB","jQuery","Javascript","Bootstrap","Sass","CSS","HTML"
     ],
     desc:"You're looking at it.  Visit my Trello board to see how I used the natural planning model and a Kanban board to create this project.",
     button1: {
@@ -135,63 +135,63 @@ const myProjects = [dev, barkr, distractionTimer, killi, LICS, portfolio]
 const allDevIcons = [
     gatsby={
         name:"Gatsby",
-        svg:"images/svg/gatsby.svg",
+        svg:"images/icons/gatsby.svg",
     },
     jQuery={
         name:"jQuery",
-        svg:"images/svg/jquery.svg",
+        svg:"images/icons/jquery.svg",
     },
     react={
         name:"React",
-        svg:"images/svg/react.svg",
+        svg:"images/icons/react.svg",
     },
     reactrouter={
         name:"React Router",
-        svg:"images/svg/reactrouter.svg"
+        svg:"images/icons/reactrouter.svg"
     },
     reactstrap={
         name:"Reactstrap",
-        svg:"images/svg/reactstrap.png"
+        svg:"images/icons/reactstrap.png"
     },
     reactgooglecharts={
         name:"React Google Charts",
-        svg:"images/svg/reactgooglecharts.png"
+        svg:"images/icons/reactgooglecharts.png"
     },
     javascript={
         name:"Javascript",
-        svg:"images/svg/js.svg",
+        svg:"images/icons/js.svg",
     },
     bootstrap={
         name:"Bootstrap",
-        svg:"images/svg/bootstrap.svg",
+        svg:"images/icons/bootstrap.svg",
     },
     HTMLicon={
         name:"HTML",
-        svg:"images/svg/html.svg",
+        svg:"images/icons/html.svg",
     },
     CSSicon={
         name:"CSS",
-        svg:"images/svg/css.svg",
+        svg:"images/icons/css.svg",
     },
     nodeJS={
         name:"Node.js",
-        svg:"images/svg/nodejs.svg",
+        svg:"images/icons/nodejs.svg",
     },
     express={
         name:"Express",
-        svg:"images/svg/express.svg",
+        svg:"images/icons/express.svg",
     },
     mongodb={
         name:"MongoDB",
-        svg:"images/svg/mongodb.svg",
+        svg:"images/icons/mongodb.svg",
     },
     sass={
         name:"Sass",
-        svg:"images/svg/sass.svg"
+        svg:"images/icons/sass.svg"
     },
     less={
         name:"less",
-        svg:"images/svg/less.svg"
+        svg:"images/icons/less.svg"
     }
 ]
 

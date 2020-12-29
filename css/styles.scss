@@ -131,10 +131,16 @@ a:hover {
     font-size:1.25rem
 }
 
-hr {
-    border-color: $mid-blue;
-    margin:5vh;
+.badge-container {
+    width:fit-content;
+    margin: 2px 0;
 }
+
+hr {
+    width:100%;
+    border-top:10px solid $mid-blue;
+    margin:5vh;
+} 
 
 #about ul {
     list-style-type:none;
@@ -340,18 +346,6 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     }
 }
 
-// #dev-card {
-//     .back {
-//         background-image: linear-gradient(rgb(255, 111, 111),  rgb(255, 221, 221));
-//     }
-//     .btn {
-//         background-color:rgb(255, 111, 111);
-//         &:hover {
-//             background-color: rgb(211, 92, 92); 
-//         }
-//     }
-// }
-
 #barkr-card {
     .back {
         background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
@@ -441,9 +435,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
       */
  
 #about {
-    .card, li {
-        background-color: $lightest-blue;
-    }
+    // .card, li {
+    //     background-color: $lightest-blue;
+    // }
     li {
         margin-bottom:2vh;
         display:flex;
@@ -453,16 +447,44 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     .card {
         margin-bottom: 3vh;
     }
+    .btn {
+        font-size:inherit;
+        color:black;
+    }
+} 
+
+#headingOne {
+    background-image: linear-gradient(rgb(64, 107, 227), $mid-blue)
 }
 
-#about-cards {
-    .card {
-        border:none;
-    };
-    .card-body {
-        padding:0;
-    }
+#headingTwo {
+    background-image: linear-gradient($mid-blue, $light-blue)
 }
+
+#headingThree {
+    background-image: linear-gradient($light-blue, $lightest-blue);
+}
+
+// #headingOne {
+//     background-color: $mid-blue;
+// }
+
+// #headingTwo {
+//     background-color: $light-blue;
+// }
+
+// #headingThree {
+//     background-color: $lightest-blue;
+// }
+
+// #about-cards {
+//     .card {
+//         border:none;
+//     };
+//     .card-body {
+//         padding:0;
+//     }
+// }
 
 .badge {
     transition: transform 1s;
@@ -505,6 +527,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 #key > .badge {
     font-size:1.5rem;
     margin: .25rem;
+}
+
+#accordionExample .card {
+    margin:0;
 }
 
 // .zoom:hover, .dev-icon:hover {
@@ -647,7 +673,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         font-size:1.25rem;
     }
     h2 {
-        font-size:1.75rem;
+        font-size:1.75rem; 
     }
     h3, .contact-text {
         font-size:1.5rem
