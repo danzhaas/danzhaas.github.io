@@ -3,50 +3,92 @@
 
 <head>
   <title>Lorem Ipsum Cancer Studies</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/mdcs.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Linden+Hill&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo-favicon-d.png" />
   <meta property="og:title" content="Dan Haas Web Dev">
   <meta property="og:description" content="Dan Haas is a web developer specializing in healthcare.">
   <meta property="og:image" content="http://dan-z-haas.github.io/images/index-open-graph.jpg">
   <meta property="og:url" content="http://dan-z-haas.github.io">
-  <link rel="icon" type="image/png" href="images/logo-favicon-d.png" />
   <meta name="viewport" content="width=device-width">
+  <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <div id="uber-header">
-      <div id="logo">
-        <img src="images/uoli-logo.png" alt="university of lorem ipsum logo">
+  <header id="header" class="header">
+
+    <nav id="school-nav">
+      <a href="index.html" id="school-logo" class="logo" >
+        <i id="logo-svg" class="fas fa-university fa-3x"></i>
         <p id="logo-text">University of Lorem Ipsem<br>School of Medicine</p>
+      </a>
+
+      <div class="nav navbar-nav">
+        <a href="index.html" >About ULI</a>
+        <a href="forParticipants.html">Academics</a>
+        <a href="researchInterests.html">Admissions</a>
+        <a href="sponsorInfo.html">Research</a>
+        <a href="staff.html" >Services</a>
+        <a href="contactUs.html">University Life</a>
       </div>
-      <img id="uber-header-bottom" src="images/nav-curve.png" alt="curve">
-    </div>
-    <img class="headerImg" src="images/BrCa3-1200.jpg" alt="breast cancer cells">
+    </nav>
+
   </header>
 
+
+  <section id="header-img">
+    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="headerImg d-block w-100" src="images/doc-and-pt-1200.jpg" alt="breast cancer cells">
+        </div>
+        <div class="carousel-item">
+          <img class="headerImg d-block w-100" src="images/BrCa3-1200.jpg" alt="breast cancer cells">
+        </div>
+        <div class="carousel-item">
+          <img class="headerImg d-block w-100" src="images/med-lab-1200.jpg" alt="breast cancer cells">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+  <nav id="study-nav">
+    <a href="index.html" id="study-logo" class="logo" >
+      <i class="fas fa-dna fa-3x"></i>
+      <p id="logo-text">Lorem Ipsem<br>Cancer Studies</p>
+    </a>
+    <div class="nav navbar-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="forParticipants.html">For Participants</a>
+      <a href="researchInterests.html">Research Interests</a>
+      <a href="sponsorInfo.html">Sponsor Information</a>
+      <a href="staff.html" >Staff</a>
+      <a href="contactUs.html">Contact Us</a>
+    </div>
+  </nav>
+
+  
   <div id="bottomRow">
     <div class="wrapper">
       <h1>Lorem Ipsum Cancer Studies</h1>
       <div class="row">
 
-        <nav>
-          <ul id="navList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="forParticipants.html">For Participants</a></li>
-            <li><a href="researchInterests.html">Research Interests</a></li>
-            <li><a href="sponsorInfo.html">Sponsor Information</a></li>
-            <li><a href="staff.html" class="active">Staff</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-          </ul>
-        </nav>
-
         <main>
           <h2>Welcome to Our Study</h2>
           <hr>
-          <p>Thank you for your interest in Lorem Ipsum Cancer Studies (LICS). Our goal is to better know why some people get cancer when other people don't,  and help doctors better prevent, detect, and cure cancer. </p>
+          <p>Thank you for your interest in Lorem Ipsum Cancer Studies. Our goal is to better know why some people get cancer when other people don't and to help doctors better prevent, detect, and cure cancer. </p>
           <br>
           <div class="full-width">
             <a href="forParticipants.html" target="_blank" class="center-img">
@@ -54,13 +96,13 @@
             </a>
           </div>
           <br>
-          <p>Dr. Lorem Ipsum leads this study about the environmental and genetic factors that influence the development of cancer. <a href="researchInterests.html">Read about Dr. Ipsum's research interests</a>.</p>
+          <p>Dr. Lorem Ipsum is Principal Investigator in this study investigating the environmental and genetic factors that influence the development of cancer. <a href="researchInterests.html">Read about Dr. Ipsum's research interests</a>.</p>
           <br>
-          <p>Our study is sponsored by the Lorem Upsum Cancer Institutem, a branch of the Lorem Ipsum Institute of Health.  The work is conducted in the University of Lorem Ipsum School of Medicine's Pathology department.  <a href="sponsorInfo.html">Learn more about our sponsors</a>.</p>
+          <p>Our study is sponsored by the Lorem Ipsum Cancer Institute, a branch of the Lorem Ipsum Institute of Health.  The research is conducted in the University of Lorem Ipsum School of Medicine's Pathology department.  <a href="sponsorInfo.html">Learn more about our sponsors</a>.</p>
           <br>
-          <p>Dr. Lorem Ipsum is aided by our research study manager and a team of research study coordinators and lab technicians.  <a href="staff.html">See who is on our staff</a>.</p>
+          <p>Research team members include the research study manager, research study coordinators, and lab technicians.  <a href="staff.html">See who is on our staff</a>.</p>
           <br>
-          <p>Thank you for your interest.  You are invited to reach out to us with questions and comments.  <a href="contactUs.html">Contact us via email or phone, and find our address.</a>.</p>
+          <p>You are invited to reach out to us with questions and comments.  <a href="contactUs.html">Contact us via email or phone and find our address.</a></p>
         </main>
       </div>
     </div>
@@ -71,6 +113,8 @@
     <p>Copyright &#169; 2019 LICS, University of Lorem Ipsum. <a rel="noopener" href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a></p>
   </footer>
 
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
