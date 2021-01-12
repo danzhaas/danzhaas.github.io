@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Lorem Ipsum Cancer Studies</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -18,93 +17,114 @@
 </head>
 
 <body>
-  <header id="header" class="header">
-
-    <nav id="school-nav">
-      <a href="index.html" id="school-logo" class="logo" >
+  <header id="header" class="header" >
+    <nav id="school-nav" class="navbar navbar-expand-lg navbar-dark position-sticky" >
+      <div class="container-lg">
+      <a href="#" class="navbar-brand" id="school-logo" data-bs-toggle="tooltip" data-bs-placement="left" title="University links are beyond the scope of this demo.">
         <i id="logo-svg" class="fas fa-university fa-3x"></i>
-        <p id="logo-text">University of Lorem Ipsem<br>School of Medicine</p>
+        <p class="logo-text">University of Lorem Ipsum<br>School of Medicine</p>
       </a>
-
-      <div class="nav navbar-nav">
-        <a href="index.html" >About ULI</a>
-        <a href="forParticipants.html">Academics</a>
-        <a href="researchInterests.html">Admissions</a>
-        <a href="sponsorInfo.html">Research</a>
-        <a href="staff.html" >Services</a>
-        <a href="contactUs.html">University Life</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSchool" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavSchool">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo." >About ULI</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Academics</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Admissions</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Research</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Services</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">University Life</a>
+        </div>
       </div>
     </nav>
-
   </header>
 
 
   <section id="header-img">
     <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="headerImg d-block w-100" src="images/doc-and-pt-1200.jpg" alt="breast cancer cells">
+          <img class="headerImg" id="slide1" src="images/doc-and-pt-1200.jpg" alt="A doctor speaking with a patient">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Lorem Ipsum Cancer Studies.</h5>
+            <p>Were you invited to participate?  <a href="forParticipants.html">Learn about our study</a> and what this opportunity means for you.  </p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img class="headerImg d-block w-100" src="images/BrCa3-1200.jpg" alt="breast cancer cells">
+          <img class="headerImg" id="slide2" src="images/med-lab-1200.jpg" alt="Laboratory Technicians in a lab">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Our Sponsors and Partners</h5>
+            <p>Our work is made possible thanks to a grant from the Lorem Ipsum Cancer Institute and the cooperation of clinicians all over the country.  <a href="sponsorInfo.html">Learn about our sponsors.</a></p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img class="headerImg d-block w-100" src="images/med-lab-1200.jpg" alt="breast cancer cells">
+          <img class="headerImg" id="slide3" src="images/BrCa3-1200.jpg" alt="Enlargement of Breast cancer cells">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cutting-Edge Health Science Research</h5>
+            <p>For 30 years, our study has published discoveries on the impact of environmental factors on carcinogenesis.  <a href="researchInterests.html">Learn about our research interests.</a></p>
+          </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </a>
     </div>
   </section>
 
-
-  <nav id="study-nav">
-    <a href="index.html" id="study-logo" class="logo" >
-      <i class="fas fa-dna fa-3x"></i>
-      <p id="logo-text">Lorem Ipsem<br>Cancer Studies</p>
-    </a>
-    <div class="nav navbar-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="forParticipants.html">For Participants</a>
-      <a href="researchInterests.html">Research Interests</a>
-      <a href="sponsorInfo.html">Sponsor Information</a>
-      <a href="staff.html" >Staff</a>
-      <a href="contactUs.html">Contact Us</a>
+  <nav id="study-nav" class="navbar navbar-expand-lg navbar-light position-sticky">
+    <div class="container-lg">
+      <a href="index.html" class="navbar-brand" id="school-logo" >
+        <h1>Lorem Ipsum<br> Cancer Studies</h1>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLICS" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavLICS">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html" class="active">Home</a>
+          <a class="nav-link" href="forParticipants.html">For Participants</a>
+          <a class="nav-link" href="researchInterests.html">Research Interests</a>
+          <a class="nav-link" href="sponsorInfo.html">Sponsor Information</a>
+          <a class="nav-link" href="staff.html" >Staff</a>
+          <a class="nav-link" href="contactUs.html">Contact Us</a>
+        </div>
+      </div>
     </div>
   </nav>
-
   
-  <div id="bottomRow">
-    <div class="wrapper">
-      <h1>Lorem Ipsum Cancer Studies</h1>
-      <div class="row">
-
-        <main>
-          <h2>Welcome to Our Study</h2>
-          <hr>
-          <p>Thank you for your interest in Lorem Ipsum Cancer Studies. Our goal is to better know why some people get cancer when other people don't and to help doctors better prevent, detect, and cure cancer. </p>
-          <br>
-          <div class="full-width">
-            <a href="forParticipants.html" target="_blank" class="center-img">
-              <img src="images/invitation-button.jpg" class="invite-button">
-            </a>
-          </div>
-          <br>
-          <p>Dr. Lorem Ipsum is Principal Investigator in this study investigating the environmental and genetic factors that influence the development of cancer. <a href="researchInterests.html">Read about Dr. Ipsum's research interests</a>.</p>
-          <br>
-          <p>Our study is sponsored by the Lorem Ipsum Cancer Institute, a branch of the Lorem Ipsum Institute of Health.  The research is conducted in the University of Lorem Ipsum School of Medicine's Pathology department.  <a href="sponsorInfo.html">Learn more about our sponsors</a>.</p>
-          <br>
-          <p>Research team members include the research study manager, research study coordinators, and lab technicians.  <a href="staff.html">See who is on our staff</a>.</p>
-          <br>
-          <p>You are invited to reach out to us with questions and comments.  <a href="contactUs.html">Contact us via email or phone and find our address.</a></p>
-        </main>
-      </div>
+  <div>
+    <div class="container-md">
+      <main>
+        <h2>Welcome to Our Study</h2>
+        <hr>
+        <p>Thank you for your interest in Lorem Ipsum Cancer Studies. Our goal is to better know why some people get cancer when other people don't and to help doctors better prevent, detect, and cure cancer. </p>
+        <br>
+        <div class="full-width">
+          <a href="forParticipants.html" target="_blank" class="center-img">
+            <img src="images/invitation-button.jpg" class="invite-button">
+          </a>
+        </div>
+        <br>
+        <p>Dr. Lorem Ipsum is Principal Investigator in this study investigating the environmental and genetic factors that influence the development of cancer. <a href="researchInterests.html">Read about Dr. Ipsum's research interests</a>.
+        <br><br>
+        Our study is sponsored by the Lorem Ipsum Cancer Institute, a branch of the Lorem Ipsum Institute of Health.  The research is conducted in the University of Lorem Ipsum School of Medicine's Pathology department.  <a href="sponsorInfo.html">Learn more about our sponsors</a>.
+        <br><br>
+        Research team members include the research study manager, research study coordinators, and lab technicians.  <a href="staff.html">See who is on our staff</a>.
+        <br><br>
+        You are invited to reach out to us with questions and comments.  <a href="contactUs.html">Contact us via email or phone and find our address.</a></p>
+      </main>
     </div>
   </div>
 

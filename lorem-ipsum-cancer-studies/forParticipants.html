@@ -2,120 +2,145 @@
 <html lang="en">
 <head>
   <title>LICS - For Participants</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/mdcs.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Linden+Hill&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo-favicon-d.png" />
   <meta property="og:title" content="Dan Haas Web Dev">
   <meta property="og:description" content="Dan Haas is a web developer specializing in healthcare.">
   <meta property="og:image" content="http://dan-z-haas.github.io/images/index-open-graph.jpg">
   <meta property="og:url" content="http://dan-z-haas.github.io">
-  <link rel="icon" type="image/png" href="images/logo-favicon-d.png" />
   <meta name="viewport" content="width=device-width">
   <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
 </head>
   
 <body>
-  <a name="top"></a>
-  <header>
-    <div id="uber-header">
-      <div id="logo">
-        <img src="images/uoli-logo.png" alt="university of lorem ipsum logo">
-        <p id="logo-text">University of Lorem Ipsem<br>School of Medicine</p>
+  <header id="header" class="header" >
+    <nav id="school-nav" class="navbar navbar-expand-lg navbar-dark position-sticky" >
+      <div class="container-lg">
+      <a href="#" class="navbar-brand" id="school-logo" data-bs-toggle="tooltip" data-bs-placement="left" title="University links are beyond the scope of this demo.">
+        <i id="logo-svg" class="fas fa-university fa-3x"></i>
+        <p class="logo-text">University of Lorem Ipsum<br>School of Medicine</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSchool" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavSchool">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo." >About ULI</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Academics</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Admissions</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Research</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Services</a>
+          <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">University Life</a>
+        </div>
       </div>
-      <img id="uber-header-bottom" src="images/nav-curve.png" alt="curve">        
-    </div>
-    <img class="headerImg" src="images/doc-and-pt-1200.jpg" alt="Doc and patient">
-  </header> 
-    
-    <div id="bottomRow">
-      <div class="wrapper">
-        <h1>Lorem Ipsum Cancer Studies</h1>
+    </nav>
+  </header>
         
-        <div class="row">
-          
-          <nav>
-            <ul id="navList">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="forParticipants.html">For Participants</a></li>
-              <li><a href="researchInterests.html">Research Interests</a></li>
-              <li><a href="sponsorInfo.html">Sponsor Information</a></li>
-              <li><a href="staff.html" class="active">Staff</a></li>
-              <li><a href="contactUs.html">Contact Us</a></li>
-            </ul>
-          </nav>
-
-          <main>
-            <p>
-            <h2>Information for Participants</h2><hr>
-            First, thank you for your interest in our study!  We are grateful for everyone 
-              who would like to help us.  
-              <br><br>
-              Do you have questions?  Let us answer those for you:
-            <br><br>
-            <h3>Why was I invited?</h3>
-            <span class="bold">If we invited you to our study, we are NOT saying you have
-              cancer.</span>
-              We need all different kinds of people for our research: not only people with cancer, but also people without cancer. Many people were randomly chosen and we don't know anything about them.
-              <br><br>
-            <h3>Who are you?</h3>
-            We are scientists working at the University
-              of Lorem Ipsum School of Medicine in New York City, NY.  We have been
-              studying cancer for over 30 years and learned a lot.  We need help from people like you  
-              to learn even more.
-              <br><br>
-            <h3>What is the study about?</h3>
-            This study is to learn why some people get cancer and other people don't.  We are looking at causes from the environment and from our genes.
-            <br><br>
-            <h3>Why would I do this?</h3>
-            For you, this is a chance to help medical scientists learn how to help people heal faster and get less 
-              sick in the future.  Also, we will pay you $50 for your time.
-              <br><br>
-            <h3>What would I be asked to do?</h3>
-            We ask you to meet us for only one visit which lasts about one hour.  This visit involves:
-              <ol>
-                <li>Taking a short survey about your medical history;</li>
-                <li>Drawing a small amount of blood;</li>
-                <li>Collecting a urine sample.</li>
-              </ol>
-            <br>
-            <h3>Is this safe?</h3>
-            We take our responsiblity to keep you safe very seriously.
-            <br><br>
-            A group of local leaders in our ethics group (the Human Research Protections Office, or HRPO) read our study plan and
-            agreed the risk to subjects is minimal, and that there are only three risks to be aware of:</p>
-            <ol>
-              <li><i>Risk of getting a bruise.</i>  Like any blood draw, there is risk of a bruise with any blood draw, and   
-                we use a butterfly needle, which is very small.</li>
-              <li><i>Risk of feeling uncomfortable with personal questions.</i> We let you skip any 
-                questions in the questionnaire that make you feel uncomfortable.  </li>
-              <li><i>Risk of breach of privacy.</i>  Unfortunately there are hackers out in the world.  However,  
-                the university takes many safeguards to keep your information safe.  Also, your 
-              information is seen only by scientists who need to see it, and would only be used for 
-            this one research project.</li>
-            </ol>
-            You will have time to read the consent form before agreeing to it.  It has
-            all these details and more about being a subject in our study, so you can decide if 
-            it is right for you.
-            <br><br>
-            <h3>Still have questions?</h3>
-            If have any questions or concerns about the study, you should first reach out to 
-            our study lead, <a href="contactUs.html" target="_blank">Dr. Ipsum</a>.  If 
-            you have further concerns, you may reach out to 
-            <a href="https://www.lipsum.com/feed/html" style="display:inline" target="_blank">the HRPO.</a></p>
-            <hr>
-            <div>
-              <a href="#top" style="display:block; text-align:center">Back to Top</a>
-            </div>
-          </main>
-
+  <section id="header-img">
+    <img class="headerImg" src="images/doc-and-pt-1200.jpg" alt="Doc and patient">
+  </section>
+    
+  <nav id="study-nav" class="navbar navbar-expand-lg navbar-light position-sticky">
+    <div class="container-lg">
+      <a href="index.html" class="navbar-brand" id="school-logo" >
+        <h1>Lorem Ipsum<br> Cancer Studies</h1>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLICS" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavLICS">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html" class="active">Home</a>
+          <a class="nav-link" href="forParticipants.html">For Participants</a>
+          <a class="nav-link" href="researchInterests.html">Research Interests</a>
+          <a class="nav-link" href="sponsorInfo.html">Sponsor Information</a>
+          <a class="nav-link" href="staff.html" >Staff</a>
+          <a class="nav-link" href="contactUs.html">Contact Us</a>
         </div>
       </div>
     </div>
-    <footer>
-      <p>Disclaimer: The study described above is not real.  This website is for demonstration purposes only.</p>
-      <p>Copyright &#169; 2019 LICS, University of Lorem Ipsum. <a rel="noopener" href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a></p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  </body>
+  </nav>
+
+  <div>
+    <div class="container-md">
+      <main>
+        <h2>Information for Participants</h2><hr>
+        <p>Thank you for your interest in our study!  We are grateful for everyone 
+          who would like to help us.  
+        <br><br>
+        First: <span class="bold">If we invited you to our study, we are NOT saying you have
+          cancer.</span>        
+        <br><br>
+        Do you have questions?  Let us answer those for you:
+        <br><br>
+        <h3>Who are you?</h3>
+        We are scientists working at the University
+          of Lorem Ipsum School of Medicine in New York City, NY.  We have been
+          studying cancer for over 30 years and learned a lot.  We need help from people like you  
+          to learn even more.
+        <br><br>
+        <h3>What is the study about?</h3>
+        This study is to learn why some people get cancer and other people don't.  We are looking at causes from the environment and from our genes.
+        <br><br>
+        <h3>Why was I invited?</h3>
+          We need people with cancer and people without cancer to compare their health. We choose people from all over the state by luck and we don't know about their health at all.
+        <br><br>
+        <h3>Why would I do this?</h3>
+        For you, this is a chance to help medical scientists learn how to help people heal faster and get less 
+          sick in the future.  Also, we will pay you $50 for your time.
+          <br><br>
+        <h3>What would I be asked to do?</h3>
+        We ask you to meet us for only one visit which lasts about one hour.  This visit involves:
+          <ol>
+            <li>Taking a short survey about your medical history;</li>
+            <li>Drawing a small amount of blood;</li>
+            <li>Collecting a urine sample.</li>
+          </ol>
+        <h3>Is this safe?</h3>
+        We take our responsiblity to keep you safe very seriously.
+        <br><br>
+        A group of local leaders in our ethics group (the Human Research Protections Office, or HRPO) read our study plan and
+        agreed the risk to subjects is minimal, and that there are only three risks to be aware of:</p>
+        <ol>
+          <li><i>Risk of getting a bruise.</i>  Like any blood draw, there is risk of a bruise with any blood draw, and   
+            we use a butterfly needle, which is very small.</li>
+          <li><i>Risk of feeling uncomfortable with personal questions.</i> We let you skip any 
+            questions in the questionnaire that make you feel uncomfortable.  </li>
+          <li><i>Risk of breach of privacy.</i>  Unfortunately there are hackers out in the world.  However,  
+            the university takes many safeguards to keep your information safe.  Also, your 
+          information is seen only by scientists who need to see it, and would only be used for 
+        this one research project.</li>
+        </ol>
+        You will have time to read the consent form before agreeing to it.  It has
+        all these details and more about being a subject in our study, so you can decide if 
+        it is right for you.
+        <br><br>
+        <h3>Still have questions?</h3>
+        If have any questions or concerns about the study, you should first reach out to 
+        our study lead, <a href="contactUs.html" target="_blank">Dr. Ipsum</a>.  If 
+        you have further concerns, you may reach out to 
+        <a href="https://www.lipsum.com/feed/html" style="display:inline" target="_blank">the HRPO.</a></p>
+        <hr>
+        <div>
+          <a href="#top" style="display:block; text-align:center">Back to Top</a>
+        </div>
+      </main>
+    </div>
+  </div>
+          
+  <footer>
+    <p>Disclaimer: The study described above is not real.  This website is for demonstration purposes only.</p>
+    <p>Copyright &#169; 2019 LICS, University of Lorem Ipsum. <a rel="noopener" href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a></p>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
 </html>

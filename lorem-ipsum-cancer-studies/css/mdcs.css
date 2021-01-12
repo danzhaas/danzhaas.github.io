@@ -1,3 +1,13 @@
+ /* 
+ ██████╗ ██╗      ██████╗ ██████╗  █████╗ ██╗     
+██╔════╝ ██║     ██╔═══██╗██╔══██╗██╔══██╗██║     
+██║  ███╗██║     ██║   ██║██████╔╝███████║██║     
+██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║     
+╚██████╔╝███████╗╚██████╔╝██████╔╝██║  ██║███████╗
+ ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+                                                   */
+
+
 body {
     width:100%;
     color:black;
@@ -10,16 +20,9 @@ body {
     flex-direction:column;
 }
 
-.wrapper {
-  background-color:white;
-  width:100%;
-  height: fit-content;
-}
-
 .headerImg {
   box-sizing:border-box;
   width:100%;
-  /* border-bottom: 8px solid darkred; */
   display:block;
   margin:0 auto;
 }
@@ -27,17 +30,14 @@ body {
 header {
   width:100%;
   position:relative;
-  text-align:center;
-  /* z-index:-1; */
-  /* border-bottom: 10px solid blue; */
 }
 
 nav {
   display: flex;
   flex-direction: row;
   width:100%;
-  /* color:black; */
-  /* font-weight:bold;   */
+  position: sticky;
+  top:0;
 }
 
 #school-nav {
@@ -49,15 +49,14 @@ nav {
   color:white;
 }
 
-#study-nav {
-  background-color: white;
-  border-bottom:5px solid #800000 ;
+#school-logo {
+  display: flex;
+  flex-direction: row;
 }
 
-.navbar-nav {
-  width:100%;
-  display:flex;
-  flex-direction: row;
+#study-nav {
+  background-color: white;
+  border-bottom:5px solid blue;
 }
 
 .nav a {
@@ -88,7 +87,7 @@ nav {
   color:gold
 }
 
-#logo-text {
+.logo-text {
   margin:auto 0;
   font-family: 'Linden Hill', serif;
   text-align:left;
@@ -104,17 +103,18 @@ nav {
 }
 
 main {
-  padding: 20px;
+  padding: 20px 0;
   box-sizing:border-box;
   background-color:white;
 }
 
 h1 {
-  color: maroon;
+  font-family: 'Lato', serif;
+  color: blue;
   text-align:left;
-  font-size:2.5em;
+  font-size:2em;
   line-height:1.0;
-  padding: 20px;
+  /* padding: 10px; */
   margin:0;
 }
 
@@ -126,7 +126,7 @@ h2 {
 }
 
 h3 {
-  color: maroon;
+  color: blue;
   margin: 10px 0 0 0;
 }
 
@@ -156,8 +156,6 @@ ul {
   padding:0 0 0 1em;
 }
 
-
-
 .active {
   color: #fff;
   text-decoration: underline !important;
@@ -181,12 +179,12 @@ dt {
   font-weight:bold;
 }
 
-#bottomRow {
+/* #bottomRow {
   margin-top:0;
   width:100%;
   height: fit-content;
-  /* background-color:darkgray; */
-}
+  background-color:darkgray;
+} */
 
 .row:after {
   margin:20px;
@@ -242,6 +240,27 @@ margin:10px auto;
 max-width:100%;
 }
 
+.carousel-item {
+  position:relative
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,0.7);
+  margin-bottom:0
+}
+
+.carousel-caption h5, .carousel-caption a {
+  color:gold;
+}
+
+#slide3 {
+  filter: brightness(0.9);
+}
+
+#study-nav .nav-link {
+  font-size:1.5em;
+}
+
 
 /* 
 ███╗   ███╗███████╗██████╗ ██╗ █████╗      ██████╗ ██╗   ██╗███████╗██████╗ ██╗   ██╗
@@ -253,38 +272,13 @@ max-width:100%;
 */
 
 @media only screen and (min-width: 800px) {
-  
-  /* .wrapper {
-    width:70%;
-    margin: auto;
-  }
-  
-  .headerImg {
-    width:70%;
-    margin: 0 auto;
-  } */
 
   .row {
     display:flex;
     flex-direction:row;
   }
-/* 
-  nav {
-    padding: 0 0 20px 20px;
-    border-width:0 2px 0 0;
-    border-style: solid;
-    border-color: lightgray;
-    background-color:white;
-    text-indent:0; */
-    /* float:left; */
-    /* width:25%; */
-  }
 
-  main {
-    /* padding: 0 20px 20px 20px; */
-    /* float:right; */
-    width:75%;
-  }
+}
   
   #PIPic {
     max-width:20%;

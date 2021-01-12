@@ -2,65 +2,93 @@
 <html lang="en">
   <head>
     <title>LICS - Sponsors</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/mdcs.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Linden+Hill&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo-favicon-d.png" />
     <meta property="og:title" content="Dan Haas Web Dev">
     <meta property="og:description" content="Dan Haas is a web developer specializing in healthcare.">
     <meta property="og:image" content="http://dan-z-haas.github.io/images/index-open-graph.jpg">
     <meta property="og:url" content="http://dan-z-haas.github.io">
-    <link rel="icon" type="image/png" href="images/logo-favicon-d.png" />
     <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/729fb5f0cf.js" crossorigin="anonymous"></script>
   </head>
   
   <body>
-    <header>
-      <div id="uber-header">
-        <div id="logo">
-          <img src="images/uoli-logo.png" alt="university of lorem ipsum logo">
-          <p id="logo-text">University of Lorem Ipsem<br>School of Medicine</p>
+    <header id="header" class="header" >
+      <nav id="school-nav" class="navbar navbar-expand-lg navbar-dark position-sticky" >
+        <div class="container-lg">
+        <a href="#" class="navbar-brand" id="school-logo" data-bs-toggle="tooltip" data-bs-placement="left" title="University links are beyond the scope of this demo.">
+          <i id="logo-svg" class="fas fa-university fa-3x"></i>
+          <p class="logo-text">University of Lorem Ipsum<br>School of Medicine</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSchool" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavSchool">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo." >About ULI</a>
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Academics</a>
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Admissions</a>
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Research</a>
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">Services</a>
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="University links are beyond the scope of this demo.">University Life</a>
+          </div>
         </div>
-        <img id="uber-header-bottom" src="images/nav-curve.png" alt="curve">        
-      </div>
+      </nav>
+    </header>
+
+    <section id="header-img">
       <img class="headerImg" src="images/nih-1200.jpg" alt="aerial view of NIH facility">
-    </header> 
+    </section>
     
-    <div id="bottomRow">
-      <div class="wrapper">
-        <h1>Lorem Ipsum Cancer Studies</h1>
-        <div class="row">
-          
-          <nav>
-            <ul id="navList">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="forParticipants.html">For Participants</a></li>
-              <li><a href="researchInterests.html">Research Interests</a></li>
-              <li><a href="sponsorInfo.html">Sponsor Information</a></li>
-              <li><a href="staff.html" class="active">Staff</a></li>
-              <li><a href="contactUs.html">Contact Us</a></li>
-            </ul>
-          </nav>
+    <nav id="study-nav" class="navbar navbar-expand-lg navbar-light position-sticky">
+      <div class="container-lg">
+        <a href="index.html" class="navbar-brand" id="school-logo" >
+          <h1>Lorem Ipsum<br> Cancer Studies</h1>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLICS" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <main>
-            <h2>Our Sponsors</h2><hr>
-            <p>We would like to thank these sponsors for their support:</p>
-            <h3><a href="https://www.medschool.umaryland.edu/pathology">Department of Pathology, University of Lorem Ipsum School of Medicine</a></h3>
-            <p>The research vision of the School of Medicine is to increase the impact of research and discovery on human health, not only in this region but around the world.  The School of Medicine works closely in partnership with the University of Lorem Ipsum Medical Center to provide research-intensive, academic and clinically based care for more than .2 million patients each year.  </p>
-            <h3><a href="http://www.cancer.gov">Lorem Ipsum Cancer Institute, Lorem Ipsum Institute of Health</a></h3>
-            <p>The Loem Ipsum Cancer Institute (LICI) is the nation's leader in cancer research.  It is the subdivision of the Lorem Ipsum Institute of Health (LIIH) responsible for researching diagnosis, pathology, detection, and treatment of cancer.  <br>
-              The LIIH is staffed by over 20,000 employees and is where national level medical research is conducted.  Located in Bethesda, Maryland, the LIIH was created in 1887 to provide for the medical care of the American public.</p>
-          </main>
-
+        <div class="collapse navbar-collapse" id="navbarNavLICS">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html" class="active">Home</a>
+            <a class="nav-link" href="forParticipants.html">For Participants</a>
+            <a class="nav-link" href="researchInterests.html">Research Interests</a>
+            <a class="nav-link" href="sponsorInfo.html">Sponsor Information</a>
+            <a class="nav-link" href="staff.html" >Staff</a>
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </div>
         </div>
-
+      </div>
+    </nav>
+      
+    <div>
+      <div class="container-md">
+        <main>
+          <h2>Our Sponsors</h2>
+          <hr>
+          <p>We would like to thank these sponsors for their support:</p>
+          <h3><a href="https://www.medschool.umaryland.edu/pathology">Department of Pathology, University of Lorem Ipsum School of Medicine</a></h3>
+          <p>The research vision of the School of Medicine is to increase the impact of research and discovery on human health, not only in this region but around the world.  The School of Medicine works closely in partnership with the University of Lorem Ipsum Medical Center to provide research-intensive, academic and clinically based care for more than .2 million patients each year.  </p>
+          <h3><a href="http://www.cancer.gov">Lorem Ipsum Cancer Institute, Lorem Ipsum Institute of Health</a></h3>
+          <p>The Loem Ipsum Cancer Institute (LICI) is the nation's leader in cancer research.  It is the subdivision of the Lorem Ipsum Institute of Health (LIIH) responsible for researching diagnosis, pathology, detection, and treatment of cancer.  <br>
+            The LIIH is staffed by over 20,000 employees and is where national level medical research is conducted.  Located in Bethesda, Maryland, the LIIH was created in 1887 to provide for the medical care of the American public.</p>
+        </main>
       </div>
     </div>
+
     <footer>
       <p>Disclaimer: The study described above is not real.  This website is for demonstration purposes only.</p>
       <p>Copyright &#169; 2019 LICS, University of Lorem Ipsum. <a rel="noopener" href="mailto:danzhaas@gmail.com">danzhaas@gmail.com</a></p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
