@@ -392,16 +392,16 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 #LICS-card {
     .back {
-    background-image: linear-gradient(rgb(139, 139, 139),rgb(223, 223, 223));
+        background-image: linear-gradient(tan,white);
     }
 
     .btn {
-    background-color:rgb(139, 139, 139);
-    // background-color: hsl(0, 0%, 41%); 
-    &:hover {
-        background-color: hsl(0, 0%, 41%); 
-        // background-color:rgb(139, 139, 139);
-    }
+        background-color: tan;
+        // background-color: hsl(0, 0%, 41%); 
+        &:hover {
+            background-color: tan; 
+            // background-color:rgb(139, 139, 139);
+        }
     }
 }
 

@@ -12,9 +12,9 @@ const dev = {
     id:"dev",
     imageSrc:"images/dev-tile-500.jpg",
     devIcons:[
-        "Node.js","Express","MongoDB"
+        "Node.js","Express","MongoDB","React"
     ],
-    desc:'I am currently taking this Udemy course by Brad Traversy.  It teaches how to build and deploy a social network with the MERN stack and Redux.',
+    desc:'Social network full stack web application.  Features authentication, use of async/await, and Redux.',
     button1: {
         text:"Course Page",
         href:"https://www.udemy.com/course/mern-stack-front-to-back/"
@@ -93,9 +93,9 @@ const LICS = {
     id:"LICS",
     imageSrc:"images/LICS-tile-500.jpg",
     devIcons:[
-        "HTML","CSS"
+        "jQuery","Bootstrap","HTML","CSS"
     ],
-    desc:'A university medical research study site. The content was written to be readable by all, from the layman to the Ph.D.',
+    desc:'A university medical research study site. UI designed around user stories for participants, scientists, and sponsors.',
     button1: {
         text:"Live Version",
         href:"https://danzhaas.github.io/lorem-ipsum-cancer-studies/index.html"

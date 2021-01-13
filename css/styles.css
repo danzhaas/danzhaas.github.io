@@ -363,13 +363,13 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 }
 
 #LICS-card .back {
-  background-image: linear-gradient(#8b8b8b, #dfdfdf);
+  background-image: linear-gradient(tan, white);
 }
 #LICS-card .btn {
-  background-color: #8b8b8b;
+  background-color: tan;
 }
 #LICS-card .btn:hover {
-  background-color: dimgray;
+  background-color: tan;
 }
 
 #portfolio-card .back {
