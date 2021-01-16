@@ -183,7 +183,7 @@ $('#submit-btn').addEventListener('click', async () => {
 })
 
 document.addEventListener('submit', e => {
-   
+
     // Store reference to form to make later code easier to read
     const form = e.target;
     
@@ -200,5 +200,5 @@ document.addEventListener('submit', e => {
     }
     // Prevent the default form submit
     e.preventDefault();
-  
-  });
+
+});

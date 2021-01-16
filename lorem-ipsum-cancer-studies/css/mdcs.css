@@ -126,7 +126,6 @@ h2 {
 }
 
 h3 {
-  color: blue;
   margin: 10px 0 0 0;
 }
 
@@ -179,13 +178,6 @@ dt {
   font-weight:bold;
 }
 
-/* #bottomRow {
-  margin-top:0;
-  width:100%;
-  height: fit-content;
-  background-color:darkgray;
-} */
-
 .row:after {
   margin:20px;
   clear:both;
@@ -232,6 +224,7 @@ footer {
 }
 
 #contact-table {
+  width:100%;
   margin:15px 15px 15px 0;
 }
 
@@ -259,6 +252,10 @@ max-width:100%;
 
 #study-nav .nav-link {
   font-size:1.5em;
+}
+
+.blue {
+  color: blue;
 }
 
 
@@ -307,7 +304,3 @@ max-width:100%;
 .full-width {
   width:100%;
 }
-
-/*
-Media query ends here
-*/
