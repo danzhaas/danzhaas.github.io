@@ -166,6 +166,22 @@ hr {
   cursor: pointer;
 }
 
+.line-top {
+  border-top: 10px solid #40a2e3;
+}
+
+.line-right {
+  border-right: 10px solid #40a2e3;
+}
+
+.line-bottom {
+  border-bottom: 10px solid #40a2e3;
+}
+
+.line-left {
+  border-left: 10px solid #40a2e3;
+}
+
 /* 
 d8b   db  .d8b.  db    db 
 888o  88 d8' `8b 88    88 
@@ -205,26 +221,20 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 */
+#home {
+  background: #030024 url("../images/code-illustration.svg") no-repeat center;
+}
+
 #headline {
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
-}
-
-#home-container {
-  padding: 1rem 1rem 1rem 0;
-  border-top: 10px solid #40a2e3;
-  border-right: 10px solid #40a2e3;
-  border-bottom: 10px solid #40a2e3;
-}
-
-#home-l-div {
-  border-top: 10px solid #40a2e3;
-  border-bottom: 10px solid #40a2e3;
+  backdrop-filter: grayscale(0.5);
 }
 
 #dzh {
   max-height: 100%;
   max-width: 100%;
+  border: 10px solid #40a2e3;
 }
 
 /*  
@@ -382,6 +392,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   background-color: #2b7eb6;
 }
 
+#project img {
+  max-width: 100%;
+}
+
 /*
            .d8b.  d8888b.  .d88b.  db    db d888888b 
           d8' `8b 88  `8D .8P  Y8. 88    88 `~~88~~' 
@@ -478,6 +492,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 
       */
+#contact {
+  background: #030024 url("../images/code-illustration.svg") no-repeat center;
+}
+
 #contact-top-l-div {
   border-top: 10px solid #40a2e3;
 }

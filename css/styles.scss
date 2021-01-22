@@ -165,6 +165,22 @@ hr {
     cursor:pointer;
 }
 
+.line-top {
+    border-top:10px solid $mid-blue;
+}
+
+.line-right {
+    border-right:10px solid $mid-blue;
+}
+
+.line-bottom {
+    border-bottom:10px solid $mid-blue;
+}
+
+.line-left {
+    border-left:10px solid $mid-blue;
+}
+
 
 /* 
 d8b   db  .d8b.  db    db 
@@ -192,8 +208,6 @@ VP   V8P YP   YP    YP
 
 
 
-
-
 /* 
 .d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db .d8888. 
 88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88 88'  YP 
@@ -212,27 +226,20 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 */
 
+#home {
+    background: $darkest-blue url('../images/code-illustration.svg') no-repeat center;
+}
 
 #headline {
     font-family: 'Poiret One', sans-serif;
     font-weight: bold;
-}
-
-#home-container {
-    padding: 1rem 1rem 1rem 0;
-    border-top:10px solid $mid-blue;
-    border-right:10px solid $mid-blue;
-    border-bottom:10px solid $mid-blue
-}
-
-#home-l-div {
-    border-top:10px solid $mid-blue;
-    border-bottom:10px solid $mid-blue
+    backdrop-filter: grayscale(0.5)
 }
 
 #dzh {
     max-height:100%;
-    max-width:100%
+    max-width:100%;
+    border:10px solid $mid-blue;
 }
 
 /*  
@@ -421,7 +428,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     }
 }
 
-
+#project img {
+    max-width:100%
+}
 
 /*
            .d8b.  d8888b.  .d88b.  db    db d888888b 
@@ -551,7 +560,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
                                                                       
       */
 
-
+#contact {
+    background: $darkest-blue url('../images/code-illustration.svg') no-repeat center;
+}
 // Xs to Md design
 
 #contact-top-l-div {

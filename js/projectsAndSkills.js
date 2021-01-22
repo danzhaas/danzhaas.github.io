@@ -12,12 +12,12 @@ const dev = {
     id:"dev",
     imageSrc:"images/dev-tile-500.jpg",
     devIcons:[
-        "Node.js","Express","MongoDB","React"
+        "Node.js","Express","MongoDB","React", "React Router","Javascript"
     ],
     desc:'Social network full stack web application.  Features authentication, use of async/await, and Redux.',
     button1: {
-        text:"Course Page",
-        href:"https://www.udemy.com/course/mern-stack-front-to-back/"
+        text:"Live Version",
+        href:"https://dev-connector-dzh.herokuapp.com/"
     },
     button2:{
         text:"See My Code",
