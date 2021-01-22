@@ -10,7 +10,8 @@
 const dev = {
     name:"Dev Connector",
     id:"dev",
-    imageSrc:"images/dev-tile-500.jpg",
+    thumbnailSrc:"images/dev-tile-500.jpg",
+    imageSrc:"images/dev-connector-landscape.jpg",
     devIcons:[
         "Node.js","Express","MongoDB","React", "React Router","Javascript"
     ],
@@ -30,7 +31,8 @@ const dev = {
 const barkr = {
     name:"Barkr",
     id:"barkr",
-    imageSrc:"images/barkr-tile-500.jpg",
+    thumbnailSrc:"images/barkr-tile-500.jpg",
+    imageSrc:"images/barkr-landscape.jpg",
     devIcons:[
         "React","React Router","Reactstrap","Javascript","Bootstrap","HTML","CSS"
     ],
@@ -50,6 +52,7 @@ const barkr = {
 const distractionTimer = {
     name:"Distraction Timer",
     id:"timer",
+    thumbnailSrc:"images/timer-tile-500.jpg",
     imageSrc:"images/timer-tile-500.jpg",
     devIcons:[
         "Gatsby","React","React Google Charts","Javascript","Bootstrap","HTML","CSS","Sass"
@@ -71,6 +74,7 @@ const distractionTimer = {
 const killi = {
     name:"Killifish Classic",
     id:"killi",
+    thumbnailSrc:"images/killi-tile-500.jpg",
     imageSrc:"images/killi-tile-500.jpg",
     devIcons:[
         "jQuery","Javascript","HTML","CSS","less"
@@ -91,7 +95,8 @@ const killi = {
 const LICS = {
     name:"Lorem Ipsum Cancer Studies",
     id:"LICS",
-    imageSrc:"images/LICS-tile-500.jpg",
+    thumbnailSrc:"images/LICS-tile-500.jpg",
+    imageSrc:"images/LICS-landscape.jpg",
     devIcons:[
         "jQuery","Bootstrap","HTML","CSS"
     ],
@@ -111,11 +116,12 @@ const LICS = {
 const portfolio = {
     name:"My Portfolio",
     id:"portfolio",
+    thumbnailSrc:"images/portfolio-tile-500.jpg",
     imageSrc:"images/portfolio-tile-500.jpg",
     devIcons:[
         "Node.js","Express","MongoDB","jQuery","Javascript","Bootstrap","Sass","CSS","HTML"
     ],
-    desc:"You're looking at it.  Visit my Trello board to see how I used the natural planning model and a Kanban board to create this project.",
+    desc:"You're looking at it.  Visit my Trello board to see how I used a Kanban board to plan and create this project.",
     button1: {
         text:"Trello Board",
         href:"https://trello.com/b/pXxa9X5h/danzhaasgithubio"
@@ -128,7 +134,7 @@ const portfolio = {
 
 
 // List of Projects
-const myProjects = [dev, barkr, distractionTimer, killi, LICS, portfolio]
+const myProjects = [dev, barkr, LICS]
 
 
 // Development Icon Library

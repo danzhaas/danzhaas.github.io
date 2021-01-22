@@ -34,26 +34,35 @@ function flip(cardId) {
 var cardTemplate, iconsTemplate;
 
 function populateTemplate(project) {
+
     cardTemplate = `
-        <div id="${project.id}-card" class="card project-card border-0 mx-auto" onclick="flip('#${project.id}-card')"
-            tabindex=0>
-            <div class="front zoom">
-                <img class="card-img rounded-0" src="${project.imageSrc}"
-                    alt="${project.altText}" />
-            </div>
-            <div
-                class="back zoom px-2 py-4 p-md-3 d-flex flex-column justify-content-between d-none zoom">
-                <h2 class="card-title m-0">${project.name}</h2>
-                <div id="${project.id}-icons">
+        <div id="${project.id}-card" class="project card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="front zoom">
+                        <a href='${project.button1.href}' target='_blank'>
+                            <img class="card-img d-md-none" src="${project.thumbnailSrc}"
+                                alt="${project.altText}" />
+                            <img class="d-none d-md-block card-img rounded-0" src="${project.imageSrc}"
+                                alt="${project.altText}" />
+                        </a>
+                    </div>
                 </div>
-                <p class="card-text m-0">${project.desc}</p>
-                <div class="d-flex flex-row justify-content-around">
-                    <a role="button" class="btn btn-sm" href="${project.button1.href}" target="_blank" ${project.button1.attribute} >
-                        ${project.button1.text}
-                    </a>
-                    <a role="button" class="btn btn-sm" href="${project.button2.href}" target="_blank">
-                        ${project.button2.text}
-                    </a>
+                <div class="col-md-4">
+                    <div class="card-body">
+                    <h2 class="card-title m-0">${project.name}</h2>
+                        <div id="${project.id}-icons">
+                        </div>
+                        <p class="card-text m-0">${project.desc}</p>
+                        <div class="d-flex flex-row justify-content-around">
+                            <a role="button" class="btn btn-sm" href="${project.button1.href}" target="_blank" ${project.button1.attribute} >
+                                ${project.button1.text}
+                            </a>
+                            <a role="button" class="btn btn-sm" href="${project.button2.href}" target="_blank">
+                                ${project.button2.text}
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,7 +83,7 @@ function generateIcons(icons) {
 
 function buildCard(project) {
     var cardContainer = document.createElement("div");  
-    cardContainer.classList="card-container col-12 col-md-6 col-xl-4 px-lg-0";  
+    cardContainer.classList="card-container col-12";  
     cardContainer.innerHTML = cardTemplate;     
     document.getElementById("cards").appendChild(cardContainer);  
     var iconTarget = $(`#${project.id}-icons`); 
@@ -88,21 +97,6 @@ function generateCard(project) {
 }
 
 myProjects.forEach(generateCard);
-
-
-//CARD DIMENSIONS
-function squareCard(cardId) {
-    var cardWidth = $(cardId).width();
-    $(cardId).css({
-        'height': cardWidth + 'px'
-    });
-    $(cardId + ' > div').css({
-        'height': cardWidth + 'px',
-        'width': cardWidth + 'px'
-    });
-}
-squareCard('.card-container');
-
 
 // TOOLTIPS
 $(function () {
@@ -161,44 +155,51 @@ document.querySelectorAll(".badge").forEach(badge => badge.addEventListener("mou
 }))
 
 
+//  ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗
+// ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔════╝╚══██╔══╝
+// ██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║        ██║   
+// ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║        ██║   
+// ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║   
+//  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝   
+
 // TESTING msg
 // input: 
-const testMessage = {
-    "name":"Dan",
-    "email":"danzhaas@gmail.com",
-    "formMessage":"Hi there!"
-};
+// const testMessage = {
+//     "name":"Dan",
+//     "email":"danzhaas@gmail.com",
+//     "formMessage":"Hi there!"
+// };
 
-//to connect the two, 
-//send testMessage as body of HTTP req on 
-$('#submit-btn').addEventListener('click', async () => {
-    try {
-        const res = await 
+// //to connect the two, 
+// //send testMessage as body of HTTP req on 
+// $('#submit-btn').addEventListener('click', async () => {
+//     try {
+//         const res = await 
         
-        alert(res.msg)
-    }
-    catch {
-        alert("Uh oh")
-    }
-})
+//         alert(res.msg)
+//     }
+//     catch {
+//         alert("Uh oh")
+//     }
+// })
 
-document.addEventListener('submit', e => {
+// document.addEventListener('submit', e => {
 
-    // Store reference to form to make later code easier to read
-    const form = e.target;
+//     // Store reference to form to make later code easier to read
+//     const form = e.target;
     
-    // fetch(form.action, {
-    //   method: form.method,
-    //   body: new FormData(form)
-    // })
+//     // fetch(form.action, {
+//     //   method: form.method,
+//     //   body: new FormData(form)
+//     // })
 
-    try {
+//     try {
 
-    }
-    catch {
-        alert("Uh oh")
-    }
-    // Prevent the default form submit
-    e.preventDefault();
+//     }
+//     catch {
+//         alert("Uh oh")
+//     }
+//     // Prevent the default form submit
+//     e.preventDefault();
 
-});
+// });

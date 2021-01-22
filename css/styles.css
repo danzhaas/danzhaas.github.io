@@ -102,11 +102,11 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.container, .container-fluid {
   padding: 4px 0;
   height: 100%;
 }
-.container > h1 {
+.container > h1, .container-fluid > h1 {
   font-weight: bold;
 }
 
@@ -161,8 +161,8 @@ hr {
 }
 
 .zoom:hover, .dev-icon:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
   cursor: pointer;
 }
 
@@ -222,19 +222,28 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 */
 #home {
-  background: #030024 url("../images/code-illustration.svg") no-repeat center;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/code-illustration.svg");
+  background-size: cover;
+  filter: brightness(0.4);
 }
 
 #headline {
   font-family: "Poiret One", sans-serif;
   font-weight: bold;
-  backdrop-filter: grayscale(0.5);
 }
 
 #dzh {
   max-height: 100%;
   max-width: 100%;
-  border: 10px solid #40a2e3;
 }
 
 /*  
@@ -245,18 +254,12 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
         ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
         ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
 */
-.card-container {
-  width: 400px;
-  max-width: 100%;
-  margin: 3vw 0;
-  position: relative;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
+#projects > div {
+  padding: 0;
 }
-.card-container:hover {
-  z-index: 25;
+
+#cards {
+  padding: 0;
 }
 
 .project-card {
@@ -392,7 +395,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   background-color: #2b7eb6;
 }
 
-#project img {
+.project img {
   max-width: 100%;
 }
 
@@ -493,7 +496,18 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
       */
 #contact {
-  background: #030024 url("../images/code-illustration.svg") no-repeat center;
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/code-illustration.svg");
+  background-size: cover;
+  filter: brightness(0.4);
 }
 
 #contact-top-l-div {
@@ -639,10 +653,6 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
   .nav-item > a {
     background-color: white;
-  }
-
-  #about-cards {
-    padding: 0 2vh;
   }
 
   form > .card-body {
