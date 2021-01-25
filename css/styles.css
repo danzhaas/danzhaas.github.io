@@ -228,12 +228,13 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 #home::before {
   content: "";
   position: absolute;
-  top: -10%;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-image: url("../images/code-illustration.svg");
   background-size: cover;
-  filter: brightness(0.4);
+  background-position: center center;
+  filter: brightness(0.8);
 }
 
 #headline {
@@ -486,14 +487,12 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 }
 
 /*
-           .o88b.  .d88b.  d8b   db d888888b  .d8b.   .o88b. d888888b 
-          d8P  Y8 .8P  Y8. 888o  88 `~~88~~' d8' `8b d8P  Y8 `~~88~~' 
-          8P      88    88 88V8o 88    88    88ooo88 8P         88    
-          8b      88    88 88 V8o88    88    88~~~88 8b         88    
-          Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88    
-           `Y88P'  `Y88P'  VP   V8P    YP    YP   YP  `Y88P'    YP    
-
-
+ .o88b.  .d88b.  d8b   db d888888b  .d8b.   .o88b. d888888b 
+d8P  Y8 .8P  Y8. 888o  88 `~~88~~' d8' `8b d8P  Y8 `~~88~~' 
+8P      88    88 88V8o 88    88    88ooo88 8P         88    
+8b      88    88 88 V8o88    88    88~~~88 8b         88    
+Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88    
+ `Y88P'  `Y88P'  VP   V8P    YP    YP   YP  `Y88P'    YP    
       */
 #contact {
   position: relative;
@@ -508,6 +507,7 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   background-image: url("../images/code-illustration.svg");
   background-size: cover;
   filter: brightness(0.4);
+  z-index: 0;
 }
 
 #contact-top-l-div {
