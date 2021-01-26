@@ -365,17 +365,17 @@
                                 <h2 class="pb-3 text-white">Message Me</h2>
                                 <div class="form-group">
                                     <label for="name">Your Name</label><br>
-                                    <input name="name" id="name" type="text" class="input form-control"
+                                    <input name="name" id="name-s" type="text" class="input form-control"
                                         placeholder="John Doe">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Your Email</label><br>
-                                    <input name="email" id="email" type="email" class="input form-control"
+                                    <input name="email" id="email-s" type="email" class="input form-control"
                                         placeholder="johndoe@jdoeinc.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="formMessage">Your Message</label><br>
-                                    <textarea class="textarea form-control" name="formMessage" id="formMessage"
+                                    <textarea class="textarea form-control" name="formMessage" id="formMessage-s"
                                         placeholder="My project's purpose or vision is..." rows="3"></textarea>
                                 </div>
                                 <div class="form-group row">
@@ -428,23 +428,21 @@
 
                     <!-- form -->
                     <div id="container-right" class="col-5 mt-0">
-                        <form class="h-100 d-flex flex-column justify-content-between" id="form-large"
-                            action="https://danzhaas-github-io-back-end.herokuapp.com/api/messages/" method="POST"
-                            target="_blank">
+                        <form class="h-100 d-flex flex-column justify-content-between" id="form-large" onSubmit= >
                             <h2 class="pb-3 text-white">Message Me</h2>
                             <div class="form-group">
                                 <label for="name">Your Name</label><br>
-                                <input name="name" id="name" type="text" class="input form-control"
+                                <input name="name" id="name-l" type="text" class="input form-control"
                                     placeholder="John Doe">
                             </div>
                             <div class="form-group">
                                 <label for="email">Your Email</label><br>
-                                <input name="email" id="email" type="email" class="input form-control"
+                                <input name="email" id="email-l" type="email" class="input form-control"
                                     placeholder="johndoe@jdoeinc.com">
                             </div>
                             <div class="form-group">
                                 <label for="formMessage">Your Message</label><br>
-                                <textarea class="textarea form-control" name="formMessage" id="formMessage"
+                                <textarea class="textarea form-control" name="formMessage" id="formMessage-l"
                                     placeholder="My project's purpose or vision is..." rows="3"></textarea>
                             </div>
                             <div class="form-group row">
@@ -515,9 +513,7 @@ db. 88  db   8D
 Y8888P  `8888Y' 
 
 -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>

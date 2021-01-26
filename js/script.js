@@ -162,44 +162,58 @@ document.querySelectorAll(".badge").forEach(badge => badge.addEventListener("mou
 // ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╗   ██║   
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝   
 
-// TESTING msg
-// input: 
-// const testMessage = {
-//     "name":"Dan",
-//     "email":"danzhaas@gmail.com",
-//     "formMessage":"Hi there!"
-// };
 
-// //to connect the two, 
-// //send testMessage as body of HTTP req on 
-// $('#submit-btn').addEventListener('click', async () => {
-//     try {
-//         const res = await 
-        
-//         alert(res.msg)
-//     }
-//     catch {
-//         alert("Uh oh")
-//     }
-// })
+// const proxy = 'https://cors-anywhere.herokuapp.com/'
+// const url = 'https://danzhaas-github-io-back-end.herokuapp.com/api/messages/'
 
-// document.addEventListener('submit', e => {
+// $('#form-large').submit(function (e) {
+//     e.preventDefault(); // prevents form from submitting
+//     const formValues = {
+//         "name":$('#name-l').value,
+//         "email":$('#email-l').value,
+//         "formMessage":$('#formMessage-l').value
+//     };
+//     $.ajax({
+//         url:url,
+//         type:"POST",
+//         data:formValues,
+//         // headers:{
+//         //     Access-Control-Allow-Origin:*
+//         // },
+//         beforeSend: function(request) {
+//             request.setRequestHeader('Access-Control-Allow-Origin','*')
+//         },
+//         success: function() {
+//             alert("Message received, thank you. I will get back to you within 3 business days.")
+//         },
+//         error: function() {
+//             alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .")
+//         }
+//     });
+// });
 
-//     // Store reference to form to make later code easier to read
-//     const form = e.target;
-    
-//     // fetch(form.action, {
-//     //   method: form.method,
-//     //   body: new FormData(form)
-//     // })
-
-//     try {
-
-//     }
-//     catch {
-//         alert("Uh oh")
-//     }
-//     // Prevent the default form submit
-//     e.preventDefault();
-
+// $('#form-small').submit(function (e) {
+//     e.preventDefault(); // prevents form from submitting
+//     const formValues = {
+//         "name":$('#name-s').value,
+//         "email":$('#email-s').value,
+//         "formMessage":$('#formMessage-s').value
+//     };
+//     $.ajax({
+//         url:url,
+//         type:"POST",
+//         data:formValues,
+//         // headers:{
+//         //     Access-Control-Allow-Origin:*
+//         // },
+//         beforeSend: function(request) {
+//             request.setRequestHeader('Access-Control-Allow-Origin','*')
+//         },
+//         success: function() {
+//             alert("Message received, thank you. I will get back to you within 3 business days.")
+//         },
+//         error: function() {
+//             alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .")
+//         }
+//     });
 // });
