@@ -21,7 +21,7 @@ const dev = {
         href:"https://dev-connector-dzh.herokuapp.com/"
     },
     button2:{
-        text:"See My Code",
+        text:"See Code",
         href:"http://github.com/danzhaas/dev-connector"
     }
 }
@@ -117,7 +117,7 @@ const portfolio = {
     name:"My Portfolio",
     id:"portfolio",
     thumbnailSrc:"images/portfolio-tile-500.jpg",
-    imageSrc:"images/portfolio-tile-500.jpg",
+    imageSrc:"images/portfolio-landscape.jpg",
     devIcons:[
         "Node.js","Express","MongoDB","jQuery","Javascript","Bootstrap","Sass","CSS","HTML"
     ],
@@ -134,7 +134,7 @@ const portfolio = {
 
 
 // List of Projects
-const myProjects = [dev, barkr, LICS]
+const myProjects = [dev, barkr, LICS, portfolio];
 
 
 // Development Icon Library

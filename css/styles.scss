@@ -657,15 +657,12 @@ footer {
     width:100%;
     color:white;
     background-color:$darkest-blue;
-    padding:5px
-}
-
-footer {
+    padding:5px;
 
     > * {
         position: relative;
         font-family: 'Source Sans Pro', sans-serif;
-        font-weight:bold;
+        // font-weight:bold;
         color:white;
         height:fit-content;
         font-size: clamp(1rem, 1.5rem, 2rem)
@@ -737,7 +734,8 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         font-size: 1rem;
     }
     footer * {
-        font-size:1rem
+        font-size:1rem;
+        font-weight:bold;
     }
 
     // Global
@@ -813,6 +811,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     svg {
         height:10vh;
     }
+
 }
 
 /* 
@@ -909,24 +908,38 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     
     #projects {
 
-        padding:5vw;
+        padding:5vw 10vw;
 
         .btn {
             font-size:1.25rem
         }
 
         .card-container {
-            margin:0
-            // margin:1.5rem 0
+            // margin:0
+            margin:3% 0;
         }
 
         .card-text {
             font-size: 1rem
         }
+
+        .card-body {
+            height:100%;
+            padding:15% 15%;
+            display:flex;
+            flex-direction:column;
+            align-items: space-between;
+            justify-content: space-between;
+        }
+
     }
 
     h3, .contact-text {
         font-size:1.75rem
+    }
+
+    #about {
+        padding:5vw 10vw;
     }
 }
 

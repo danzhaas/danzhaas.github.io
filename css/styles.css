@@ -566,11 +566,9 @@ footer {
   background-color: #030024;
   padding: 5px;
 }
-
 footer > * {
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
   color: white;
   height: fit-content;
   font-size: clamp(1rem, 1.5rem, 2rem);
@@ -639,6 +637,7 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 
   footer * {
     font-size: 1rem;
+    font-weight: bold;
   }
 
   section {
@@ -801,20 +800,32 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
 */
 @media only screen and (min-width: 992px) {
   #projects {
-    padding: 5vw;
+    padding: 5vw 10vw;
   }
   #projects .btn {
     font-size: 1.25rem;
   }
   #projects .card-container {
-    margin: 0;
+    margin: 3% 0;
   }
   #projects .card-text {
     font-size: 1rem;
   }
+  #projects .card-body {
+    height: 100%;
+    padding: 15% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+  }
 
   h3, .contact-text {
     font-size: 1.75rem;
+  }
+
+  #about {
+    padding: 5vw 10vw;
   }
 }
 #contact-l-div {

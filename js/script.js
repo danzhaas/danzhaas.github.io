@@ -7,7 +7,7 @@
 
 
 // SCROLLSPY
-$('body').scrollspy({ target: '#navbar-collapse' })
+$('body').scrollspy({ target: '#navbar-collapse' });
 
 
 // ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
@@ -19,15 +19,15 @@ $('body').scrollspy({ target: '#navbar-collapse' })
 
 
 //CARD-FLIP
-function flip(cardId) {
-    const thisCard = document.querySelector(cardId);
-    var face;
-    thisCard.classList.contains("flipped") ? face = "1" : face = "0";
-    const reverse = 1 - face;
-    thisCard.children[reverse].classList.toggle("d-none");
-    thisCard.classList.toggle('flipped');
-    setTimeout(function () { thisCard.children[face].classList.toggle("d-none") }, 500);    // To address problem of anchors on the reverse side being activated on click from the front, the side of the card facing backwards gets display = none 
-}
+// function flip(cardId) {
+//     const thisCard = document.querySelector(cardId);
+//     var face;
+//     thisCard.classList.contains("flipped") ? face = "1" : face = "0";
+//     const reverse = 1 - face;
+//     thisCard.children[reverse].classList.toggle("d-none");
+//     thisCard.classList.toggle('flipped');
+//     setTimeout(function () { thisCard.children[face].classList.toggle("d-none") }, 500);    // To address problem of anchors on the reverse side being activated on click from the front, the side of the card facing backwards gets display = none 
+// }
 
 
 // GENERATE CARDS
@@ -38,6 +38,7 @@ function populateTemplate(project) {
     cardTemplate = `
         <div id="${project.id}-card" class="project card mb-3">
             <div class="row g-0">
+
                 <div class="col-md-8">
                     <div class="front zoom">
                         <a href='${project.button1.href}' target='_blank'>
@@ -48,9 +49,10 @@ function populateTemplate(project) {
                         </a>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="card-body">
-                    <h2 class="card-title m-0">${project.name}</h2>
+                        <h2 class="card-title m-0">${project.name}</h2>
                         <div id="${project.id}-icons">
                         </div>
                         <p class="card-text m-0">${project.desc}</p>
@@ -64,6 +66,7 @@ function populateTemplate(project) {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     `
@@ -117,12 +120,10 @@ $('.collapse').collapse();
 
 
 //RESUME MODAL
-
 document.getElementById("resume-icon").addEventListener("click", () => $('#resumeModal').modal('toggle'));
 
 
 //GENERATE BADGES
-
 function generateBadges(listString, badgeColor, nothing) {
     const badgeArray = listString.split(", ").map(text => "<div class='badge-container zoom'><span class='badge badge-"+badgeColor+" mr-1'>" +text + "</span></div>");
     switch (listString) {
@@ -163,57 +164,32 @@ document.querySelectorAll(".badge").forEach(badge => badge.addEventListener("mou
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═╝   
 
 
-// const proxy = 'https://cors-anywhere.herokuapp.com/'
-// const url = 'https://danzhaas-github-io-back-end.herokuapp.com/api/messages/'
+function sendForm (formSize) {
+    const formValues = {
+        "name":document.querySelector('#name-'+formSize).value,
+        "email":document.querySelector('#email-'+formSize).value,
+        "formMessage":document.querySelector('#formMessage-'+formSize).value
+    };
+    $.ajax({
+        url:'https://danzhaas-github-io-back-end.herokuapp.com/api/messages/',
+        type:"POST",
+        data:formValues,
+        success: function() {
+            alert("Message received, thank you. I will get back to you within 3 business days.")
+        },
+        error: function() {
+            alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .")
+        }
+    });
+};
 
-// $('#form-large').submit(function (e) {
-//     e.preventDefault(); // prevents form from submitting
-//     const formValues = {
-//         "name":$('#name-l').value,
-//         "email":$('#email-l').value,
-//         "formMessage":$('#formMessage-l').value
-//     };
-//     $.ajax({
-//         url:url,
-//         type:"POST",
-//         data:formValues,
-//         // headers:{
-//         //     Access-Control-Allow-Origin:*
-//         // },
-//         beforeSend: function(request) {
-//             request.setRequestHeader('Access-Control-Allow-Origin','*')
-//         },
-//         success: function() {
-//             alert("Message received, thank you. I will get back to you within 3 business days.")
-//         },
-//         error: function() {
-//             alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .")
-//         }
-//     });
-// });
+$('#form-large').submit(function(e) {
+    e.preventDefault(); // prevents form from submitting
+    sendForm("l");
+})
 
-// $('#form-small').submit(function (e) {
-//     e.preventDefault(); // prevents form from submitting
-//     const formValues = {
-//         "name":$('#name-s').value,
-//         "email":$('#email-s').value,
-//         "formMessage":$('#formMessage-s').value
-//     };
-//     $.ajax({
-//         url:url,
-//         type:"POST",
-//         data:formValues,
-//         // headers:{
-//         //     Access-Control-Allow-Origin:*
-//         // },
-//         beforeSend: function(request) {
-//             request.setRequestHeader('Access-Control-Allow-Origin','*')
-//         },
-//         success: function() {
-//             alert("Message received, thank you. I will get back to you within 3 business days.")
-//         },
-//         error: function() {
-//             alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .")
-//         }
-//     });
-// });
+
+$('#form-small').submit(function(e) {
+    e.preventDefault(); // prevents form from submitting
+    sendForm("s");
+})
