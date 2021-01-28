@@ -13,7 +13,7 @@ const dev = {
     thumbnailSrc:"images/dev-tile-500.jpg",
     imageSrc:"images/dev-connector-landscape.jpg",
     devIcons:[
-        "Node.js","Express","MongoDB","React", "React Router","Javascript"
+        "Node.js","Express","MongoDB","React", "Redux", "React Router","Javascript"
     ],
     desc:'Social network full stack web application.  Features authentication, use of async/await, and Redux.',
     button1: {
@@ -150,6 +150,10 @@ const allDevIcons = [
     react={
         name:"React",
         svg:"images/icons/react.svg",
+    },
+    redux = {
+        name:"Redux",
+        svg:"images/icons/redux.svg"
     },
     reactrouter={
         name:"React Router",
