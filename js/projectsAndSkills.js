@@ -6,6 +6,27 @@
 // ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
 
 
+//Alien Vs Editor
+const ave = {
+    name:"Alien Vs Editor",
+    id:"ave",
+    thumbnailSrc:"images/AvE-tile-500.jpg",
+    imageSrc:"images/AvE-landscape.jpg",
+    devIcons:[
+        "Node.js","Express","MongoDB","React", "React Router","Javascript","Sass"
+    ],
+    desc:'Rich text editor my 3-person team built in one week for a Hackathon project.  Features cloud file management.',
+    button1: {
+        text:"Live Version",
+        href:"https://our-mintbean-team.github.io/texteditor-mintbean/"
+    },
+    button2:{
+        text:"See Code",
+        href:"https://github.com/our-mintbean-team/texteditor-mintbean"
+    }
+}
+
+
 //Dev Connector
 const dev = {
     name:"Dev Connector",
@@ -134,7 +155,7 @@ const portfolio = {
 
 
 // List of Projects
-const myProjects = [dev, barkr, LICS, portfolio];
+const myProjects = [ave, dev, barkr, LICS, portfolio];
 
 
 // Development Icon Library

@@ -77,10 +77,12 @@ Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D
 
 /* Gradients */
 .home-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#0044e3));
   background-image: linear-gradient(black, #0044e3);
 }
 
 .contact-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0044e3), to(black));
   background-image: linear-gradient(#0044e3, black);
 }
 
@@ -97,7 +99,7 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   overflow-x: hidden;
 }
@@ -106,6 +108,7 @@ body {
   padding: 4px 0;
   height: 100%;
 }
+
 .container > h1, .container-fluid > h1 {
   font-weight: bold;
 }
@@ -133,6 +136,8 @@ a:hover {
 }
 
 .badge-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 2px 0;
 }
@@ -157,7 +162,10 @@ hr {
 }
 
 .zoom, .dev-icon {
-  transition: transform 0.2s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .zoom:hover, .dev-icon:hover {
@@ -234,11 +242,12 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   background-image: url("../images/code-illustration.svg");
   background-size: cover;
   background-position: center center;
-  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 
 #headline {
-  font-family: "Poiret One", sans-serif;
+  font-family: 'Poiret One', sans-serif;
   font-weight: bold;
 }
 
@@ -270,16 +279,15 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   color: black;
   background-color: white;
   -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  -o-transition: -o-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
+
 .project-card .btn {
   color: black;
 }
@@ -292,9 +300,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 .front img, .front .card-img-overlay {
   -webkit-transition: -webkit-filter 0.5s;
-  -moz-transition: -moz-filter 0.5s;
-  -o-transition: -o-filter 0.5s;
+  transition: -webkit-filter 0.5s;
   transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
 }
 
 .card-title {
@@ -306,8 +314,6 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   max-height: 65vh;
   position: absolute;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -320,15 +326,11 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 .project-card .back {
   -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .flipped {
   -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -337,61 +339,79 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 }
 
 #dev-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#dfdfdf), color-stop(#cacaca), to(#1e1e1c));
   background-image: linear-gradient(white, #dfdfdf, #cacaca, #1e1e1c);
 }
+
 #dev-card .btn {
   background-color: white;
 }
+
 #dev-card .btn:hover {
   background-color: #cccccc;
 }
 
 #barkr-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe96f), to(#fffadd));
   background-image: linear-gradient(#ffe96f, #fffadd);
 }
+
 #barkr-card .btn {
   background-color: #ffe96f;
 }
+
 #barkr-card .btn:hover {
   background-color: #ffda05;
 }
 
 #timer-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ab7aff), to(#e5d6ff));
   background-image: linear-gradient(#ab7aff, #e5d6ff);
 }
+
 #timer-card .btn {
   background-color: #ab7aff;
 }
+
 #timer-card .btn:hover {
   background-color: #8b38ff;
 }
 
 #killi-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#79ebff), to(#c4f6ff));
   background-image: linear-gradient(#79ebff, #c4f6ff);
 }
+
 #killi-card .btn {
   background-color: #79ebff;
 }
+
 #killi-card .btn:hover {
   background-color: #1fddff;
 }
 
 #LICS-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(tan), to(white));
   background-image: linear-gradient(tan, white);
 }
+
 #LICS-card .btn {
   background-color: tan;
 }
+
 #LICS-card .btn:hover {
   background-color: tan;
 }
 
 #portfolio-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#40a2e3), to(#92bbd6));
   background-image: linear-gradient(#40a2e3, #92bbd6);
 }
+
 #portfolio-card .btn {
   background-color: #40a2e3;
 }
+
 #portfolio-card .btn:hover {
   background-color: #2b7eb6;
 }
@@ -407,43 +427,53 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
           88~~~88 88~~~b. 88    88 88    88    88    
           88   88 88   8D `8b  d8' 88b  d88    88    
           YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP    
-
-
+                                                     
+                                                     
       */
 #about li {
   margin-bottom: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
+
 #about .card {
   margin-bottom: 3vh;
 }
+
 #about .btn {
   font-size: inherit;
   color: black;
 }
 
 #headingOne {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#406be3), to(#40a2e3));
   background-image: linear-gradient(#406be3, #40a2e3);
 }
 
 #headingTwo {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#40a2e3), to(#92bbd6));
   background-image: linear-gradient(#40a2e3, #92bbd6);
 }
 
 #headingThree {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#92bbd6), to(#bce4ff));
   background-image: linear-gradient(#92bbd6, #bce4ff);
 }
 
 .badge {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .barrel-roll {
   -webkit-transform: rotateY(360deg);
-  -moz-transform: rotateY(360deg);
-  -o-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
 
@@ -468,18 +498,25 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 }
 
 .carousel-item img {
-  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 #key {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #key > .badge {
   font-size: 1.5rem;
-  margin: 0.25rem;
+  margin: .25rem;
 }
 
 #accordionExample .card {
@@ -506,7 +543,8 @@ Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88
   height: 100%;
   background-image: url("../images/code-illustration.svg");
   background-size: cover;
-  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
   z-index: 0;
 }
 
@@ -557,8 +595,8 @@ Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88
           88~~~   88    88 88    88    88    88~~~~~ 88`8b   
           88      `8b  d8' `8b  d8'    88    88.     88 `88. 
           YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD 
-
-
+                                                             
+                                                             
     */
 footer {
   width: 100%;
@@ -566,10 +604,13 @@ footer {
   background-color: #030024;
   padding: 5px;
 }
+
 footer > * {
   position: relative;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   font-size: clamp(1rem, 1.5rem, 2rem);
 }
@@ -587,6 +628,7 @@ YP   YP  `Y88P'  `Y88P' Y88888P `8888Y' `8888Y' YP   YP Y8888P' Y888888P Y88888P
     scroll-behavior: auto;
   }
 }
+
 /* 
 .88b  d88. d88888b d8888b. d888888b  .d8b.        .d88b.  db    db d88888b d8888b. d888888b d88888b .d8888. 
 88'YbdP`88 88'     88  `8D   `88'   d8' `8b      .8P  Y8. 88    88 88'     88  `8D   `88'   88'     88'  YP 
@@ -602,74 +644,61 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
            .dPYb.    `Y8b. 
           .8P  Y8. db   8D 
           YP    YP `8888Y' 
-
-
+                           
+                           
 */
 @media only screen and (max-width: 576px) {
   /* Typography */
   body, p {
     font-size: 1.25rem;
   }
-
   h2 {
     font-size: 1.75rem;
   }
-
   h3, .contact-text {
     font-size: 1.5rem;
   }
-
   .badge {
     font-size: 1rem;
   }
-
   .btn {
     font-size: 1rem;
   }
-
   .display-3 {
     font-size: 2rem;
   }
-
   .navbar-brand {
     font-size: 1rem;
   }
-
   footer * {
     font-size: 1rem;
     font-weight: bold;
   }
-
   section {
     padding: 5vh 2vh;
   }
-
   /* Nav */
   .navbar-toggler-icon, .navbar-brand {
     outline: white auto 1px;
     background-color: rgba(0, 0, 0, 0.65);
   }
-
   .nav-item > a {
     background-color: white;
   }
-
   form > .card-body {
     padding: 10px;
   }
-
   .label {
     margin-bottom: 4px;
   }
-
   .form-group {
     margin-bottom: 8px;
   }
-
   #home {
     padding: 10vh 0;
   }
 }
+
 /* 
           .d8888. .88b  d88. 
           88'  YP 88'YbdP`88 
@@ -682,35 +711,29 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   body, p, label, li {
     font-size: 1.5rem;
   }
-
   #home {
     padding: 10vh 0;
   }
-
   #home-container {
     padding: 2rem 2rem 2rem 0;
   }
-
   #headline {
     font-size: 3.5rem;
   }
-
   section {
     padding: 7vw 0;
   }
-
   #projects .btn {
     font-size: 1.5rem;
   }
-
   .card-text {
     font-size: 1.5rem;
   }
-
   svg {
     height: 10vh;
   }
 }
+
 /* 
           .88b  d88. d8888b. 
           88'YbdP`88 88  `8D 
@@ -718,76 +741,62 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
           88  88  88 88   88 
           88  88  88 88  .8D 
           YP  YP  YP Y8888D' 
-
-
+                             
+                             
 */
 @media only screen and (min-width: 768px) {
   body {
     font-size: 1rem;
   }
-
   h1 {
     font-size: 3rem;
   }
-
   h2 {
     font-size: 2rem;
   }
-
   h3 {
     font-size: 1.5rem;
   }
-
   section {
     padding: 10vh 0;
   }
-
   #home {
     padding: 19vh 0;
   }
-
   #contact {
     padding: 15vh 0;
   }
-
   #home-container {
     padding: 2.5rem 2.5rem 2.5rem 0;
   }
-
   .navbar-brand {
     padding: 8px;
   }
-
   header {
     width: 99%;
   }
-
   .modal-dialog {
     max-width: 75vw;
   }
-
   #dzh {
     max-height: 50vh;
     max-width: 100%;
   }
-
   .fa-linkedin, .fa-github-square {
     font-size: 6rem;
   }
-
   svg {
     height: 4vh;
     margin: 3px;
   }
-
   #projects .btn {
     font-size: 1.25rem;
   }
-
   .card-text {
     font-size: 1.2rem;
   }
 }
+
 /* 
           db       d888b  
           88      88' Y8b 
@@ -795,8 +804,8 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
           88      88  ooo 
           88booo. 88. ~8~ 
           Y88888P  Y888P  
-
-
+                          
+                          
 */
 @media only screen and (min-width: 992px) {
   #projects {
@@ -809,25 +818,35 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
     margin: 3% 0;
   }
   #projects .card-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+  #projects .card {
+    background-color: #bce4ff;
+    border: 0;
   }
   #projects .card-body {
     height: 100%;
-    padding: 15% 15%;
+    padding: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #bce4ff;
   }
-
   h3, .contact-text {
     font-size: 1.75rem;
   }
-
   #about {
     padding: 5vw 10vw;
   }
 }
+
 #contact-l-div {
   margin-right: 15px;
   border-bottom: 10px solid #40a2e3;
@@ -860,42 +879,34 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
            .dPYb.  88      
           .8P  Y8. 88booo. 
           YP    YP Y88888P 
-
-
+                           
+                           
           */
 @media only screen and (min-width: 1200px) {
   section {
     padding: 9vh 0;
   }
-
   h1 {
     font-size: 4rem;
   }
-
   h2 {
     font-size: 2.6rem;
   }
-
   h3 {
     font-size: 1.7rem;
   }
-
   #home-container {
     padding: 3rem 3rem 3rem 0;
   }
-
   #headline {
     top: 33%;
     font-size: 5rem;
   }
-
   .card-container {
     margin: 1.5rem 0;
   }
-
   .card-text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
