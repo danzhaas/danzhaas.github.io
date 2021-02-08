@@ -165,6 +165,9 @@ document.querySelectorAll(".badge").forEach(badge => badge.addEventListener("mou
 
 
 function sendForm (formSize) {
+    document.querySelectorAll(".submit-btn").forEach(node => 
+        node.value='Sending...'
+    );
     const formValues = {
         "name":document.querySelector('#name-'+formSize).value,
         "email":document.querySelector('#email-'+formSize).value,
@@ -175,10 +178,12 @@ function sendForm (formSize) {
         type:"POST",
         data:formValues,
         success: function() {
-            alert("Message received, thank you. I will get back to you within 3 business days.")
+            alert("Message received, thank you. I will get back to you within 3 business days.");
+            document.querySelectorAll(".submit-btn").forEach(node => node.value='Message Sent');
         },
         error: function() {
-            alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .")
+            alert("Server error.  Try again later or email me directly at danzhaas@gmail.com .");
+            document.querySelectorAll(".submit-btn").forEach(node => node.value='Send Message')
         }
     });
 };
