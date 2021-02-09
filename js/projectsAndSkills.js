@@ -15,7 +15,7 @@ const ave = {
     devIcons:[
         "Node.js","Express","MongoDB","React", "React Router","Javascript","Sass"
     ],
-    desc:'Rich text editor my 3-person team built in one week for a Hackathon project.  Features cloud file management.',
+    desc:'Rich text editor my 3-person team built in one week for a Hackathon challenge.  Features cloud file management.',
     button1: {
         text:"Live Version",
         href:"https://our-mintbean-team.github.io/texteditor-mintbean/"

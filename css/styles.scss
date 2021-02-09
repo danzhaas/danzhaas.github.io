@@ -364,58 +364,49 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     font-size:18px;
 }
 
-#dev-card {
-    .back {
-        background-image: linear-gradient(rgb(255, 255, 255), rgb(223, 223, 223), rgb(202, 202, 202), rgb(30, 30, 28));
-    }
+#ave-card {
     .btn {
-        background-color:rgb(255, 255, 255);
+        background-color:rgb(0, 0, 0);
+        color:white;
         &:hover {
-            background-color: rgb(204, 204, 204); 
+            background-color: rgb(51, 51, 51); 
+        }
+    }
+}
+
+#dev-card {
+    .btn {
+        background-color:rgb(85, 85, 85);
+        color:white;
+        &:hover {
+            background-color: rgb(59, 59, 59); 
         }
     }
 }
 
 #barkr-card {
-    .back {
-        background-image: linear-gradient(rgb(255, 233, 111),  rgb(255, 250, 221));
-    }
     .btn {
         background-color:rgb(255, 233, 111);
-        // background-color: hsl(51, 100%, 51%); 
         &:hover {
             background-color: hsl(51, 100%, 51%); 
-            // background-color:rgb(255, 233, 111);
         }
     }
 }
 
 #timer-card {
-    .back {
-    background-image: linear-gradient( rgb(171, 122, 255), rgb(229, 214, 255));
-    }
-
     .btn {
         background-color:rgb(171, 122, 255);
-        // background-color: hsl(265, 100%, 61%); 
         &:hover {
             background-color: hsl(265, 100%, 61%); 
-            // background-color:rgb(171, 122, 255);
         }
     }
 }
 
 #killi-card {
-    .back {
-    background-image: linear-gradient( rgb(121, 235, 255), rgb(196, 246, 255));
-    }
-
     .btn {
         background-color:rgb(121, 235, 255);
-        // background-color: hsl(189, 100%, 56%); 
         &:hover {
             background-color: hsl(189, 100%, 56%); 
-            // background-color:rgb(121, 235, 255);
         }
     }
 }
@@ -427,10 +418,8 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
     .btn {
         background-color: tan;
-        // background-color: hsl(0, 0%, 41%); 
         &:hover {
             background-color: tan; 
-            // background-color:rgb(139, 139, 139);
         }
     }
 }
@@ -442,11 +431,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
     .btn {
     background-color:rgb(64, 162, 227);
-    // background-color:hsl(204, 62%, 44%);
+    color:white;
         &:hover {
             background-color:hsl(204, 62%, 44%);
-            // background-color:rgb(64, 162, 227);
-            
         }
     }
 }
@@ -667,7 +654,6 @@ footer {
         height:fit-content;
         font-size: clamp(1rem, 1.5rem, 2rem)
     }
-
 }
 
 
