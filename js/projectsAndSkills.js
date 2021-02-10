@@ -236,7 +236,7 @@ const allDevIcons = [
 
 
 // Development Skills
-const devBadges = "MongoDB, Express, React, Node.js, Gatsby, Redux, React Router, JQuery, Javascript, Bootstrap, LESS, SASS, CSS, HTML, NPM, React Native, Github, Browser Developer Tools, XML";
+const devBadges = "React, Node.js, Express, MongoDB, Gatsby, Redux, React Router, JQuery, Javascript, Bootstrap, LESS, SASS, CSS, HTML, NPM, React Native, Github, Browser Developer Tools, XML";
 // Design Skills
 const designBadges = "Photoshop, GIMP, Adobe Illustrator";
 // Databases
