@@ -74,7 +74,7 @@ const distractionTimer = {
     name:"Distraction Timer",
     id:"timer",
     thumbnailSrc:"images/timer-tile-500.jpg",
-    imageSrc:"images/timer-tile-500.jpg",
+    imageSrc:"images/timer-landscape.jpg",
     devIcons:[
         "Gatsby","React","React Google Charts","Javascript","Bootstrap","HTML","CSS","Sass"
     ],
@@ -155,7 +155,7 @@ const portfolio = {
 
 
 // List of Projects
-const myProjects = [dev, barkr, LICS, portfolio, ave];
+const myProjects = [dev, distractionTimer, barkr, LICS, portfolio, ave];
 
 
 // Development Icon Library
