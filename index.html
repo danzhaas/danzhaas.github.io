@@ -146,7 +146,7 @@
             <div id="about-cards" class="row d-flex flex-row flex-wrap justify-content-between">
 
                 <!-- First Card: Skills -->
-                <div class="col-12">
+                <div id="skills" class="col-12">
                     <h2 class="py-3 bold card-title">Skills</h2>
                     <!-- <div class="card-body"> -->
 
@@ -181,45 +181,65 @@
                     </ul>
                 </div>
 
-                <hr>
+                <!-- <hr> -->
 
-                <!-- Second card: Background -->
-                <div class="col-12">
-                    <h2 class="card-title py-3 bold ">Background</h2>
-                    <!-- <div class="card-body"> -->
-                    <div class="card-content d-flex flex-column">
+                <!-- Second card: Fast Facts -->
+                <div id="fast-facts" class="col-12">
+                    <h2 class="card-title py-3 bold ">Fast Facts</h2>
+                    <div class="card-content">
 
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item px-0 pt-lg-0">Experienced with MongoDB, Express, React,
-                                Node.js; NuCamp Full Stack Bootcamp graduate.</li>
-                            <li class="list-group-item px-0 pt-lg-0">Bachelor's degree in Digital Media and Web
-                                Technology will be complete in Spring 2021.</li>
-                            <li class="list-group-item px-0 pt-lg-0">Knowledgable in other fields: 10 years
-                                experience and a Master's degree in health science.</li>
-                        </ul>
-
-                        <div class="d-flex flex-row align-items-end justify-content-start">
-                            <!-- GitHub -->
-                            <a href="https://github.com/danzhaas" class="zoom" target="_blank">
-                                <i style="color:#24292e" class="fab fa-5x fa-github-square"></i>
-                            </a>
-                            <!-- LinkedIn -->
-                            <a href="https://linkedin.com/in/danzhaas" class="mx-3 zoom" target="_blank">
-                                <i style="color:#0082ca" class="fab fa-5x fa-linkedin"></i>
-                            </a>
-                            <!-- Resume -->
-                            <img id="resume-icon" class="zoom" src="images\brand-resume-icon-w-margin.svg" tabindex=0
-                                alt="thumbnail for resume with Dan Haas' logo">
+                        <div class="col-md-4">
+                            <div class="icon-and-heading">
+                                <i class="fas fa-hard-hat"></i>&nbsp;
+                                <h3>Experienced Builder</h3>
+                            </div>
+                            <p>Has built projects with React, Node.js, Express, and MongoDB, both solo and on a team.  My code makes my research study more efficient, and coding isn't even in my job description.</p>
                         </div>
 
+                        <div class="col-md-4">
+                            <div class="icon-and-heading">
+                                <i class="fas fa-graduation-cap"></i>&nbsp;
+                                <h3>Lifelong Learner</h3>
+                            </div>
+                            <p>Currently learning D3 for React on <a href="https://www.udemy.com/course/d3-react/learn/lecture/15942812#overview">Udemy</a>, bioinformatics and python on <a href="http://rosalind.info/problems/locations/">rosalind.info</a>, and will earn my second Bachelor's degree in Digital Media and Web Technology in May 2021.</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="icon-and-heading">
+                                <i class="fas fa-brain"></i>&nbsp;
+                                <h3>Versatile Professional</h3>
+                            </div>
+                            <p>Knowledgable in other fields: In addition to web development, I have a BS in Biochemistry and Molecular Biology and an MS in Anatomy and Clinical Health Science.</p>
+                        </div>
+                        
                     </div>
-                    <!-- </div> -->
                 </div>
 
-                <hr>
+                <!-- <hr> -->
 
-                <!-- Third Card: Who I Am -->
-                <div class="col-12  mb-0">
+                <!-- Third card: Social -->
+                <div id="social" class="col-12">
+                    <!-- <h2 class="w-100 py-3 bold card-title">Social</h2> -->
+
+                    <div class="social-icons">
+                        <a href="https://github.com/danzhaas" class="zoom" target="_blank">
+                            <i style="color:#24292e" class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/danzhaas" class="mx-3 zoom" target="_blank">
+                            <i style="color:#0082ca" class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/danzhaas" class="zoom" target="_blank">
+                            <img id="resume-icon" class="zoom" src="images\brand-resume-icon-w-margin.svg" tabindex=0
+                            alt="thumbnail for resume with Dan Haas' logo">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- <hr> -->
+
+                <!-- Fourth Card: Who I Am -->
+                <div id="who" class="col-12  mb-0">
                     <h2 class="py-3 bold card-title">Who I Am</h2>
                     <div class="d-flex flex-column flex-lg-row flex-wrap">
 
@@ -259,9 +279,8 @@
                                         <img src="images/goofball-600.jpg" class="d-block w-100"
                                             alt="Screen capture of The Simpsons with Homer Simpson and the Capitol City Goofball">
                                         <div class="carousel-caption">
-                                            <h5><i class="fas fa-golf-ball"></i> Goofball</h5>
-                                            <p class="d-none d-md-block">Comedies I've been watching recently are
-                                                Community, Schitts Creek, and classic The Simpsons.
+                                            <h5><i class="fas fa-golf-ball"></i> TV & Movie Buff </h5>
+                                            <p class="d-none d-md-block">Recently I've been watching Wandavision, Schitt's Creek, and Aliens of the Deep.
                                             </p>
                                         </div>
                                     </div>
@@ -280,19 +299,13 @@
                         </div>
 
                         <!-- Facts -->
-                        <div class="col-12 col-lg-6 px-0 pl-lg-3">
+                        <div id="facts" class="col-12 col-lg-6 px-0 pl-lg-3">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item px-0 px-lg-3 pt-lg-0">I was born and raised in Maryland and
-                                    have lived, learned, and worked in Baltimore for the last 8 years.
+                                    have lived, learned, and worked in Baltimore for the last 8 years except 1 year at University of Delaware.
                                 </li>
-                                <li class="list-group-item px-0 px-lg-3 mb-0">My best work is done with realistic,
-                                    investigative,
-                                    and artistic people who are
-                                    responsible, trustworthy, and hardworking.</li>
-                                <li class="list-group-item px-0 px-lg-3">My current passion project is Focus Suite:
-                                    apps designed
-                                    to help
-                                    people with ADHD manage their distractions and organize their thoughts. </li>
+                                <li class="list-group-item px-0 px-lg-3 mb-0">My #1 most desired vacation spot to visit is Scandanavia because I want to see the Northern Lights.</li>
+                                <li class="list-group-item px-0 px-lg-3">I'm excited about building a suite of apps for people with ADHD which helps them better manage their distractions and organize their thoughts. </li>
 
                             </ul>
                         </div>

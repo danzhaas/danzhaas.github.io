@@ -18,18 +18,6 @@ $('body').scrollspy({ target: '#navbar-collapse' });
 // ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
 
 
-//CARD-FLIP
-// function flip(cardId) {
-//     const thisCard = document.querySelector(cardId);
-//     var face;
-//     thisCard.classList.contains("flipped") ? face = "1" : face = "0";
-//     const reverse = 1 - face;
-//     thisCard.children[reverse].classList.toggle("d-none");
-//     thisCard.classList.toggle('flipped');
-//     setTimeout(function () { thisCard.children[face].classList.toggle("d-none") }, 500);    // To address problem of anchors on the reverse side being activated on click from the front, the side of the card facing backwards gets display = none 
-// }
-
-
 // GENERATE CARDS
 var cardTemplate, iconsTemplate;
 
@@ -113,10 +101,6 @@ $(function () {
 // ██╔══██║██╔══██╗██║   ██║██║   ██║   ██║   
 // ██║  ██║██████╔╝╚██████╔╝╚██████╔╝   ██║   
 // ╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝    ╚═╝   
-
-
-// ACCORDION
-$('.collapse').collapse();
 
 
 //RESUME MODAL

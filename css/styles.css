@@ -393,6 +393,11 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   background-color: tan;
 }
 
+#LICS-card .card-img {
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
 #portfolio-card .back {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#40a2e3), to(#92bbd6));
   background-image: linear-gradient(#40a2e3, #92bbd6);
@@ -421,6 +426,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
                                                      
                                                      
       */
+#about h2 {
+  color: #40a2e3;
+}
+
 #about li {
   margin-bottom: 2vh;
   display: -webkit-box;
@@ -454,6 +463,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 #headingThree {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#92bbd6), to(#bce4ff));
   background-image: linear-gradient(#92bbd6, #bce4ff);
+}
+
+#skills {
+  margin-bottom: 5vh;
 }
 
 .badge {
@@ -512,6 +525,54 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 #accordionExample .card {
   margin: 0;
+}
+
+#fast-facts .icon-and-heading {
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fast-facts h3 {
+  font-weight: bold;
+}
+
+#fast-facts .fas {
+  font-size: 5vh;
+}
+
+#social {
+  margin: 8vh 0;
+}
+
+#social .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#social .social-icons i {
+  font-size: 30vw;
+}
+
+#social .social-icons img {
+  height: 30vw;
+}
+
+#social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: italic;
 }
 
 /*
@@ -783,8 +844,62 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
   #projects .btn {
     font-size: 1.25rem;
   }
+  #LICS-card .card-img {
+    border: none;
+  }
   .card-text {
     font-size: 1.2rem;
+  }
+  .zoom, .dev-icon {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .zoom:hover, .dev-icon:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+  }
+  #fast-facts .icon-and-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #fast-facts .card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #fast-facts .card-content > div {
+    padding: 5vh;
+  }
+  #fast-facts > div > * {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #fast-facts .fas {
+    font-size: 20vh;
+  }
+  #social .social-icons {
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #social .social-icons i {
+    font-size: 20vh;
+  }
+  #social .social-icons img {
+    height: 20vh;
   }
 }
 

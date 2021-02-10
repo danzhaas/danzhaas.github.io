@@ -422,6 +422,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
             background-color: tan; 
         }
     }
+    .card-img {
+        border-bottom: 1px solid black;
+        border-radius: 0;
+    }
 }
 
 #portfolio-card {
@@ -454,9 +458,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
       */
  
 #about {
-    // .card, li {
-    //     background-color: $lightest-blue;
-    // }
+    h2 {
+        color:#40a2e3
+    }
     li {
         margin-bottom:2vh;
         display:flex;
@@ -484,26 +488,9 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     background-image: linear-gradient($light-blue, $lightest-blue);
 }
 
-// #headingOne {
-//     background-color: $mid-blue;
-// }
-
-// #headingTwo {
-//     background-color: $light-blue;
-// }
-
-// #headingThree {
-//     background-color: $lightest-blue;
-// }
-
-// #about-cards {
-//     .card {
-//         border:none;
-//     };
-//     .card-body {
-//         padding:0;
-//     }
-// }
+#skills {
+    margin-bottom:5vh
+}
 
 .badge {
     transition: transform 1s;
@@ -552,11 +539,38 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
     margin:0;
 }
 
-// .zoom:hover, .dev-icon:hover {
-//     -webkit-transform: scale(1.1, 1.1);
-//     transform: scale(1.1, 1.1);
-//     cursor:pointer;
-// }
+#fast-facts {
+    .icon-and-heading {
+        margin-top:3vh;
+        display: flex;
+    }
+    h3 {
+        font-weight: bold;
+    }
+    .fas {
+        font-size: 5vh;
+    }
+}
+
+#social {
+    margin:8vh 0;
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        i {
+            font-size: 30vw;
+        }
+        img {
+            height:30vw;
+            // border:1px solid black
+        }
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        font-style: italic;
+    }
+}
 
 
 /*
@@ -875,8 +889,61 @@ YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   
         font-size:1.25rem
     }
 
+    #LICS-card .card-img {
+        border: none;
+    }
+
     .card-text {
         font-size: 1.2rem
+    }
+
+    .zoom, .dev-icon {
+        transition: transform .2s;
+    }
+    
+    .zoom:hover, .dev-icon:hover {
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+        cursor:pointer;
+    }
+
+    #fast-facts {
+        .icon-and-heading {
+            flex-direction: column;
+        }
+        .card-content {
+            display: flex;
+            flex-direction: row;
+            > div {
+                padding:5vh;
+            }
+        }
+        > div {
+            > * {
+                margin: 0 auto;
+                text-align:center;
+            }
+        }
+        .fas {
+            // height:15vh;
+            font-size: 20vh;
+        }
+    }
+    
+    #social {
+        .social-icons {
+            margin: 0 auto;
+            text-align:center;
+            display: flex;
+            justify-content: space-around;
+            i {
+                font-size: 20vh;
+            }
+            img {
+                height:20vh;
+                // border:1px solid black
+            }
+        }
     }
 }
 

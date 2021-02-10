@@ -155,7 +155,7 @@ const portfolio = {
 
 
 // List of Projects
-const myProjects = [ave, dev, barkr, LICS, portfolio];
+const myProjects = [dev, barkr, LICS, portfolio, ave];
 
 
 // Development Icon Library
