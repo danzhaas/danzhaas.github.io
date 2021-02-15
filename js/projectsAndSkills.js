@@ -29,14 +29,14 @@ const ave = {
 
 //Dev Connector
 const dev = {
-    name:"Dev Connector",
+    name:"Developer Web",
     id:"dev",
     thumbnailSrc:"images/dev-tile-500.jpg",
     imageSrc:"images/dev-connector-landscape.jpg",
     devIcons:[
         "Node.js","Express","MongoDB","React", "Redux", "React Router","Javascript"
     ],
-    desc:'Social network full stack web application.  Features authentication, use of async/await, and Redux.',
+    desc:'Social network full stack web application.  Features chat functionality, use of async/await, and Redux.',
     button1: {
         text:"Live Version",
         href:"https://dev-connector-dzh.herokuapp.com/"
