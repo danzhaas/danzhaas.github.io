@@ -254,8 +254,22 @@ max-width:100%;
   font-size:1.5em;
 }
 
+.nav-link:hover {
+  background-color: lightblue;
+}
+
 .blue {
   color: blue;
+}
+
+#participant-form {
+  border: 0.25rem solid blue;
+  padding: 2rem;
+  width:fit-content
+}
+
+#participant-form label, #participant-form input {
+  width:100%
 }
 
 
