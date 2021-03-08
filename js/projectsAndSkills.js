@@ -64,7 +64,7 @@ const barkr = {
     },
     button2:{
         text:"See Code",
-        href:"http://github.com/danzhaas/barkr-react"
+        href:"http://github.com/danzhaas/barkr-fullstack"
     }
 }
 
