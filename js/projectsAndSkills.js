@@ -240,7 +240,7 @@ const devBadges = "React, Node.js, Express, MongoDB, Gatsby, Redux, React Router
 // Design Skills
 const designBadges = "Photoshop, GIMP, Adobe Illustrator";
 // Databases
-const databaseBadges = "MySQL, Robo3T, MS Access, MongoDB";
+const databaseBadges = "MySQL, MS Access, MongoDB, MongoDBCompass";
 // Languages
 const languagesBadges = "Visual Basic for Applications, Javascript";
 // OS
