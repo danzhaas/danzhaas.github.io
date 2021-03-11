@@ -55,7 +55,7 @@ const barkr = {
     thumbnailSrc:"images/barkr-tile-500.jpg",
     imageSrc:"images/barkr-landscape.jpg",
     devIcons:[
-        "React","React Router","Reactstrap","Javascript","Bootstrap","HTML","CSS"
+        "React","React Router","Node.js","Express","Javascript","Bootstrap","HTML","CSS"
     ],
     desc:'My "pet project": a companion to your companion. Share your best friend with the world on this dog social network.',
     button1: {
